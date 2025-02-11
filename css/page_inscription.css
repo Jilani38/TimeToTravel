@@ -2,7 +2,7 @@
     body {
         font-family: Arial, sans-serif;
         background-color: #f0f8ff;
-        background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)), url('fond.jpeg'); /* L'image de fond */
+        background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)), url('../img/fond.jpeg'); /* L'image de fond */
         background-attachment: fixed; /* Fixe l’image de fond pour éviter les décalages */
         background-size: cover; /* L'image couvre toute la page */
         background-position: center; /* Centrage de l'image */
@@ -56,6 +56,7 @@ input[type="tel"],
 input[type="number"],
 input[type="date"],
 input[type="submit"],
+input[type="password"],
 input[type="radio"] {
     width: 100%;
     padding: 10px;
