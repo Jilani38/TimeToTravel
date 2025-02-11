@@ -1,0 +1,128 @@
+
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f8ff;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)), url('fond.jpeg'); /* L'image de fond */
+        background-attachment: fixed; /* Fixe l’image de fond pour éviter les décalages */
+        background-size: cover; /* L'image couvre toute la page */
+        background-position: center; /* Centrage de l'image */
+        background-repeat: no-repeat; /* Pas de répétition de l’image */
+        
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    
+   
+    
+
+
+form {
+    
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 30px 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(251, 11, 255, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+legend {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #064a74;
+}
+
+label {
+    display: block;
+    margin-bottom: 7px;
+    font-weight: bold;
+    color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+input[type="date"],
+input[type="submit"],
+input[type="radio"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="tel"] {
+    margin-bottom: 35px; /* Ajuste la valeur si nécessaire */
+}
+
+
+input[type="radio"] {
+    width: auto;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+input[type="submit"] {
+    background-color: #064a74;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #053b59;
+}
+
+::placeholder {
+    color: #999;
+}
+
+.logo {
+    display: block;
+    margin: 70px auto 0px auto ;
+    max-width: 300px;
+    height: auto;
+}
+
+.btn-primary {
+    background-color: #064a74;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background-color: #053b59;
+}
+
+.btn-secondary {
+    background-color: #b11d0d; /* Rouge foncé */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-secondary:hover {
+    background-color: #c0392b; /* Rouge encore plus foncé au survol */
+}
+

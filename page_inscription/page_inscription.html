@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang"=fr">
+    <head>
+        <meta charset="UTF -8">
+        <meta name = "viewport" content="width=device-width, initial-scale=1,0">
+        <title>Formulaire d'inscription</title>
+        <link rel = "stylesheet" type = "text/css" href = "page_inscription.css">
+    </head>
+    
+    <body>
+        <form action = "" method = "post">
+            <img src="logo.svg" alt="Logo du site" class="logo">
+            <fieldset>
+                <legend> Inscris toi !</legend>
+        
+        <label for="fp"> Prenom : </label>
+        <input type = "text" id = "fp" name = "fp"/>
+        
+        <label for="fm"> Nom : </label>
+        <input type = "text" id = "fn" name = "fn"/>
+        
+        <label for="date">Date de naissance : </label>
+        <input type = "date" name = date value = "2003-12-23" max = "2007-01-01">
+
+        <label for = "g">Genre : </label>
+        <input type = "radio" name = "g" value = "Homme" checked = "checked"> Homme
+        <input type = "radio" name = "g" value = "Femme"> Femme
+        
+        <label for = "adresse">Adresse postale : </label>
+        <input type = "text" name = "adresse" >
+        
+        <label for = "em">Adresse mail : </label>
+        <input type = Email id = "em" name = "em"/>
+        
+        <label name = "t">Téléphone : </label>
+        <input type = "tel" name = "t" id = "t"/>
+        
+        
+        
+        <input type="submit" value="Créer mon compte" class="btn-primary">
+        <button type="button" class="btn-secondary">J'ai déjà un compte</button>
+        
+        
+        </fieldset>
+         </form>
+    </body>
+    
+    
+    
+    
+    
+    
+    
+    
+</html>

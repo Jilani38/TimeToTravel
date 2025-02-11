@@ -1,0 +1,107 @@
+body {
+    font-family: 'Arial, sans-serif';
+    background-color: #f0f8ff;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)), url('fond.jpeg'); /* L'image de fond */
+    background-attachment: fixed; /* Fixe l’image de fond pour éviter les décalages */
+    background-size: cover; /* L'image couvre toute la page */
+    background-position: center; /* Centrage de l'image */
+    background-repeat: no-repeat; /* Pas de répétition de l’image */
+
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+table {
+    background-color: rgba(255, 255, 255, 0.8); /* Fond blanc moins opaque */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: none;
+    width: 100%;
+    max-width: 400px;
+}
+
+th {
+    font-size: 1.8em;
+    color: #064a74;
+    padding: 10px;
+    text-align: center;
+}
+
+td {
+    padding: 10px;
+}
+
+label {
+    font-weight: bold;
+    color: #333;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input::placeholder {
+    color: #999;
+}
+
+button {
+    background-color: #064a74;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #053b59;
+}
+
+.button-group {
+    text-align: center;
+}
+
+img {
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+.btn-primary {
+    background-color: #064a74;
+    color: white;
+    padding: 15px 30px; /* Plus grand pour connexion */
+    font-size: 1.2em;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background-color: #053b59;
+}
+
+.btn-secondary {
+    background-color: #b11d0d; /* Rouge foncé */
+    color: white;
+    padding: 8px 16px; /* Plus petit pour créer un compte */
+    font-size: 0.9em;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-secondary:hover {
+    background-color: #c0392b; /* Rouge encore plus foncé au survol */
+}
