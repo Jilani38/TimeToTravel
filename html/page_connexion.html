@@ -1,37 +1,34 @@
 <!DOCTYPE html>
-<html lang"=fr">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-witdh, initial-scal=1,0">
-        <link rel = "stylesheet" type = "text/css" href = "page_connexion.css">
-        <title>Connexion</title>
-    </head>
-    <body>
-        <table border = "5", cellpading="5">
-            <tr><th colspan="2">
-                Sign in
-            </th></tr>
-            <tr><td>
-                Email : <label for = "email">
-                </label>
-            </td><td>
-                <input type="text" id="email" name="email"/>
-            </td>
-            </tr>
-            
-            <tr><td>
-                Mot de passe : <label for = "mdp">
-                </label>
-            </td><td>
-            <input type="password" id="mdp" name="password" size ="20" maxlength="15" placeholder="saisir 15 caractere max"/><br/>
-            </td>
-            </tr>
-    
-            <td colspan="2" style="text-align:center;">
-                <input type="submit" value="Connexion" class="btn-primary">
-                <br></br>
-                <button type="button" class="btn-secondary">Je n'ai pas de compte</button>
-            </td>
-            
-        </table>
-    </body>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connexion</title>
+    <link rel="stylesheet" href="../css/page_connexion.css">
+</head>
+<body>
+
+    <div class="login-container">
+        <h2>Connecte-toi !</h2>
+        
+        <form action="traitement_connexion.php" method="POST">
+            <div class="input-group">
+                <label for="email">E-mail :</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="input-group">
+                <label for="mdp">Mot de passe :</label>
+                <input type="password" id="mdp" name="mdp" required>
+            </div>
+
+            <button type="submit" class="btn-primary">Se connecter</button>
+        </form>
+
+        <p class="register-link">
+            <a href="page_inscription.html">Je n'ai pas de compte</a>
+        </p>
+    </div>
+
+</body>
+</html>
