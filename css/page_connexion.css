@@ -1,107 +1,118 @@
+/* ====== Fond avec dégradé marron (passé) → bleu (futur) ====== */
 body {
-    font-family: 'Arial, sans-serif';
-    background-color: #f0f8ff;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)), url('fond.jpeg'); /* L'image de fond */
-    background-attachment: fixed; /* Fixe l’image de fond pour éviter les décalages */
-    background-size: cover; /* L'image couvre toute la page */
-    background-position: center; /* Centrage de l'image */
-    background-repeat: no-repeat; /* Pas de répétition de l’image */
-
-    height: 100vh;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #654321, #003366);
+    color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100vh;
     margin: 0;
+    position: relative;
+    overflow: hidden;
 }
 
-table {
-    background-color: rgba(255, 255, 255, 0.8); /* Fond blanc moins opaque */
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border: none;
+/* ====== Filtre noir semi-transparent sur toute la page ====== */
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Noir à 50% d'opacité */
+    z-index: 1;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+
+/* ====== Conteneur du formulaire ====== */
+.login-container {
+    position: relative;
+    z-index: 2;
+    background: rgba(30, 30, 30, 0.9); /* Fond sombre légèrement transparent */
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
     width: 100%;
     max-width: 400px;
 }
 
-th {
-    font-size: 1.8em;
-    color: #064a74;
-    padding: 10px;
-    text-align: center;
+/* ====== Titre du formulaire ====== */
+h2 {
+    margin-bottom: 1.5rem;
+    color: #ffffff;
 }
 
-td {
-    padding: 10px;
-}
-
-label {
-    font-weight: bold;
-    color: #333;
-}
-
-input[type="text"],
-input[type="password"] {
+/* ====== Champs du formulaire bien alignés ====== */
+.input-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 1rem;
     width: 100%;
+}
+
+.input-group label {
+    font-weight: bold;
+    margin-bottom: 0.3rem;
+    color: #cccccc;
+    align-self: flex-start; /* Assure que les labels restent bien à gauche */
+}
+
+.input-group input {
+    width: 94%;
     padding: 10px;
-    margin-top: 5px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-}
-
-input::placeholder {
-    color: #999;
-}
-
-button {
-    background-color: #064a74;
+    border: 1px solid #444;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #333;
     color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 1em;
-    transition: background-color 0.3s ease;
+    outline: none;
+    text-align: left; /* Assure que le texte saisi est bien aligné à gauche */
 }
 
-button:hover {
-    background-color: #053b59;
+/* Effet au focus */
+.input-group input:focus {
+    border-color: #007BFF;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
 }
 
-.button-group {
-    text-align: center;
-}
-
-img {
-    margin-left: 10px;
-    vertical-align: middle;
-}
-
+/* ====== Bouton de connexion ====== */
 .btn-primary {
-    background-color: #064a74;
+    background-color: #007BFF;
     color: white;
-    padding: 15px 30px; /* Plus grand pour connexion */
-    font-size: 1.2em;
     border: none;
-    border-radius: 4px;
+    padding: 10px 15px;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 1rem;
     cursor: pointer;
+    transition: 0.3s;
 }
 
 .btn-primary:hover {
-    background-color: #053b59;
+    background-color: #0056b3;
 }
 
-.btn-secondary {
-    background-color: #b11d0d; /* Rouge foncé */
-    color: white;
-    padding: 8px 16px; /* Plus petit pour créer un compte */
-    font-size: 0.9em;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+/* ====== Lien d'inscription centré ====== */
+.register-link {
+    text-align: center;
+    margin-top: 1rem;
 }
 
-.btn-secondary:hover {
-    background-color: #c0392b; /* Rouge encore plus foncé au survol */
+.register-link a {
+    color: #00aaff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.register-link a:hover {
+    text-decoration: underline;
 }
