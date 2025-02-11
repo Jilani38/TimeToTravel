@@ -1,0 +1,176 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: sans-serif;
+}
+
+header {
+  display: grid;
+  place-items: center;
+  height: 400px;
+  background-image:
+    linear-gradient(#0008, #0008),
+    url("../img/accueil_hero.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+header input {
+  width: 50%;
+  height: 50px;
+  padding-left: 25px;
+  border-radius: 25px;
+  font-size: 20px;
+  background: transparent;
+  color: white;
+  border: 1px solid white;
+
+  &::placeholder {
+    color: white;
+  }
+
+  &:focus {
+    outline: 2px solid white;
+  }
+}
+
+header nav {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 20px;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+header nav a {
+  text-decoration: none;
+  color: white;
+}
+
+header nav div a {
+  padding: 10px;
+  border-radius: 10px;
+
+  &:nth-child(1) {
+    position: relative;
+    background: #123964;
+
+    &::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: #0002;
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+
+    &:hover::before {
+      opacity: 1;
+    }
+  }
+}
+
+header img {
+  width: 200px;
+}
+
+main {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+section {
+  margin: 20px;
+  /* border: 1px solid black; */
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
+  box-shadow: 0 4px 8px 0 #0003;
+  border-radius: 10px;
+  background-size: cover;
+  background-position: center;
+  transition-property: box-shadow scale;
+  transition-duration: 0.5s;
+  overflow: hidden;
+
+  &:nth-child(1) {
+    margin-right: 0;
+    /* border-right: 1px solid black; */
+    background-image: url("../img/accueil_past.avif");
+  }
+
+  &:is(:hover, :focus-within) {
+    /* box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2); */
+    box-shadow: 0 8px 16px 0 #0003;
+    scale: 1.01;
+  }
+
+  &:nth-child(2) {
+    background-image: url("../img/accueil_future.jpg");
+  }
+}
+
+section div {
+  position: relative;
+  height: 100%;
+  translate: 0 100%;
+  transition-property: translate background-color;
+  transition-duration: 0.3s;
+  color: white;
+  padding: 20px;
+  /* display: flex; */
+  /* flex-direction: column; */
+}
+
+section div span {
+  text-wrap: balance;
+  text-align: center;
+  font-size: 20px;
+}
+
+section div a {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  text-decoration: none;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+section div a::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: #0003;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+section:nth-child(1) div a {
+  background: #553A26;
+  color: white;
+}
+
+section:nth-child(2) div a {
+  background: #123964;
+  color: white;
+}
+
+section:is(:hover, :focus-within) div {
+  translate: 0 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+section div a:hover::before {
+  opacity: 1;
+}
