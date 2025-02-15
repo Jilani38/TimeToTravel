@@ -1,0 +1,11 @@
+main {
+  padding: 10px;
+}
+
+dialog img {
+  width: 100%;
+}
+
+a[title="Supprimer"] {
+  color: red;
+}

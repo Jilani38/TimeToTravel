@@ -1,0 +1,53 @@
+main img {
+  width: 100%;
+}
+
+main {
+  padding: 10px;
+}
+
+table :has(> input) {
+  text-align: left;
+}
+
+main div {
+  margin-top: 20px;
+}
+
+main div * {
+  padding: 10px;
+  border-radius: 10px;
+  color: black;
+  text-decoration: none;
+}
+
+main div :first-child {
+  position: relative;
+  background: #123964;
+  color: white;
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: #fff2;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+
+  &:hover::before {
+    opacity: 1;
+  }
+}
+
+main div :last-child {
+  position: relative;
+  border: 1px solid black;
+  overflow: hidden;
+  transition: background 0.3s, color 0.3s;
+
+  &:hover {
+    background: #123964;
+    color: white;
+  }
+}
