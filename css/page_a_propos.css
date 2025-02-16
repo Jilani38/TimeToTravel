@@ -1,7 +1,8 @@
 body {
     font-family: Optima, sans-serif;
     background-color: #f1f4f6;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)), url('../img/fond.jpeg'); /* L'image de fond */
+   /* background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)), url('../img/fond.jpeg');  L'image de fond */
+   background: linear-gradient(135deg, #654321, #003366);
     background-attachment: fixed; /* Fixe l’image de fond pour éviter les décalages */
     background-size: cover; /* L'image couvre toute la page */
     background-position: center; /* Centrage de l'image */
@@ -36,7 +37,7 @@ margin: 0;
 }
 
 legend {
-font-size: 1.5em;
+font-size: 3em;
 font-weight: 150;
 margin-bottom: 15px;
 text-align: center;
