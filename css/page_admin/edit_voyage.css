@@ -44,7 +44,9 @@ main div :last-child {
   position: relative;
   border: 1px solid black;
   overflow: hidden;
-  transition: background 0.3s, color 0.3s;
+  transition:
+    background 0.3s,
+    color 0.3s;
 
   &:hover {
     background: #123964;

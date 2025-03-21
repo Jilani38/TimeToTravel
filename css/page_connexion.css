@@ -1,196 +1,192 @@
 /* ====== Fond avec dégradé marron (passé) → bleu (futur) ====== */
 body {
-    font-family: Arial, sans-serif;
-    background: linear-gradient(135deg, #654321, #003366);
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    position: relative;
-    overflow: hidden;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #654321, #003366);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  position: relative;
+  overflow: hidden;
 }
 
 /* ====== Filtre noir semi-transparent sur toute la page ====== */
 body::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Noir à 50% d'opacité */
-    z-index: 0;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Noir à 50% d'opacité */
+  z-index: 0;
 }
 form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
 }
 
 eader input {
-    width: 50%;
-    height: 50px;
-    padding-left: 25px;
-    border-radius: 25px;
-    font-size: 20px;
-    background: transparent;
-    color: white;
-    border: 1px solid white;
-  
-    &::placeholder {
-      color: white;
-    }
-  
-    &:focus {
-      outline: 2px solid white;
-    }
-  }
-  
-  header nav {
-    position: absolute;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-right: 20px;
-    top: 0;
-    left: 0;
-    right: 0;
-  }
-  
-  header nav a {
-    text-decoration: none;
+  width: 50%;
+  height: 50px;
+  padding-left: 25px;
+  border-radius: 25px;
+  font-size: 20px;
+  background: transparent;
+  color: white;
+  border: 1px solid white;
+
+  &::placeholder {
     color: white;
   }
-  
-  header nav div a {
-    padding: 10px;
-    border-radius: 10px;
-  
-    &:nth-child(4) {
-      position: relative;
-      background: #123964;
-  
-      &::before {
-        content: "";
-        position: absolute;
-        inset: 0;
-        background: #0002;
-        opacity: 0;
-        transition: opacity 0.3s;
-      }
-  
-      &:hover::before {
-        opacity: 1;
-      }
+
+  &:focus {
+    outline: 2px solid white;
+  }
+}
+
+header nav {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 20px;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+header nav a {
+  text-decoration: none;
+  color: white;
+}
+
+header nav div a {
+  padding: 10px;
+  border-radius: 10px;
+
+  &:nth-child(4) {
+    position: relative;
+    background: #123964;
+
+    &::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: #0002;
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+
+    &:hover::before {
+      opacity: 1;
     }
   }
-  
-  header img {
-    width: 200px;
-  }
-  
-  main {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    gap: 5rem;
-  }
-  
-  
-  
-  section#choice {
-    height: 50vh;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
+}
 
+header img {
+  width: 200px;
+}
 
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+section#choice {
+  height: 50vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
 
 /* ====== Conteneur du formulaire ====== */
 .login-container {
-    position: relative;
-    z-index: 2;
-    background: rgba(30, 30, 30, 0.9); /* Fond sombre légèrement transparent */
-    padding: 2rem;
-    border-radius: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    text-align: center;
-    width: 100%;
-    max-width: 400px;
+  position: relative;
+  z-index: 2;
+  background: rgba(30, 30, 30, 0.9); /* Fond sombre légèrement transparent */
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
 }
 
 /* ====== Titre du formulaire ====== */
 h2 {
-    margin-bottom: 1.5rem;
-    color: #ffffff;
+  margin-bottom: 1.5rem;
+  color: #ffffff;
 }
 
 /* ====== Champs du formulaire bien alignés ====== */
 .input-group {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-bottom: 1rem;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+  width: 100%;
 }
 
 .input-group label {
-    font-weight: bold;
-    margin-bottom: 0.3rem;
-    color: #cccccc;
-    align-self: flex-start; /* Assure que les labels restent bien à gauche */
+  font-weight: bold;
+  margin-bottom: 0.3rem;
+  color: #cccccc;
+  align-self: flex-start; /* Assure que les labels restent bien à gauche */
 }
 
 .input-group input {
-    width: 94%;
-    padding: 10px;
-    border: 1px solid #444;
-    border-radius: 5px;
-    font-size: 1rem;
-    background-color: #333;
-    color: white;
-    outline: none;
-    text-align: left; /* Assure que le texte saisi est bien aligné à gauche */
+  width: 94%;
+  padding: 10px;
+  border: 1px solid #444;
+  border-radius: 5px;
+  font-size: 1rem;
+  background-color: #333;
+  color: white;
+  outline: none;
+  text-align: left; /* Assure que le texte saisi est bien aligné à gauche */
 }
 
 /* Effet au focus */
 .input-group input:focus {
-    border-color: #007BFF;
-    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
 }
 
 /* ====== Bouton de connexion ====== */
 .btn-primary {
-    background-color: #007BFF;
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    width: 100%;
-    border-radius: 5px;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: 0.3s;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  width: 100%;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
 .btn-primary:hover {
-    background-color: #0056b3;
+  background-color: #0056b3;
 }
 
 /* ====== Lien d'inscription centré ====== */
 .register-link {
-    text-align: center;
-    margin-top: 1rem;
+  text-align: center;
+  margin-top: 1rem;
 }
 
 .register-link a {
-    color: #00aaff;
-    text-decoration: none;
-    font-weight: bold;
+  color: #00aaff;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 .register-link a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
