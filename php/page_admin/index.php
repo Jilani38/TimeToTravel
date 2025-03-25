@@ -1,3 +1,20 @@
+<?php
+
+function get_csv(string $path): array {
+  $rows = file('../../data/voyages.csv');
+  $names = str_getcsv($rows[0], ';');
+  $csv = [];
+  for($i = 1; $i < count($rows); $i++) {
+    $row = str_getcsv($rows[$i], ';');
+    for ($j = 0; $j < count($names); $j++) {
+      $csv[$i - 1][$names[$j]] = $row[$j];
+    }
+  }
+  return $csv;
+}
+
+$voyages = get_csv('../../data/voyages.csv');
+?>
 <!doctype html>
 <html lang="en">
   <head>
@@ -38,22 +55,23 @@
           </tr>
         </thead>
         <tbody>
+          <?php foreach ($voyages as $voyage): ?>
           <tr>
-            <td>1</td>
-            <td>Prise de la Bastille</td>
-            <td>14 Juillet 1789</td>
-            <td>Paris, France</td>
+            <td><?php echo $voyage['id']; ?></td>
+            <td><?php echo $voyage['titre']; ?></td>
+            <td><?php echo $voyage['date']; ?></td>
+            <td><?php echo $voyage['lieu']; ?></td>
             <td>
               <button
                 href="#"
                 title="Voir l'image"
-                data-image-modal-src="../../img/voyages/prise-bastille.jpeg"
+                data-image-modal-src="../../data/images/<?php echo $voyage['image']; ?>"
               >
                 <i data-lucide="eye"></i>
               </button>
             </td>
             <td>
-              <a href="./edit_voyage.php?id=1" title="Modifier">
+              <a href="./edit_voyage.php?id=<?php echo $voyage['id']; ?>" title="Modifier">
                 <i data-lucide="pencil"></i>
               </a>
               <a href="#" title="Supprimer">
@@ -61,6 +79,7 @@
               </a>
             </td>
           </tr>
+          <?php endforeach; ?>
         </tbody>
       </table>
     </main>
