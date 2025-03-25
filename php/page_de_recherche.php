@@ -10,12 +10,12 @@
     <header>
       <nav>
         <!-- <h1>Time to Travel</h1> -->
-        <a href="./page_accueil.html">
+        <a href="./page_accueil.php">
           <img src="../img/accueil_logo.svg" alt="Time to Travel" />
         </a>
         <div>
-          <a href="./page_connexion.html">Connexion</a>
-          <a href="./page_inscription.html">Inscription</a>
+          <a href="./page_connexion.php">Connexion</a>
+          <a href="./page_inscription.php">Inscription</a>
         </div>
       </nav>
       <h1>Où voulez vous aller ?</h1>

@@ -15,13 +15,13 @@
     </dialog>
     <aside>
       <header>
-        <a href="./index.html">
+        <a href="./index.php">
           <img src="../../img/logo.svg" alt="Time to Travel" />
         </a>
       </header>
       <nav>
-        <a href="./voyages.html">Voyages</a>
-        <a href="./utilisateurs.html">Utilisateurs</a>
+        <a href="./voyages.php">Voyages</a>
+        <a href="./utilisateurs.php">Utilisateurs</a>
       </nav>
     </aside>
     <main>
@@ -53,7 +53,7 @@
               </button>
             </td>
             <td>
-              <a href="./edit_voyage.html?id=1" title="Modifier">
+              <a href="./edit_voyage.php?id=1" title="Modifier">
                 <i data-lucide="pencil"></i>
               </a>
               <a href="#" title="Supprimer">

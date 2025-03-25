@@ -16,17 +16,17 @@
       </video>
       <nav>
         <!-- <h1>Time to Travel</h1> -->
-        <a href="./page_accueil.html">
+        <a href="./page_accueil.php">
           <img src="../img/accueil_logo.svg" alt="Time to Travel" />
         </a>
 
         <div>
-          <a href="./page_de_recherche.html">Rechercher </a>
-          <a href="./page_admin/index.html">Admin</a>
-          <a href="./page_a_propos.html">À propos de nous</a>
-          <a href="./page_profil.html">Mon profil</a>
-          <a href="./page_connexion.html">Connexion</a>
-          <a href="./page_inscription.html">Inscription</a>
+          <a href="./page_de_recherche.php">Rechercher </a>
+          <a href="./page_admin/index.php">Admin</a>
+          <a href="./page_a_propos.php">À propos de nous</a>
+          <a href="./page_profil.php">Mon profil</a>
+          <a href="./page_connexion.php">Connexion</a>
+          <a href="./page_inscription.php">Inscription</a>
         </div>
       </nav>
       <input type="search" placeholder="Rechercher" />
@@ -39,7 +39,7 @@
               Voyagez dans le passé, et découvrez le commencement de tout ce que
               vous connaissez.
             </span>
-            <a href="./page_past.html">Plus d'infos</a>
+            <a href="./page_past.php">Plus d'infos</a>
           </div>
         </aside>
         <aside>
@@ -48,7 +48,7 @@
               Voyagez dans le futur, et découvrez le le résultat de tout vos
               efforts.
             </span>
-            <a href="./page_futur.html">Plus d'infos</a>
+            <a href="./page_futur.php">Plus d'infos</a>
           </div>
         </aside>
       </section>

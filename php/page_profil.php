@@ -10,7 +10,7 @@
     <header>
       <nav>
         <!-- <h1>Time to Travel</h1> -->
-        <a href="./page_accueil.html">
+        <a href="./page_accueil.php">
           <img src="../img/accueil_logo.svg" alt="Time to Travel" />
         </a>
 

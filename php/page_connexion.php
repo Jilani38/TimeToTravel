@@ -10,17 +10,17 @@
     <header>
       <nav>
         <!-- <h1>Time to Travel</h1> -->
-        <a href="./page_accueil.html">
+        <a href="./page_accueil.php">
           <img src="../img/accueil_logo.svg" alt="Time to Travel" />
         </a>
 
         <div>
-          <a href="./page_de_recherche.html">Rechercher </a>
-          <a href="./page_admin/index.html">Admin</a>
-          <a href="./page_a_propos.html">À propos de nous</a>
-          <a href="./page_profil.html">Mon profil</a>
-          <a href="./page_connexion.html">Connexion</a>
-          <a href="./page_inscription.html">Inscription</a>
+          <a href="./page_de_recherche.php">Rechercher </a>
+          <a href="./page_admin/index.php">Admin</a>
+          <a href="./page_a_propos.php">À propos de nous</a>
+          <a href="./page_profil.php">Mon profil</a>
+          <a href="./page_connexion.php">Connexion</a>
+          <a href="./page_inscription.php">Inscription</a>
         </div>
       </nav>
     </header>
@@ -43,7 +43,7 @@
       </form>
 
       <p class="register-link">
-        <a href="page_inscription.html">Je n'ai pas de compte</a>
+        <a href="page_inscription.php">Je n'ai pas de compte</a>
       </p>
     </div>
   </body>

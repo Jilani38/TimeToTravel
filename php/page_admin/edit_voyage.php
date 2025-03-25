@@ -11,13 +11,13 @@
   <body>
     <aside>
       <header>
-        <a href="./index.html">
+        <a href="./index.php">
           <img src="../../img/logo.svg" alt="Time to Travel" />
         </a>
       </header>
       <nav>
-        <a href="./voyages.html">Voyages</a>
-        <a href="./utilisateurs.html">Utilisateurs</a>
+        <a href="./voyages.php">Voyages</a>
+        <a href="./utilisateurs.php">Utilisateurs</a>
       </nav>
     </aside>
     <main>
@@ -52,8 +52,8 @@
         </tr>
       </table>
       <div>
-        <a href="./index.html">Enregistrer</a>
-        <a href="./index.html">Annuler</a>
+        <a href="./index.php">Enregistrer</a>
+        <a href="./index.php">Annuler</a>
       </div>
     </main>
   </body>

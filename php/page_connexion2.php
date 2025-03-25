@@ -21,7 +21,7 @@
 
           <input type="submit" value="Créer mon compte" class="btn-primary" />
           <br />
-          <a href="page_inscription.html" class="btn-secondary"
+          <a href="page_inscription.php" class="btn-secondary"
             >Je n'ai pas de compte
           </a>
         </th>
