@@ -64,7 +64,7 @@ if (isset($_POST['submit'])) {
           <tr>
             <th>Date</th>
             <td>
-              <input type="date" name="date" value="<?= $voyage['date']; ?>" />
+              <input type="text" name="date" value="<?= $voyage['date']; ?>" />
             </td>
           </tr>
           <tr>
