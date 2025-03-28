@@ -2,10 +2,10 @@
 
 function get_csv(string $path): array {
   $rows = file('../../data/voyages.csv');
-  $names = str_getcsv($rows[0], ';');
+  $names = str_getcsv($rows[0], ';', '"', "");
   $csv = [];
   for($i = 1; $i < count($rows); $i++) {
-    $row = str_getcsv($rows[$i], ';');
+    $row = str_getcsv($rows[$i], ';', '"', "");
     for ($j = 0; $j < count($names); $j++) {
       $csv[$i - 1][$names[$j]] = $row[$j];
     }
