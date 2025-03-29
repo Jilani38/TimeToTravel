@@ -22,7 +22,7 @@
 
         <div>
           <a href="./page_de_recherche.php">Rechercher </a>
-          
+          <a href="./page_destination.html">Destination </a>
           <a href="./page_a_propos.php">À propos de nous</a>
           <a href="./page_profil.php">Mon profil</a>
           <a href="./page_connexion.php">Connexion</a>
