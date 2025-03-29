@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Nos Destinations</title>
+    <link rel="stylesheet" href="../css/page_destination.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+          <!-- <h1>Time to Travel</h1> -->
+          <a href="./page_accueil.php">
+            <img src="../img/accueil_logo.svg" alt="Time to Travel" />
+          </a>
+      
+          <div>
+            <a href="./page_de_recherche.php">Rechercher </a>
+            
+            <a href="./page_a_propos.php">À propos de nous</a>
+            <a href="./page_profil.php">Mon profil</a>
+            <a href="./page_connexion.php">Connexion</a>
+            <a href="./page_inscription.php">Inscription</a>
+            <a href="./page_panier.html">
+                <img src="../img/panier_blanc.png" alt="panier" class="icone-panier" />
+            </a>
+            
+          </div>
+        </nav>
+        </header>
+        
+       
+    <div class="left-section">
+        <h1>Destinations</h1>
+        <p class="definition">
+            Découvrez toutes les incroyables destinations proposées par Time2Travel. Cliquez sur une destination pour plus de détails et commencer votre voyage à travers le temps et l'espace !
+        </p>
+    </div>
+    
+        <div class="right-section">
+            <div class="destinations-container">
+                <!-- Exemple statique, généré dynamiquement avec PHP ensuite -->
+                <div class="bubble" style="background-image:url('images/paris1789.jpg');">
+                    <div class="overlay">
+                        <a href="voyage.php?id=1" class="button">Afficher ce voyage</a>
+                    </div>
+                    <div class="title">Paris, 14 juillet 1789</div>
+                </div>
+
+                <div class="bubble" style="background-image:url('images/moon1969.jpg');">
+                    <div class="overlay">
+                        <a href="voyage.php?id=2" class="button">Afficher ce voyage</a>
+                    </div>
+                    <div class="title">La Lune, 19 juillet 1969</div>
+                </div>
+
+                <!-- Ajouter plus tard dynamiquement avec PHP -->
+            </div>
+        </div>
+    </div>
+</body>
+</html>

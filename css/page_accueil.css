@@ -80,11 +80,15 @@ header nav {
 header nav a {
   text-decoration: none;
   color: white;
+
 }
 
 header nav div a {
   padding: 10px;
   border-radius: 10px;
+  
+    
+  
 
   &:nth-child(4) {
     position: relative;
@@ -97,10 +101,12 @@ header nav div a {
       background: #0002;
       opacity: 0;
       transition: opacity 0.3s;
+      border-radius: 10px;
     }
 
     &:hover::before {
       opacity: 1;
+     
     }
   }
 }
@@ -248,3 +254,26 @@ section#future img {
 section#future aside {
   padding: var(--aside-padding) 0 0 var(--aside-padding);
 }
+
+nav .icone-panier {
+  width: 35px;              /* Largeur */
+  height: auto;             /* Hauteur  */
+  vertical-align: middle;   /* Alignement vertical  */
+  transition: transform 0.3s ease;
+}
+
+nav .icone-panier:hover {
+  transform: scale(1.2);    /* zoom au survol */
+}
+
+/* survol boutton */
+
+header nav div a {
+  display: inline-block; /* nécessaire pour que le zoom fonctionne proprement */
+  transition: transform 0.3s ease; /* Animation fluide */
+}
+
+header nav div a:hover {
+  transform: scale(1.2); /* Zoom de 20% au survol */
+}
+

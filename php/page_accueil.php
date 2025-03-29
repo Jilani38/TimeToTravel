@@ -27,6 +27,9 @@
           <a href="./page_profil.php">Mon profil</a>
           <a href="./page_connexion.php">Connexion</a>
           <a href="./page_inscription.php">Inscription</a>
+          <a href="./page_panier.html">
+          <img src="../img/panier_blanc.png" alt="panier" class="icone-panier" />
+      </a>
           
         </div>
       </nav>
