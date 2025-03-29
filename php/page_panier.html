@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Panier - Time2Travel</title>
+  <link rel="stylesheet" href="../css/page_panier.css" />
+</head>
+<body>
+
+  <h1>Votre panier</h1>
+
+  <form action="paiement.html" method="post">
+    <fieldset>
+      <legend>Voyage sélectionné</legend>
+
+      <p>
+        <label for="destination">Destination :</label><br>
+        <input type="text" id="destination" name="destination" value="Paris 1789" readonly>
+      </p>
+
+      <p>
+        <label for="epoque">Époque :</label><br>
+        <input type="text" id="epoque" name="epoque" value="Passé" readonly>
+      </p>
+
+      <p>
+        <label for="depart">Date de départ :</label><br>
+        <input type="date" id="depart" name="depart" value="2025-04-12">
+      </p>
+
+      <p>
+        <label for="retour">Date de retour :</label><br>
+        <input type="date" id="retour" name="retour" value="2025-04-20">
+      </p>
+
+      <p class="price">1500 €</p>>
+        <label for="prix">Prix (€) :</label><br>
+        <input type="number" id="prix" name="prix" value="1500" readonly>
+      </p>
+
+      <p>
+        <label for="quantite">Quantité :</label><br>
+        <input type="number" id="quantite" name="quantite" value="2" min="1">
+      </p>
+    </fieldset>
+
+    <p>
+      <a href="page_destination.html">← Continuer mes voyages</a><br>
+      <a href="page_paiement.html">Valider la commande</a>
+    </p>
+  </form>
+
+</body>
+</html>
+
+  

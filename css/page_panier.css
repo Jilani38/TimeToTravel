@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fb;
+    padding: 30px;
+  }
+  
+  form {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  fieldset {
+    border: none;
+    background-color: #e4f0f9;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+  }
+  
+  legend {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  fieldset p {
+    margin: 12px 0;
+  }
+  
+  input[type="text"],
+  input[type="date"],
+  input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    background-color: white;
+  }
+  
+  input[readonly] {
+    background-color: #f0f0f0;
+  }
+  
+  input[type="submit"] {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #005aa7;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 100%;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #004080;
+  }
+  
+  .price {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-weight: bold;
+    font-size: 1.3em;
+    color: #0e2f44;
+  }
+  
+  .warning {
+    color: #c0392b;
+    font-size: 0.9em;
+    margin-top: 5px;
+  }
+  

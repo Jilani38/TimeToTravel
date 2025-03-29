@@ -27,6 +27,7 @@
           <a href="./page_profil.php">Mon profil</a>
           <a href="./page_connexion.php">Connexion</a>
           <a href="./page_inscription.php">Inscription</a>
+          
         </div>
       </nav>
       <input type="search" placeholder="Rechercher" />
