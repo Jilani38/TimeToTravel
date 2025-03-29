@@ -1,76 +1,206 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f7fb;
-    padding: 30px;
+    margin: 0;
+    padding: 20px;
+  }
+
+  header nav {
+    position: absolute;
+    background-color: #123964;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 20px;
+    
+    top: 0;
+    left: 0;
+    right: 0;
   }
   
-  form {
-    max-width: 600px;
-    margin: 0 auto;
+  header nav a {
+    text-decoration: none;
+    color: white;
   }
   
-  fieldset {
-    border: none;
+  header nav div a {
+    padding: 10px;
+    border-radius: 10px;
+  
+    &:nth-child(4) {
+      position: relative;
+      color: #123964;
+      background: #ffffff;
+  
+      &::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: #0002;
+        opacity: 0;
+        transition: opacity 0.3s;
+      }
+  
+      &:hover::before {
+        opacity: 1;
+      }
+    }
+  }
+  
+  header img {
+    width: 150px;
+  }
+  
+  
+  
+  /* Mise en page panier */
+  .panier-container {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  
+  .container {
+    flex: 1;
+    max-width: 700px;
+    margin-right: 20px;
+  }
+  
+  .carte-voyage {
     background-color: #e4f0f9;
     border-radius: 12px;
-    padding: 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  .entete {
+    background-color: #cfe6f5;
+    border-radius: 8px;
+    padding: 10px 15px;
     position: relative;
   }
   
-  legend {
-    font-size: 1.2em;
-    font-weight: bold;
-    margin-bottom: 10px;
+  .entete h2 {
+    margin: 0;
+    font-size: 1.1em;
   }
   
-  fieldset p {
-    margin: 12px 0;
-  }
-  
-  input[type="text"],
-  input[type="date"],
-  input[type="number"] {
-    width: 100%;
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    box-sizing: border-box;
-    background-color: white;
-  }
-  
-  input[readonly] {
-    background-color: #f0f0f0;
-  }
-  
-  input[type="submit"] {
-    margin-top: 20px;
-    padding: 10px 20px;
-    background-color: #005aa7;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    font-weight: bold;
-    width: 100%;
-  }
-  
-  input[type="submit"]:hover {
-    background-color: #004080;
-  }
-  
-  .price {
+  .prix {
     position: absolute;
-    top: 20px;
-    right: 20px;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
     font-weight: bold;
-    font-size: 1.3em;
-    color: #0e2f44;
+  }
+  
+  .details {
+    padding: 10px 15px;
   }
   
   .warning {
     color: #c0392b;
     font-size: 0.9em;
-    margin-top: 5px;
   }
   
+  .actions {
+    margin-top: 25px;
+  }
+  
+  .btn {
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+  }
+  
+  .continuer {
+    background-color: #7f8c8d;
+  }
+  
+  .valider, .payer {
+    background-color: #005aa7;
+  }
+  
+  .ajouter {
+    background-color: white;
+    color: #005aa7;
+    border: 2px solid #005aa7;
+    margin-top: 10px;
+  }
+  
+  .btn:hover {
+    opacity: 0.9;
+  }
+  
+  /* Bulle de total à droite */
+  .bulle-total {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  .bulle-total h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+  }
+  
+  .bulle-total p {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .total-commande {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2em;
+    margin: 15px 0;
+  }
+  
+  /*.bulle-total hr {
+    border: none;
+    border-top: 1px solid #ddd;
+  }
+  
+  .bulle-total .btn {
+    width: 100%;
+    margin-top: 10px;
+    padding: 12px;
+  }*/
+
+  .bulle-total .btn-payer,
+.bulle-total .btn-ajouter {
+  width: 100% !important;
+  display: block !important; /* crucial pour forcer une nouvelle ligne */
+  padding: 12px 15px !important;
+  box-sizing: border-box !important;
+  text-align: center !important;
+  margin-top: 10px !important;
+  border-radius: 8px !important;
+  font-weight: bold !important;
+  cursor: pointer !important;
+  text-decoration: none !important;
+  border: none !important; /* retire les bordures par défaut (utile pour <button>) */
+}
+
+.bulle-total .btn-payer {
+  background-color: #005aa7 !important;
+  color: white !important;
+}
+
+.bulle-total .btn-ajouter {
+  background-color: white !important;
+  color: #005aa7 !important;
+  border: 2px solid #005aa7 !important; /* Ajoute explicitement une bordure au lien */
+}
+
+.bulle-total .btn-payer:hover,
+.bulle-total .btn-ajouter:hover {
+  opacity: 0.9 !important;
+}

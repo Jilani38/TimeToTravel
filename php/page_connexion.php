@@ -16,7 +16,7 @@
 
         <div>
           <a href="./page_de_recherche.php">Rechercher </a>
-          <a href="./page_admin/index.php">Admin</a>
+          
           <a href="./page_a_propos.php">À propos de nous</a>
           <a href="./page_profil.php">Mon profil</a>
           <a href="./page_connexion.php">Connexion</a>
@@ -44,6 +44,9 @@
 
       <p class="register-link">
         <a href="page_inscription.php">Je n'ai pas de compte</a>
+        <br></br>
+        <a href="./page_admin/index.php">Admin</a>
+
       </p>
     </div>
   </body>

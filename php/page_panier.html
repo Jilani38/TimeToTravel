@@ -7,50 +7,65 @@
 </head>
 <body>
 
-  <h1>Votre panier</h1>
+  <header>
+  <nav>
+    <!-- <h1>Time to Travel</h1> -->
+    <a href="./page_accueil.php">
+      <img src="../img/accueil_logo.svg" alt="Time to Travel" />
+    </a>
 
-  <form action="paiement.html" method="post">
-    <fieldset>
-      <legend>Voyage sélectionné</legend>
+    <div>
+      <a href="./page_de_recherche.php">Rechercher </a>
+      
+      <a href="./page_a_propos.php">À propos de nous</a>
+      <a href="./page_profil.php">Mon profil</a>
+      <a href="./page_connexion.php">Connexion</a>
+      <a href="./page_inscription.php">Inscription</a>
+      
+    </div>
+  </nav>
+  </header>
 
-      <p>
-        <label for="destination">Destination :</label><br>
-        <input type="text" id="destination" name="destination" value="Paris 1789" readonly>
-      </p>
+<div class="panier-container">
+  <div class="container">
+    <h1>Votre panier</h1>
 
-      <p>
-        <label for="epoque">Époque :</label><br>
-        <input type="text" id="epoque" name="epoque" value="Passé" readonly>
-      </p>
+    <div class="carte-voyage">
 
-      <p>
-        <label for="depart">Date de départ :</label><br>
-        <input type="date" id="depart" name="depart" value="2025-04-12">
-      </p>
+      <div class="entete">
+        <h2>Paris 1789 : Révolution</h2>
+        <span class="prix">1500 €</span>
+      </div>
 
-      <p>
-        <label for="retour">Date de retour :</label><br>
-        <input type="date" id="retour" name="retour" value="2025-04-20">
-      </p>
+      <div class="details">
+        <p><strong>Époque :</strong> Passé</p>
+        <p><strong>Dates :</strong> du 12/04/2025 au 20/04/2025</p>
+        <p><strong>Quantité :</strong> 2 voyageurs</p>
+       <!-- <p class="warning">⚠ Prix valable jusqu'à 17:19</p>-->
+      </div>
 
-      <p class="price">1500 €</p>>
-        <label for="prix">Prix (€) :</label><br>
-        <input type="number" id="prix" name="prix" value="1500" readonly>
-      </p>
+    </div>
 
-      <p>
-        <label for="quantite">Quantité :</label><br>
-        <input type="number" id="quantite" name="quantite" value="2" min="1">
-      </p>
-    </fieldset>
+    <!--<div class="actions">
+      <a class="btn continuer" href="page_destination.html">← Continuer mes voyages</a>
+    </div>
+  -->
 
-    <p>
-      <a href="page_destination.html">← Continuer mes voyages</a><br>
-      <a href="page_paiement.html">Valider la commande</a>
-    </p>
-  </form>
+  </div>
+
+  <div class="bulle-total">
+    <h3>Détail de la commande</h3>
+    <p><strong>1 voyage</strong> <span>1500 €</span></p>
+    <hr>
+    <div class="total-commande">
+      <strong>Total commande</strong>
+      <span class="prix-total">1500 €</span>
+    </div>
+    <button class="btn-payer">Valider et payer</button>
+    <a class="btn-ajouter" href="./page_accueil.php">Poursuivre mes achats</a>
+  </div>
+
+</div>
 
 </body>
 </html>
-
-  
