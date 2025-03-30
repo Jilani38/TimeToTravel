@@ -34,14 +34,11 @@ $voyages = read_csv('../../data/voyages.csv');
       </header>
       <nav>
         <a href="./voyages.php">Voyages</a>
-        <a href="./utilisateur.php">Utilisateurs</a>
-        <a href="../page_accueil.php">Retour au site</a>
-        <a href="../deconnexion.php">Déconnexion</a>
+        <a href="./utilisateurs.php">Utilisateurs</a>
       </nav>
     </aside>
     <main>
-      <h1>Tableau de bord - Administration</h1>
-      <p>Bienvenue <?= htmlspecialchars($_SESSION['prenom'] ?? 'Admin') ?> 👋</p>
+      <h1>Admin</h1>
       <table>
         <thead>
           <tr>

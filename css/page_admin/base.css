@@ -27,7 +27,7 @@ aside nav {
   padding: 0 20px;
 }
 
-aside nav a {
+a.btn {
   position: relative;
   text-decoration: none;
   color: white;
