@@ -24,12 +24,13 @@ $voyages = read_csv('../../data/voyages.csv');
         </a>
       </header>
       <nav>
-        <a href="./voyages.php">Voyages</a>
-        <a href="./utilisateurs.php">Utilisateurs</a>
+        <a class="btn" href="./voyages.php">Voyages</a>
+        <a class="btn" href="./utilisateurs.php">Utilisateurs</a>
       </nav>
     </aside>
     <main>
       <h1>Admin</h1>
+      <a class="btn" href="./creer_voyage.php">Ajouter</a>
       <table>
         <thead>
           <tr>

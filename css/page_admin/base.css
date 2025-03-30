@@ -18,13 +18,14 @@ aside nav {
   padding: 10px;
 }
 
-aside nav a {
+a.btn {
   position: relative;
   text-decoration: none;
   color: white;
   padding: 10px;
   border-radius: 10px;
   background-color: #123964;
+  display: inline-block;
 
   &::before {
     content: "";
