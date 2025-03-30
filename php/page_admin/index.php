@@ -1,4 +1,11 @@
 <?php
+session_start();
+
+if (!isset($_SESSION['role']) || $_SESSION['role'] !== 'admin') {
+    header('Location: ../page_accueil.php');
+    exit();
+}
+
 require_once('../../php_utils/csv.php');
 $voyages = read_csv('../../data/voyages.csv');
 ?>
@@ -14,9 +21,11 @@ $voyages = read_csv('../../data/voyages.csv');
   </head>
 
   <body>
-    <dialog>
-      <img src="" alt="" />
-    </dialog>
+  <dialog id="image-modal">
+  <button id="close-modal" title="Fermer">&times;</button>
+  <img src="" alt="Aperçu de l'image" />
+</dialog>
+
     <aside>
       <header>
         <a href="./index.php">
@@ -25,15 +34,18 @@ $voyages = read_csv('../../data/voyages.csv');
       </header>
       <nav>
         <a href="./voyages.php">Voyages</a>
-        <a href="./utilisateurs.php">Utilisateurs</a>
+        <a href="./utilisateur.php">Utilisateurs</a>
+        <a href="../page_accueil.php">Retour au site</a>
+        <a href="../deconnexion.php">Déconnexion</a>
       </nav>
     </aside>
     <main>
-      <h1>Admin</h1>
+      <h1>Tableau de bord - Administration</h1>
+      <p>Bienvenue <?= htmlspecialchars($_SESSION['prenom'] ?? 'Admin') ?> 👋</p>
       <table>
         <thead>
           <tr>
-            <th></th>
+            <th>ID</th>
             <th>Titre</th>
             <th>Date</th>
             <th>Lieu</th>
@@ -61,7 +73,7 @@ $voyages = read_csv('../../data/voyages.csv');
               <a href="./edit_voyage.php?id=<?= $voyage['id']; ?>" title="Modifier">
                 <i data-lucide="pencil"></i>
               </a>
-              <a href="./delete_voyage.php?id=<?= $voyage['id']; ?>" title="Supprimer">
+              <a href="./delete_voyage.php?id=<?= $voyage['id']; ?>" title="Supprimer" onclick="return confirm('Confirmer la suppression du voyage ?');">
                 <i data-lucide="trash-2"></i>
               </a>
             </td>

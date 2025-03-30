@@ -1,8 +1,6 @@
-
-
 <?php
 
-function read_csv(string $path): array {
+function read_utilisateur_csv(string $path): array {
     if (!file_exists($path)) return [];
 
     $csv = [];
@@ -21,7 +19,7 @@ function read_csv(string $path): array {
     return $csv;
 }
 
-function write_csv(array $csv, string $path) {
+function write_utilisateur_csv(array $csv, string $path) {
     if (empty($csv)) return;
 
     $headers = array_keys($csv[0]);
@@ -38,7 +36,7 @@ function write_csv(array $csv, string $path) {
     file_put_contents($path, implode("\n", $lines));
 }
 
-function array_find_key(array $array, callable $callback) {
+function array_find_utilisateur_key(array $array, callable $callback) {
     foreach ($array as $key => $value) {
         if ($callback($value)) {
             return $key;
@@ -46,5 +44,3 @@ function array_find_key(array $array, callable $callback) {
     }
     return null;
 }
-
-?>

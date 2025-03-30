@@ -1,4 +1,16 @@
 <?php
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
+session_start();
+
+// Sécurité : accès réservé aux administrateurs
+if (!isset($_SESSION['role']) || $_SESSION['role'] !== 'admin') {
+  header('Location: ../page_accueil.php');
+  exit;
+}
+
 if (!isset($_GET['id'])) {
   header('Location: ./index.php');
   exit;
@@ -18,6 +30,7 @@ if (isset($_POST['submit'])) {
   $voyages[$index]['titre'] = $_POST['titre'];
   $voyages[$index]['date'] = $_POST['date'];
   $voyages[$index]['lieu'] = $_POST['lieu'];
+  
   /*if (!empty($_FILES['image']['name'])) {
     $info = pathinfo($_FILES['image']['name']);
     $filename = sprintf('%s.%s', $voyage['id'], $info['extension']);
@@ -46,7 +59,6 @@ if (isset($_POST['submit'])) {
       // Gestion d'erreur si ce n'est pas PNG ou JPEG/JPG
       exit('Erreur : format invalide. Veuillez charger une image PNG ou JPEG.');
     }
-  
   }
   
   write_csv($voyages, '../../data/voyages.csv');
@@ -83,19 +95,19 @@ if (isset($_POST['submit'])) {
           <tr>
             <th>Titre</th>
             <td>
-              <input type="text" name="titre" value="<?= $voyage['titre']; ?>" />
+              <input type="text" name="titre" value="<?= htmlspecialchars($voyage['titre']); ?>" />
             </td>
           </tr>
           <tr>
             <th>Date</th>
             <td>
-              <input type="text" name="date" value="<?= $voyage['date']; ?>" />
+              <input type="text" name="date" value="<?= htmlspecialchars($voyage['date']); ?>" />
             </td>
           </tr>
           <tr>
             <th>Lieu</th>
             <td>
-              <input type="text" name="lieu" value="<?= $voyage['lieu']; ?>" />
+              <input type="text" name="lieu" value="<?= htmlspecialchars($voyage['lieu']); ?>" />
             </td>
           </tr>
           <tr>
@@ -103,7 +115,7 @@ if (isset($_POST['submit'])) {
             <td>
               <input type="file" name="image" accept="image/*" />
               <img
-                src="../../data/images/<?= $voyage['image']; ?>"
+                src="../../data/images/<?= htmlspecialchars($voyage['image']); ?>"
                 alt="Prise de la Bastille"
               />
             </td>

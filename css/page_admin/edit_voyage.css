@@ -1,58 +1,85 @@
-main img {
-  width: 100%;
+main {
+  padding: 20px;
 }
 
-main {
+main form {
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  max-width: 800px;
+  margin: auto;
+}
+
+table {
+  width: 100%;
+  border-spacing: 0 10px;
+  border-collapse: separate;
+}
+
+table th {
+  text-align: left;
+  padding: 10px;
+  width: 150px;
+  color: #123964;
+}
+
+table td {
   padding: 10px;
 }
 
-table :has(> input) {
-  text-align: left;
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="file"],
+select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1em;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 200px;
+  margin-top: 10px;
+  border-radius: 6px;
 }
 
 main div {
-  margin-top: 20px;
+  margin-top: 30px;
+  display: flex;
+  gap: 10px;
 }
 
-main div * {
-  font-size: 1em;
-  padding: 10px;
-  border-radius: 10px;
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-main div :first-child {
-  position: relative;
-  background: #123964;
-  border: none;
+main div input[type="submit"] {
+  background-color: #123964;
   color: white;
-
-  &::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: #fff2;
-    opacity: 0;
-    transition: opacity 0.3s;
-  }
-
-  &:hover::before {
-    opacity: 1;
-  }
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
 }
 
-main div :last-child {
-  position: relative;
-  border: 1px solid black;
-  overflow: hidden;
-  transition:
-    background 0.3s,
-    color 0.3s;
+main div input[type="submit"]:hover {
+  background-color: #19508a;
+}
 
-  &:hover {
-    background: #123964;
-    color: white;
-  }
+main div a {
+  background-color: white;
+  border: 1px solid #123964;
+  padding: 12px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #123964;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+main div a:hover {
+  background-color: #123964;
+  color: white;
 }

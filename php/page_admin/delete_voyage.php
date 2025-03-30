@@ -1,4 +1,11 @@
 <?php
+session_start();
+
+// Sécurité : accès réservé aux administrateurs
+if (!isset($_SESSION['role']) || $_SESSION['role'] !== 'admin') {
+  header('Location: ../page_accueil.php');
+  exit;
+}
 
 if (!isset($_GET['id'])) {
   header('Location: ./index.php');
@@ -13,6 +20,12 @@ $voyage = $voyages[$index];
 if (!isset($voyage)) {
   header('Location: ./index.php');
   exit;
+}
+
+// Suppression de l'image associée au voyage (optionnel)
+$image_path = '../../data/images/' . $voyage['image'];
+if (file_exists($image_path)) {
+  unlink($image_path);
 }
 
 unset($voyages[$index]);

@@ -8,3 +8,11 @@ for (const dialogOpener of dialogOpeners) {
 		dialog.showModal();
 	});
 }
+
+const modal = document.querySelector("dialog");
+const closeBtn = document.getElementById("close-modal");
+
+closeBtn.addEventListener("click", () => {
+  modal.close();
+});
+

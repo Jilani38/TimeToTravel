@@ -40,21 +40,23 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
   $motdepasse_hash = password_hash($motdepasse, PASSWORD_DEFAULT);
   $id = uniqid();
 
-  fputcsv($fichier, [
-    $id, 
-    $prenom, 
-    $nom, 
-    $date_naissance, 
-    $genre, 
-    $email, 
-    $motdepasse_hash, 
-    $date_inscription, 
-    $derniere_connexion,
-    $role,
-    $telephone
-  ], ';');
+  $file = fopen('../data/utilisateur.csv', 'a'); // 'a' = append
+fputcsv($file, [
+    $id,
+    $_POST['prenom'],     // prénom
+    $_POST['nom'],     // nom
+    $_POST['date_naissance'],   // date de naissance
+    $_POST['genre'],      // genre
+    $_POST['email'],     // email
+    $hashed_password, // mot de passe haché
+    date('Y-m-d'),    // date inscription
+    '',               // dernière connexion vide
+    'client',         // rôle par défaut
+    ''                // téléphone vide
+], ';'); // séparateur ;
 
-  fclose($fichier);
+fclose($file);
+
 
   header("Location: page_connexion.php");
   exit();
