@@ -1,9 +1,21 @@
 id;titre;date;lieu;image
-1;Prise de la Bastille;14 Juillet 1789;Paris,France;1.jpeg
-2;Avant Apollo 11;19 Juillet 1969;Mer de la Tranquillité,Lune;2.jpeg
-3;Ère des dinosaures;Crétacé -66M;Patagonie,Argentine;3.jpeg
-4;Assassinat de Jules César;15 Mars -44;Rome,Italie;4.jpeg
-5;Colonie martienne;15 Août 2157;Valles Marineris,Mars;5.jpeg
-6;Tokyo flottante;23 Avril 2342;Tokyo,Japon;6.jpeg
-7;Révolte des IA;3 Décembre 2483;Pékin,Chine;7.jpeg
-8;Terre ré-ensauvagée;8 Juin 3080;Tromsø,Norvège;8.jpeg
+1;Prise de la Bastille;14 Juillet 1789;Paris,France;2.png
+2;Avant Apollo 11;19 Juillet 1969;Mer de la Tranquillité,Lune;2.png
+3;Ère des dinosaures;Crétacé -66M;Patagonie,Argentine;3.png
+4;Assassinat de Jules César;15 Mars -44;Rome,Italie;4.png
+5;Colonie martienne;15 Août 2157;Valles Marineris,Mars;5.png
+6;Tokyo flottante;23 Avril 2342;Tokyo,Japon;6.png
+7;Révolte des IA;3 Décembre 2483;Pékin,Chine;7.png
+8;Terre ré-ensauvagée;8 Juin 3080;Tromsø,Norvège;8.png
+9;Découverte de l’Amérique;12 Octobre 1492;San Salvador,Bahamas;9.png
+10;Débarquement de Normandie;6 Juin 1944;Plage d’Omaha,France;10.png
+11;Assassinat de JFK;22 Novembre 1963;Dallas,États-Unis;11.png
+12;Victoire de la France en Coupe du Monde;15 Juillet 2018;Moscou,Russie;12.png
+13;Couronnement de Napoléon;2 Décembre 1804;Paris,France;13.png
+14;Chute du mur de Berlin;9 Novembre 1989;Berlin,Allemagne;14.png
+15;Premier vol des frères Wright;17 Décembre 1903;Kitty Hawk,États-Unis;15.png
+16;Discours "I Have a Dream";28 Août 1963;Washington D.C.,États-Unis;16.png
+17;Grande Pyramide en construction;-2560;Gizeh,Égypte;17.png
+18;Inauguration de la Tour Eiffel;31 Mars 1889;Paris,France;18.png
+19;Bataille de Waterloo;18 Juin 1815;Waterloo,Belgique;19.png
+20;Proclamation de la République;22 Septembre 1792;Paris,France;20.png

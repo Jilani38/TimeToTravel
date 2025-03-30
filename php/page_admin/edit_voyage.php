@@ -18,12 +18,37 @@ if (isset($_POST['submit'])) {
   $voyages[$index]['titre'] = $_POST['titre'];
   $voyages[$index]['date'] = $_POST['date'];
   $voyages[$index]['lieu'] = $_POST['lieu'];
-  if (!empty($_FILES['image']['name'])) {
+  /*if (!empty($_FILES['image']['name'])) {
     $info = pathinfo($_FILES['image']['name']);
     $filename = sprintf('%s.%s', $voyage['id'], $info['extension']);
     move_uploaded_file($_FILES['image']['tmp_name'], '../../data/images/' . $filename);
     $voyages[$index]['image'] = $filename;
+  }*/
+  if (!empty($_FILES['image']['name'])) {
+
+    // Récupération sécurisée de l'extension en minuscule
+    $info = pathinfo($_FILES['image']['name']);
+    $extension = strtolower($info['extension']);
+  
+    // Vérification que l'image soit bien PNG ou JPEG/JPG
+    if (in_array($extension, ['png', 'jpg', 'jpeg'])) {
+  
+      // Création d'un nom de fichier standardisé (id + extension)
+      $filename = sprintf('%s.%s', $voyage['id'], $extension);
+  
+      // Déplacement sécurisé de l'image vers le dossier
+      move_uploaded_file($_FILES['image']['tmp_name'], '../../data/images/' . $filename);
+  
+      // Mise à jour dans le CSV
+      $voyages[$index]['image'] = $filename;
+  
+    } else {
+      // Gestion d'erreur si ce n'est pas PNG ou JPEG/JPG
+      exit('Erreur : format invalide. Veuillez charger une image PNG ou JPEG.');
+    }
+  
   }
+  
   write_csv($voyages, '../../data/voyages.csv');
   header('Location: ./index.php');
   exit;

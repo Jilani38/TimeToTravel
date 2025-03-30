@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/page_paiement.css">
+    <title>Paiement - Time2Travel</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Paiement sécurisé</h2>
+
+        <div class="bubble" style="background-image:url('images/paris1789.jpg');">
+            <div class="title">Paris, 14 juillet 1789</div>
+            <div class="details">
+                <p><strong>Date début :</strong> 14/07/1789</p>
+                <p><strong>Date fin :</strong> 15/07/1789</p>
+            </div>
+        </div>
+
+        <form action="verification_paiement.php" method="POST" class="payment-form">
+            <label>Numéro de carte bancaire :</label>
+            <input type="text" name="cb_number" placeholder="1234 5678 9012 3456" maxlength="19" required>
+
+            <label>Nom et prénom du propriétaire :</label>
+            <input type="text" name="cb_name" placeholder="Nom complet" required>
+
+            <div class="flex-row">
+                <div class="expiry">
+                    <label>Expiration :</label>
+                    <input type="text" name="cb_expiry" placeholder="MM/AA" maxlength="5" required>
+                </div>
+                <div class="cvv">
+                    <label>Code CVV :</label>
+                    <input type="text" name="cb_cvv" placeholder="123" maxlength="3" required>
+                </div>
+            </div>
+
+            <button type="submit">Valider le paiement</button>
+        </form>
+    </div>
+</body>
+</html>
