@@ -33,12 +33,15 @@ $voyages = read_csv('../../data/voyages.csv');
         </a>
       </header>
       <nav>
-        <a href="./voyages.php">Voyages</a>
-        <a href="./utilisateurs.php">Utilisateurs</a>
+        <a href="./index.php">Voyages</a>
+        <a href="./utilisateur.php">Utilisateurs</a>
+        <a href="../page_accueil.php">Retour au site</a>
+        <a href="../deconnexion.php">Déconnexion</a>
       </nav>
     </aside>
     <main>
-      <h1>Admin</h1>
+      <h1>Tableau de bord - Administration</h1>
+      <p>Bienvenue <?= htmlspecialchars($_SESSION['prenom'] ?? 'Admin') ?> 👋</p>
       <table>
         <thead>
           <tr>
