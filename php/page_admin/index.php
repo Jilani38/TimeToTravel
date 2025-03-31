@@ -29,8 +29,8 @@ $voyages = json_decode(file_get_contents('../../data/voyages.json'), true);
 
   <aside>
     <header>
-      <a href="./index.php">
-        <img src="../../img/logo.svg" alt="Time to Travel" />
+      <a href="../page_accueil.php">
+        <img src="../../img/accueil_logo.svg" alt="Time to Travel" />
       </a>
     </header>
     <nav>

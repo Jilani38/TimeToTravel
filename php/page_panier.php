@@ -80,7 +80,8 @@ $total = 0;
       <strong>Total commande</strong>
       <span class="prix-total"><?= $total ?> €</span>
     </div>
-    <form method="POST" action="valider_commande.php">
+    <form method="POST" action="page_paiement.php">
+  <input type="hidden" name="total" value="<?= $total ?>">
       <button class="btn-payer" type="submit">Valider et payer</button>
     </form>
     <a class="btn-ajouter" href="./page_accueil.php">Poursuivre mes achats</a>
