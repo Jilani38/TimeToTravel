@@ -1,3 +1,10 @@
+<?php
+require_once('../php_utils/csv.php');
+$voyages = read_csv('../data/voyages.csv');
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -21,7 +28,7 @@
             <a href="./page_profil.php">Mon profil</a>
             <a href="./page_connexion.php">Connexion</a>
             <a href="./page_inscription.php">Inscription</a>
-            <a href="./page_panier.html">
+            <a href="./page_panier.php">
                 <img src="../img/panier_blanc.png" alt="panier" class="icone-panier" />
             </a>
             
@@ -38,24 +45,17 @@
     </div>
     
         <div class="right-section">
-            <div class="destinations-container">
-                <!-- Exemple statique, généré dynamiquement avec PHP ensuite -->
-                <div class="bubble" style="background-image:url('images/paris1789.jpg');">
-                    <div class="overlay">
-                        <a href="voyage.php?id=1" class="button">Afficher ce voyage</a>
-                    </div>
-                    <div class="title">Paris, 14 juillet 1789</div>
-                </div>
+        <div class="destinations-container">
+  <?php foreach ($voyages as $voyage): ?>
+    <div class="bubble" style="background-image:url('../data/images/<?= htmlspecialchars($voyage['image']) ?>');">
+        <div class="overlay">
+            <a href="voyage.php?id=<?= htmlspecialchars($voyage['id']) ?>" class="button">Afficher ce voyage</a>
+        </div>
+        <div class="title"><?= htmlspecialchars($voyage['titre']) ?></div>
+    </div>
+  <?php endforeach; ?>
+</div>
 
-                <div class="bubble" style="background-image:url('images/moon1969.jpg');">
-                    <div class="overlay">
-                        <a href="voyage.php?id=2" class="button">Afficher ce voyage</a>
-                    </div>
-                    <div class="title">La Lune, 19 juillet 1969</div>
-                </div>
-
-                <!-- Ajouter plus tard dynamiquement avec PHP -->
-            </div>
         </div>
     </div>
 </body>

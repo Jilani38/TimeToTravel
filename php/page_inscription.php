@@ -20,48 +20,53 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
   $chemin_csv = "../data/utilisateur.csv";
   $nouveau_fichier = !file_exists($chemin_csv) || filesize($chemin_csv) == 0;
 
-  $fichier = fopen($chemin_csv, 'a+');
-
-  // Ajouter la ligne d'entête si le fichier est vide
-  if ($nouveau_fichier) {
-    fputcsv($fichier, [
-      "id", "prenom", "nom", "date_naissance", "genre", "email",
-      "motdepasse", "date_inscription", "derniere_connexion", "role", "telephone"
-    ], ';');
+  // 🔁 Étape 1 : vérification doublon avec lecture
+  if (file_exists($chemin_csv)) {
+    $f = fopen($chemin_csv, 'r');
+    while (($ligne = fgetcsv($f, 1000, ';')) !== false) {
+      if (isset($ligne[5]) && $ligne[5] === $email) {
+        fclose($f);
+        die("Cet email existe déjà !");
+      }
+    }
+    fclose($f);
   }
 
-  while (($ligne = fgetcsv($fichier, 1000, ';')) !== FALSE) {
-    if ($ligne[5] === $email) {
-      fclose($fichier);
-      die("Cet email existe déjà !");
-    }
+  // 🔁 Étape 2 : écriture propre avec saut de ligne AVANT
+  $fichier = fopen($chemin_csv, 'a');
+
+  if ($nouveau_fichier) {
+    fwrite($fichier, "id;prenom;nom;date_naissance;genre;email;motdepasse;date_inscription;derniere_connexion;role;telephone\n");
   }
 
   $motdepasse_hash = password_hash($motdepasse, PASSWORD_DEFAULT);
   $id = uniqid();
 
-  $file = fopen('../data/utilisateur.csv', 'a'); // 'a' = append
-fputcsv($file, [
+  $ligne = [
     $id,
-    $_POST['prenom'],     // prénom
-    $_POST['nom'],     // nom
-    $_POST['date_naissance'],   // date de naissance
-    $_POST['genre'],      // genre
-    $_POST['email'],     // email
-    $hashed_password, // mot de passe haché
-    date('Y-m-d'),    // date inscription
-    '',               // dernière connexion vide
-    'client',         // rôle par défaut
-    ''                // téléphone vide
-], ';'); // séparateur ;
+    $prenom,
+    $nom,
+    $date_naissance,
+    $genre,
+    $email,
+    $motdepasse_hash,
+    $date_inscription,
+    $derniere_connexion,
+    $role,
+    $telephone
+  ];
 
-fclose($file);
+  // On force un saut de ligne avant + point-virgule final
+  fwrite($fichier, "\n" . implode(';', $ligne));
 
+  fclose($fichier);
 
   header("Location: page_connexion.php");
   exit();
 }
 ?>
+
+
 
 
 

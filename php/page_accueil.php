@@ -24,7 +24,7 @@
 
         <div>
     <a href="./page_de_recherche.php">Rechercher</a>
-    <a href="./page_destination.html">Destination</a>
+    <a href="./page_destination.php">Destination</a>
 
     <?php if (isset($_SESSION['role']) && $_SESSION['role'] === 'admin'): ?>
         <a href="./page_admin/index.php">Gestion des voyages</a>

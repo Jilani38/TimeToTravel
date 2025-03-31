@@ -38,7 +38,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
   fclose($fichier);
 
   if ($connecte) {
-    header("Location: page_profil.php");
+    header("Location: page_accueil.php");
     exit();
   } else {
     die("Email ou mot de passe incorrect.");
