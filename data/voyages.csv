@@ -1,4 +1,4 @@
-id;titre;date;lieu;image
+id;titre;date;lieu;image;description;programme;prix
 1;Prise de la Bastille;14 Juillet 1789;Paris,France;1.png
 2;Avant Apollo 11;19 Juillet 1969;Mer de la Tranquillité,Lune;2.png
 3;Ère des dinosaures;Crétacé -66M;Patagonie,Argentine;3.png
