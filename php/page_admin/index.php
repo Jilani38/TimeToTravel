@@ -44,6 +44,7 @@ $voyages = json_decode(file_get_contents('../../data/voyages.json'), true);
   <main>
     <h1>Tableau de bord - Administration</h1>
     <p>Bienvenue <?= htmlspecialchars($_SESSION['prenom'] ?? 'Admin') ?> 👋</p>
+    <a href="./creer_voyage.php" class="btn-ajouter-voyage">+ Créer un nouveau voyage</a>
 
     <table>
       <thead>

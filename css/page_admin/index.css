@@ -79,3 +79,22 @@ dialog {
   color: #000;
 }
 
+
+/*bouton ajouter voyage*/
+
+.btn-ajouter-voyage {
+  display: inline-block;
+  margin: 15px 0;
+  background-color: #123964;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.btn-ajouter-voyage:hover {
+  background-color: #0f2e4e;
+}
+
