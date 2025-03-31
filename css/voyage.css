@@ -1,0 +1,176 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+
+  /*gestion header*/
+  
+  header nav {
+    position: absolute;
+    z-index: 1;
+    background-color: #123964;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 20px;
+    
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  
+  header nav a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  header nav div a {
+    padding: 10px;
+    border-radius: 10px;
+  
+    &:nth-child(4) {
+      position: relative;
+      color: #123964;
+      background: #ffffff;
+  
+      &::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: #0002;
+        opacity: 0;
+        transition: opacity 0.3s;
+      }
+  
+      &:hover::before {
+        opacity: 1;
+      }
+    }
+  }
+  
+  header img {
+    width: 160px;
+    margin-top: 1px;
+  }
+
+/*gestion icone panier*/
+
+  nav .icone-panier {
+    width: 35px;              /* Largeur */
+    height: auto;             /* Hauteur  */
+    vertical-align: middle;   /* Alignement vertical  */
+    transition: transform 0.3s ease;
+  }
+  
+  nav .icone-panier:hover {
+    transform: scale(1.2);    /* zoom au survol */
+  }
+  
+  /* survol boutton */
+  
+  header nav div a {
+    display: inline-block; /* nécessaire pour que le zoom fonctionne proprement */
+    transition: transform 0.3s ease; /* Animation fluide */
+  }
+  
+  header nav div a:hover {
+    transform: scale(1.2); /* Zoom de 20% au survol */
+  }
+  
+  
+
+
+  .voyage-container {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2em;
+    gap: 2em;
+    justify-content: center;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s ease forwards;
+  }
+  
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .image img {
+    max-width: 500px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  }
+  
+  .infos {
+    flex: 1;
+    min-width: 300px;
+    max-width: 600px;
+    background: white;
+    padding: 2em;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  .infos h1 {
+    font-size: 2em;
+    color: #1d3557;
+    margin-bottom: 0.5em;
+  }
+  
+  .specificites {
+    font-style: italic;
+    margin-bottom: 1.5em;
+  }
+  
+  .etape, .infos ul, .infos form {
+    margin-bottom: 1.5em;
+  }
+  
+  h2 {
+    margin-top: 1.5em;
+    color: #457b9d;
+  }
+  
+  ul {
+    padding-left: 1em;
+  }
+  
+  .prix {
+    font-size: 1.4em;
+    color: #e63946;
+    font-weight: bold;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  }
+  
+  input[type="number"] {
+    width: 80px;
+    padding: 0.5em;
+    font-size: 1em;
+  }
+  
+  button {
+    background-color: #1d3557;
+    color: white;
+    padding: 0.8em;
+    font-size: 1em;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  button:hover {
+    background-color: #457b9d;
+  }
+

@@ -1,9 +1,7 @@
 <?php
-require_once('../php_utils/csv.php');
-$voyages = read_csv('../data/voyages.csv');
+// On lit les voyages depuis le JSON
+$voyages = json_decode(file_get_contents('../data/voyages.json'), true);
 ?>
-
-
 
 <!DOCTYPE html>
 <html lang="fr">
