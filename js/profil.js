@@ -35,3 +35,8 @@ document.addEventListener("DOMContentLoaded", function () {
 	});
 });
 
+document.addEventListener("DOMContentLoaded", () => {
+	lucide.createIcons();
+  });
+  
+

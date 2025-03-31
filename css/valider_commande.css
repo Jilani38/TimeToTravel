@@ -1,0 +1,184 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    animation: fadeInPage 1s ease-in;
+  }
+
+  header {
+    position: relative;
+    height: 50px;
+    display: grid;
+    place-items: center;
+    color: white;
+    text-align: center;
+  }
+  
+
+  header nav {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 20px;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  
+  header nav a {
+    text-decoration: none;
+    color: white;
+  
+  }
+
+  header img {
+    width: 200px;
+  }
+  
+  @keyframes fadeInPage {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  header {
+    padding: 1em;
+    background-color: #1d3557;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  header a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 1em;
+  }
+  
+  header div {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+  }
+  
+  .icone-panier {
+    width: 30px;
+    height: auto;
+  }
+  
+  .voyage-container,
+  .panier-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2em;
+    gap: 2em;
+    justify-content: center;
+  }
+  
+  .container {
+    background: white;
+    padding: 2em;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    max-width: 700px;
+    width: 100%;
+    animation: zoomIn 0.5s ease-out;
+  }
+  
+  @keyframes zoomIn {
+    from {
+      transform: scale(0.95);
+      opacity: 0;
+    }
+    to {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  h1 {
+    color: #1d3557;
+    font-size: 2em;
+    margin-bottom: 0.5em;
+    text-align: center;
+  }
+  
+  h2 {
+    color: #457b9d;
+    margin-top: 1em;
+  }
+  
+  .carte-voyage {
+    background-color: #f8f9fa;
+    border: 1px solid #ccc;
+    padding: 1em;
+    margin-bottom: 1em;
+    border-radius: 10px;
+  }
+  
+  .entete {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .prix {
+    color: #e63946;
+    font-weight: bold;
+  }
+  
+  .details p {
+    margin: 5px 0;
+  }
+  
+  .btn-ajouter {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 16px;
+    background-color: #1d3557;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background 0.3s;
+    text-align: center;
+  }
+  
+  .btn-ajouter:hover {
+    background-color: #457b9d;
+  }
+  
+  .btn-payer {
+    width: 100%;
+    margin-top: 15px;
+    padding: 12px;
+    font-size: 1em;
+    background-color: #2a9d8f;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .btn-payer:hover {
+    background-color: #21867a;
+  }
+  
+  .total-commande {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-top: 10px;
+  }
+  

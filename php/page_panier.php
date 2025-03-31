@@ -1,3 +1,15 @@
+<?php
+session_start();
+if (!isset($_SESSION['id'])) {
+  header("Location: page_connexion.php");
+  exit();
+}
+
+$voyages = json_decode(file_get_contents("../data/voyages.json"), true);
+$panier = $_SESSION['panier'] ?? [];
+$total = 0;
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -7,64 +19,72 @@
 </head>
 <body>
 
-  <header>
+<header>
   <nav>
-    <!-- <h1>Time to Travel</h1> -->
     <a href="./page_accueil.php">
       <img src="../img/accueil_logo.svg" alt="Time to Travel" />
     </a>
 
     <div>
       <a href="./page_de_recherche.php">Rechercher </a>
-      
       <a href="./page_a_propos.php">À propos de nous</a>
       <a href="./page_profil.php">Mon profil</a>
       <a href="./page_connexion.php">Connexion</a>
       <a href="./page_inscription.php">Inscription</a>
-      
     </div>
   </nav>
-  </header>
+</header>
 
 <div class="panier-container">
   <div class="container">
     <h1>Votre panier</h1>
 
-    <div class="carte-voyage">
+    <?php if (empty($panier)): ?>
+      <p>Votre panier est vide.</p>
+    <?php else: ?>
+      <?php foreach ($panier as $id => $quantite): ?>
+        <?php
+          $voyage = array_filter($voyages, fn($v) => $v['id'] == $id);
+          $voyage = reset($voyage);
+          $sous_total = $voyage['prix_total'] * $quantite;
+          $total += $sous_total;
+        ?>
+        <div class="carte-voyage">
+  <div class="entete">
+    <h2><?= htmlspecialchars($voyage['titre']) ?></h2>
+    <span class="prix"><?= $sous_total ?> €</span>
+  </div>
+  <div class="details">
+    <p><strong>Lieu :</strong> <?= htmlspecialchars($voyage['etapes'][0]['position']['nom_lieu']) ?></p>
+    <p><strong>Dates :</strong> du <?= $voyage['etapes'][0]['date_arrivee'] ?> au <?= $voyage['etapes'][0]['date_depart'] ?></p>
+    <p><strong>Quantité :</strong> <?= $quantite ?> voyageur<?= $quantite > 1 ? 's' : '' ?></p>
 
-      <div class="entete">
-        <h2>Paris 1789 : Révolution</h2>
-        <span class="prix">1500 €</span>
-      </div>
+    <!-- bouton supprimer -->
+    <form action="supprimer_du_panier.php" method="post" style="margin-top: 10px;">
+      <input type="hidden" name="voyage_id" value="<?= $id ?>">
+      <button type="submit" class="btn-supprimer">🗑️ Supprimer</button>
+    </form>
+  </div>
+</div>
 
-      <div class="details">
-        <p><strong>Époque :</strong> Passé</p>
-        <p><strong>Dates :</strong> du 12/04/2025 au 20/04/2025</p>
-        <p><strong>Quantité :</strong> 2 voyageurs</p>
-       <!-- <p class="warning">⚠ Prix valable jusqu'à 17:19</p>-->
-      </div>
-
-    </div>
-
-    <!--<div class="actions">
-      <a class="btn continuer" href="page_destination.html">← Continuer mes voyages</a>
-    </div>
-  -->
+      <?php endforeach; ?>
+    <?php endif; ?>
 
   </div>
 
   <div class="bulle-total">
     <h3>Détail de la commande</h3>
-    <p><strong>1 voyage</strong> <span>1500 €</span></p>
+    <p><strong><?= count($panier) ?> voyage<?= count($panier) > 1 ? 's' : '' ?></strong> <span><?= $total ?> €</span></p>
     <hr>
     <div class="total-commande">
       <strong>Total commande</strong>
-      <span class="prix-total">1500 €</span>
+      <span class="prix-total"><?= $total ?> €</span>
     </div>
-    <button class="btn-payer">Valider et payer</button>
+    <form method="POST" action="valider_commande.php">
+      <button class="btn-payer" type="submit">Valider et payer</button>
+    </form>
     <a class="btn-ajouter" href="./page_accueil.php">Poursuivre mes achats</a>
   </div>
-
 </div>
 
 </body>

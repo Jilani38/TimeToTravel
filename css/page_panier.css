@@ -205,3 +205,21 @@ body {
 .bulle-total .btn-ajouter:hover {
   opacity: 0.9 !important;
 }
+
+/*gestion boutton supprimer*/
+
+.btn-supprimer {
+  background-color: #e63946;
+  color: white;
+  padding: 8px 14px;
+  font-size: 0.9em;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn-supprimer:hover {
+  background-color: #c5303b;
+}
+
