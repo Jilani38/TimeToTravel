@@ -1,18 +1,26 @@
-const dialog = document.querySelector("dialog");
-const dialogImage = dialog.querySelector("img");
-const dialogOpeners = document.querySelectorAll("[data-image-modal-src]");
-
-for (const dialogOpener of dialogOpeners) {
-	dialogOpener.addEventListener("click", () => {
-		dialogImage.src = dialogOpener.dataset.imageModalSrc;
+document.addEventListener("DOMContentLoaded", () => {
+	console.log("✅ JS chargé !");
+  
+	if (window.lucide) {
+	  lucide.createIcons();
+	  console.log("✅ Lucide chargé !");
+	} else {
+	  console.error("❌ Lucide non chargé !");
+	}
+  
+	const dialog = document.querySelector("dialog");
+	const image = dialog?.querySelector("img");
+	const close = document.getElementById("close-modal");
+  
+	document.querySelectorAll("[data-image-modal-src]").forEach(button => {
+	  button.addEventListener("click", () => {
+		image.src = button.dataset.imageModalSrc;
 		dialog.showModal();
+	  });
 	});
-}
-
-const modal = document.querySelector("dialog");
-const closeBtn = document.getElementById("close-modal");
-
-closeBtn.addEventListener("click", () => {
-  modal.close();
-});
-
+  
+	if (close) {
+	  close.addEventListener("click", () => dialog.close());
+	}
+  });
+  

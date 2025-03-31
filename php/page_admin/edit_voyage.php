@@ -1,7 +1,6 @@
 <?php
 session_start();
 
-// Sécurité : accès réservé aux administrateurs
 if (!isset($_SESSION['role']) || $_SESSION['role'] !== 'admin') {
   header('Location: ../page_accueil.php');
   exit;
@@ -13,22 +12,28 @@ if (!isset($_GET['id'])) {
 }
 
 $voyages = json_decode(file_get_contents('../../data/voyages.json'), true);
-$index = array_search($_GET['id'], array_column($voyages, 'id'));
+$id = $_GET['id'];
 
-if ($index === false) {
+$index = null;
+foreach ($voyages as $key => $v) {
+  if ((string)$v['id'] === (string)$id) {
+    $index = $key;
+    break;
+  }
+}
+
+if ($index === null) {
   header('Location: ./index.php');
   exit;
 }
 
 $voyage = $voyages[$index];
 
-// Traitement du formulaire
 if (isset($_POST['submit'])) {
-  $voyages[$index]['titre'] = $_POST['titre'];
-  $voyages[$index]['etapes'][0]['date_arrivee'] = $_POST['date'];
-  $voyages[$index]['etapes'][0]['position']['nom_lieu'] = $_POST['lieu'];
+  $voyages[$index]['titre'] = $_POST['titre'] ?? $voyage['titre'];
+  $voyages[$index]['etapes'][0]['date_arrivee'] = $_POST['date'] ?? $voyage['etapes'][0]['date_arrivee'];
+  $voyages[$index]['etapes'][0]['position']['nom_lieu'] = $_POST['lieu'] ?? $voyage['etapes'][0]['position']['nom_lieu'];
 
-  // Image
   if (!empty($_FILES['image']['name'])) {
     $info = pathinfo($_FILES['image']['name']);
     $extension = strtolower($info['extension']);
@@ -42,7 +47,6 @@ if (isset($_POST['submit'])) {
     }
   }
 
-  // Sauvegarde
   file_put_contents('../../data/voyages.json', json_encode($voyages, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE));
   header('Location: ./index.php');
   exit;
@@ -51,19 +55,18 @@ if (isset($_POST['submit'])) {
 <!doctype html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <link rel="stylesheet" href="../../css/base.css" />
-  <link rel="stylesheet" href="../../css/page_admin/base.css" />
-  <link rel="stylesheet" href="../../css/page_admin/edit_voyage.css" />
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="../../css/base.css">
+  <link rel="stylesheet" href="../../css/page_admin/base.css">
+  <link rel="stylesheet" href="../../css/page_admin/edit_voyage.css">
   <script src="../../js/page_admin/edit_voyage.js" defer></script>
-  <title>Time to Travel - Edit Voyage</title>
+  <title>Modifier un voyage</title>
 </head>
-
 <body>
   <aside>
     <header>
       <a href="./index.php">
-        <img src="../../img/logo.svg" alt="Time to Travel" />
+        <img src="../../img/logo.svg" alt="Time to Travel">
       </a>
     </header>
     <nav>
@@ -76,32 +79,26 @@ if (isset($_POST['submit'])) {
       <table>
         <tr>
           <th>Titre</th>
-          <td>
-            <input type="text" name="titre" value="<?= htmlspecialchars($voyage['titre']); ?>" />
-          </td>
+          <td><input type="text" name="titre" value="<?= htmlspecialchars($voyage['titre']) ?>"></td>
         </tr>
         <tr>
           <th>Date</th>
-          <td>
-            <input type="text" name="date" value="<?= htmlspecialchars($voyage['etapes'][0]['date_arrivee']); ?>" />
-          </td>
+          <td><input type="text" name="date" value="<?= htmlspecialchars($voyage['etapes'][0]['date_arrivee']) ?>"></td>
         </tr>
         <tr>
           <th>Lieu</th>
-          <td>
-            <input type="text" name="lieu" value="<?= htmlspecialchars($voyage['etapes'][0]['position']['nom_lieu']); ?>" />
-          </td>
+          <td><input type="text" name="lieu" value="<?= htmlspecialchars($voyage['etapes'][0]['position']['nom_lieu']) ?>"></td>
         </tr>
         <tr>
           <th>Image</th>
           <td>
-            <input type="file" name="image" accept="image/*" />
-            <img src="../../data/images/<?= htmlspecialchars($voyage['image']); ?>" alt="<?= htmlspecialchars($voyage['titre']); ?>" />
+            <input type="file" name="image" accept="image/*">
+            <img src="../../data/images/<?= htmlspecialchars($voyage['image']) ?>" alt="<?= htmlspecialchars($voyage['titre']) ?>">
           </td>
         </tr>
       </table>
       <div>
-        <input type="submit" name="submit" value="Enregistrer" />
+        <input type="submit" name="submit" value="Enregistrer">
         <a href="./index.php">Annuler</a>
       </div>
     </form>

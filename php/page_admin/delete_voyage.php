@@ -12,23 +12,36 @@ if (!isset($_GET['id'])) {
   exit;
 }
 
-require_once('../../php_utils/csv.php');
-$voyages = read_csv('../../data/voyages.csv');
-$index = array_find_key($voyages, fn($v) => $v['id'] == $_GET['id']);
-$voyage = $voyages[$index];
+$id = $_GET['id'];
+$voyages = json_decode(file_get_contents('../../data/voyages.json'), true);
 
-if (!isset($voyage)) {
+// Recherche de l'index à supprimer
+$index = null;
+foreach ($voyages as $key => $v) {
+  if ((string)$v['id'] === (string)$id) {
+    $index = $key;
+    break;
+  }
+}
+
+if ($index === null) {
   header('Location: ./index.php');
   exit;
 }
 
-// Suppression de l'image associée au voyage (optionnel)
+$voyage = $voyages[$index];
+
+// Suppression de l'image associée (si elle existe)
 $image_path = '../../data/images/' . $voyage['image'];
-if (file_exists($image_path)) {
+if (!empty($voyage['image']) && file_exists($image_path)) {
   unlink($image_path);
 }
 
-unset($voyages[$index]);
-write_csv($voyages, '../../data/voyages.csv');
+// Suppression du voyage du tableau
+array_splice($voyages, $index, 1);
+
+// Réécriture du JSON
+file_put_contents('../../data/voyages.json', json_encode($voyages, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE));
+
 header('Location: ./index.php');
 exit;

@@ -1,1082 +1,1082 @@
 [
-  {
-    "id": 1,
-    "titre": "Prise de la Bastille",
-    "image": "1.png",
-    "duree": 6,
-    "specificites": "Voyage unique à Paris,France lors de l'événement « Prise de la Bastille ».",
-    "prix_total": 2963,
-    "etapes": [
-      {
-        "titre": "Immersion",
-        "date_arrivee": "2025-12-01",
-        "date_depart": "2025-12-03",
-        "duree": 2,
-        "position": {
-          "gps": "0.0000, 0.0000",
-          "nom_lieu": "Paris,France"
-        },
-        "options": [
-          {
-            "type": "hébergement",
-            "nom": "Auberge temporelle",
-            "prix_par_personne": 120
-          },
-          {
-            "type": "hébergement",
-            "nom": "Tente de l’époque",
-            "prix_par_personne": 90
-          }
+    {
+        "id": 1,
+        "titre": "Prise de la Bastille",
+        "image": "1.png",
+        "duree": 6,
+        "specificites": "Voyage unique à Paris,France lors de l'événement « Prise de la Bastille ».",
+        "prix_total": 2963,
+        "etapes": [
+            {
+                "titre": "Immersion",
+                "date_arrivee": "2025-12-02",
+                "date_depart": "2025-12-03",
+                "duree": 2,
+                "position": {
+                    "gps": "0.0000, 0.0000",
+                    "nom_lieu": "Paris,France"
+                },
+                "options": [
+                    {
+                        "type": "hébergement",
+                        "nom": "Auberge temporelle",
+                        "prix_par_personne": 120
+                    },
+                    {
+                        "type": "hébergement",
+                        "nom": "Tente de l’époque",
+                        "prix_par_personne": 90
+                    }
+                ]
+            }
+        ],
+        "activites": [
+            {
+                "nom": "Conférence immersive",
+                "description": "Découvrez les dessous de l'événement avec un historien.",
+                "prix": 100
+            },
+            {
+                "nom": "Photographie historique",
+                "description": "Prenez une photo souvenir dans un décor authentique.",
+                "prix": 60
+            },
+            {
+                "nom": "Expérience sensorielle",
+                "description": "Plongez dans l'ambiance de l'époque avec sons, odeurs, et lumières.",
+                "prix": 120
+            },
+            {
+                "nom": "Repas d’époque",
+                "description": "Dégustez un repas fidèle à l’époque visitée.",
+                "prix": 80
+            }
         ]
-      }
-    ],
-    "activites": [
-      {
-        "nom": "Conférence immersive",
-        "description": "Découvrez les dessous de l'événement avec un historien.",
-        "prix": 100
-      },
-      {
-        "nom": "Photographie historique",
-        "description": "Prenez une photo souvenir dans un décor authentique.",
-        "prix": 60
-      },
-      {
-        "nom": "Expérience sensorielle",
-        "description": "Plongez dans l'ambiance de l'époque avec sons, odeurs, et lumières.",
-        "prix": 120
-      },
-      {
-        "nom": "Repas d’époque",
-        "description": "Dégustez un repas fidèle à l’époque visitée.",
-        "prix": 80
-      }
-    ]
-  },
-  {
-    "id": 2,
-    "titre": "Avant Apollo 11",
-    "image": "2.png",
-    "duree": 7,
-    "specificites": "Voyage unique à Mer de la Tranquillité,Lune lors de l'événement « Avant Apollo 11 ».",
-    "prix_total": 3406,
-    "etapes": [
-      {
-        "titre": "Immersion",
-        "date_arrivee": "2025-12-01",
-        "date_depart": "2025-12-03",
-        "duree": 2,
-        "position": {
-          "gps": "0.0000, 0.0000",
-          "nom_lieu": "Mer de la Tranquillité,Lune"
-        },
-        "options": [
-          {
-            "type": "hébergement",
-            "nom": "Tente de l’époque",
-            "prix_par_personne": 90
-          },
-          {
-            "type": "expédition",
-            "nom": "Visite guidée historique",
-            "prix_par_personne": 180
-          }
+    },
+    {
+        "id": 2,
+        "titre": "Avant Apollo 11",
+        "image": "2.png",
+        "duree": 7,
+        "specificites": "Voyage unique à Mer de la Tranquillité,Lune lors de l'événement « Avant Apollo 11 ».",
+        "prix_total": 3406,
+        "etapes": [
+            {
+                "titre": "Immersion",
+                "date_arrivee": "2025-12-01",
+                "date_depart": "2025-12-03",
+                "duree": 2,
+                "position": {
+                    "gps": "0.0000, 0.0000",
+                    "nom_lieu": "Mer de la Tranquillité,Lune"
+                },
+                "options": [
+                    {
+                        "type": "hébergement",
+                        "nom": "Tente de l’époque",
+                        "prix_par_personne": 90
+                    },
+                    {
+                        "type": "expédition",
+                        "nom": "Visite guidée historique",
+                        "prix_par_personne": 180
+                    }
+                ]
+            }
+        ],
+        "activites": [
+            {
+                "nom": "Conférence immersive",
+                "description": "Découvrez les dessous de l'événement avec un historien.",
+                "prix": 100
+            },
+            {
+                "nom": "Photographie historique",
+                "description": "Prenez une photo souvenir dans un décor authentique.",
+                "prix": 60
+            },
+            {
+                "nom": "Chasse au trésor",
+                "description": "Un jeu interactif à travers l’événement.",
+                "prix": 90
+            },
+            {
+                "nom": "Repas d’époque",
+                "description": "Dégustez un repas fidèle à l’époque visitée.",
+                "prix": 80
+            }
         ]
-      }
-    ],
-    "activites": [
-      {
-        "nom": "Conférence immersive",
-        "description": "Découvrez les dessous de l'événement avec un historien.",
-        "prix": 100
-      },
-      {
-        "nom": "Photographie historique",
-        "description": "Prenez une photo souvenir dans un décor authentique.",
-        "prix": 60
-      },
-      {
-        "nom": "Chasse au trésor",
-        "description": "Un jeu interactif à travers l’événement.",
-        "prix": 90
-      },
-      {
-        "nom": "Repas d’époque",
-        "description": "Dégustez un repas fidèle à l’époque visitée.",
-        "prix": 80
-      }
-    ]
-  },
-  {
-    "id": 3,
-    "titre": "Ère des dinosaures",
-    "image": "3.png",
-    "duree": 8,
-    "specificites": "Voyage unique à Patagonie,Argentine lors de l'événement « Ère des dinosaures ».",
-    "prix_total": 1905,
-    "etapes": [
-      {
-        "titre": "Immersion",
-        "date_arrivee": "2025-12-01",
-        "date_depart": "2025-12-03",
-        "duree": 2,
-        "position": {
-          "gps": "0.0000, 0.0000",
-          "nom_lieu": "Patagonie,Argentine"
-        },
-        "options": [
-          {
-            "type": "hébergement",
-            "nom": "Tente de l’époque",
-            "prix_par_personne": 90
-          },
-          {
-            "type": "activité",
-            "nom": "Immersion 360°",
-            "prix_par_personne": 100
-          }
+    },
+    {
+        "id": 3,
+        "titre": "Ère des dinosaures",
+        "image": "3.png",
+        "duree": 8,
+        "specificites": "Voyage unique à Patagonie,Argentine lors de l'événement « Ère des dinosaures ».",
+        "prix_total": 1905,
+        "etapes": [
+            {
+                "titre": "Immersion",
+                "date_arrivee": "2025-12-01",
+                "date_depart": "2025-12-03",
+                "duree": 2,
+                "position": {
+                    "gps": "0.0000, 0.0000",
+                    "nom_lieu": "Patagonie,Argentine"
+                },
+                "options": [
+                    {
+                        "type": "hébergement",
+                        "nom": "Tente de l’époque",
+                        "prix_par_personne": 90
+                    },
+                    {
+                        "type": "activité",
+                        "nom": "Immersion 360°",
+                        "prix_par_personne": 100
+                    }
+                ]
+            }
+        ],
+        "activites": [
+            {
+                "nom": "Repas d’époque",
+                "description": "Dégustez un repas fidèle à l’époque visitée.",
+                "prix": 80
+            },
+            {
+                "nom": "Conférence immersive",
+                "description": "Découvrez les dessous de l'événement avec un historien.",
+                "prix": 100
+            },
+            {
+                "nom": "Expérience sensorielle",
+                "description": "Plongez dans l'ambiance de l'époque avec sons, odeurs, et lumières.",
+                "prix": 120
+            },
+            {
+                "nom": "Chasse au trésor",
+                "description": "Un jeu interactif à travers l’événement.",
+                "prix": 90
+            }
         ]
-      }
-    ],
-    "activites": [
-      {
-        "nom": "Repas d’époque",
-        "description": "Dégustez un repas fidèle à l’époque visitée.",
-        "prix": 80
-      },
-      {
-        "nom": "Conférence immersive",
-        "description": "Découvrez les dessous de l'événement avec un historien.",
-        "prix": 100
-      },
-      {
-        "nom": "Expérience sensorielle",
-        "description": "Plongez dans l'ambiance de l'époque avec sons, odeurs, et lumières.",
-        "prix": 120
-      },
-      {
-        "nom": "Chasse au trésor",
-        "description": "Un jeu interactif à travers l’événement.",
-        "prix": 90
-      }
-    ]
-  },
-  {
-    "id": 4,
-    "titre": "Assassinat de Jules César",
-    "image": "4.png",
-    "duree": 4,
-    "specificites": "Voyage unique à Rome,Italie lors de l'événement « Assassinat de Jules César ».",
-    "prix_total": 3170,
-    "etapes": [
-      {
-        "titre": "Immersion",
-        "date_arrivee": "2025-12-01",
-        "date_depart": "2025-12-03",
-        "duree": 2,
-        "position": {
-          "gps": "0.0000, 0.0000",
-          "nom_lieu": "Rome,Italie"
-        },
-        "options": [
-          {
-            "type": "activité",
-            "nom": "Immersion 360°",
-            "prix_par_personne": 100
-          },
-          {
-            "type": "hébergement",
-            "nom": "Auberge temporelle",
-            "prix_par_personne": 120
-          }
+    },
+    {
+        "id": 4,
+        "titre": "Assassinat de Jules César",
+        "image": "4.png",
+        "duree": 4,
+        "specificites": "Voyage unique à Rome,Italie lors de l'événement « Assassinat de Jules César ».",
+        "prix_total": 3170,
+        "etapes": [
+            {
+                "titre": "Immersion",
+                "date_arrivee": "2025-12-01",
+                "date_depart": "2025-12-03",
+                "duree": 2,
+                "position": {
+                    "gps": "0.0000, 0.0000",
+                    "nom_lieu": "Rome,Italie"
+                },
+                "options": [
+                    {
+                        "type": "activité",
+                        "nom": "Immersion 360°",
+                        "prix_par_personne": 100
+                    },
+                    {
+                        "type": "hébergement",
+                        "nom": "Auberge temporelle",
+                        "prix_par_personne": 120
+                    }
+                ]
+            }
+        ],
+        "activites": [
+            {
+                "nom": "Photographie historique",
+                "description": "Prenez une photo souvenir dans un décor authentique.",
+                "prix": 60
+            },
+            {
+                "nom": "Expérience sensorielle",
+                "description": "Plongez dans l'ambiance de l'époque avec sons, odeurs, et lumières.",
+                "prix": 120
+            },
+            {
+                "nom": "Chasse au trésor",
+                "description": "Un jeu interactif à travers l’événement.",
+                "prix": 90
+            },
+            {
+                "nom": "Conférence immersive",
+                "description": "Découvrez les dessous de l'événement avec un historien.",
+                "prix": 100
+            }
         ]
-      }
-    ],
-    "activites": [
-      {
-        "nom": "Photographie historique",
-        "description": "Prenez une photo souvenir dans un décor authentique.",
-        "prix": 60
-      },
-      {
-        "nom": "Expérience sensorielle",
-        "description": "Plongez dans l'ambiance de l'époque avec sons, odeurs, et lumières.",
-        "prix": 120
-      },
-      {
-        "nom": "Chasse au trésor",
-        "description": "Un jeu interactif à travers l’événement.",
-        "prix": 90
-      },
-      {
-        "nom": "Conférence immersive",
-        "description": "Découvrez les dessous de l'événement avec un historien.",
-        "prix": 100
-      }
-    ]
-  },
-  {
-    "id": 5,
-    "titre": "Colonie martienne",
-    "image": "5.png",
-    "duree": 6,
-    "specificites": "Voyage unique à Valles Marineris,Mars lors de l'événement « Colonie martienne ».",
-    "prix_total": 1795,
-    "etapes": [
-      {
-        "titre": "Immersion",
-        "date_arrivee": "2025-12-01",
-        "date_depart": "2025-12-03",
-        "duree": 2,
-        "position": {
-          "gps": "0.0000, 0.0000",
-          "nom_lieu": "Valles Marineris,Mars"
-        },
-        "options": [
-          {
-            "type": "hébergement",
-            "nom": "Tente de l’époque",
-            "prix_par_personne": 90
-          },
-          {
-            "type": "expédition",
-            "nom": "Visite guidée historique",
-            "prix_par_personne": 180
-          }
+    },
+    {
+        "id": 5,
+        "titre": "Colonie martienne",
+        "image": "5.png",
+        "duree": 6,
+        "specificites": "Voyage unique à Valles Marineris,Mars lors de l'événement « Colonie martienne ».",
+        "prix_total": 1795,
+        "etapes": [
+            {
+                "titre": "Immersion",
+                "date_arrivee": "2025-12-01",
+                "date_depart": "2025-12-03",
+                "duree": 2,
+                "position": {
+                    "gps": "0.0000, 0.0000",
+                    "nom_lieu": "Valles Marineris,Mars"
+                },
+                "options": [
+                    {
+                        "type": "hébergement",
+                        "nom": "Tente de l’époque",
+                        "prix_par_personne": 90
+                    },
+                    {
+                        "type": "expédition",
+                        "nom": "Visite guidée historique",
+                        "prix_par_personne": 180
+                    }
+                ]
+            }
+        ],
+        "activites": [
+            {
+                "nom": "Chasse au trésor",
+                "description": "Un jeu interactif à travers l’événement.",
+                "prix": 90
+            },
+            {
+                "nom": "Expérience sensorielle",
+                "description": "Plongez dans l'ambiance de l'époque avec sons, odeurs, et lumières.",
+                "prix": 120
+            },
+            {
+                "nom": "Repas d’époque",
+                "description": "Dégustez un repas fidèle à l’époque visitée.",
+                "prix": 80
+            },
+            {
+                "nom": "Conférence immersive",
+                "description": "Découvrez les dessous de l'événement avec un historien.",
+                "prix": 100
+            }
         ]
-      }
-    ],
-    "activites": [
-      {
-        "nom": "Chasse au trésor",
-        "description": "Un jeu interactif à travers l’événement.",
-        "prix": 90
-      },
-      {
-        "nom": "Expérience sensorielle",
-        "description": "Plongez dans l'ambiance de l'époque avec sons, odeurs, et lumières.",
-        "prix": 120
-      },
-      {
-        "nom": "Repas d’époque",
-        "description": "Dégustez un repas fidèle à l’époque visitée.",
-        "prix": 80
-      },
-      {
-        "nom": "Conférence immersive",
-        "description": "Découvrez les dessous de l'événement avec un historien.",
-        "prix": 100
-      }
-    ]
-  },
-  {
-    "id": 6,
-    "titre": "Tokyo flottante",
-    "image": "6.png",
-    "duree": 3,
-    "specificites": "Voyage unique à Tokyo,Japon lors de l'événement « Tokyo flottante ».",
-    "prix_total": 2756,
-    "etapes": [
-      {
-        "titre": "Immersion",
-        "date_arrivee": "2025-12-01",
-        "date_depart": "2025-12-03",
-        "duree": 2,
-        "position": {
-          "gps": "0.0000, 0.0000",
-          "nom_lieu": "Tokyo,Japon"
-        },
-        "options": [
-          {
-            "type": "activité",
-            "nom": "Immersion 360°",
-            "prix_par_personne": 100
-          },
-          {
-            "type": "hébergement",
-            "nom": "Tente de l’époque",
-            "prix_par_personne": 90
-          }
+    },
+    {
+        "id": 6,
+        "titre": "Tokyo flottante",
+        "image": "6.png",
+        "duree": 3,
+        "specificites": "Voyage unique à Tokyo,Japon lors de l'événement « Tokyo flottante ».",
+        "prix_total": 2756,
+        "etapes": [
+            {
+                "titre": "Immersion",
+                "date_arrivee": "2025-12-01",
+                "date_depart": "2025-12-03",
+                "duree": 2,
+                "position": {
+                    "gps": "0.0000, 0.0000",
+                    "nom_lieu": "Tokyo,Japon"
+                },
+                "options": [
+                    {
+                        "type": "activité",
+                        "nom": "Immersion 360°",
+                        "prix_par_personne": 100
+                    },
+                    {
+                        "type": "hébergement",
+                        "nom": "Tente de l’époque",
+                        "prix_par_personne": 90
+                    }
+                ]
+            }
+        ],
+        "activites": [
+            {
+                "nom": "Expérience sensorielle",
+                "description": "Plongez dans l'ambiance de l'époque avec sons, odeurs, et lumières.",
+                "prix": 120
+            },
+            {
+                "nom": "Repas d’époque",
+                "description": "Dégustez un repas fidèle à l’époque visitée.",
+                "prix": 80
+            },
+            {
+                "nom": "Chasse au trésor",
+                "description": "Un jeu interactif à travers l’événement.",
+                "prix": 90
+            },
+            {
+                "nom": "Conférence immersive",
+                "description": "Découvrez les dessous de l'événement avec un historien.",
+                "prix": 100
+            }
         ]
-      }
-    ],
-    "activites": [
-      {
-        "nom": "Expérience sensorielle",
-        "description": "Plongez dans l'ambiance de l'époque avec sons, odeurs, et lumières.",
-        "prix": 120
-      },
-      {
-        "nom": "Repas d’époque",
-        "description": "Dégustez un repas fidèle à l’époque visitée.",
-        "prix": 80
-      },
-      {
-        "nom": "Chasse au trésor",
-        "description": "Un jeu interactif à travers l’événement.",
-        "prix": 90
-      },
-      {
-        "nom": "Conférence immersive",
-        "description": "Découvrez les dessous de l'événement avec un historien.",
-        "prix": 100
-      }
-    ]
-  },
-  {
-    "id": 7,
-    "titre": "Révolte des IA",
-    "image": "7.png",
-    "duree": 8,
-    "specificites": "Voyage unique à Pékin,Chine lors de l'événement « Révolte des IA ».",
-    "prix_total": 846,
-    "etapes": [
-      {
-        "titre": "Immersion",
-        "date_arrivee": "2025-12-01",
-        "date_depart": "2025-12-03",
-        "duree": 2,
-        "position": {
-          "gps": "0.0000, 0.0000",
-          "nom_lieu": "Pékin,Chine"
-        },
-        "options": [
-          {
-            "type": "hébergement",
-            "nom": "Tente de l’époque",
-            "prix_par_personne": 90
-          },
-          {
-            "type": "expédition",
-            "nom": "Visite guidée historique",
-            "prix_par_personne": 180
-          }
+    },
+    {
+        "id": 7,
+        "titre": "Révolte des IA",
+        "image": "7.png",
+        "duree": 8,
+        "specificites": "Voyage unique à Pékin,Chine lors de l'événement « Révolte des IA ».",
+        "prix_total": 846,
+        "etapes": [
+            {
+                "titre": "Immersion",
+                "date_arrivee": "2025-12-01",
+                "date_depart": "2025-12-03",
+                "duree": 2,
+                "position": {
+                    "gps": "0.0000, 0.0000",
+                    "nom_lieu": "Pékin,Chine"
+                },
+                "options": [
+                    {
+                        "type": "hébergement",
+                        "nom": "Tente de l’époque",
+                        "prix_par_personne": 90
+                    },
+                    {
+                        "type": "expédition",
+                        "nom": "Visite guidée historique",
+                        "prix_par_personne": 180
+                    }
+                ]
+            }
+        ],
+        "activites": [
+            {
+                "nom": "Repas d’époque",
+                "description": "Dégustez un repas fidèle à l’époque visitée.",
+                "prix": 80
+            },
+            {
+                "nom": "Chasse au trésor",
+                "description": "Un jeu interactif à travers l’événement.",
+                "prix": 90
+            },
+            {
+                "nom": "Expérience sensorielle",
+                "description": "Plongez dans l'ambiance de l'époque avec sons, odeurs, et lumières.",
+                "prix": 120
+            },
+            {
+                "nom": "Photographie historique",
+                "description": "Prenez une photo souvenir dans un décor authentique.",
+                "prix": 60
+            }
         ]
-      }
-    ],
-    "activites": [
-      {
-        "nom": "Repas d’époque",
-        "description": "Dégustez un repas fidèle à l’époque visitée.",
-        "prix": 80
-      },
-      {
-        "nom": "Chasse au trésor",
-        "description": "Un jeu interactif à travers l’événement.",
-        "prix": 90
-      },
-      {
-        "nom": "Expérience sensorielle",
-        "description": "Plongez dans l'ambiance de l'époque avec sons, odeurs, et lumières.",
-        "prix": 120
-      },
-      {
-        "nom": "Photographie historique",
-        "description": "Prenez une photo souvenir dans un décor authentique.",
-        "prix": 60
-      }
-    ]
-  },
-  {
-    "id": 8,
-    "titre": "Terre ré-ensauvagée",
-    "image": "8.png",
-    "duree": 8,
-    "specificites": "Voyage unique à Tromsø,Norvège lors de l'événement « Terre ré-ensauvagée ».",
-    "prix_total": 3216,
-    "etapes": [
-      {
-        "titre": "Immersion",
-        "date_arrivee": "2025-12-01",
-        "date_depart": "2025-12-03",
-        "duree": 2,
-        "position": {
-          "gps": "0.0000, 0.0000",
-          "nom_lieu": "Tromsø,Norvège"
-        },
-        "options": [
-          {
-            "type": "activité",
-            "nom": "Immersion 360°",
-            "prix_par_personne": 100
-          },
-          {
-            "type": "hébergement",
-            "nom": "Tente de l’époque",
-            "prix_par_personne": 90
-          }
+    },
+    {
+        "id": 8,
+        "titre": "Terre ré-ensauvagée",
+        "image": "8.png",
+        "duree": 8,
+        "specificites": "Voyage unique à Tromsø,Norvège lors de l'événement « Terre ré-ensauvagée ».",
+        "prix_total": 3216,
+        "etapes": [
+            {
+                "titre": "Immersion",
+                "date_arrivee": "2025-12-01",
+                "date_depart": "2025-12-03",
+                "duree": 2,
+                "position": {
+                    "gps": "0.0000, 0.0000",
+                    "nom_lieu": "Tromsø,Norvège"
+                },
+                "options": [
+                    {
+                        "type": "activité",
+                        "nom": "Immersion 360°",
+                        "prix_par_personne": 100
+                    },
+                    {
+                        "type": "hébergement",
+                        "nom": "Tente de l’époque",
+                        "prix_par_personne": 90
+                    }
+                ]
+            }
+        ],
+        "activites": [
+            {
+                "nom": "Photographie historique",
+                "description": "Prenez une photo souvenir dans un décor authentique.",
+                "prix": 60
+            },
+            {
+                "nom": "Conférence immersive",
+                "description": "Découvrez les dessous de l'événement avec un historien.",
+                "prix": 100
+            },
+            {
+                "nom": "Expérience sensorielle",
+                "description": "Plongez dans l'ambiance de l'époque avec sons, odeurs, et lumières.",
+                "prix": 120
+            },
+            {
+                "nom": "Repas d’époque",
+                "description": "Dégustez un repas fidèle à l’époque visitée.",
+                "prix": 80
+            }
         ]
-      }
-    ],
-    "activites": [
-      {
-        "nom": "Photographie historique",
-        "description": "Prenez une photo souvenir dans un décor authentique.",
-        "prix": 60
-      },
-      {
-        "nom": "Conférence immersive",
-        "description": "Découvrez les dessous de l'événement avec un historien.",
-        "prix": 100
-      },
-      {
-        "nom": "Expérience sensorielle",
-        "description": "Plongez dans l'ambiance de l'époque avec sons, odeurs, et lumières.",
-        "prix": 120
-      },
-      {
-        "nom": "Repas d’époque",
-        "description": "Dégustez un repas fidèle à l’époque visitée.",
-        "prix": 80
-      }
-    ]
-  },
-  {
-    "id": 9,
-    "titre": "Découverte de l’Amérique",
-    "image": "9.png",
-    "duree": 6,
-    "specificites": "Voyage unique à San Salvador,Bahamas lors de l'événement « Découverte de l’Amérique ».",
-    "prix_total": 3137,
-    "etapes": [
-      {
-        "titre": "Immersion",
-        "date_arrivee": "2025-12-01",
-        "date_depart": "2025-12-03",
-        "duree": 2,
-        "position": {
-          "gps": "0.0000, 0.0000",
-          "nom_lieu": "San Salvador,Bahamas"
-        },
-        "options": [
-          {
-            "type": "hébergement",
-            "nom": "Auberge temporelle",
-            "prix_par_personne": 120
-          },
-          {
-            "type": "activité",
-            "nom": "Immersion 360°",
-            "prix_par_personne": 100
-          }
+    },
+    {
+        "id": 9,
+        "titre": "Découverte de l’Amérique",
+        "image": "9.png",
+        "duree": 6,
+        "specificites": "Voyage unique à San Salvador,Bahamas lors de l'événement « Découverte de l’Amérique ».",
+        "prix_total": 3137,
+        "etapes": [
+            {
+                "titre": "Immersion",
+                "date_arrivee": "2025-12-01",
+                "date_depart": "2025-12-03",
+                "duree": 2,
+                "position": {
+                    "gps": "0.0000, 0.0000",
+                    "nom_lieu": "San Salvador,Bahamas"
+                },
+                "options": [
+                    {
+                        "type": "hébergement",
+                        "nom": "Auberge temporelle",
+                        "prix_par_personne": 120
+                    },
+                    {
+                        "type": "activité",
+                        "nom": "Immersion 360°",
+                        "prix_par_personne": 100
+                    }
+                ]
+            }
+        ],
+        "activites": [
+            {
+                "nom": "Conférence immersive",
+                "description": "Découvrez les dessous de l'événement avec un historien.",
+                "prix": 100
+            },
+            {
+                "nom": "Photographie historique",
+                "description": "Prenez une photo souvenir dans un décor authentique.",
+                "prix": 60
+            },
+            {
+                "nom": "Chasse au trésor",
+                "description": "Un jeu interactif à travers l’événement.",
+                "prix": 90
+            },
+            {
+                "nom": "Expérience sensorielle",
+                "description": "Plongez dans l'ambiance de l'époque avec sons, odeurs, et lumières.",
+                "prix": 120
+            }
         ]
-      }
-    ],
-    "activites": [
-      {
-        "nom": "Conférence immersive",
-        "description": "Découvrez les dessous de l'événement avec un historien.",
-        "prix": 100
-      },
-      {
-        "nom": "Photographie historique",
-        "description": "Prenez une photo souvenir dans un décor authentique.",
-        "prix": 60
-      },
-      {
-        "nom": "Chasse au trésor",
-        "description": "Un jeu interactif à travers l’événement.",
-        "prix": 90
-      },
-      {
-        "nom": "Expérience sensorielle",
-        "description": "Plongez dans l'ambiance de l'époque avec sons, odeurs, et lumières.",
-        "prix": 120
-      }
-    ]
-  },
-  {
-    "id": 10,
-    "titre": "Débarquement de Normandie",
-    "image": "10.png",
-    "duree": 6,
-    "specificites": "Voyage unique à Plage d’Omaha,France lors de l'événement « Débarquement de Normandie ».",
-    "prix_total": 849,
-    "etapes": [
-      {
-        "titre": "Immersion",
-        "date_arrivee": "2025-12-01",
-        "date_depart": "2025-12-03",
-        "duree": 2,
-        "position": {
-          "gps": "0.0000, 0.0000",
-          "nom_lieu": "Plage d’Omaha,France"
-        },
-        "options": [
-          {
-            "type": "expédition",
-            "nom": "Visite guidée historique",
-            "prix_par_personne": 180
-          },
-          {
-            "type": "hébergement",
-            "nom": "Tente de l’époque",
-            "prix_par_personne": 90
-          }
+    },
+    {
+        "id": 10,
+        "titre": "Débarquement de Normandie",
+        "image": "10.png",
+        "duree": 6,
+        "specificites": "Voyage unique à Plage d’Omaha,France lors de l'événement « Débarquement de Normandie ».",
+        "prix_total": 849,
+        "etapes": [
+            {
+                "titre": "Immersion",
+                "date_arrivee": "2025-12-01",
+                "date_depart": "2025-12-03",
+                "duree": 2,
+                "position": {
+                    "gps": "0.0000, 0.0000",
+                    "nom_lieu": "Plage d’Omaha,France"
+                },
+                "options": [
+                    {
+                        "type": "expédition",
+                        "nom": "Visite guidée historique",
+                        "prix_par_personne": 180
+                    },
+                    {
+                        "type": "hébergement",
+                        "nom": "Tente de l’époque",
+                        "prix_par_personne": 90
+                    }
+                ]
+            }
+        ],
+        "activites": [
+            {
+                "nom": "Repas d’époque",
+                "description": "Dégustez un repas fidèle à l’époque visitée.",
+                "prix": 80
+            },
+            {
+                "nom": "Chasse au trésor",
+                "description": "Un jeu interactif à travers l’événement.",
+                "prix": 90
+            },
+            {
+                "nom": "Photographie historique",
+                "description": "Prenez une photo souvenir dans un décor authentique.",
+                "prix": 60
+            },
+            {
+                "nom": "Conférence immersive",
+                "description": "Découvrez les dessous de l'événement avec un historien.",
+                "prix": 100
+            }
         ]
-      }
-    ],
-    "activites": [
-      {
-        "nom": "Repas d’époque",
-        "description": "Dégustez un repas fidèle à l’époque visitée.",
-        "prix": 80
-      },
-      {
-        "nom": "Chasse au trésor",
-        "description": "Un jeu interactif à travers l’événement.",
-        "prix": 90
-      },
-      {
-        "nom": "Photographie historique",
-        "description": "Prenez une photo souvenir dans un décor authentique.",
-        "prix": 60
-      },
-      {
-        "nom": "Conférence immersive",
-        "description": "Découvrez les dessous de l'événement avec un historien.",
-        "prix": 100
-      }
-    ]
-  },
-  {
-    "id": 11,
-    "titre": "Assassinat de JFK",
-    "image": "11.png",
-    "duree": 3,
-    "specificites": "Voyage unique à Dallas,États-Unis lors de l'événement « Assassinat de JFK ».",
-    "prix_total": 2908,
-    "etapes": [
-      {
-        "titre": "Immersion",
-        "date_arrivee": "2025-12-01",
-        "date_depart": "2025-12-03",
-        "duree": 2,
-        "position": {
-          "gps": "0.0000, 0.0000",
-          "nom_lieu": "Dallas,États-Unis"
-        },
-        "options": [
-          {
-            "type": "activité",
-            "nom": "Immersion 360°",
-            "prix_par_personne": 100
-          },
-          {
-            "type": "expédition",
-            "nom": "Visite guidée historique",
-            "prix_par_personne": 180
-          }
+    },
+    {
+        "id": 11,
+        "titre": "Assassinat de JFK",
+        "image": "11.png",
+        "duree": 3,
+        "specificites": "Voyage unique à Dallas,États-Unis lors de l'événement « Assassinat de JFK ».",
+        "prix_total": 2908,
+        "etapes": [
+            {
+                "titre": "Immersion",
+                "date_arrivee": "2025-12-01",
+                "date_depart": "2025-12-03",
+                "duree": 2,
+                "position": {
+                    "gps": "0.0000, 0.0000",
+                    "nom_lieu": "Dallas,États-Unis"
+                },
+                "options": [
+                    {
+                        "type": "activité",
+                        "nom": "Immersion 360°",
+                        "prix_par_personne": 100
+                    },
+                    {
+                        "type": "expédition",
+                        "nom": "Visite guidée historique",
+                        "prix_par_personne": 180
+                    }
+                ]
+            }
+        ],
+        "activites": [
+            {
+                "nom": "Chasse au trésor",
+                "description": "Un jeu interactif à travers l’événement.",
+                "prix": 90
+            },
+            {
+                "nom": "Conférence immersive",
+                "description": "Découvrez les dessous de l'événement avec un historien.",
+                "prix": 100
+            },
+            {
+                "nom": "Repas d’époque",
+                "description": "Dégustez un repas fidèle à l’époque visitée.",
+                "prix": 80
+            },
+            {
+                "nom": "Expérience sensorielle",
+                "description": "Plongez dans l'ambiance de l'époque avec sons, odeurs, et lumières.",
+                "prix": 120
+            }
         ]
-      }
-    ],
-    "activites": [
-      {
-        "nom": "Chasse au trésor",
-        "description": "Un jeu interactif à travers l’événement.",
-        "prix": 90
-      },
-      {
-        "nom": "Conférence immersive",
-        "description": "Découvrez les dessous de l'événement avec un historien.",
-        "prix": 100
-      },
-      {
-        "nom": "Repas d’époque",
-        "description": "Dégustez un repas fidèle à l’époque visitée.",
-        "prix": 80
-      },
-      {
-        "nom": "Expérience sensorielle",
-        "description": "Plongez dans l'ambiance de l'époque avec sons, odeurs, et lumières.",
-        "prix": 120
-      }
-    ]
-  },
-  {
-    "id": 12,
-    "titre": "Victoire de la France en Coupe du Monde",
-    "image": "12.png",
-    "duree": 5,
-    "specificites": "Voyage unique à Moscou,Russie lors de l'événement « Victoire de la France en Coupe du Monde ».",
-    "prix_total": 2958,
-    "etapes": [
-      {
-        "titre": "Immersion",
-        "date_arrivee": "2025-12-01",
-        "date_depart": "2025-12-03",
-        "duree": 2,
-        "position": {
-          "gps": "0.0000, 0.0000",
-          "nom_lieu": "Moscou,Russie"
-        },
-        "options": [
-          {
-            "type": "hébergement",
-            "nom": "Tente de l’époque",
-            "prix_par_personne": 90
-          },
-          {
-            "type": "expédition",
-            "nom": "Visite guidée historique",
-            "prix_par_personne": 180
-          }
+    },
+    {
+        "id": 12,
+        "titre": "Victoire de la France en Coupe du Monde",
+        "image": "12.png",
+        "duree": 5,
+        "specificites": "Voyage unique à Moscou,Russie lors de l'événement « Victoire de la France en Coupe du Monde ».",
+        "prix_total": 2958,
+        "etapes": [
+            {
+                "titre": "Immersion",
+                "date_arrivee": "2025-12-01",
+                "date_depart": "2025-12-03",
+                "duree": 2,
+                "position": {
+                    "gps": "0.0000, 0.0000",
+                    "nom_lieu": "Moscou,Russie"
+                },
+                "options": [
+                    {
+                        "type": "hébergement",
+                        "nom": "Tente de l’époque",
+                        "prix_par_personne": 90
+                    },
+                    {
+                        "type": "expédition",
+                        "nom": "Visite guidée historique",
+                        "prix_par_personne": 180
+                    }
+                ]
+            }
+        ],
+        "activites": [
+            {
+                "nom": "Repas d’époque",
+                "description": "Dégustez un repas fidèle à l’époque visitée.",
+                "prix": 80
+            },
+            {
+                "nom": "Conférence immersive",
+                "description": "Découvrez les dessous de l'événement avec un historien.",
+                "prix": 100
+            },
+            {
+                "nom": "Expérience sensorielle",
+                "description": "Plongez dans l'ambiance de l'époque avec sons, odeurs, et lumières.",
+                "prix": 120
+            },
+            {
+                "nom": "Chasse au trésor",
+                "description": "Un jeu interactif à travers l’événement.",
+                "prix": 90
+            }
         ]
-      }
-    ],
-    "activites": [
-      {
-        "nom": "Repas d’époque",
-        "description": "Dégustez un repas fidèle à l’époque visitée.",
-        "prix": 80
-      },
-      {
-        "nom": "Conférence immersive",
-        "description": "Découvrez les dessous de l'événement avec un historien.",
-        "prix": 100
-      },
-      {
-        "nom": "Expérience sensorielle",
-        "description": "Plongez dans l'ambiance de l'époque avec sons, odeurs, et lumières.",
-        "prix": 120
-      },
-      {
-        "nom": "Chasse au trésor",
-        "description": "Un jeu interactif à travers l’événement.",
-        "prix": 90
-      }
-    ]
-  },
-  {
-    "id": 13,
-    "titre": "Couronnement de Napoléon",
-    "image": "13.png",
-    "duree": 10,
-    "specificites": "Voyage unique à Paris,France lors de l'événement « Couronnement de Napoléon ».",
-    "prix_total": 3313,
-    "etapes": [
-      {
-        "titre": "Immersion",
-        "date_arrivee": "2025-12-01",
-        "date_depart": "2025-12-03",
-        "duree": 2,
-        "position": {
-          "gps": "0.0000, 0.0000",
-          "nom_lieu": "Paris,France"
-        },
-        "options": [
-          {
-            "type": "hébergement",
-            "nom": "Auberge temporelle",
-            "prix_par_personne": 120
-          },
-          {
-            "type": "activité",
-            "nom": "Immersion 360°",
-            "prix_par_personne": 100
-          }
+    },
+    {
+        "id": 13,
+        "titre": "Couronnement de Napoléon",
+        "image": "13.png",
+        "duree": 10,
+        "specificites": "Voyage unique à Paris,France lors de l'événement « Couronnement de Napoléon ».",
+        "prix_total": 3313,
+        "etapes": [
+            {
+                "titre": "Immersion",
+                "date_arrivee": "2025-12-01",
+                "date_depart": "2025-12-03",
+                "duree": 2,
+                "position": {
+                    "gps": "0.0000, 0.0000",
+                    "nom_lieu": "Paris,France"
+                },
+                "options": [
+                    {
+                        "type": "hébergement",
+                        "nom": "Auberge temporelle",
+                        "prix_par_personne": 120
+                    },
+                    {
+                        "type": "activité",
+                        "nom": "Immersion 360°",
+                        "prix_par_personne": 100
+                    }
+                ]
+            }
+        ],
+        "activites": [
+            {
+                "nom": "Photographie historique",
+                "description": "Prenez une photo souvenir dans un décor authentique.",
+                "prix": 60
+            },
+            {
+                "nom": "Expérience sensorielle",
+                "description": "Plongez dans l'ambiance de l'époque avec sons, odeurs, et lumières.",
+                "prix": 120
+            },
+            {
+                "nom": "Conférence immersive",
+                "description": "Découvrez les dessous de l'événement avec un historien.",
+                "prix": 100
+            },
+            {
+                "nom": "Chasse au trésor",
+                "description": "Un jeu interactif à travers l’événement.",
+                "prix": 90
+            }
         ]
-      }
-    ],
-    "activites": [
-      {
-        "nom": "Photographie historique",
-        "description": "Prenez une photo souvenir dans un décor authentique.",
-        "prix": 60
-      },
-      {
-        "nom": "Expérience sensorielle",
-        "description": "Plongez dans l'ambiance de l'époque avec sons, odeurs, et lumières.",
-        "prix": 120
-      },
-      {
-        "nom": "Conférence immersive",
-        "description": "Découvrez les dessous de l'événement avec un historien.",
-        "prix": 100
-      },
-      {
-        "nom": "Chasse au trésor",
-        "description": "Un jeu interactif à travers l’événement.",
-        "prix": 90
-      }
-    ]
-  },
-  {
-    "id": 14,
-    "titre": "Chute du mur de Berlin",
-    "image": "14.png",
-    "duree": 7,
-    "specificites": "Voyage unique à Berlin,Allemagne lors de l'événement « Chute du mur de Berlin ».",
-    "prix_total": 2484,
-    "etapes": [
-      {
-        "titre": "Immersion",
-        "date_arrivee": "2025-12-01",
-        "date_depart": "2025-12-03",
-        "duree": 2,
-        "position": {
-          "gps": "0.0000, 0.0000",
-          "nom_lieu": "Berlin,Allemagne"
-        },
-        "options": [
-          {
-            "type": "hébergement",
-            "nom": "Tente de l’époque",
-            "prix_par_personne": 90
-          },
-          {
-            "type": "activité",
-            "nom": "Immersion 360°",
-            "prix_par_personne": 100
-          }
+    },
+    {
+        "id": 14,
+        "titre": "Chute du mur de Berlin",
+        "image": "14.png",
+        "duree": 7,
+        "specificites": "Voyage unique à Berlin,Allemagne lors de l'événement « Chute du mur de Berlin ».",
+        "prix_total": 2484,
+        "etapes": [
+            {
+                "titre": "Immersion",
+                "date_arrivee": "2025-12-01",
+                "date_depart": "2025-12-03",
+                "duree": 2,
+                "position": {
+                    "gps": "0.0000, 0.0000",
+                    "nom_lieu": "Berlin,Allemagne"
+                },
+                "options": [
+                    {
+                        "type": "hébergement",
+                        "nom": "Tente de l’époque",
+                        "prix_par_personne": 90
+                    },
+                    {
+                        "type": "activité",
+                        "nom": "Immersion 360°",
+                        "prix_par_personne": 100
+                    }
+                ]
+            }
+        ],
+        "activites": [
+            {
+                "nom": "Conférence immersive",
+                "description": "Découvrez les dessous de l'événement avec un historien.",
+                "prix": 100
+            },
+            {
+                "nom": "Photographie historique",
+                "description": "Prenez une photo souvenir dans un décor authentique.",
+                "prix": 60
+            },
+            {
+                "nom": "Chasse au trésor",
+                "description": "Un jeu interactif à travers l’événement.",
+                "prix": 90
+            },
+            {
+                "nom": "Expérience sensorielle",
+                "description": "Plongez dans l'ambiance de l'époque avec sons, odeurs, et lumières.",
+                "prix": 120
+            }
         ]
-      }
-    ],
-    "activites": [
-      {
-        "nom": "Conférence immersive",
-        "description": "Découvrez les dessous de l'événement avec un historien.",
-        "prix": 100
-      },
-      {
-        "nom": "Photographie historique",
-        "description": "Prenez une photo souvenir dans un décor authentique.",
-        "prix": 60
-      },
-      {
-        "nom": "Chasse au trésor",
-        "description": "Un jeu interactif à travers l’événement.",
-        "prix": 90
-      },
-      {
-        "nom": "Expérience sensorielle",
-        "description": "Plongez dans l'ambiance de l'époque avec sons, odeurs, et lumières.",
-        "prix": 120
-      }
-    ]
-  },
-  {
-    "id": 15,
-    "titre": "Premier vol des frères Wright",
-    "image": "15.png",
-    "duree": 9,
-    "specificites": "Voyage unique à Kitty Hawk,États-Unis lors de l'événement « Premier vol des frères Wright ».",
-    "prix_total": 2281,
-    "etapes": [
-      {
-        "titre": "Immersion",
-        "date_arrivee": "2025-12-01",
-        "date_depart": "2025-12-03",
-        "duree": 2,
-        "position": {
-          "gps": "0.0000, 0.0000",
-          "nom_lieu": "Kitty Hawk,États-Unis"
-        },
-        "options": [
-          {
-            "type": "expédition",
-            "nom": "Visite guidée historique",
-            "prix_par_personne": 180
-          },
-          {
-            "type": "activité",
-            "nom": "Immersion 360°",
-            "prix_par_personne": 100
-          }
+    },
+    {
+        "id": 15,
+        "titre": "Premier vol des frères Wright",
+        "image": "15.png",
+        "duree": 9,
+        "specificites": "Voyage unique à Kitty Hawk,États-Unis lors de l'événement « Premier vol des frères Wright ».",
+        "prix_total": 2281,
+        "etapes": [
+            {
+                "titre": "Immersion",
+                "date_arrivee": "2025-12-01",
+                "date_depart": "2025-12-03",
+                "duree": 2,
+                "position": {
+                    "gps": "0.0000, 0.0000",
+                    "nom_lieu": "Kitty Hawk,États-Unis"
+                },
+                "options": [
+                    {
+                        "type": "expédition",
+                        "nom": "Visite guidée historique",
+                        "prix_par_personne": 180
+                    },
+                    {
+                        "type": "activité",
+                        "nom": "Immersion 360°",
+                        "prix_par_personne": 100
+                    }
+                ]
+            }
+        ],
+        "activites": [
+            {
+                "nom": "Repas d’époque",
+                "description": "Dégustez un repas fidèle à l’époque visitée.",
+                "prix": 80
+            },
+            {
+                "nom": "Photographie historique",
+                "description": "Prenez une photo souvenir dans un décor authentique.",
+                "prix": 60
+            },
+            {
+                "nom": "Chasse au trésor",
+                "description": "Un jeu interactif à travers l’événement.",
+                "prix": 90
+            },
+            {
+                "nom": "Conférence immersive",
+                "description": "Découvrez les dessous de l'événement avec un historien.",
+                "prix": 100
+            }
         ]
-      }
-    ],
-    "activites": [
-      {
-        "nom": "Repas d’époque",
-        "description": "Dégustez un repas fidèle à l’époque visitée.",
-        "prix": 80
-      },
-      {
-        "nom": "Photographie historique",
-        "description": "Prenez une photo souvenir dans un décor authentique.",
-        "prix": 60
-      },
-      {
-        "nom": "Chasse au trésor",
-        "description": "Un jeu interactif à travers l’événement.",
-        "prix": 90
-      },
-      {
-        "nom": "Conférence immersive",
-        "description": "Découvrez les dessous de l'événement avec un historien.",
-        "prix": 100
-      }
-    ]
-  },
-  {
-    "id": 16,
-    "titre": "Discours \"I Have a Dream\"",
-    "image": "16.png",
-    "duree": 7,
-    "specificites": "Voyage unique à Washington D.C.,États-Unis lors de l'événement « Discours \"I Have a Dream\" ».",
-    "prix_total": 1525,
-    "etapes": [
-      {
-        "titre": "Immersion",
-        "date_arrivee": "2025-12-01",
-        "date_depart": "2025-12-03",
-        "duree": 2,
-        "position": {
-          "gps": "0.0000, 0.0000",
-          "nom_lieu": "Washington D.C.,États-Unis"
-        },
-        "options": [
-          {
-            "type": "hébergement",
-            "nom": "Tente de l’époque",
-            "prix_par_personne": 90
-          },
-          {
-            "type": "expédition",
-            "nom": "Visite guidée historique",
-            "prix_par_personne": 180
-          }
+    },
+    {
+        "id": 16,
+        "titre": "Discours \"I Have a Dream\"",
+        "image": "16.png",
+        "duree": 7,
+        "specificites": "Voyage unique à Washington D.C.,États-Unis lors de l'événement « Discours \"I Have a Dream\" ».",
+        "prix_total": 1525,
+        "etapes": [
+            {
+                "titre": "Immersion",
+                "date_arrivee": "2025-12-01",
+                "date_depart": "2025-12-03",
+                "duree": 2,
+                "position": {
+                    "gps": "0.0000, 0.0000",
+                    "nom_lieu": "Washington D.C.,États-Unis"
+                },
+                "options": [
+                    {
+                        "type": "hébergement",
+                        "nom": "Tente de l’époque",
+                        "prix_par_personne": 90
+                    },
+                    {
+                        "type": "expédition",
+                        "nom": "Visite guidée historique",
+                        "prix_par_personne": 180
+                    }
+                ]
+            }
+        ],
+        "activites": [
+            {
+                "nom": "Expérience sensorielle",
+                "description": "Plongez dans l'ambiance de l'époque avec sons, odeurs, et lumières.",
+                "prix": 120
+            },
+            {
+                "nom": "Chasse au trésor",
+                "description": "Un jeu interactif à travers l’événement.",
+                "prix": 90
+            },
+            {
+                "nom": "Repas d’époque",
+                "description": "Dégustez un repas fidèle à l’époque visitée.",
+                "prix": 80
+            },
+            {
+                "nom": "Photographie historique",
+                "description": "Prenez une photo souvenir dans un décor authentique.",
+                "prix": 60
+            }
         ]
-      }
-    ],
-    "activites": [
-      {
-        "nom": "Expérience sensorielle",
-        "description": "Plongez dans l'ambiance de l'époque avec sons, odeurs, et lumières.",
-        "prix": 120
-      },
-      {
-        "nom": "Chasse au trésor",
-        "description": "Un jeu interactif à travers l’événement.",
-        "prix": 90
-      },
-      {
-        "nom": "Repas d’époque",
-        "description": "Dégustez un repas fidèle à l’époque visitée.",
-        "prix": 80
-      },
-      {
-        "nom": "Photographie historique",
-        "description": "Prenez une photo souvenir dans un décor authentique.",
-        "prix": 60
-      }
-    ]
-  },
-  {
-    "id": 17,
-    "titre": "Grande Pyramide en construction",
-    "image": "17.png",
-    "duree": 7,
-    "specificites": "Voyage unique à Gizeh,Égypte lors de l'événement « Grande Pyramide en construction ».",
-    "prix_total": 2522,
-    "etapes": [
-      {
-        "titre": "Immersion",
-        "date_arrivee": "2025-12-01",
-        "date_depart": "2025-12-03",
-        "duree": 2,
-        "position": {
-          "gps": "0.0000, 0.0000",
-          "nom_lieu": "Gizeh,Égypte"
-        },
-        "options": [
-          {
-            "type": "hébergement",
-            "nom": "Auberge temporelle",
-            "prix_par_personne": 120
-          },
-          {
-            "type": "expédition",
-            "nom": "Visite guidée historique",
-            "prix_par_personne": 180
-          }
+    },
+    {
+        "id": 17,
+        "titre": "Grande Pyramide en construction",
+        "image": "17.png",
+        "duree": 7,
+        "specificites": "Voyage unique à Gizeh,Égypte lors de l'événement « Grande Pyramide en construction ».",
+        "prix_total": 2522,
+        "etapes": [
+            {
+                "titre": "Immersion",
+                "date_arrivee": "2025-12-01",
+                "date_depart": "2025-12-03",
+                "duree": 2,
+                "position": {
+                    "gps": "0.0000, 0.0000",
+                    "nom_lieu": "Gizeh,Égypte"
+                },
+                "options": [
+                    {
+                        "type": "hébergement",
+                        "nom": "Auberge temporelle",
+                        "prix_par_personne": 120
+                    },
+                    {
+                        "type": "expédition",
+                        "nom": "Visite guidée historique",
+                        "prix_par_personne": 180
+                    }
+                ]
+            }
+        ],
+        "activites": [
+            {
+                "nom": "Photographie historique",
+                "description": "Prenez une photo souvenir dans un décor authentique.",
+                "prix": 60
+            },
+            {
+                "nom": "Conférence immersive",
+                "description": "Découvrez les dessous de l'événement avec un historien.",
+                "prix": 100
+            },
+            {
+                "nom": "Chasse au trésor",
+                "description": "Un jeu interactif à travers l’événement.",
+                "prix": 90
+            },
+            {
+                "nom": "Expérience sensorielle",
+                "description": "Plongez dans l'ambiance de l'époque avec sons, odeurs, et lumières.",
+                "prix": 120
+            }
         ]
-      }
-    ],
-    "activites": [
-      {
-        "nom": "Photographie historique",
-        "description": "Prenez une photo souvenir dans un décor authentique.",
-        "prix": 60
-      },
-      {
-        "nom": "Conférence immersive",
-        "description": "Découvrez les dessous de l'événement avec un historien.",
-        "prix": 100
-      },
-      {
-        "nom": "Chasse au trésor",
-        "description": "Un jeu interactif à travers l’événement.",
-        "prix": 90
-      },
-      {
-        "nom": "Expérience sensorielle",
-        "description": "Plongez dans l'ambiance de l'époque avec sons, odeurs, et lumières.",
-        "prix": 120
-      }
-    ]
-  },
-  {
-    "id": 18,
-    "titre": "Inauguration de la Tour Eiffel",
-    "image": "18.png",
-    "duree": 10,
-    "specificites": "Voyage unique à Paris,France lors de l'événement « Inauguration de la Tour Eiffel ».",
-    "prix_total": 1781,
-    "etapes": [
-      {
-        "titre": "Immersion",
-        "date_arrivee": "2025-12-01",
-        "date_depart": "2025-12-03",
-        "duree": 2,
-        "position": {
-          "gps": "0.0000, 0.0000",
-          "nom_lieu": "Paris,France"
-        },
-        "options": [
-          {
-            "type": "activité",
-            "nom": "Immersion 360°",
-            "prix_par_personne": 100
-          },
-          {
-            "type": "hébergement",
-            "nom": "Tente de l’époque",
-            "prix_par_personne": 90
-          }
+    },
+    {
+        "id": 18,
+        "titre": "Inauguration de la Tour Eiffel",
+        "image": "18.png",
+        "duree": 10,
+        "specificites": "Voyage unique à Paris,France lors de l'événement « Inauguration de la Tour Eiffel ».",
+        "prix_total": 1781,
+        "etapes": [
+            {
+                "titre": "Immersion",
+                "date_arrivee": "2025-12-01",
+                "date_depart": "2025-12-03",
+                "duree": 2,
+                "position": {
+                    "gps": "0.0000, 0.0000",
+                    "nom_lieu": "Paris,France"
+                },
+                "options": [
+                    {
+                        "type": "activité",
+                        "nom": "Immersion 360°",
+                        "prix_par_personne": 100
+                    },
+                    {
+                        "type": "hébergement",
+                        "nom": "Tente de l’époque",
+                        "prix_par_personne": 90
+                    }
+                ]
+            }
+        ],
+        "activites": [
+            {
+                "nom": "Chasse au trésor",
+                "description": "Un jeu interactif à travers l’événement.",
+                "prix": 90
+            },
+            {
+                "nom": "Repas d’époque",
+                "description": "Dégustez un repas fidèle à l’époque visitée.",
+                "prix": 80
+            },
+            {
+                "nom": "Conférence immersive",
+                "description": "Découvrez les dessous de l'événement avec un historien.",
+                "prix": 100
+            },
+            {
+                "nom": "Expérience sensorielle",
+                "description": "Plongez dans l'ambiance de l'époque avec sons, odeurs, et lumières.",
+                "prix": 120
+            }
         ]
-      }
-    ],
-    "activites": [
-      {
-        "nom": "Chasse au trésor",
-        "description": "Un jeu interactif à travers l’événement.",
-        "prix": 90
-      },
-      {
-        "nom": "Repas d’époque",
-        "description": "Dégustez un repas fidèle à l’époque visitée.",
-        "prix": 80
-      },
-      {
-        "nom": "Conférence immersive",
-        "description": "Découvrez les dessous de l'événement avec un historien.",
-        "prix": 100
-      },
-      {
-        "nom": "Expérience sensorielle",
-        "description": "Plongez dans l'ambiance de l'époque avec sons, odeurs, et lumières.",
-        "prix": 120
-      }
-    ]
-  },
-  {
-    "id": 19,
-    "titre": "Bataille de Waterloo",
-    "image": "19.png",
-    "duree": 7,
-    "specificites": "Voyage unique à Waterloo,Belgique lors de l'événement « Bataille de Waterloo ».",
-    "prix_total": 1792,
-    "etapes": [
-      {
-        "titre": "Immersion",
-        "date_arrivee": "2025-12-01",
-        "date_depart": "2025-12-03",
-        "duree": 2,
-        "position": {
-          "gps": "0.0000, 0.0000",
-          "nom_lieu": "Waterloo,Belgique"
-        },
-        "options": [
-          {
-            "type": "hébergement",
-            "nom": "Tente de l’époque",
-            "prix_par_personne": 90
-          },
-          {
-            "type": "hébergement",
-            "nom": "Auberge temporelle",
-            "prix_par_personne": 120
-          }
+    },
+    {
+        "id": 19,
+        "titre": "Bataille de Waterloo",
+        "image": "19.png",
+        "duree": 7,
+        "specificites": "Voyage unique à Waterloo,Belgique lors de l'événement « Bataille de Waterloo ».",
+        "prix_total": 1792,
+        "etapes": [
+            {
+                "titre": "Immersion",
+                "date_arrivee": "2025-12-01",
+                "date_depart": "2025-12-03",
+                "duree": 2,
+                "position": {
+                    "gps": "0.0000, 0.0000",
+                    "nom_lieu": "Waterloo,Belgique"
+                },
+                "options": [
+                    {
+                        "type": "hébergement",
+                        "nom": "Tente de l’époque",
+                        "prix_par_personne": 90
+                    },
+                    {
+                        "type": "hébergement",
+                        "nom": "Auberge temporelle",
+                        "prix_par_personne": 120
+                    }
+                ]
+            }
+        ],
+        "activites": [
+            {
+                "nom": "Expérience sensorielle",
+                "description": "Plongez dans l'ambiance de l'époque avec sons, odeurs, et lumières.",
+                "prix": 120
+            },
+            {
+                "nom": "Repas d’époque",
+                "description": "Dégustez un repas fidèle à l’époque visitée.",
+                "prix": 80
+            },
+            {
+                "nom": "Conférence immersive",
+                "description": "Découvrez les dessous de l'événement avec un historien.",
+                "prix": 100
+            },
+            {
+                "nom": "Photographie historique",
+                "description": "Prenez une photo souvenir dans un décor authentique.",
+                "prix": 60
+            }
         ]
-      }
-    ],
-    "activites": [
-      {
-        "nom": "Expérience sensorielle",
-        "description": "Plongez dans l'ambiance de l'époque avec sons, odeurs, et lumières.",
-        "prix": 120
-      },
-      {
-        "nom": "Repas d’époque",
-        "description": "Dégustez un repas fidèle à l’époque visitée.",
-        "prix": 80
-      },
-      {
-        "nom": "Conférence immersive",
-        "description": "Découvrez les dessous de l'événement avec un historien.",
-        "prix": 100
-      },
-      {
-        "nom": "Photographie historique",
-        "description": "Prenez une photo souvenir dans un décor authentique.",
-        "prix": 60
-      }
-    ]
-  },
-  {
-    "id": 20,
-    "titre": "Proclamation de la République",
-    "image": "20.png",
-    "duree": 10,
-    "specificites": "Voyage unique à Paris,France lors de l'événement « Proclamation de la République ».",
-    "prix_total": 1374,
-    "etapes": [
-      {
-        "titre": "Immersion",
-        "date_arrivee": "2025-12-01",
-        "date_depart": "2025-12-03",
-        "duree": 2,
-        "position": {
-          "gps": "0.0000, 0.0000",
-          "nom_lieu": "Paris,France"
-        },
-        "options": [
-          {
-            "type": "hébergement",
-            "nom": "Tente de l’époque",
-            "prix_par_personne": 90
-          },
-          {
-            "type": "expédition",
-            "nom": "Visite guidée historique",
-            "prix_par_personne": 180
-          }
+    },
+    {
+        "id": 20,
+        "titre": "Proclamation de la République",
+        "image": "20.png",
+        "duree": 10,
+        "specificites": "Voyage unique à Paris,France lors de l'événement « Proclamation de la République ».",
+        "prix_total": 1374,
+        "etapes": [
+            {
+                "titre": "Immersion",
+                "date_arrivee": "2025-12-01",
+                "date_depart": "2025-12-03",
+                "duree": 2,
+                "position": {
+                    "gps": "0.0000, 0.0000",
+                    "nom_lieu": "Paris,France"
+                },
+                "options": [
+                    {
+                        "type": "hébergement",
+                        "nom": "Tente de l’époque",
+                        "prix_par_personne": 90
+                    },
+                    {
+                        "type": "expédition",
+                        "nom": "Visite guidée historique",
+                        "prix_par_personne": 180
+                    }
+                ]
+            }
+        ],
+        "activites": [
+            {
+                "nom": "Chasse au trésor",
+                "description": "Un jeu interactif à travers l’événement.",
+                "prix": 90
+            },
+            {
+                "nom": "Photographie historique",
+                "description": "Prenez une photo souvenir dans un décor authentique.",
+                "prix": 60
+            },
+            {
+                "nom": "Conférence immersive",
+                "description": "Découvrez les dessous de l'événement avec un historien.",
+                "prix": 100
+            },
+            {
+                "nom": "Repas d’époque",
+                "description": "Dégustez un repas fidèle à l’époque visitée.",
+                "prix": 80
+            }
         ]
-      }
-    ],
-    "activites": [
-      {
-        "nom": "Chasse au trésor",
-        "description": "Un jeu interactif à travers l’événement.",
-        "prix": 90
-      },
-      {
-        "nom": "Photographie historique",
-        "description": "Prenez une photo souvenir dans un décor authentique.",
-        "prix": 60
-      },
-      {
-        "nom": "Conférence immersive",
-        "description": "Découvrez les dessous de l'événement avec un historien.",
-        "prix": 100
-      },
-      {
-        "nom": "Repas d’époque",
-        "description": "Dégustez un repas fidèle à l’époque visitée.",
-        "prix": 80
-      }
-    ]
-  }
+    }
 ]
