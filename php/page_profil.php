@@ -77,20 +77,16 @@ fclose($fichier);
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../css/base.css" />
   <link rel="stylesheet" href="../css/page_profil.css" />
   <title>Mon profil</title>
 </head>
 <body>
   <header>
-    <nav>
-      <a href="./page_accueil.php">
-        <img src="../img/accueil_logo.svg" alt="Time to Travel" />
-      </a>
-      <div></div>
-    </nav>
+    <?php require_once './partials/nav.php'; ?>
   </header>
 
-  <div class="profil-container">
+  <div class="profil-container card">
     <h1>Mon profil</h1>
 
     <form id="profil" method="POST">
@@ -114,7 +110,7 @@ fclose($fichier);
 
       <?php if ($mode_edition): ?>
         <button type="submit" class="btn-primary">Enregistrer</button>
-        <a href="page_profil.php" class="btn-secondary">Annuler</a>
+        <a href="page_profil.php" class="btn-error">Annuler</a>
       <?php else: ?>
         <a href="page_profil.php?edit=true" class="btn-primary">Modifier mon profil</a>
       <?php endif; ?>

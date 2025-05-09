@@ -43,26 +43,17 @@ $control = md5($api_key . "#" . $transaction . "#" . $montant . "#" . $vendeur .
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/base.css">
     <link rel="stylesheet" href="../css/page_paiement.css">
     <title>Paiement - Time2Travel</title>
 </head>
 <body>
 
 <header>
-    <nav>
-        <a href="./page_accueil.php">
-            <img src="../img/accueil_logo.svg" alt="Time to Travel" />
-        </a>
-        <div>
-            <a href="./page_destination.html">Destination </a>
-            <a href="./page_panier.html">
-                <img src="../img/panier.png" alt="panier" class="icone-panier" />
-            </a>
-        </div>
-    </nav>
+    <?php require_once './partials/nav.php'; ?>
 </header>
 
-<div class="container">
+<div class="container card">
     <h2>Paiement sécurisé</h2>
 
     <div class="bubble" style="background-image: url('../img/<?= $voyage['image'] ?>');">

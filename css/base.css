@@ -3,8 +3,9 @@
 }
 
 body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f7fb;
   margin: 0;
-  padding: 0;
   min-height: 100vh;
 }
 
@@ -13,4 +14,181 @@ button {
   border: none;
   padding: 0;
   cursor: pointer;
+}
+
+header nav {
+  position: absolute;
+  z-index: 1;
+  background-color: #123964;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 20px;
+
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+header nav a {
+  text-decoration: none;
+  color: white;
+}
+
+header nav div a {
+  padding: 10px;
+  border-radius: 10px;
+
+  &:nth-child(5) {
+    position: relative;
+    color: #123964;
+    background: #ffffff;
+
+    &::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: #0002;
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+
+    &:hover::before {
+      opacity: 1;
+    }
+  }
+}
+
+header img {
+  width: 160px;
+  margin-top: 1px;
+}
+
+header nav .icone-panier {
+  width: 35px; /* Largeur */
+  height: auto; /* Hauteur  */
+  vertical-align: middle; /* Alignement vertical  */
+  transition: transform 0.3s ease;
+}
+
+header nav .icone-panier:hover {
+  transform: scale(1.2); /* zoom au survol */
+}
+
+/* survol boutton */
+
+header nav div a {
+  display: inline-block; /* nécessaire pour que le zoom fonctionne proprement */
+  transition: transform 0.3s ease; /* Animation fluide */
+}
+
+header nav div a:hover {
+  transform: scale(1.2); /* Zoom de 20% au survol */
+}
+
+
+/* Bulle de total à droite */
+.card {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="date"],
+input[type="file"],
+input[type="tel"],
+select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1em;
+  box-sizing: border-box;
+}
+
+input:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* ====== Champs du formulaire bien alignés ====== */
+.input-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+.input-group label {
+  font-weight: bold;
+  margin-bottom: 0.3rem;
+  align-self: flex-start; /* Assure que les labels restent bien à gauche */
+}
+
+/* ====== Boutons stylés ====== */
+.btn-primary {
+  display: inline-block;
+  text-decoration: none;
+  background-color: #007bff;
+  color: white;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  border: none;
+  padding: 10px 15px;
+  width: 100%;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 15px;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+/* ====== Boutons stylés ====== */
+.btn-secondary {
+  display: inline-block;
+  text-decoration: none;
+  color: #007bff;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  border: none;
+  padding: 10px 15px;
+  width: 100%;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 15px;
+}
+
+.btn-secondary:hover {
+  color: #0056b3;
+}
+
+.btn-error {
+  display: inline-block;
+  text-decoration: none;
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  width: 100%;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 10px;
+}
+
+.btn-error:hover {
+  background-color: #a71d2a;
 }

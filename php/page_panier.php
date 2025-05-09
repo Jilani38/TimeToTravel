@@ -15,24 +15,13 @@ $total = 0;
 <head>
   <meta charset="UTF-8">
   <title>Panier - Time2Travel</title>
+  <link rel="stylesheet" href="../css/base.css" />
   <link rel="stylesheet" href="../css/page_panier.css" />
 </head>
 <body>
 
 <header>
-  <nav>
-    <a href="./page_accueil.php">
-      <img src="../img/accueil_logo.svg" alt="Time to Travel" />
-    </a>
-
-    <div>
-      <a href="./page_de_recherche.php">Rechercher </a>
-      <a href="./page_a_propos.php">À propos de nous</a>
-      <a href="./page_profil.php">Mon profil</a>
-      <a href="./page_connexion.php">Connexion</a>
-      <a href="./page_inscription.php">Inscription</a>
-    </div>
-  </nav>
+  <?php require_once './partials/nav.php'; ?>
 </header>
 
 <div class="panier-container">
@@ -72,7 +61,7 @@ $total = 0;
 
   </div>
 
-  <div class="bulle-total">
+  <div class="card bulle-total">
     <h3>Détail de la commande</h3>
     <p><strong><?= count($panier) ?> voyage<?= count($panier) > 1 ? 's' : '' ?></strong> <span><?= $total ?> €</span></p>
     <hr>

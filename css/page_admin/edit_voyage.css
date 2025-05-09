@@ -28,19 +28,6 @@ table td {
   padding: 10px;
 }
 
-input[type="text"],
-input[type="email"],
-input[type="date"],
-input[type="file"],
-select {
-  width: 100%;
-  padding: 10px;
-  border-radius: 8px;
-  border: 1px solid #ccc;
-  font-size: 1em;
-  box-sizing: border-box;
-}
-
 img {
   max-width: 200px;
   margin-top: 10px;

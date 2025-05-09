@@ -1,58 +1,3 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f7fb;
-    margin: 0;
-    padding: 20px;
-  }
-
-  header nav {
-    position: absolute;
-    background-color: #123964;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-right: 20px;
-    
-    top: 0;
-    left: 0;
-    right: 0;
-  }
-  
-  header nav a {
-    text-decoration: none;
-    color: white;
-  }
-  
-  header nav div a {
-    padding: 10px;
-    border-radius: 10px;
-  
-    &:nth-child(4) {
-      position: relative;
-      color: #123964;
-      background: #ffffff;
-  
-      &::before {
-        content: "";
-        position: absolute;
-        inset: 0;
-        background: #0002;
-        opacity: 0;
-        transition: opacity 0.3s;
-      }
-  
-      &:hover::before {
-        opacity: 1;
-      }
-    }
-  }
-  
-  header img {
-    width: 150px;
-  }
-  
-  
-  
   /* Mise en page panier */
   .panier-container {
     margin-top: 50px;
@@ -139,12 +84,8 @@ body {
   
   /* Bulle de total à droite */
   .bulle-total {
-    background-color: #fff;
-    border-radius: 12px;
-    padding: 20px;
     margin-top: 70px;
     width: 300px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   }
   
   .bulle-total h3 {

@@ -1,92 +1,11 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f4f9;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    margin: 0;
 }
 
-header nav {
-    position: absolute;
-    z-index: 1;
-    
-    background-color: #123a644a;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-right: 20px;
-    
-    top: 0;
-    left: 0;
-    right: 0;
-  }
-  
-  header nav a {
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-  }
-  
-  header nav div a {
-    padding: 10px;
-    border-radius: 10px;
-  
-    &:nth-child(4) {
-      position: relative;
-      color: #123964;
-      background: #ffffff;
-  
-      &::before {
-        content: "";
-        position: absolute;
-        inset: 0;
-        background: #0002;
-        opacity: 0;
-        transition: opacity 0.3s;
-      }
-  
-      &:hover::before {
-        opacity: 1;
-      }
-    }
-  }
-  
-  header img {
-    width: 160px;
-    margin-top: 1px;
-  }
-
-  nav .icone-panier {
-    width: 35px;              /* Largeur */
-    height: auto;             /* Hauteur  */
-    vertical-align: middle;   /* Alignement vertical  */
-    transition: transform 0.3s ease;
-  }
-  
-  nav .icone-panier:hover {
-    transform: scale(1.2);    /* zoom au survol */
-  }
-  
-  /* survol boutton */
-  
-  header nav div a {
-    display: inline-block; /* nécessaire pour que le zoom fonctionne proprement */
-    transition: transform 0.3s ease; /* Animation fluide */
-  }
-  
-  header nav div a:hover {
-    transform: scale(1.2); /* Zoom de 20% au survol */
-  }
-  
-  
-
-
 .container {
-    background-color: #ffffff;
-    padding: 30px;
-    border-radius: 15px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
     width: 450px;
 }
 

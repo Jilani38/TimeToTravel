@@ -3,21 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/base.css" />
     <link rel="stylesheet" href="../css/page_recherche.css" />
     <title>Recherche</title>
   </head>
   <body>
     <header>
-      <nav>
-        <!-- <h1>Time to Travel</h1> -->
-        <a href="./page_accueil.php">
-          <img src="../img/accueil_logo.svg" alt="Time to Travel" />
-        </a>
-        <div>
-          <a href="./page_connexion.php">Connexion</a>
-          <a href="./page_inscription.php">Inscription</a>
-        </div>
-      </nav>
+      <?php require_once './partials/nav.php'; ?>
+    </header>
+    <form class="card">
       <h1>Où voulez vous aller ?</h1>
       <div class="input-group">
         <label>Voulez vous partir dans le passé ou le future ?</label>
@@ -44,7 +38,7 @@
       <input type="date" id="date_retour" name="date_retour" />
 
       <button type="submit" class="btn-primary">Valider</button>
-    </header>
+    </form>
   </body>
 </html>
 

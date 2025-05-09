@@ -77,30 +77,17 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Formulaire d'inscription</title>
+    <link rel="stylesheet" href="../css/base.css" />
     <link rel="stylesheet" href="../css/page_inscription.css" />
   </head>
 
   <body>
     <header>
-      <nav>
-        <!-- <h1>Time to Travel</h1> -->
-        <a href="./page_accueil.php">
-          <img src="../img/accueil_logo.svg" alt="Time to Travel" />
-        </a>
-
-        <div>
-          <a href="./page_de_recherche.php">Rechercher</a>
-          <a href="./page_admin/index.php">Admin</a>
-          <a href="./page_a_propos.php">À propos de nous</a>
-          <a href="./page_profil.php">Mon profil</a>
-          <a href="./page_connexion.php">Connexion</a>
-          <a href="./page_inscription.php">Inscription</a>
-        </div>
-      </nav>
+      <?php require_once './partials/nav.php' ?>
     </header>
 
-    <form action="page_inscription.php" method="post">
-      <legend>Inscris-toi !</legend>
+    <form action="page_inscription.php" method="post" class="card">
+      <h2>Inscris-toi !</h2>
 
       <div class="input-group">
         <label for="prenom">Prénom :</label>

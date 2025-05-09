@@ -38,11 +38,7 @@ $total = 0;
 <body>
 
 <header>
-  <nav>
-    <a href="./page_accueil.php">
-      <img src="../img/accueil_logo.svg" alt="Time to Travel" />
-    </a>
-  </nav>
+  <?php require_once './partials/nav.php'; ?>
 </header>
 
 <main class="panier-container">
