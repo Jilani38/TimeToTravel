@@ -2,6 +2,10 @@ body {
   display: flex;
   justify-content: center; /* Centre le contenu horizontalement */
   align-items: center; /* Centre le contenu verticalement */
+  background-image: url("../img/fondrecherche2.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   flex-direction: column;
   height: 100vh;
   overflow: hidden; /* Empêche le scroll si nécessaire */
