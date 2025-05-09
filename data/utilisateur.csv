@@ -4,3 +4,5 @@ id;prenom;nom;date_naissance;genre;email;motdepasse;date_inscription;derniere_co
 67eae99bab110;paul;lagrange;2003-12-23;Homme;paul@cy.fr;$2y$10$FQnOgcL5bCmiYvhEfY9QOuHaLFfeoxPSH/GO./WVZOJwx6xpM.R.q;2025-03-31;"2025-03-31 19:14:44";client;99999
 67eae9d6acd04;jade;mohamed;2007-01-01;Homme;jade@cy.fr;$2y$10$O4Dfg8seKOA6UZPoR1vTJu04rYrg3wfJw7Hxs5SvpcUh7oEKvmuRa;2025-03-31;"2025-03-31 19:15:50";admin;
 67eaea1b5c2a7;lea;sabathe;2003-12-23;Femme;lea@cy.fr;$2y$10$OJngQ/IW2Bg2UJn0wK/vzuCY4uWtkY2ZzIn9AupY0oSYaNybIe566;2025-03-31;;client;
+
+681dfd4d3d11f;charly;mario;2005-10-14;Homme;chachoubidoupouloulou@gmail.com;$2y$10$xI1Xcci1DLhF8LYEbJtyXucm79XtsBBut.ndAHjIODbvdNvB8WD.2;2025-05-09;"2025-05-09 13:11:49";admin;
