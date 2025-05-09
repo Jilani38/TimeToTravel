@@ -17,7 +17,11 @@
         Votre navigateur ne supporte pas la vidéo.
       </video>
       <?php require_once './partials/nav.php' ?>
-      <input type="search" placeholder="Rechercher" />
+     <form method="GET" action="./recherche.php" class="form-recherche">
+  <input type="search" name="q" placeholder="Rechercher un voyage..." />
+  <button type="submit">🔍</button>
+</form>
+
     </header>
     <main>
       <section id="choice">

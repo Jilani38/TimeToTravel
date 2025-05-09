@@ -234,3 +234,49 @@ header nav div a:hover {
   transform: scale(1.2); /* Zoom de 20% au survol */
 }
 
+
+/* nouvelle gestion de l'affichage de la barre de recherche*/
+
+.form-recherche {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.form-recherche input[type="search"] {
+  width: 50%;
+  height: 50px;
+  padding-left: 25px;
+  border-radius: 25px;
+  font-size: 20px;
+  background: transparent;
+  color: white;
+  border: 1px solid white;
+}
+
+.form-recherche input[type="search"]::placeholder {
+  color: white;
+}
+
+.form-recherche input[type="search"]:focus {
+  outline: 2px solid white;
+}
+
+.form-recherche button {
+  background-color: white;
+  color: #123964;
+  border: none;
+  border-radius: 25px;
+  padding: 12px 20px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.form-recherche button:hover {
+  background-color: #e0e0e0;
+}
+
