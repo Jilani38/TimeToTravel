@@ -59,9 +59,11 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
           <input type="email" id="email" name="email" required />
         </div>
 
-        <div class="input-group">
+        <div class="input-group input-password">
           <label for="motdepasse">Mot de passe :</label>
-          <input type="password" id="motdepasse" name="motdepasse" required />
+          <input type="password" id="motdepasse" name="motdepasse" maxlength="20" required />
+          <button type="button" class="toggle-password" title="Afficher/Masquer le mot de passe">👁️</button>
+          <span class="char-count">0 / 20</span>
         </div>
 
         <button type="submit" class="btn-primary">Se connecter</button>
@@ -73,5 +75,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         <a href="./page_admin/index.php">Admin</a>
       </p>
     </div>
+
+    <script src="../js/form_validation.js"></script>
   </body>
 </html>

@@ -97,18 +97,24 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         <input type="tel" id="telephone" name="telephone" required />
       </div>
 
-      <div class="input-group">
+      <div class="input-group input-password">
         <label for="motdepasse">Mot de passe :</label>
-        <input type="password" id="motdepasse" name="motdepasse" required />
+        <input type="password" id="motdepasse" name="motdepasse" maxlength="20" required />
+        <button type="button" class="toggle-password" title="Afficher/Masquer">👁️</button>
+        <span class="char-count">0 / 20</span>
       </div>
 
-      <div class="input-group">
+      <div class="input-group input-password">
         <label for="confirm_mdp">Confirmer mot de passe :</label>
-        <input type="password" id="confirm_mdp" name="confirm_mdp" required />
+        <input type="password" id="confirm_mdp" name="confirm_mdp" maxlength="20" required />
+        <button type="button" class="toggle-password" title="Afficher/Masquer">👁️</button>
+        <span class="char-count">0 / 20</span>
       </div>
 
       <button type="submit" class="btn-primary">Créer mon compte</button>
       <a href="page_connexion.php" class="btn-secondary">J'ai déjà un compte</a>
     </form>
+
+    <script src="../js/form_validation.js"></script>
   </body>
 </html>

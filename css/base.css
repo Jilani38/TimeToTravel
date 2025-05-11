@@ -192,3 +192,41 @@ input:focus {
 .btn-error:hover {
   background-color: #a71d2a;
 }
+
+
+/*pour la partie mdp des form*/
+
+.input-password {
+  position: relative;
+  width: 100%;
+}
+
+.input-password input {
+  width: 100%;
+  padding-right: 80px; /* Laisse bien la place */
+  box-sizing: border-box;
+}
+
+.input-password .toggle-password {
+  position: absolute;
+  right: 50px;
+  margin-top: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  color: #123964;
+  padding: 0;
+}
+
+.input-password .char-count {
+  position: absolute;
+  margin-top: 12px;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 12px;
+  color: #555;
+}

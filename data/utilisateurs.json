@@ -6,10 +6,10 @@
         "date_naissance": "2004-08-30",
         "genre": "Homme",
         "email": "jilani@cy.fr",
-        "motdepasse": "$2y$10$K2woU8FzeaCR1te8Nt5Sh.9m8p.KUD60zhnOwoAGGaZwXNloZtULe",
+        "motdepasse": "$2y$10$WegyZTDNYsmbuvviME\/wr.9ULjrjJ\/LPNpdOeoZPyrWw9LJ\/yoEhO",
         "telephone": "0641104600",
         "date_inscription": "2025-03-31",
-        "derniere_connexion": "2025-05-11 22:28:54",
+        "derniere_connexion": "2025-05-11 23:21:31",
         "role": "admin",
         "commandes": [
             {
@@ -294,5 +294,19 @@
                 "total": 17610
             }
         ]
+    },
+    {
+        "id": "682130a71692d",
+        "prenom": "ff",
+        "nom": "z",
+        "date_naissance": "2025-05-21",
+        "genre": "Homme",
+        "email": "ff@cy.fr",
+        "motdepasse": "$2y$10$QOIzt7RLNiZMae27j41xTevoqNpYnJLRCfSDzJsnwtlDCxiZ.fK\/q",
+        "telephone": "0641104600",
+        "date_inscription": "2025-05-11",
+        "derniere_connexion": "2025-05-11 23:20:58",
+        "role": "admin",
+        "commandes": []
     }
 ]

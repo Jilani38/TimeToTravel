@@ -1,69 +1,116 @@
 body {
-  display: flex;
-  justify-content: center; /* Centre le contenu horizontalement */
-  align-items: center; /* Centre le contenu verticalement */
-  background-image: url("../img/fondrecherche2.png");
+  /*background-image: url("../img/fondrecherche2.png");*/
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  flex-direction: column;
-  height: 100vh;
-  overflow: hidden; /* Empêche le scroll si nécessaire */
+  color: white;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-/* ====== Barre et Logo ====== */
 main {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 5rem;
+  padding: 30px;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  max-width: 1200px;
+  margin: 50px auto;
 }
 
-.radio-group {
-  display: flex;
-  margin-left: 93px;
-  gap: 20px; /* Ajoute un espace entre les boutons radio */
-  align-items: center;
-}
-
-.selection-container {
-  margin-top: 20px; /* Ajoute un espace entre le texte et le champ de sélection */
-}
-
-/* select {
-  width: 50%;
-  padding: 10px;
-  font-size: 18px;
-  border-radius: 5px;
-  border: 1px solid white;
-  background: transparent;
+h1 {
   text-align: center;
-} */
+  margin-bottom: 30px;
+}
 
-/* select option {
-  color: black;
-} */
+.filtres {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 30px;
+}
 
-/* label {
-  font-size: 18px;
-  margin-top: 15px;
-  margin-bottom: 10px;
-  display: block;
-  color: white;
-} */
-
-/* input[type="date"] {
-  width: 50%;
+.filtres select,
+.filtres input[type="search"],
+.filtres button {
   padding: 10px;
-  font-size: 18px;
-  border-radius: 5px;
+  font-size: 1em;
+  border-radius: 6px;
   border: 1px solid white;
-  background: transparent;
+  background: rgba(255, 255, 255, 0.1);
   color: white;
+}
+
+.filtres select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.filtres select option {
+  background-color: #123964;
+  color: white;
+}
+
+.filtres button:hover,
+.actions-tri button:hover {
+  background-color: #123964;
+  color: white;
+}
+
+.resultats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.carte-voyage {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 15px;
   text-align: center;
-} */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  transition: transform 0.3s;
+}
 
-/* input[type="date"]::-webkit-calendar-picker-indicator {
-  filter: invert(1);
-} */
+.carte-voyage:hover {
+  transform: scale(1.05);
+}
 
+.carte-voyage img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.actions-tri {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.actions-tri button {
+  padding: 8px 15px;
+  background: white;
+  color: #123964;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+  font-weight: bold;
+}
+
+#reset-filtres {
+  background-color: #e63946;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#reset-filtres:hover {
+  background-color: #a8231a;
+}

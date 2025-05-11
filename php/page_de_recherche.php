@@ -1,44 +1,57 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/base.css" />
-    <link rel="stylesheet" href="../css/page_recherche.css" />
-    <title>Recherche</title>
-  </head>
-  <body>
-    <header>
-      <?php require_once './partials/nav.php'; ?>
-    </header>
-    <form class="card">
-      <h1>Où voulez vous aller ?</h1>
-      <div class="input-group">
-        <label>Voulez vous partir dans le passé ou le future ?</label>
-        <div class="radio-group">
-          <label for="temp">Passé</label>
-          <input type="radio" id="temp" name="temp" value="passé" checked />
-
-          <label for="temp">Future</label>
-          <input type="radio" id="temp" name="temp" value="future" />
-        </div>
-      </div>
-      <label>Choisissez votre destination : </label>
-      <select name="destination">
-        <option value="paris 1789">Paris 1789 : Révolution Française</option>
-        <option value="amerique 1492">
-          Amerique 1492 : Découverte de l'Amérique
-        </option>
-        <option value="rome 476">Rome 476 : La chute de l'Empire Romain</option>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/page_recherche.css">
+  <title>Recherche de voyages temporels</title>
+</head>
+<body>
+  <header>
+    <?php require_once './partials/nav.php'; ?>
+  </header>
+  <main>
+    <h1>Recherchez votre aventure temporelle</h1>
+    <div class="filtres">
+      <input type="search" id="recherche-input" placeholder="Rechercher un voyage...">
+      <select id="filtre-type-temporel">
+        <option value="">Passé & Futur</option>
+        <option value="passé">Passé</option>
+        <option value="futur">Futur</option>
       </select>
-      <br />
-      <label for="date_aller">Date de depart : </label>
-      <input type="date" id="date_aller" name="date_aller" />
-      <label for="date_retour">Date de retour : </label>
-      <input type="date" id="date_retour" name="date_retour" />
+      <select id="filtre-prix">
+        <option value="">Tous les prix</option>
+        <option value="1">-1000€</option>
+        <option value="2">1000€ - 2000€</option>
+        <option value="3">+2000€</option>
+      </select>
+      <select id="filtre-duree">
+        <option value="">Toutes les durées</option>
+        <option value="1">Court (&le;4j)</option>
+        <option value="2">Moyen (5-7j)</option>
+        <option value="3">Long (&ge;8j)</option>
+      </select>
+      <select id="filtre-note">
+        <option value="">Toutes les notes</option>
+        <option value="4">4+ étoiles</option>
+        <option value="3">3+ étoiles</option>
+      </select>
+      <button id="reset-filtres">Reset</button>
+    </div>
 
-      <button type="submit" class="btn-primary">Valider</button>
-    </form>
-  </body>
+    <div class="actions-tri">
+      <button data-tri="prix">Trier par Prix</button>
+      <button data-tri="duree">Trier par Durée</button>
+      <button data-tri="note">Trier par Note</button>
+      <button data-tri="popularite">Trier par Popularité</button>
+    </div>
+
+    <div class="resultats" id="resultats">
+      <!-- Les cartes de voyages seront injectées ici par JS -->
+    </div>
+  </main>
+
+  <script src="../js/recherche.js"></script>
+</body>
 </html>
-
