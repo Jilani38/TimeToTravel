@@ -2,7 +2,7 @@
 session_start();
 require('getapikey.php');
 
-if (!isset($_GET['status']) || !isset($_GET['transaction']) || !isset($_GET['montant']) || !isset($_GET['vendeur']) || !isset($_GET['control'])) {
+if (!isset($_GET['status'], $_GET['transaction'], $_GET['montant'], $_GET['vendeur'], $_GET['control'])) {
   die("Erreur : paramètres manquants.");
 }
 
@@ -23,7 +23,59 @@ $paiement_accepte = ($statut === "accepted");
 $voyages = json_decode(file_get_contents("../data/voyages.json"), true);
 $panier = $_SESSION['panier'] ?? [];
 $total = 0;
+
+// Enregistrement dans utilisateurs.json si paiement ok
+if ($paiement_accepte && isset($_SESSION['id']) && !empty($panier)) {
+  $utilisateurs = json_decode(file_get_contents("../data/utilisateurs.json"), true);
+  foreach ($utilisateurs as &$u) {
+    if ($u['id'] === $_SESSION['id']) {
+      if (!isset($u['commandes'])) $u['commandes'] = [];
+
+      foreach ($panier as $reservation) {
+        $id = $reservation['id'];
+        $quantite = $reservation['nombre'];
+        $options_selectionnees = $reservation['options'] ?? [];
+
+        $voyage = array_filter($voyages, fn($v) => $v['id'] == $id);
+        $voyage = reset($voyage);
+
+        $prix_options = 0;
+        $options_detail = [];
+
+        foreach ($options_selectionnees as $opt_index) {
+          if (isset($voyage['options'][$opt_index])) {
+            $opt = $voyage['options'][$opt_index];
+            $prix_options += $opt['prix_par_personne'];
+            $options_detail[] = [
+              'type' => $opt['type'],
+              'nom' => $opt['nom'],
+              'prix_par_personne' => $opt['prix_par_personne']
+            ];
+          }
+        }
+
+        $prix_unitaire = $voyage['prix_base'] + $prix_options;
+        $sous_total = $prix_unitaire * $quantite;
+        $total += $sous_total;
+
+        $u['commandes'][] = [
+          'titre' => $voyage['titre'],
+          'date' => date("Y-m-d"),
+          'date_depart' => $voyage['etapes'][0]['date_arrivee'] ?? date("Y-m-d"),
+          'voyageurs' => $quantite,
+          'options' => $options_detail,
+          'total' => $sous_total
+        ];
+      }
+      break;
+    }
+  }
+  unset($u);
+  file_put_contents("../data/utilisateurs.json", json_encode($utilisateurs, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE));
+  unset($_SESSION['panier']);
+}
 ?>
+
 
 <!DOCTYPE html>
 <html lang="fr">
@@ -113,7 +165,6 @@ $total = 0;
 
           $prix_unitaire = $voyage['prix_base'] + $prix_options;
           $sous_total = $prix_unitaire * $quantite;
-          $total += $sous_total;
         ?>
         <div class="carte-voyage">
           <div class="entete">
@@ -145,9 +196,3 @@ $total = 0;
 
 </body>
 </html>
-
-<?php
-if ($paiement_accepte) {
-  unset($_SESSION['panier']);
-}
-?>

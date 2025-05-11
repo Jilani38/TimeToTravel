@@ -2,42 +2,33 @@
 session_start();
 
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
-  
   $email = trim($_POST['email']);
   $motdepasse = $_POST['motdepasse'];
-  $chemin_csv = "../data/utilisateur.csv";
+  $fichier = "../data/utilisateurs.json";
 
-  if (!file_exists($chemin_csv)) {
-    die("Le fichier CSV n'existe pas !");
+  if (!file_exists($fichier)) {
+    die("Fichier utilisateurs non trouvé.");
   }
 
-  $fichier = fopen($chemin_csv, 'r+');
-  $utilisateurs = [];
-
+  $utilisateurs = json_decode(file_get_contents($fichier), true);
   $connecte = false;
 
-  while (($ligne = fgetcsv($fichier, 1000, ';')) !== FALSE) {
-    if ($ligne[5] === $email && password_verify($motdepasse, $ligne[6])) {
+  foreach ($utilisateurs as &$u) {
+    if ($u['email'] === $email && password_verify($motdepasse, $u['motdepasse'])) {
       $connecte = true;
-      $_SESSION['id'] = $ligne[0];
-      $_SESSION['prenom'] = $ligne[1];
-      $_SESSION['nom'] = $ligne[2];
-      $_SESSION['role'] = $ligne[9];
 
-      $ligne[8] = date("Y-m-d H:i:s");
+      $_SESSION['id'] = $u['id'];
+      $_SESSION['prenom'] = $u['prenom'];
+      $_SESSION['nom'] = $u['nom'];
+      $_SESSION['role'] = $u['role'];
+
+      $u['derniere_connexion'] = date("Y-m-d H:i:s");
+      break;
     }
-    $utilisateurs[] = $ligne;
   }
-
-  rewind($fichier);
-  ftruncate($fichier, 0);
-  foreach ($utilisateurs as $utilisateur) {
-    fputcsv($fichier, $utilisateur, ';');
-  }
-
-  fclose($fichier);
 
   if ($connecte) {
+    file_put_contents($fichier, json_encode($utilisateurs, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE));
     header("Location: page_accueil.php");
     exit();
   } else {
@@ -45,9 +36,6 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
   }
 }
 ?>
-
-
-
 <!doctype html>
 <html lang="fr">
   <head>

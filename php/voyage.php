@@ -83,6 +83,9 @@ if (!$voyage) {
 
         <p><strong>Prix total estimé :</strong> <span id="prix-total"><?= $voyage['prix_base'] ?> €</span></p>
 
+        <label for="date_depart">Date de départ :</label>
+        <input type="date" name="date_depart" id="date_depart" min="<?= date('Y-m-d') ?>" required>
+
         <label for="nombre">Nombre de voyageurs :</label>
         <input type="number" name="nombre" id="nombre" value="1" min="1">
 

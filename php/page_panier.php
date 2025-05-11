@@ -35,6 +35,7 @@ $total = 0;
         <?php
           $id = $reservation['id'];
           $quantite = $reservation['nombre'];
+          $date_depart = $reservation['date_depart'] ?? 'Non spécifiée';
           $options_selectionnees = $reservation['options'] ?? [];
 
           $voyage = array_filter($voyages, fn($v) => $v['id'] == $id);
@@ -63,6 +64,7 @@ $total = 0;
           <div class="details">
             <p><strong>Lieu :</strong> <?= htmlspecialchars($voyage['lieu']) ?></p>
             <p><strong>Durée :</strong> <?= $voyage['duree'] ?> jours</p>
+            <p><strong>Date de départ :</strong> <?= htmlspecialchars($date_depart) ?></p>
             <p><strong>Quantité :</strong> <?= $quantite ?> voyageur<?= $quantite > 1 ? 's' : '' ?></p>
             <?php if (!empty($texte_options)): ?>
               <p><strong>Options :</strong><br><?= implode('<br>', $texte_options) ?></p>

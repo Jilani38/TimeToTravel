@@ -14,7 +14,7 @@
     <?php endif; ?>
 
     <?php if (isset($_SESSION['id'])): ?>
-      <a href="./page_profil.php">Mon profil</a>
+      <a href="./dashboard.php">Mon profil</a>
       <a href="./deconnexion.php">Déconnexion</a>
       <a href="./page_panier.php">
         <img src="../img/panier_blanc.png" alt="panier" class="icone-panier" />

@@ -1,0 +1,139 @@
+[
+    {
+        "id": "67eae8e326bf3",
+        "prenom": "jilani",
+        "nom": "mohamed",
+        "date_naissance": "2004-08-30",
+        "genre": "Homme",
+        "email": "jilani@cy.fr",
+        "motdepasse": "$2y$10$K2woU8FzeaCR1te8Nt5Sh.9m8p.KUD60zhnOwoAGGaZwXNloZtULe",
+        "telephone": "0641104600",
+        "date_inscription": "2025-03-31",
+        "derniere_connexion": "2025-05-11 20:27:49",
+        "role": "admin",
+        "commandes": [
+            {
+                "titre": "Tokyo flottante",
+                "date": "2025-05-11",
+                "date_depart": "2025-05-11",
+                "voyageurs": 3,
+                "options": [
+                    {
+                        "type": "hébergement",
+                        "nom": "Tente de l’époque",
+                        "prix_par_personne": 90
+                    },
+                    {
+                        "type": "repas",
+                        "nom": "Repas typique de l’époque",
+                        "prix_par_personne": 75
+                    },
+                    {
+                        "type": "souvenir",
+                        "nom": "Objet d’époque discret",
+                        "prix_par_personne": 60
+                    }
+                ],
+                "total": 6876
+            }
+        ]
+    },
+    {
+        "id": "67eae964cda48",
+        "prenom": "francisco",
+        "nom": "tornos",
+        "date_naissance": "2003-12-23",
+        "genre": "Homme",
+        "email": "fran@cy.fr",
+        "motdepasse": "$2y$10$puDlyY9afvOp.lzzl6ckiua58l5vG0pov9gVN7OssM.uN7Sh6o7\/e",
+        "telephone": "33345",
+        "date_inscription": "2025-03-31",
+        "derniere_connexion": "2025-03-31 19:13:50",
+        "role": "client",
+        "commandes": []
+    },
+    {
+        "id": "67eae99bab110",
+        "prenom": "paul",
+        "nom": "lagrange",
+        "date_naissance": "2003-12-23",
+        "genre": "Homme",
+        "email": "paul@cy.fr",
+        "motdepasse": "$2y$10$FQnOgcL5bCmiYvhEfY9QOuHaLFfeoxPSH\/GO.\/WVZOJwx6xpM.R.q",
+        "telephone": "99999",
+        "date_inscription": "2025-03-31",
+        "derniere_connexion": "2025-03-31 19:14:44",
+        "role": "client",
+        "commandes": []
+    },
+    {
+        "id": "67eae9d6acd04",
+        "prenom": "jade",
+        "nom": "mohamed",
+        "date_naissance": "2007-01-01",
+        "genre": "Homme",
+        "email": "jade@cy.fr",
+        "motdepasse": "$2y$10$O4Dfg8seKOA6UZPoR1vTJu04rYrg3wfJw7Hxs5SvpcUh7oEKvmuRa",
+        "telephone": "",
+        "date_inscription": "2025-03-31",
+        "derniere_connexion": "2025-03-31 19:15:50",
+        "role": "admin",
+        "commandes": []
+    },
+    {
+        "id": "67eaea1b5c2a7",
+        "prenom": "lea",
+        "nom": "sabathe",
+        "date_naissance": "2003-12-23",
+        "genre": "Femme",
+        "email": "lea@cy.fr",
+        "motdepasse": "$2y$10$OJngQ\/IW2Bg2UJn0wK\/vzuCY4uWtkY2ZzIn9AupY0oSYaNybIe566",
+        "telephone": "",
+        "date_inscription": "2025-03-31",
+        "derniere_connexion": "",
+        "role": "client",
+        "commandes": []
+    },
+    {
+        "id": "681dfd4d3d11f",
+        "prenom": "charly",
+        "nom": "mario",
+        "date_naissance": "2005-10-14",
+        "genre": "Homme",
+        "email": "chachoubidoupouloulou@gmail.com",
+        "motdepasse": "$2y$10$xI1Xcci1DLhF8LYEbJtyXucm79XtsBBut.ndAHjIODbvdNvB8WD.2",
+        "telephone": "",
+        "date_inscription": "2025-05-09",
+        "derniere_connexion": "2025-05-09 13:11:49",
+        "role": "admin",
+        "commandes": []
+    },
+    {
+        "id": "681e06329840c",
+        "prenom": "Po",
+        "nom": "Co",
+        "date_naissance": "1900-01-01",
+        "genre": "Homme",
+        "email": "me@polnio.dev",
+        "motdepasse": "$2y$12$khnCq6gjcOOVRzMi2wnNJ.OF7GW3tJdeARFPDM\/eD0lLrQ\/rixCjO",
+        "telephone": "",
+        "date_inscription": "2025-05-09",
+        "derniere_connexion": "2025-05-09 14:10:42",
+        "role": "admin",
+        "commandes": []
+    },
+    {
+        "id": "6820f680b8ee2",
+        "prenom": "test",
+        "nom": "teeeest",
+        "date_naissance": "2025-05-16",
+        "genre": "Homme",
+        "email": "test@cy.fr",
+        "motdepasse": "$2y$10$oi3aB\/foiWgGepHNjvI8SOgp5zYzv34dmY6\/eHDf6Vy.3e3aMmIIG",
+        "telephone": "123456789",
+        "date_inscription": "2025-05-11",
+        "derniere_connexion": "2025-05-11 19:12:00",
+        "role": "client",
+        "commandes": []
+    }
+]

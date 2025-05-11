@@ -1,71 +1,73 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f7fb;
-    margin: 0;
-    padding: 20px;
-  }
-  
-  h1 {
-    margin-top: 80px;
-    font-size: 2em;
-    color: #123964;
-    text-align: center;
-  }
-  
-  /* Liste des résultats */
-  ul {
-    list-style: none;
-    padding: 0;
-    margin: 30px auto;
-    max-width: 1000px;
-  }
-  
-  /* Carte de voyage */
-  li {
-    background-color: #e4f0f9;
-    border-radius: 12px;
-    padding: 20px;
-    margin-bottom: 20px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    transition: transform 0.2s;
-  }
-  
-  li:hover {
-    transform: translateY(-3px);
-  }
-  
-  /* Contenu cliquable */
-  li a {
-    text-decoration: none;
-    color: inherit;
-    display: flex;
-    gap: 20px;
-    align-items: center;
-  }
-  
-  li img {
-    width: 200px;
-    height: auto;
-    border-radius: 10px;
-    object-fit: cover;
-  }
-  
-  li h3 {
-    margin: 0;
-    font-size: 1.3em;
-    color: #123964;
-  }
-  
-  li p {
-    margin: 8px 0;
-    color: #333;
-  }
-  
-  /* Message aucun résultat */
-  p {
-    text-align: center;
-    font-size: 1.1em;
-    color: #555;
-    margin-top: 40px;
-  }
-  
+  font-family: Arial, sans-serif;
+  background-color: #f4f7fb;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  margin-top: 80px;
+  font-size: 2em;
+  color: #123964;
+  text-align: center;
+}
+
+/* Liste des résultats */
+ul.resultats-list {
+  list-style: none;
+  padding: 0;
+  margin: 30px auto;
+  max-width: 1000px;
+}
+
+/* Carte de voyage */
+.carte-voyage {
+  background-color: #e4f0f9;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+
+.carte-voyage:hover {
+  transform: translateY(-3px);
+}
+
+.carte-voyage a {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.carte-voyage img {
+  width: 200px;
+  height: 140px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.carte-voyage .texte {
+  flex: 1;
+}
+
+.carte-voyage h3 {
+  margin: 0;
+  font-size: 1.3em;
+  color: #123964;
+}
+
+.carte-voyage p {
+  margin: 8px 0;
+  color: #333;
+}
+
+/* Message aucun résultat */
+body > p {
+  text-align: center;
+  font-size: 1.1em;
+  color: #555;
+  margin-top: 40px;
+}

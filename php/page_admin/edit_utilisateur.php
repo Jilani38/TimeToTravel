@@ -1,7 +1,6 @@
 <?php
 session_start();
 ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
 // Accès réservé aux admins
@@ -10,39 +9,51 @@ if (!isset($_SESSION['role']) || $_SESSION['role'] !== 'admin') {
   exit;
 }
 
-// Vérifie si un ID est passé en GET
+// Vérifie si un ID est passé
 if (!isset($_GET['id'])) {
-  header('Location: ./utilisateurs.php');
+  header('Location: ./utilisateur.php');
   exit;
 }
 
-require_once('../../php_utils/csv.php');
-$utilisateurs = read_csv('../../data/utilisateur.csv');
+// Charger les utilisateurs depuis le JSON
+$utilisateurs = json_decode(file_get_contents('../../data/utilisateurs.json'), true);
+$id = $_GET['id'];
+$utilisateur = null;
+$index = null;
 
-// Recherche de l'utilisateur à modifier
-$index = array_find_key($utilisateurs, fn($u) => $u['id'] == $_GET['id']);
-if ($index === null || !isset($utilisateurs[$index])) {
-  header('Location: ./utilisateurs.php');
+// Recherche de l'utilisateur
+foreach ($utilisateurs as $i => $u) {
+  if ($u['id'] === $id) {
+    $utilisateur = $u;
+    $index = $i;
+    break;
+  }
+}
+
+if ($utilisateur === null) {
+  header('Location: ./utilisateur.php');
   exit;
 }
-$utilisateur = $utilisateurs[$index];
 
-// Traitement du formulaire
-if (isset($_POST['submit'])) {
-  $utilisateurs[$index]['prenom'] = $_POST['prenom'];
-  $utilisateurs[$index]['nom'] = $_POST['nom'];
-  $utilisateurs[$index]['email'] = $_POST['email'];
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+  $utilisateurs[$index]['prenom'] = trim($_POST['prenom']);
+  $utilisateurs[$index]['nom'] = trim($_POST['nom']);
+  $utilisateurs[$index]['email'] = trim($_POST['email']);
+  $utilisateurs[$index]['telephone'] = trim($_POST['telephone']);
   $utilisateurs[$index]['role'] = $_POST['role'];
-  $utilisateurs[$index]['telephone'] = $_POST['telephone'];
 
-  write_csv($utilisateurs, '../../data/utilisateur.csv');
+  if (!empty($_POST['nouveau_mdp'])) {
+    if ($_POST['nouveau_mdp'] !== $_POST['confirmer_mdp']) {
+      die("Erreur : les mots de passe ne correspondent pas.");
+    }
+    $utilisateurs[$index]['motdepasse'] = password_hash($_POST['nouveau_mdp'], PASSWORD_DEFAULT);
+  }
 
-  // Redirection propre
+  file_put_contents('../../data/utilisateurs.json', json_encode($utilisateurs, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE));
   header('Location: ./utilisateur.php');
   exit;
 }
 ?>
-
 <!doctype html>
 <html lang="fr">
 <head>
@@ -51,55 +62,47 @@ if (isset($_POST['submit'])) {
   <link rel="stylesheet" href="../../css/page_admin/base.css" />
   <link rel="stylesheet" href="../../css/page_admin/edit_voyage.css" />
   <script src="../../js/page_admin/edit_voyage.js" defer></script>
-  <title>Time to Travel - Éditer Utilisateur</title>
+  <title>Modifier un utilisateur</title>
 </head>
 <body>
-  <aside>
-    <header>
-      <a href="../page_accueil.php">
-        <img src="../../img/logo.svg" alt="Time to Travel" />
-      </a>
-    </header>
-    <nav>
-      <a href="./index.php">Voyages</a>
-      <a href="./utilisateur.php">Utilisateurs</a>
-    </nav>
-  </aside>
+<aside>
+  <header>
+    <a href="../page_accueil.php">
+      <img src="../../img/logo.svg" alt="Time to Travel" />
+    </a>
+  </header>
+  <nav>
+    <a href="./index.php">Voyages</a>
+    <a href="./utilisateur.php">Utilisateurs</a>
+  </nav>
+</aside>
 
-  <main>
-    <form action="edit_utilisateur.php?id=<?= $_GET['id'] ?>" method="post">
-      <table>
-        <tr>
-          <th>Prénom</th>
-          <td><input type="text" name="prenom" value="<?= htmlspecialchars($utilisateur['prenom']); ?>" required /></td>
-        </tr>
-        <tr>
-          <th>Nom</th>
-          <td><input type="text" name="nom" value="<?= htmlspecialchars($utilisateur['nom']); ?>" required /></td>
-        </tr>
-        <tr>
-          <th>Email</th>
-          <td><input type="email" name="email" value="<?= htmlspecialchars($utilisateur['email']); ?>" required /></td>
-        </tr>
-        <tr>
-          <th>Rôle</th>
-          <td>
-            <select name="role" required>
-              <option value="client" <?= $utilisateur['role'] === 'client' ? 'selected' : '' ?>>Client</option>
-              <option value="admin" <?= $utilisateur['role'] === 'admin' ? 'selected' : '' ?>>Admin</option>
-            </select>
-          </td>
-        </tr>
-        <tr>
-          <th>Téléphone</th>
-          <td><input type="text" name="telephone" value="<?= htmlspecialchars($utilisateur['telephone']); ?>" /></td>
-        </tr>
-      </table>
-      <div>
-        <input type="submit" name="submit" value="Enregistrer" />
-        <a href="./utilisateurs.php">Annuler</a>
-      </div>
-    </form>
-  </main>
+<main>
+  <h1>Modifier un utilisateur</h1>
+  <form method="POST">
+    <table>
+      <tr><th>Prénom</th><td><input type="text" name="prenom" value="<?= htmlspecialchars($utilisateur['prenom']) ?>" required></td></tr>
+      <tr><th>Nom</th><td><input type="text" name="nom" value="<?= htmlspecialchars($utilisateur['nom']) ?>" required></td></tr>
+      <tr><th>Email</th><td><input type="email" name="email" value="<?= htmlspecialchars($utilisateur['email']) ?>" required></td></tr>
+      <tr><th>Téléphone</th><td><input type="text" name="telephone" value="<?= htmlspecialchars($utilisateur['telephone']) ?>"></td></tr>
+      <tr><th>Rôle</th>
+        <td>
+          <select name="role" required>
+            <option value="client" <?= $utilisateur['role'] === 'client' ? 'selected' : '' ?>>Client</option>
+            <option value="admin" <?= $utilisateur['role'] === 'admin' ? 'selected' : '' ?>>Admin</option>
+          </select>
+        </td>
+      </tr>
+      <tr><th>Mot de passe actuel (hash)</th><td><input type="text" readonly value="<?= htmlspecialchars($utilisateur['motdepasse']) ?>"></td></tr>
+      <tr><th>Nouveau mot de passe</th><td><input type="password" name="nouveau_mdp" placeholder="Laisser vide si inchangé"></td></tr>
+      <tr><th>Confirmer mot de passe</th><td><input type="password" name="confirmer_mdp"></td></tr>
+    </table>
+
+    <div>
+      <input type="submit" name="submit" value="Enregistrer">
+      <a href="./utilisateur.php">Annuler</a>
+    </div>
+  </form>
+</main>
 </body>
 </html>

@@ -7,13 +7,8 @@ if (!isset($_SESSION['role']) || $_SESSION['role'] !== 'admin') {
     exit();
 }
 
-
-require_once('../../php_utils/csv_utilisateur.php');
-
-$utilisateurs = read_utilisateur_csv('../../data/utilisateur.csv');
-
-
-
+// Charger les utilisateurs depuis le JSON
+$utilisateurs = json_decode(file_get_contents('../../data/utilisateurs.json'), true);
 ?>
 <!doctype html>
 <html lang="fr">
@@ -22,8 +17,7 @@ $utilisateurs = read_utilisateur_csv('../../data/utilisateur.csv');
   <link rel="stylesheet" href="../../css/base.css" />
   <link rel="stylesheet" href="../../css/page_admin/base.css" />
   <link rel="stylesheet" href="../../css/page_admin/index.css" />
-  <script src="../../js/page_admin/index.js" defer></script>
-  <title>Time to Travel - Utilisateur</title>
+  <title>Time to Travel - Utilisateurs</title>
 </head>
 
 <body>
@@ -50,41 +44,41 @@ $utilisateurs = read_utilisateur_csv('../../data/utilisateur.csv');
     <h1>Liste des utilisateurs</h1>
     <p>Bienvenue <?= htmlspecialchars($_SESSION['prenom'] ?? 'Admin') ?> 👋</p>
 
-    <?php if (count($utilisateurs) > 0): ?>
-    <table>
-      <thead>
-        <tr>
-          <th>ID</th>
-          <th>Prénom</th>
-          <th>Nom</th>
-          <th>Email</th>
-          <th>Rôle</th>
-          <th>Date inscription</th>
-          <th>Dern. connexion</th>
-          <th>Tél</th>
-          <th>Actions</th>
-        </tr>
-      </thead>
-      <tbody>
-        <?php foreach ($utilisateurs as $utilisateur): ?>
-        <tr>
-          <td><?= $utilisateur['id']; ?></td>
-          <td><?= $utilisateur['prenom']; ?></td>
-          <td><?= $utilisateur['nom']; ?></td>
-          <td><?= $utilisateur['email']; ?></td>
-          <td><?= $utilisateur['role']; ?></td>
-          <td><?= $utilisateur['date_inscription']; ?></td>
-          <td><?= $utilisateur['derniere_connexion']; ?></td>
-          <td><?= $utilisateur['telephone']; ?></td>
-          <td>
-            <a href="./edit_utilisateur.php?id=<?= $utilisateur['id']; ?>" title="Modifier">
-              <i data-lucide="pencil"></i>
-            </a>
-          </td>
-        </tr>
-        <?php endforeach; ?>
-      </tbody>
-    </table>
+    <?php if (!empty($utilisateurs)): ?>
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Prénom</th>
+            <th>Nom</th>
+            <th>Email</th>
+            <th>Rôle</th>
+            <th>Date inscription</th>
+            <th>Dernière connexion</th>
+            <th>Téléphone</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <?php foreach ($utilisateurs as $utilisateur): ?>
+          <tr>
+            <td><?= htmlspecialchars($utilisateur['id']) ?></td>
+            <td><?= htmlspecialchars($utilisateur['prenom']) ?></td>
+            <td><?= htmlspecialchars($utilisateur['nom']) ?></td>
+            <td><?= htmlspecialchars($utilisateur['email']) ?></td>
+            <td><?= htmlspecialchars($utilisateur['role']) ?></td>
+            <td><?= htmlspecialchars($utilisateur['date_inscription']) ?></td>
+            <td><?= htmlspecialchars($utilisateur['derniere_connexion']) ?></td>
+            <td><?= htmlspecialchars($utilisateur['telephone']) ?></td>
+            <td>
+              <a href="./edit_utilisateur.php?id=<?= urlencode($utilisateur['id']) ?>" title="Modifier">
+                <i data-lucide="pencil"></i>
+              </a>
+            </td>
+          </tr>
+          <?php endforeach; ?>
+        </tbody>
+      </table>
     <?php else: ?>
       <p>Aucun utilisateur enregistré.</p>
     <?php endif; ?>
@@ -92,14 +86,14 @@ $utilisateurs = read_utilisateur_csv('../../data/utilisateur.csv');
 
   <script src="https://unpkg.com/lucide@latest"></script>
   <script>
-    lucide.createIcons();
-
-    const modal = document.querySelector("dialog");
-    const closeBtn = document.getElementById("close-modal");
-
-    if (modal && closeBtn) {
-      closeBtn.addEventListener("click", () => modal.close());
-    }
+    window.addEventListener('DOMContentLoaded', () => {
+      lucide.createIcons();
+      const modal = document.getElementById("image-modal");
+      const closeBtn = document.getElementById("close-modal");
+      if (modal && closeBtn) {
+        closeBtn.addEventListener("click", () => modal.close());
+      }
+    });
   </script>
 </body>
 </html>

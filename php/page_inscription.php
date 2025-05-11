@@ -1,5 +1,7 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
+  $fichier = "../data/utilisateurs.json";
+  $utilisateurs = file_exists($fichier) ? json_decode(file_get_contents($fichier), true) : [];
 
   $prenom = trim($_POST['prenom']);
   $nom = trim($_POST['nom']);
@@ -8,68 +10,39 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
   $email = trim($_POST['email']);
   $motdepasse = $_POST['motdepasse'];
   $confirm_mdp = $_POST['confirm_mdp'];
-  $date_inscription = date("Y-m-d");
-  $derniere_connexion = "";
-  $role = "client";
-  $telephone = "";
+  $telephone = trim($_POST['telephone']);
 
   if ($motdepasse !== $confirm_mdp) {
     die("Les mots de passe ne correspondent pas !");
   }
 
-  $chemin_csv = "../data/utilisateur.csv";
-  $nouveau_fichier = !file_exists($chemin_csv) || filesize($chemin_csv) == 0;
-
-  // 🔁 Étape 1 : vérification doublon avec lecture
-  if (file_exists($chemin_csv)) {
-    $f = fopen($chemin_csv, 'r');
-    while (($ligne = fgetcsv($f, 1000, ';')) !== false) {
-      if (isset($ligne[5]) && $ligne[5] === $email) {
-        fclose($f);
-        die("Cet email existe déjà !");
-      }
+  foreach ($utilisateurs as $u) {
+    if ($u['email'] === $email) {
+      die("Cet email existe déjà !");
     }
-    fclose($f);
   }
 
-  // 🔁 Étape 2 : écriture propre avec saut de ligne AVANT
-  $fichier = fopen($chemin_csv, 'a');
-
-  if ($nouveau_fichier) {
-    fwrite($fichier, "id;prenom;nom;date_naissance;genre;email;motdepasse;date_inscription;derniere_connexion;role;telephone\n");
-  }
-
-  $motdepasse_hash = password_hash($motdepasse, PASSWORD_DEFAULT);
-  $id = uniqid();
-
-  $ligne = [
-    $id,
-    $prenom,
-    $nom,
-    $date_naissance,
-    $genre,
-    $email,
-    $motdepasse_hash,
-    $date_inscription,
-    $derniere_connexion,
-    $role,
-    $telephone
+  $nouvel_utilisateur = [
+    "id" => uniqid(),
+    "prenom" => $prenom,
+    "nom" => $nom,
+    "date_naissance" => $date_naissance,
+    "genre" => $genre,
+    "email" => $email,
+    "motdepasse" => password_hash($motdepasse, PASSWORD_DEFAULT),
+    "telephone" => $telephone,
+    "date_inscription" => date("Y-m-d"),
+    "derniere_connexion" => date("Y-m-d H:i:s"),
+    "role" => "client",
+    "commandes" => []
   ];
 
-  // On force un saut de ligne avant + point-virgule final
-  fwrite($fichier, "\n" . implode(';', $ligne));
-
-  fclose($fichier);
-
+  $utilisateurs[] = $nouvel_utilisateur;
+  file_put_contents($fichier, json_encode($utilisateurs, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE));
   header("Location: page_connexion.php");
   exit();
 }
 ?>
-
-
-
-
-
 
 <!doctype html>
 <html lang="fr">
@@ -101,14 +74,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
       <div class="input-group">
         <label for="date_naissance">Date de naissance :</label>
-        <input
-          type="date"
-          id="date_naissance"
-          name="date_naissance"
-          value="2003-12-23"
-          max="2007-01-01"
-          required
-        />
+        <input type="date" id="date_naissance" name="date_naissance" required />
       </div>
 
       <div class="input-group">
@@ -127,6 +93,11 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
       </div>
 
       <div class="input-group">
+        <label for="telephone">Téléphone :</label>
+        <input type="tel" id="telephone" name="telephone" required />
+      </div>
+
+      <div class="input-group">
         <label for="motdepasse">Mot de passe :</label>
         <input type="password" id="motdepasse" name="motdepasse" required />
       </div>
@@ -137,9 +108,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
       </div>
 
       <button type="submit" class="btn-primary">Créer mon compte</button>
-      <a href="page_connexion.php" class="btn-secondary">
-        J'ai déjà un compte
-      </a>
+      <a href="page_connexion.php" class="btn-secondary">J'ai déjà un compte</a>
     </form>
   </body>
 </html>
