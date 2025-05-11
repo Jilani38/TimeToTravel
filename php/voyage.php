@@ -1,19 +1,14 @@
 <?php
-// voyage.php : Affichage complet d'un voyage
-
-// Récupération de l'ID depuis l'URL
 if (!isset($_GET['id'])) {
   die("ID du voyage manquant.");
 }
 $id = (int) $_GET['id'];
 
-// Chargement du JSON des voyages
 $voyages = json_decode(file_get_contents("../data/voyages.json"), true);
 
-// Recherche du voyage correspondant
 $voyage = null;
 foreach ($voyages as $v) {
-  if ($v['id'] === $id) {
+  if ((int)$v['id'] === $id) {
     $voyage = $v;
     break;
   }
@@ -42,37 +37,80 @@ if (!$voyage) {
 
     <div class="infos">
       <h1><?= htmlspecialchars($voyage['titre']) ?></h1>
-      <p class="specificites"><?= htmlspecialchars($voyage['specificites']) ?></p>
-      <h2>Programme</h2>
-      <?php foreach ($voyage['etapes'] as $etape): ?>
-        <div class="etape">
-          <h3><?= htmlspecialchars($etape['titre']) ?> (<?= $etape['date_arrivee'] ?> au <?= $etape['date_depart'] ?>)</h3>
-          <p><strong>Lieu :</strong> <?= htmlspecialchars($etape['position']['nom_lieu']) ?></p>
-          <ul>
-            <?php foreach ($etape['options'] as $option): ?>
-              <li><?= $option['type'] ?> : <?= htmlspecialchars($option['nom']) ?> - <?= $option['prix_par_personne'] ?> €</li>
-            <?php endforeach; ?>
-          </ul>
-        </div>
-      <?php endforeach; ?>
+      <p class="description"><?= htmlspecialchars($voyage['description']) ?></p>
+      <p><strong>Lieu :</strong> <?= htmlspecialchars($voyage['lieu']) ?></p>
+      <p><strong>Type :</strong> <?= htmlspecialchars($voyage['type_temporel']) ?></p>
+      <p><strong>Durée :</strong> <?= $voyage['duree'] ?> jours</p>
+      <p><strong>Niveau :</strong> <?= htmlspecialchars($voyage['niveau_difficulte']) ?></p>
+      <p><strong>Public :</strong> <?= implode(", ", $voyage['public_cible']) ?></p>
+      <p><strong>Note moyenne :</strong> <?= $voyage['note_moyenne'] ?> / 5 (<?= $voyage['nombre_avis'] ?> avis)</p>
 
-      <h2>Activités</h2>
+      <h2>Programme</h2>
       <ul>
-        <?php foreach ($voyage['activites'] as $act): ?>
-          <li><strong><?= htmlspecialchars($act['nom']) ?>:</strong> <?= htmlspecialchars($act['description']) ?> (<?= $act['prix'] ?> €)</li>
+        <?php foreach ($voyage['programme'] as $jour): ?>
+          <li><strong><?= htmlspecialchars($jour['titre']) ?>:</strong> <?= htmlspecialchars($jour['activite']) ?></li>
         <?php endforeach; ?>
       </ul>
 
-      <h2>Tarif</h2>
-      <p class="prix"><?= $voyage['prix_total'] ?> € / personne</p>
+      <h2>Activités incluses</h2>
+      <ul>
+        <?php foreach ($voyage['activites_incluses'] as $act): ?>
+          <li><strong><?= htmlspecialchars($act['nom']) ?>:</strong> <?= htmlspecialchars($act['description']) ?></li>
+        <?php endforeach; ?>
+      </ul>
 
+      <h2>Options disponibles</h2>
       <form method="POST" action="ajouter_panier.php">
         <input type="hidden" name="voyage_id" value="<?= $voyage['id'] ?>">
+        <?php foreach ($voyage['options'] as $index => $option): ?>
+          <div class="option">
+            <label>
+              <input type="checkbox" name="options[]" value="<?= $index ?>" data-prix="<?= $option['prix_par_personne'] ?>">
+              <?= htmlspecialchars($option['type']) ?> : <?= htmlspecialchars($option['nom']) ?> (<?= $option['prix_par_personne'] ?> €)
+            </label>
+          </div>
+        <?php endforeach; ?>
+
+        <h2>Infos pratiques</h2>
+        <ul>
+          <?php foreach ($voyage['infos_pratiques'] as $info): ?>
+            <li><?= htmlspecialchars($info) ?></li>
+          <?php endforeach; ?>
+        </ul>
+
+        <h2>Tarif de base</h2>
+        <p class="prix"><?= $voyage['prix_base'] ?> € / personne</p>
+
+        <p><strong>Prix total estimé :</strong> <span id="prix-total"><?= $voyage['prix_base'] ?> €</span></p>
+
         <label for="nombre">Nombre de voyageurs :</label>
         <input type="number" name="nombre" id="nombre" value="1" min="1">
+
         <button type="submit">Je choisis ce voyage</button>
       </form>
     </div>
   </main>
+
+  <script>
+    const checkboxes = document.querySelectorAll('input[type="checkbox"][name="options[]"]');
+    const nbInput = document.getElementById('nombre');
+    const prixTotal = document.getElementById('prix-total');
+    const prixBase = <?= $voyage['prix_base'] ?>;
+
+    function recalculerPrix() {
+      let total = prixBase;
+      checkboxes.forEach(cb => {
+        if (cb.checked) {
+          total += parseFloat(cb.dataset.prix || 0);
+        }
+      });
+      const nb = parseInt(nbInput.value) || 1;
+      prixTotal.textContent = (total * nb).toFixed(2) + ' €';
+    }
+
+    checkboxes.forEach(cb => cb.addEventListener('change', recalculerPrix));
+    nbInput.addEventListener('input', recalculerPrix);
+    window.addEventListener('DOMContentLoaded', recalculerPrix);
+  </script>
 </body>
 </html>

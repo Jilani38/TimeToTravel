@@ -31,31 +31,48 @@ $total = 0;
     <?php if (empty($panier)): ?>
       <p>Votre panier est vide.</p>
     <?php else: ?>
-      <?php foreach ($panier as $id => $quantite): ?>
+      <?php foreach ($panier as $index => $reservation): ?>
         <?php
+          $id = $reservation['id'];
+          $quantite = $reservation['nombre'];
+          $options_selectionnees = $reservation['options'] ?? [];
+
           $voyage = array_filter($voyages, fn($v) => $v['id'] == $id);
           $voyage = reset($voyage);
-          $sous_total = $voyage['prix_total'] * $quantite;
+
+          $prix_options = 0;
+          $texte_options = [];
+
+          foreach ($options_selectionnees as $opt_index) {
+            if (isset($voyage['options'][$opt_index])) {
+              $opt = $voyage['options'][$opt_index];
+              $prix_options += $opt['prix_par_personne'];
+              $texte_options[] = htmlspecialchars($opt['nom']) . " (" . $opt['prix_par_personne'] . " €)";
+            }
+          }
+
+          $prix_unitaire = $voyage['prix_base'] + $prix_options;
+          $sous_total = $prix_unitaire * $quantite;
           $total += $sous_total;
         ?>
         <div class="carte-voyage">
-  <div class="entete">
-    <h2><?= htmlspecialchars($voyage['titre']) ?></h2>
-    <span class="prix"><?= $sous_total ?> €</span>
-  </div>
-  <div class="details">
-    <p><strong>Lieu :</strong> <?= htmlspecialchars($voyage['etapes'][0]['position']['nom_lieu']) ?></p>
-    <p><strong>Dates :</strong> du <?= $voyage['etapes'][0]['date_arrivee'] ?> au <?= $voyage['etapes'][0]['date_depart'] ?></p>
-    <p><strong>Quantité :</strong> <?= $quantite ?> voyageur<?= $quantite > 1 ? 's' : '' ?></p>
-
-    <!-- bouton supprimer -->
-    <form action="supprimer_du_panier.php" method="post" style="margin-top: 10px;">
-      <input type="hidden" name="voyage_id" value="<?= $id ?>">
-      <button type="submit" class="btn-supprimer">🗑️ Supprimer</button>
-    </form>
-  </div>
-</div>
-
+          <div class="entete">
+            <h2><?= htmlspecialchars($voyage['titre']) ?></h2>
+            <span class="prix"><?= $sous_total ?> €</span>
+          </div>
+          <div class="details">
+            <p><strong>Lieu :</strong> <?= htmlspecialchars($voyage['lieu']) ?></p>
+            <p><strong>Durée :</strong> <?= $voyage['duree'] ?> jours</p>
+            <p><strong>Quantité :</strong> <?= $quantite ?> voyageur<?= $quantite > 1 ? 's' : '' ?></p>
+            <?php if (!empty($texte_options)): ?>
+              <p><strong>Options :</strong><br><?= implode('<br>', $texte_options) ?></p>
+            <?php endif; ?>
+            <form action="supprimer_du_panier.php" method="post" style="margin-top: 10px;">
+              <input type="hidden" name="index" value="<?= $index ?>">
+              <button type="submit" class="btn-supprimer">🗑️ Supprimer</button>
+            </form>
+          </div>
+        </div>
       <?php endforeach; ?>
     <?php endif; ?>
 
@@ -70,7 +87,7 @@ $total = 0;
       <span class="prix-total"><?= $total ?> €</span>
     </div>
     <form method="POST" action="page_paiement.php">
-  <input type="hidden" name="total" value="<?= $total ?>">
+      <input type="hidden" name="total" value="<?= $total ?>">
       <button class="btn-payer" type="submit">Valider et payer</button>
     </form>
     <a class="btn-ajouter" href="./page_accueil.php">Poursuivre mes achats</a>

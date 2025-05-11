@@ -4,6 +4,7 @@ session_start();
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   $id = $_POST['voyage_id'] ?? null;
   $quantite = $_POST['nombre'] ?? 1;
+  $options = $_POST['options'] ?? []; // tableau d'index
 
   if (!is_numeric($id) || !is_numeric($quantite) || $quantite < 1) {
     die("Erreur dans les données du formulaire.");
@@ -17,12 +18,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $_SESSION['panier'] = [];
   }
 
-  // Ajouter ou incrémenter la quantité
-  if (isset($_SESSION['panier'][$id])) {
-    $_SESSION['panier'][$id] += $quantite;
-  } else {
-    $_SESSION['panier'][$id] = $quantite;
-  }
+  // Nouvelle entrée dans le panier
+  $_SESSION['panier'][] = [
+    'id' => $id,
+    'nombre' => $quantite,
+    'options' => $options
+  ];
 
   // Redirection vers la page panier
   header("Location: page_panier.php");
