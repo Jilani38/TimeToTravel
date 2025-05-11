@@ -39,10 +39,6 @@ $commandes = $utilisateur['commandes'] ?? [];
   <main class="dashboard">
     <h1>Bienvenue, <?= htmlspecialchars($utilisateur['prenom']) ?> !</h1>
 
-    <?php if (isset($_GET['success']) && $_GET['success'] == 1): ?>
-      <p class="success-message">✅ Profil mis à jour avec succès.</p>
-    <?php endif; ?>
-
     <div class="onglets">
       <button class="onglet-actif" data-target="#profil">Mon profil</button>
       <button data-target="#commandes">Mes commandes</button>
@@ -50,51 +46,33 @@ $commandes = $utilisateur['commandes'] ?? [];
 
     <section id="profil" class="onglet-section actif">
       <h2>Informations personnelles</h2>
-      <ul id="profil-statique">
-        <li><strong>Nom :</strong> <?= htmlspecialchars($utilisateur['nom']) ?></li>
-        <li><strong>Prénom :</strong> <?= htmlspecialchars($utilisateur['prenom']) ?></li>
-        <li><strong>Email :</strong> <?= htmlspecialchars($utilisateur['email']) ?></li>
-        <li><strong>Téléphone :</strong> <?= htmlspecialchars($utilisateur['telephone']) ?></li>
-        <li><strong>Date de naissance :</strong> <?= htmlspecialchars($utilisateur['date_naissance']) ?></li>
-        <li><strong>Genre :</strong> <?= htmlspecialchars($utilisateur['genre']) ?></li>
-        <li><strong>Inscrit depuis :</strong> <?= htmlspecialchars($utilisateur['date_inscription']) ?></li>
-        <li><strong>Dernière connexion :</strong> <?= htmlspecialchars($utilisateur['derniere_connexion']) ?></li>
+      <ul class="profil-inline">
+        <?php 
+        $infos = [
+          "nom" => "Nom",
+          "prenom" => "Prénom",
+          "email" => "Email",
+          "telephone" => "Téléphone",
+          "date_naissance" => "Date de naissance",
+          "genre" => "Genre",
+          "date_inscription" => "Inscrit depuis",
+          "derniere_connexion" => "Dernière connexion"
+        ];
+        foreach ($infos as $champ => $label):
+          $readonly = in_array($champ, ["email", "date_inscription", "derniere_connexion"]) ? 'readonly' : '';
+        ?>
+          <li>
+            <label><?= $label ?> :</label>
+            <input type="text" id="<?= $champ ?>" value="<?= htmlspecialchars($utilisateur[$champ]) ?>" disabled <?= $readonly ?>>
+            <button class="btn-edit">✏️</button>
+            <button class="btn-valider" style="display:none;">✅</button>
+            <button class="btn-annuler" style="display:none;">❌</button>
+          </li>
+        <?php endforeach; ?>
       </ul>
 
-      <button id="btn-editer-profil" class="btn-secondary">✏️ Modifier mes informations</button>
-
-      <form id="form-profil" class="profil-formulaire" method="POST" action="update_profil.php" style="display: none;">
-        <label>Prénom :
-          <input type="text" name="prenom" value="<?= htmlspecialchars($utilisateur['prenom']) ?>" required>
-        </label>
-
-        <label>Nom :
-          <input type="text" name="nom" value="<?= htmlspecialchars($utilisateur['nom']) ?>" required>
-        </label>
-
-        <label>Email :
-          <input type="email" name="email" value="<?= htmlspecialchars($utilisateur['email']) ?>" readonly>
-        </label>
-
-        <label>Téléphone :
-          <input type="tel" name="telephone" value="<?= htmlspecialchars($utilisateur['telephone']) ?>">
-        </label>
-
-        <label>Date de naissance :
-          <input type="date" name="date_naissance" value="<?= htmlspecialchars($utilisateur['date_naissance']) ?>">
-        </label>
-
-        <label>Genre :
-          <select name="genre">
-            <option value="Homme" <?= $utilisateur['genre'] === 'Homme' ? 'selected' : '' ?>>Homme</option>
-            <option value="Femme" <?= $utilisateur['genre'] === 'Femme' ? 'selected' : '' ?>>Femme</option>
-          </select>
-        </label>
-
-        <div class="profil-actions">
-          <button type="submit" class="btn-primary">💾 Enregistrer</button>
-          <button type="button" onclick="annulerEdition()" class="btn-error">Annuler</button>
-        </div>
+      <form method="POST" action="update_profil.php">
+        <button id="btn-enregistrer" class="btn-primary" style="display:none;">💾 Enregistrer les modifications</button>
       </form>
     </section>
 

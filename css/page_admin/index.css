@@ -79,9 +79,7 @@ dialog {
   color: #000;
 }
 
-
-/*bouton ajouter voyage*/
-
+/* bouton ajouter voyage */
 .btn-ajouter-voyage {
   display: inline-block;
   margin: 15px 0;
@@ -98,3 +96,26 @@ dialog {
   background-color: #0f2e4e;
 }
 
+/* ✅ partie corrigée pour les boutons admin utilisateur (sobres sans rectangle) */
+.btn-bannir,
+.btn-changer-role {
+  background: none;
+  border: none;
+  color: #123964;
+  cursor: pointer;
+  font-size: 20px;
+  margin-left: 8px;
+  padding: 0;
+  transition: color 0.3s ease;
+}
+
+.btn-bannir:hover,
+.btn-changer-role:hover {
+  color: #e63946;
+}
+
+.btn-bannir:disabled,
+.btn-changer-role:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}

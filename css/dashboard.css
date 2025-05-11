@@ -74,18 +74,80 @@ main.dashboard {
   color: #123964;
 }
 
-.onglet-section ul {
+/* ✅ Profil inline */
+.profil-inline {
   list-style: none;
   padding: 0;
 }
 
-.onglet-section li {
-  margin-bottom: 10px;
-  color: #333;
+.profil-inline li {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
   font-size: 15px;
+  color: #333;
 }
 
-/* Cartes de commande */
+.profil-inline label {
+  min-width: 160px;
+  font-weight: bold;
+}
+
+.profil-inline input {
+  padding: 8px;
+  border: 1px solid #123964;
+  border-radius: 6px;
+  width: 100%;
+  max-width: 250px;
+}
+
+.profil-inline input[disabled] {
+  background-color: #f2f2f2;
+  color: #333;
+  border-color: #ccc;
+}
+
+/* ✅ Boutons d'action inline */
+.btn-edit,
+.btn-valider,
+.btn-annuler {
+  background-color: white;
+  border: 2px solid #123964;
+  color: #123964;
+  font-weight: bold;
+  border-radius: 6px;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-edit:hover,
+.btn-valider:hover,
+.btn-annuler:hover {
+  background-color: #123964;
+  color: white;
+}
+
+/* ✅ Bouton général Enregistrer */
+#btn-enregistrer {
+  display: block;
+  margin: 30px auto 0;
+  padding: 12px 24px;
+  background-color: #123964;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#btn-enregistrer:hover {
+  background-color: #0f2d55;
+}
+
+/* ✅ Commandes */
 .cartes-commandes {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -112,23 +174,8 @@ main.dashboard {
   color: #333;
 }
 
-/* Bouton Modifier mon profil */
-.bouton-modifier,
+/* ❌ Suppression ancien bouton global d'édition */
+#form-profil,
 #btn-editer-profil {
-  display: inline-block;
-  margin-top: 15px;
-  padding: 10px 18px;
-  background-color: white;
-  border: 2px solid #123964;
-  color: #123964;
-  font-weight: bold;
-  border-radius: 8px;
-  text-decoration: none;
-  transition: all 0.3s ease;
-}
-
-.bouton-modifier:hover,
-#btn-editer-profil:hover {
-  background-color: #123964;
-  color: white;
+  display: none !important;
 }

@@ -1,13 +1,11 @@
 <?php
 session_start();
 
-// Sécurité : admin uniquement
 if (!isset($_SESSION['role']) || $_SESSION['role'] !== 'admin') {
     header('Location: ../page_accueil.php');
     exit();
 }
 
-// Charger les utilisateurs depuis le JSON
 $utilisateurs = json_decode(file_get_contents('../../data/utilisateurs.json'), true);
 ?>
 <!doctype html>
@@ -21,11 +19,6 @@ $utilisateurs = json_decode(file_get_contents('../../data/utilisateurs.json'), t
 </head>
 
 <body>
-  <dialog id="image-modal">
-    <button id="close-modal" title="Fermer">&times;</button>
-    <img src="" alt="" />
-  </dialog>
-
   <aside>
     <header>
       <a href="./index.php">
@@ -53,9 +46,7 @@ $utilisateurs = json_decode(file_get_contents('../../data/utilisateurs.json'), t
             <th>Nom</th>
             <th>Email</th>
             <th>Rôle</th>
-            <th>Date inscription</th>
-            <th>Dernière connexion</th>
-            <th>Téléphone</th>
+            <th>Status</th>
             <th>Actions</th>
           </tr>
         </thead>
@@ -66,14 +57,14 @@ $utilisateurs = json_decode(file_get_contents('../../data/utilisateurs.json'), t
             <td><?= htmlspecialchars($utilisateur['prenom']) ?></td>
             <td><?= htmlspecialchars($utilisateur['nom']) ?></td>
             <td><?= htmlspecialchars($utilisateur['email']) ?></td>
-            <td><?= htmlspecialchars($utilisateur['role']) ?></td>
-            <td><?= htmlspecialchars($utilisateur['date_inscription']) ?></td>
-            <td><?= htmlspecialchars($utilisateur['derniere_connexion']) ?></td>
-            <td><?= htmlspecialchars($utilisateur['telephone']) ?></td>
+            <td><span class="role"><?= htmlspecialchars($utilisateur['role']) ?></span></td>
+            <td><span class="statut"><?= !empty($utilisateur['banni']) ? 'Banni' : 'Actif' ?></span></td>
             <td>
-              <a href="./edit_utilisateur.php?id=<?= urlencode($utilisateur['id']) ?>" title="Modifier">
+              <a href="./edit_utilisateur.php?id=<?= urlencode($utilisateur['id']) ?>" title="Modifier infos">
                 <i data-lucide="pencil"></i>
               </a>
+              <button class="btn-bannir" title="Bannir ou débannir">❌</button>
+              <button class="btn-changer-role" title="Changer rôle">🔁</button>
             </td>
           </tr>
           <?php endforeach; ?>
@@ -86,14 +77,8 @@ $utilisateurs = json_decode(file_get_contents('../../data/utilisateurs.json'), t
 
   <script src="https://unpkg.com/lucide@latest"></script>
   <script>
-    window.addEventListener('DOMContentLoaded', () => {
-      lucide.createIcons();
-      const modal = document.getElementById("image-modal");
-      const closeBtn = document.getElementById("close-modal");
-      if (modal && closeBtn) {
-        closeBtn.addEventListener("click", () => modal.close());
-      }
-    });
+    lucide.createIcons();
   </script>
+  <script src="../../js/page_admin/utilisateur.js"></script>
 </body>
 </html>

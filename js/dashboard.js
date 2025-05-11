@@ -1,6 +1,5 @@
-// js/dashboard.js
-
 document.addEventListener("DOMContentLoaded", () => {
+  // Gestion des onglets
   const boutonsOnglets = document.querySelectorAll(".onglets button");
   const sections = document.querySelectorAll(".onglet-section");
 
@@ -15,22 +14,48 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // Gestion du bouton "Modifier mes informations"
-  const btnEdit = document.getElementById("btn-editer-profil");
-  const formProfil = document.getElementById("form-profil");
-  const ulProfil = document.getElementById("profil-statique");
+  // Gestion édition inline profil
+  document.querySelectorAll(".profil-inline li").forEach((champ) => {
+    const input = champ.querySelector("input");
+    const btnEdit = champ.querySelector(".btn-edit");
+    const btnValider = champ.querySelector(".btn-valider");
+    const btnAnnuler = champ.querySelector(".btn-annuler");
 
-  if (btnEdit && formProfil && ulProfil) {
+    const valeurInitiale = input.value;
+
     btnEdit.addEventListener("click", () => {
-      formProfil.style.display = "block";
-      ulProfil.style.display = "none";
-      btnEdit.style.display = "none";
+      if (input.hasAttribute("readonly")) return;
+      input.disabled = false;
+      btnEdit.style.display = 'none';
+      btnValider.style.display = 'inline';
+      btnAnnuler.style.display = 'inline';
     });
-  }
+
+    btnValider.addEventListener("click", () => {
+      input.disabled = true;
+      input.dataset.modifie = "true";
+      btnEdit.style.display = 'inline';
+      btnValider.style.display = 'none';
+      btnAnnuler.style.display = 'none';
+      verifierModifications();
+    });
+
+    btnAnnuler.addEventListener("click", () => {
+      input.value = valeurInitiale;
+      input.disabled = true;
+      btnEdit.style.display = 'inline';
+      btnValider.style.display = 'none';
+      btnAnnuler.style.display = 'none';
+    });
+  });
 });
 
-function annulerEdition() {
-  document.getElementById("form-profil").style.display = "none";
-  document.getElementById("profil-statique").style.display = "block";
-  document.getElementById("btn-editer-profil").style.display = "inline-block";
+function verifierModifications() {
+  const boutonEnregistrer = document.getElementById('btn-enregistrer');
+  const modifications = document.querySelectorAll('input[data-modifie="true"]');
+  if (modifications.length > 0) {
+    boutonEnregistrer.style.display = 'block';
+  } else {
+    boutonEnregistrer.style.display = 'none';
+  }
 }
