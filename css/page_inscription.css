@@ -1,25 +1,96 @@
-/* ====== Fond avec dégradé passé → futur ====== */
+/* ====== Fond général ====== */
 body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f4f7fb;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  position: relative;
-  overflow: hidden;
+  flex-direction: column;
 }
 
-/* ====== Formulaire stylé ====== */
-form {
-  margin-top: 50px;
-  text-align: center;
+/* ====== Header reste bien en haut ====== */
+header {
+  background-color: #123964;
+  color: white;
+  padding: 10px 20px;
+  flex-shrink: 0;
+}
+
+/* ====== Formulaire ====== */
+form.card {
+  background-color: white;
+  margin: 50px auto;
+  padding: 30px;
+  max-width: 500px;
   width: 90%;
-  max-width: 400px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+}
+
+h2 {
+  color: #123964;
+  margin-bottom: 20px;
+}
+
+.input-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.input-group label {
+  display: block;
+  font-weight: bold;
+  color: #123964;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+input[type="date"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
   box-sizing: border-box;
 }
 
-main {
-  flex: 1;
+.radio-group {
   display: flex;
-  flex-direction: column;
-  gap: 5rem;
+  align-items: center;
+  gap: 10px;
+}
+
+button.btn-primary {
+  background-color: #123964;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  width: 100%;
+}
+
+button.btn-primary:hover {
+  background-color: #19508a;
+}
+
+a.btn-secondary {
+  display: block;
+  margin-top: 15px;
+  padding: 12px;
+  background-color: white;
+  border: 2px solid #123964;
+  color: #123964;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+}
+
+a.btn-secondary:hover {
+  background-color: #123964;
+  color: white;
 }

@@ -135,5 +135,164 @@
         "derniere_connexion": "2025-05-11 19:12:00",
         "role": "client",
         "commandes": []
+    },
+    {
+        "id": "68211804d733e",
+        "prenom": "low",
+        "nom": "trafalgar",
+        "date_naissance": "1974-06-05",
+        "genre": "Homme",
+        "email": "lt@cy.fr",
+        "motdepasse": "$2y$10$vAz.BKPrEtzL.kKyncTdYet2RGlFh4xGBgfVis8Da08LwgMeyKWkC",
+        "telephone": "0947859483",
+        "date_inscription": "2025-05-11",
+        "derniere_connexion": "2025-05-11 21:36:25",
+        "role": "client",
+        "commandes": [
+            {
+                "titre": "Terre ré-ensauvagée",
+                "date": "2025-05-11",
+                "date_depart": "2025-05-11",
+                "voyageurs": 2,
+                "options": [
+                    {
+                        "type": "activité",
+                        "nom": "Immersion 360°",
+                        "prix_par_personne": 100
+                    },
+                    {
+                        "type": "hébergement",
+                        "nom": "Tente de l’époque",
+                        "prix_par_personne": 90
+                    },
+                    {
+                        "type": "repas",
+                        "nom": "Repas typique de l’époque",
+                        "prix_par_personne": 75
+                    }
+                ],
+                "total": 5354
+            },
+            {
+                "titre": "Assassinat de Jules César",
+                "date": "2025-05-11",
+                "date_depart": "2025-05-11",
+                "voyageurs": 4,
+                "options": [
+                    {
+                        "type": "repas",
+                        "nom": "Repas typique de l’époque",
+                        "prix_par_personne": 75
+                    },
+                    {
+                        "type": "souvenir",
+                        "nom": "Objet d’époque discret",
+                        "prix_par_personne": 60
+                    }
+                ],
+                "total": 10052
+            },
+            {
+                "titre": "Bataille de Waterloo",
+                "date": "2025-05-11",
+                "date_depart": "2025-05-11",
+                "voyageurs": 1,
+                "options": [
+                    {
+                        "type": "hébergement",
+                        "nom": "Auberge temporelle",
+                        "prix_par_personne": 120
+                    },
+                    {
+                        "type": "repas",
+                        "nom": "Repas typique de l’époque",
+                        "prix_par_personne": 75
+                    },
+                    {
+                        "type": "souvenir",
+                        "nom": "Objet d’époque discret",
+                        "prix_par_personne": 60
+                    }
+                ],
+                "total": 1599
+            },
+            {
+                "titre": "Révolte des IA",
+                "date": "2025-05-11",
+                "date_depart": "2025-05-11",
+                "voyageurs": 10,
+                "options": [
+                    {
+                        "type": "hébergement",
+                        "nom": "Tente de l’époque",
+                        "prix_par_personne": 90
+                    },
+                    {
+                        "type": "expédition",
+                        "nom": "Visite guidée historique",
+                        "prix_par_personne": 180
+                    },
+                    {
+                        "type": "repas",
+                        "nom": "Repas typique de l’époque",
+                        "prix_par_personne": 75
+                    }
+                ],
+                "total": 9790
+            },
+            {
+                "titre": "Inauguration de la Tour Eiffel",
+                "date": "2025-05-11",
+                "date_depart": "2025-05-11",
+                "voyageurs": 8,
+                "options": [
+                    {
+                        "type": "hébergement",
+                        "nom": "Tente de l’époque",
+                        "prix_par_personne": 90
+                    },
+                    {
+                        "type": "repas",
+                        "nom": "Repas typique de l’époque",
+                        "prix_par_personne": 75
+                    },
+                    {
+                        "type": "bonus",
+                        "nom": "Accès à une scène secondaire confidentielle",
+                        "prix_par_personne": 100
+                    }
+                ],
+                "total": 12808
+            },
+            {
+                "titre": "Colonie martienne",
+                "date": "2025-05-11",
+                "date_depart": "2025-05-11",
+                "voyageurs": 10,
+                "options": [
+                    {
+                        "type": "expédition",
+                        "nom": "Visite guidée historique",
+                        "prix_par_personne": 180
+                    },
+                    {
+                        "type": "repas",
+                        "nom": "Repas typique de l’époque",
+                        "prix_par_personne": 75
+                    },
+                    {
+                        "type": "souvenir",
+                        "nom": "Objet d’époque discret",
+                        "prix_par_personne": 60
+                    },
+                    {
+                        "type": "bonus",
+                        "nom": "Accès à une scène secondaire confidentielle",
+                        "prix_par_personne": 100
+                    }
+                ],
+                "total": 17610
+            }
+        ]
     }
 ]
