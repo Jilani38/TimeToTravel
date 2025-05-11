@@ -30,9 +30,23 @@ if ($index === null) {
 $voyage = $voyages[$index];
 
 if (isset($_POST['submit'])) {
-  $voyages[$index]['titre'] = $_POST['titre'] ?? $voyage['titre'];
-  $voyages[$index]['etapes'][0]['date_arrivee'] = $_POST['date'] ?? $voyage['etapes'][0]['date_arrivee'];
-  $voyages[$index]['etapes'][0]['position']['nom_lieu'] = $_POST['lieu'] ?? $voyage['etapes'][0]['position']['nom_lieu'];
+  $voyages[$index] = [
+    "id" => $voyage['id'],
+    "titre" => $_POST['titre'],
+    "image" => $voyage['image'],
+    "duree" => (int) $_POST['duree'],
+    "specificites" => $_POST['specificites'],
+    "prix_total" => (int) $_POST['prix_total'],
+    "type_temporel" => $_POST['type_temporel'],
+    "niveau_difficulte" => $_POST['niveau_difficulte'],
+    "note_moyenne" => (float) ($_POST['note_moyenne'] ?? 0),
+    "nombre_avis" => (int) ($_POST['nombre_avis'] ?? 0),
+    "public_cible" => $_POST['public_cible'] ?? [],
+    "infos_pratiques" => $_POST['infos_pratiques'] ?? [],
+    "programme" => $_POST['programme'] ?? [],
+    "options" => $_POST['options'] ?? [],
+    "activites_incluses" => $_POST['activites'] ?? []
+  ];
 
   if (!empty($_FILES['image']['name'])) {
     $info = pathinfo($_FILES['image']['name']);
@@ -48,7 +62,7 @@ if (isset($_POST['submit'])) {
   }
 
   file_put_contents('../../data/voyages.json', json_encode($voyages, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE));
-  header('Location: ./index.php');
+  header('Location: ./index.php?updated=1');
   exit;
 }
 ?>
@@ -75,28 +89,80 @@ if (isset($_POST['submit'])) {
     </nav>
   </aside>
   <main>
+    <h1>Modifier le voyage</h1>
     <form action="" method="post" enctype="multipart/form-data">
       <table>
-        <tr>
-          <th>Titre</th>
-          <td><input type="text" name="titre" value="<?= htmlspecialchars($voyage['titre']) ?>"></td>
-        </tr>
-        <tr>
-          <th>Date</th>
-          <td><input type="text" name="date" value="<?= htmlspecialchars($voyage['etapes'][0]['date_arrivee']) ?>"></td>
-        </tr>
-        <tr>
-          <th>Lieu</th>
-          <td><input type="text" name="lieu" value="<?= htmlspecialchars($voyage['etapes'][0]['position']['nom_lieu']) ?>"></td>
-        </tr>
-        <tr>
-          <th>Image</th>
+        <tr><th>Titre</th><td><input type="text" name="titre" value="<?= htmlspecialchars($voyage['titre']) ?>" required></td></tr>
+        <tr><th>Image</th>
           <td>
             <input type="file" name="image" accept="image/*">
-            <img src="../../data/images/<?= htmlspecialchars($voyage['image']) ?>" alt="<?= htmlspecialchars($voyage['titre']) ?>">
+            <img src="../../data/images/<?= htmlspecialchars($voyage['image']) ?>" alt="<?= htmlspecialchars($voyage['titre']) ?>" style="max-height: 120px; margin-top: 10px;">
+          </td>
+        </tr>
+        <tr><th>Durée</th><td><input type="number" name="duree" id="duree" value="<?= $voyage['duree'] ?>" required></td></tr>
+        <tr><th>Spécificités</th><td><textarea name="specificites" required><?= htmlspecialchars($voyage['specificites']) ?></textarea></td></tr>
+        <tr><th>Prix total</th><td><input type="number" name="prix_total" value="<?= $voyage['prix_total'] ?>" required></td></tr>
+        <tr><th>Type temporel</th>
+          <td>
+            <label><input type="radio" name="type_temporel" value="passé" <?= $voyage['type_temporel'] === 'passé' ? 'checked' : '' ?>> Passé</label>
+            <label><input type="radio" name="type_temporel" value="futur" <?= $voyage['type_temporel'] === 'futur' ? 'checked' : '' ?>> Futur</label>
+          </td>
+        </tr>
+        <tr><th>Niveau de difficulté</th>
+          <td>
+            <select name="niveau_difficulte">
+              <option value="facile" <?= $voyage['niveau_difficulte'] === 'facile' ? 'selected' : '' ?>>Facile</option>
+              <option value="intermédiaire" <?= $voyage['niveau_difficulte'] === 'intermédiaire' ? 'selected' : '' ?>>Intermédiaire</option>
+              <option value="difficile" <?= $voyage['niveau_difficulte'] === 'difficile' ? 'selected' : '' ?>>Difficile</option>
+            </select>
+          </td>
+        </tr>
+        <tr><th>Note moyenne</th><td><input type="number" name="note_moyenne" step="0.1" value="<?= $voyage['note_moyenne'] ?>"></td></tr>
+        <tr><th>Nombre d'avis</th><td><input type="number" name="nombre_avis" value="<?= $voyage['nombre_avis'] ?>"></td></tr>
+        <tr><th>Public cible</th>
+          <td>
+            <?php
+              $options = ["enfants", "adultes", "seniors", "tout public"];
+              foreach ($options as $opt) {
+                $checked = in_array($opt, $voyage['public_cible']) ? 'checked' : '';
+                echo "<label><input type='checkbox' name='public_cible[]' value='$opt' $checked> $opt</label> ";
+              }
+            ?>
           </td>
         </tr>
       </table>
+
+      <section>
+        <h2>Infos pratiques</h2>
+        <div id="infos-container">
+          <?php foreach ($voyage['infos_pratiques'] as $info): ?>
+            <div class="info-bloc">
+              <input type="text" name="infos_pratiques[]" value="<?= htmlspecialchars($info) ?>">
+              <button type="button" onclick="this.parentElement.remove()">❌ Supprimer</button>
+              <hr>
+            </div>
+          <?php endforeach; ?>
+        </div>
+        <button type="button" onclick="ajouterInfo()">Ajouter une info</button>
+      </section>
+
+      <section>
+        <h2>Programme</h2>
+        <div id="programme-container" data-programme='<?= json_encode($voyage['programme'], JSON_UNESCAPED_UNICODE) ?>'></div>
+      </section>
+
+      <section>
+        <h2>Options disponibles</h2>
+        <div id="options-container" data-options='<?= json_encode($voyage['options'], JSON_UNESCAPED_UNICODE) ?>'></div>
+        <button type="button" onclick="ajouterOption()">Ajouter une option</button>
+      </section>
+
+      <section>
+        <h2>Activités incluses</h2>
+        <div id="activites-container" data-activites='<?= json_encode($voyage['activites_incluses'], JSON_UNESCAPED_UNICODE) ?>'></div>
+        <button type="button" onclick="ajouterActivite()">Ajouter une activité</button>
+      </section>
+
       <div>
         <input type="submit" name="submit" value="Enregistrer">
         <a href="./index.php">Annuler</a>

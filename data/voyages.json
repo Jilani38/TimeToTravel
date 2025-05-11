@@ -1,2067 +1,2067 @@
 [
-  {
-    "id": 1,
-    "titre": "Prise de la Bastille",
-    "image": "1.png",
-    "duree": 6,
-    "description": "Voyage unique à Paris,France lors de l'événement « Prise de la Bastille ».",
-    "type_temporel": "passé",
-    "lieu": "Paris,France",
-    "date_depart_personnalisable": true,
-    "prix_base": 2222,
-    "programme": [
-      {
-        "jour": 1,
-        "titre": "Jour 1",
-        "activite": "Arrivée, installation et familiarisation avec l’époque"
-      },
-      {
-        "jour": 2,
-        "titre": "Jour 2",
-        "activite": "Observation discrète de la situation locale"
-      },
-      {
-        "jour": 3,
-        "titre": "Jour 3",
-        "activite": "Présence sécurisée à l’événement historique principal"
-      },
-      {
-        "jour": 4,
-        "titre": "Jour 4",
-        "activite": "Exploration encadrée ou activité optionnelle"
-      },
-      {
-        "jour": 5,
-        "titre": "Jour 5",
-        "activite": "Exploration encadrée ou activité optionnelle"
-      },
-      {
-        "jour": 6,
-        "titre": "Jour 6",
-        "activite": "Temps libre, souvenirs personnels et retour sécurisé"
-      }
-    ],
-    "options": [
-      {
-        "type": "hébergement",
-        "nom": "Auberge temporelle",
-        "prix_par_personne": 120
-      },
-      {
-        "type": "hébergement",
-        "nom": "Tente de l’époque",
-        "prix_par_personne": 90
-      },
-      {
-        "type": "repas",
-        "nom": "Repas typique de l’époque",
-        "prix_par_personne": 75
-      },
-      {
-        "type": "souvenir",
-        "nom": "Objet d’époque discret",
-        "prix_par_personne": 60
-      },
-      {
-        "type": "bonus",
-        "nom": "Accès à une scène secondaire confidentielle",
-        "prix_par_personne": 100
-      }
-    ],
-    "activites_incluses": [
-      {
-        "nom": "Briefing temporel",
-        "description": "Séance préparatoire avant immersion pour comprendre les enjeux historiques."
-      },
-      {
-        "nom": "Exploration encadrée",
-        "description": "Parcours dans l’environnement historique réel, sans modifier le cours du temps."
-      },
-      {
-        "nom": "Observation protégée de l’événement principal",
-        "description": "Point de vue sécurisé et dissimulé pour vivre l’instant tel qu’il s’est produit."
-      }
-    ],
-    "niveau_difficulte": "modéré",
-    "public_cible": [
-      "étudiants",
-      "curieux d'histoire",
-      "passionnés d'aventure"
-    ],
-    "note_moyenne": 4.0,
-    "nombre_avis": 27,
-    "infos_pratiques": [
-      "Langue du contexte : langue locale d’époque",
-      "Tenue sobre recommandée",
-      "Interaction directe avec les personnages historiques interdite"
-    ],
-    "conditions_annulation": "Annulation gratuite jusqu’à 48h avant le départ.",
-    "theme": "Prise de la Bastille"
-  },
-  {
-    "id": 2,
-    "titre": "Avant Apollo 11",
-    "image": "2.png",
-    "duree": 7,
-    "description": "Voyage unique à Mer de la Tranquillité,Lune lors de l'événement « Avant Apollo 11 ».",
-    "type_temporel": "futur",
-    "lieu": "Mer de la Tranquillité,Lune",
-    "date_depart_personnalisable": true,
-    "prix_base": 2554,
-    "programme": [
-      {
-        "jour": 1,
-        "titre": "Jour 1",
-        "activite": "Arrivée, installation et familiarisation avec l’époque"
-      },
-      {
-        "jour": 2,
-        "titre": "Jour 2",
-        "activite": "Observation discrète de la situation locale"
-      },
-      {
-        "jour": 3,
-        "titre": "Jour 3",
-        "activite": "Présence sécurisée à l’événement historique principal"
-      },
-      {
-        "jour": 4,
-        "titre": "Jour 4",
-        "activite": "Exploration encadrée ou activité optionnelle"
-      },
-      {
-        "jour": 5,
-        "titre": "Jour 5",
-        "activite": "Exploration encadrée ou activité optionnelle"
-      },
-      {
-        "jour": 6,
-        "titre": "Jour 6",
-        "activite": "Exploration encadrée ou activité optionnelle"
-      },
-      {
-        "jour": 7,
-        "titre": "Jour 7",
-        "activite": "Temps libre, souvenirs personnels et retour sécurisé"
-      }
-    ],
-    "options": [
-      {
-        "type": "hébergement",
-        "nom": "Tente de l’époque",
-        "prix_par_personne": 90
-      },
-      {
-        "type": "expédition",
-        "nom": "Visite guidée historique",
-        "prix_par_personne": 180
-      },
-      {
-        "type": "repas",
-        "nom": "Repas typique de l’époque",
-        "prix_par_personne": 75
-      },
-      {
-        "type": "souvenir",
-        "nom": "Objet d’époque discret",
-        "prix_par_personne": 60
-      },
-      {
-        "type": "bonus",
-        "nom": "Accès à une scène secondaire confidentielle",
-        "prix_par_personne": 100
-      }
-    ],
-    "activites_incluses": [
-      {
-        "nom": "Briefing temporel",
-        "description": "Séance préparatoire avant immersion pour comprendre les enjeux historiques."
-      },
-      {
-        "nom": "Exploration encadrée",
-        "description": "Parcours dans l’environnement historique réel, sans modifier le cours du temps."
-      },
-      {
-        "nom": "Observation protégée de l’événement principal",
-        "description": "Point de vue sécurisé et dissimulé pour vivre l’instant tel qu’il s’est produit."
-      }
-    ],
-    "niveau_difficulte": "modéré",
-    "public_cible": [
-      "étudiants",
-      "curieux d'histoire",
-      "passionnés d'aventure"
-    ],
-    "note_moyenne": 4.3,
-    "nombre_avis": 29,
-    "infos_pratiques": [
-      "Langue du contexte : langue locale d’époque",
-      "Tenue sobre recommandée",
-      "Interaction directe avec les personnages historiques interdite"
-    ],
-    "conditions_annulation": "Annulation gratuite jusqu’à 48h avant le départ.",
-    "theme": "Avant Apollo 11"
-  },
-  {
-    "id": 3,
-    "titre": "Ère des dinosaures",
-    "image": "3.png",
-    "duree": 8,
-    "description": "Voyage unique à Patagonie,Argentine lors de l'événement « Ère des dinosaures ».",
-    "type_temporel": "passé",
-    "lieu": "Patagonie,Argentine",
-    "date_depart_personnalisable": true,
-    "prix_base": 1429,
-    "programme": [
-      {
-        "jour": 1,
-        "titre": "Jour 1",
-        "activite": "Arrivée, installation et familiarisation avec l’époque"
-      },
-      {
-        "jour": 2,
-        "titre": "Jour 2",
-        "activite": "Observation discrète de la situation locale"
-      },
-      {
-        "jour": 3,
-        "titre": "Jour 3",
-        "activite": "Présence sécurisée à l’événement historique principal"
-      },
-      {
-        "jour": 4,
-        "titre": "Jour 4",
-        "activite": "Exploration encadrée ou activité optionnelle"
-      },
-      {
-        "jour": 5,
-        "titre": "Jour 5",
-        "activite": "Exploration encadrée ou activité optionnelle"
-      },
-      {
-        "jour": 6,
-        "titre": "Jour 6",
-        "activite": "Exploration encadrée ou activité optionnelle"
-      },
-      {
-        "jour": 7,
-        "titre": "Jour 7",
-        "activite": "Exploration encadrée ou activité optionnelle"
-      },
-      {
-        "jour": 8,
-        "titre": "Jour 8",
-        "activite": "Temps libre, souvenirs personnels et retour sécurisé"
-      }
-    ],
-    "options": [
-      {
-        "type": "hébergement",
-        "nom": "Tente de l’époque",
-        "prix_par_personne": 90
-      },
-      {
-        "type": "activité",
-        "nom": "Immersion 360°",
-        "prix_par_personne": 100
-      },
-      {
-        "type": "repas",
-        "nom": "Repas typique de l’époque",
-        "prix_par_personne": 75
-      },
-      {
-        "type": "souvenir",
-        "nom": "Objet d’époque discret",
-        "prix_par_personne": 60
-      },
-      {
-        "type": "bonus",
-        "nom": "Accès à une scène secondaire confidentielle",
-        "prix_par_personne": 100
-      }
-    ],
-    "activites_incluses": [
-      {
-        "nom": "Briefing temporel",
-        "description": "Séance préparatoire avant immersion pour comprendre les enjeux historiques."
-      },
-      {
-        "nom": "Exploration encadrée",
-        "description": "Parcours dans l’environnement historique réel, sans modifier le cours du temps."
-      },
-      {
-        "nom": "Observation protégée de l’événement principal",
-        "description": "Point de vue sécurisé et dissimulé pour vivre l’instant tel qu’il s’est produit."
-      }
-    ],
-    "niveau_difficulte": "modéré",
-    "public_cible": [
-      "étudiants",
-      "curieux d'histoire",
-      "passionnés d'aventure"
-    ],
-    "note_moyenne": 3.7,
-    "nombre_avis": 31,
-    "infos_pratiques": [
-      "Langue du contexte : langue locale d’époque",
-      "Tenue sobre recommandée",
-      "Interaction directe avec les personnages historiques interdite"
-    ],
-    "conditions_annulation": "Annulation gratuite jusqu’à 48h avant le départ.",
-    "theme": "Ère des dinosaures"
-  },
-  {
-    "id": 4,
-    "titre": "Assassinat de Jules César",
-    "image": "4.png",
-    "duree": 4,
-    "description": "Voyage unique à Rome,Italie lors de l'événement « Assassinat de Jules César ».",
-    "type_temporel": "passé",
-    "lieu": "Rome,Italie",
-    "date_depart_personnalisable": true,
-    "prix_base": 2378,
-    "programme": [
-      {
-        "jour": 1,
-        "titre": "Jour 1",
-        "activite": "Arrivée, installation et familiarisation avec l’époque"
-      },
-      {
-        "jour": 2,
-        "titre": "Jour 2",
-        "activite": "Observation discrète de la situation locale"
-      },
-      {
-        "jour": 3,
-        "titre": "Jour 3",
-        "activite": "Présence sécurisée à l’événement historique principal"
-      },
-      {
-        "jour": 4,
-        "titre": "Jour 4",
-        "activite": "Temps libre, souvenirs personnels et retour sécurisé"
-      }
-    ],
-    "options": [
-      {
-        "type": "activité",
-        "nom": "Immersion 360°",
-        "prix_par_personne": 100
-      },
-      {
-        "type": "hébergement",
-        "nom": "Auberge temporelle",
-        "prix_par_personne": 120
-      },
-      {
-        "type": "repas",
-        "nom": "Repas typique de l’époque",
-        "prix_par_personne": 75
-      },
-      {
-        "type": "souvenir",
-        "nom": "Objet d’époque discret",
-        "prix_par_personne": 60
-      },
-      {
-        "type": "bonus",
-        "nom": "Accès à une scène secondaire confidentielle",
-        "prix_par_personne": 100
-      }
-    ],
-    "activites_incluses": [
-      {
-        "nom": "Briefing temporel",
-        "description": "Séance préparatoire avant immersion pour comprendre les enjeux historiques."
-      },
-      {
-        "nom": "Exploration encadrée",
-        "description": "Parcours dans l’environnement historique réel, sans modifier le cours du temps."
-      },
-      {
-        "nom": "Observation protégée de l’événement principal",
-        "description": "Point de vue sécurisé et dissimulé pour vivre l’instant tel qu’il s’est produit."
-      }
-    ],
-    "niveau_difficulte": "modéré",
-    "public_cible": [
-      "étudiants",
-      "curieux d'histoire",
-      "passionnés d'aventure"
-    ],
-    "note_moyenne": 4.0,
-    "nombre_avis": 33,
-    "infos_pratiques": [
-      "Langue du contexte : langue locale d’époque",
-      "Tenue sobre recommandée",
-      "Interaction directe avec les personnages historiques interdite"
-    ],
-    "conditions_annulation": "Annulation gratuite jusqu’à 48h avant le départ.",
-    "theme": "Assassinat de Jules César"
-  },
-  {
-    "id": 5,
-    "titre": "Colonie martienne",
-    "image": "5.png",
-    "duree": 6,
-    "description": "Voyage unique à Valles Marineris,Mars lors de l'événement « Colonie martienne ».",
-    "type_temporel": "futur",
-    "lieu": "Valles Marineris,Mars",
-    "date_depart_personnalisable": true,
-    "prix_base": 1346,
-    "programme": [
-      {
-        "jour": 1,
-        "titre": "Jour 1",
-        "activite": "Arrivée, installation et familiarisation avec l’époque"
-      },
-      {
-        "jour": 2,
-        "titre": "Jour 2",
-        "activite": "Observation discrète de la situation locale"
-      },
-      {
-        "jour": 3,
-        "titre": "Jour 3",
-        "activite": "Présence sécurisée à l’événement historique principal"
-      },
-      {
-        "jour": 4,
-        "titre": "Jour 4",
-        "activite": "Exploration encadrée ou activité optionnelle"
-      },
-      {
-        "jour": 5,
-        "titre": "Jour 5",
-        "activite": "Exploration encadrée ou activité optionnelle"
-      },
-      {
-        "jour": 6,
-        "titre": "Jour 6",
-        "activite": "Temps libre, souvenirs personnels et retour sécurisé"
-      }
-    ],
-    "options": [
-      {
-        "type": "hébergement",
-        "nom": "Tente de l’époque",
-        "prix_par_personne": 90
-      },
-      {
-        "type": "expédition",
-        "nom": "Visite guidée historique",
-        "prix_par_personne": 180
-      },
-      {
-        "type": "repas",
-        "nom": "Repas typique de l’époque",
-        "prix_par_personne": 75
-      },
-      {
-        "type": "souvenir",
-        "nom": "Objet d’époque discret",
-        "prix_par_personne": 60
-      },
-      {
-        "type": "bonus",
-        "nom": "Accès à une scène secondaire confidentielle",
-        "prix_par_personne": 100
-      }
-    ],
-    "activites_incluses": [
-      {
-        "nom": "Briefing temporel",
-        "description": "Séance préparatoire avant immersion pour comprendre les enjeux historiques."
-      },
-      {
-        "nom": "Exploration encadrée",
-        "description": "Parcours dans l’environnement historique réel, sans modifier le cours du temps."
-      },
-      {
-        "nom": "Observation protégée de l’événement principal",
-        "description": "Point de vue sécurisé et dissimulé pour vivre l’instant tel qu’il s’est produit."
-      }
-    ],
-    "niveau_difficulte": "modéré",
-    "public_cible": [
-      "étudiants",
-      "curieux d'histoire",
-      "passionnés d'aventure"
-    ],
-    "note_moyenne": 4.3,
-    "nombre_avis": 35,
-    "infos_pratiques": [
-      "Langue du contexte : langue locale d’époque",
-      "Tenue sobre recommandée",
-      "Interaction directe avec les personnages historiques interdite"
-    ],
-    "conditions_annulation": "Annulation gratuite jusqu’à 48h avant le départ.",
-    "theme": "Colonie martienne"
-  },
-  {
-    "id": 6,
-    "titre": "Tokyo flottante",
-    "image": "6.png",
-    "duree": 3,
-    "description": "Voyage unique à Tokyo,Japon lors de l'événement « Tokyo flottante ».",
-    "type_temporel": "futur",
-    "lieu": "Tokyo,Japon",
-    "date_depart_personnalisable": true,
-    "prix_base": 2067,
-    "programme": [
-      {
-        "jour": 1,
-        "titre": "Jour 1",
-        "activite": "Arrivée, installation et familiarisation avec l’époque"
-      },
-      {
-        "jour": 2,
-        "titre": "Jour 2",
-        "activite": "Observation discrète de la situation locale"
-      },
-      {
-        "jour": 3,
-        "titre": "Jour 3",
-        "activite": "Temps libre, souvenirs personnels et retour sécurisé"
-      }
-    ],
-    "options": [
-      {
-        "type": "activité",
-        "nom": "Immersion 360°",
-        "prix_par_personne": 100
-      },
-      {
-        "type": "hébergement",
-        "nom": "Tente de l’époque",
-        "prix_par_personne": 90
-      },
-      {
-        "type": "repas",
-        "nom": "Repas typique de l’époque",
-        "prix_par_personne": 75
-      },
-      {
-        "type": "souvenir",
-        "nom": "Objet d’époque discret",
-        "prix_par_personne": 60
-      },
-      {
-        "type": "bonus",
-        "nom": "Accès à une scène secondaire confidentielle",
-        "prix_par_personne": 100
-      }
-    ],
-    "activites_incluses": [
-      {
-        "nom": "Briefing temporel",
-        "description": "Séance préparatoire avant immersion pour comprendre les enjeux historiques."
-      },
-      {
-        "nom": "Exploration encadrée",
-        "description": "Parcours dans l’environnement historique réel, sans modifier le cours du temps."
-      },
-      {
-        "nom": "Observation protégée de l’événement principal",
-        "description": "Point de vue sécurisé et dissimulé pour vivre l’instant tel qu’il s’est produit."
-      }
-    ],
-    "niveau_difficulte": "modéré",
-    "public_cible": [
-      "étudiants",
-      "curieux d'histoire",
-      "passionnés d'aventure"
-    ],
-    "note_moyenne": 3.7,
-    "nombre_avis": 37,
-    "infos_pratiques": [
-      "Langue du contexte : langue locale d’époque",
-      "Tenue sobre recommandée",
-      "Interaction directe avec les personnages historiques interdite"
-    ],
-    "conditions_annulation": "Annulation gratuite jusqu’à 48h avant le départ.",
-    "theme": "Tokyo flottante"
-  },
-  {
-    "id": 7,
-    "titre": "Révolte des IA",
-    "image": "7.png",
-    "duree": 8,
-    "description": "Voyage unique à Pékin,Chine lors de l'événement « Révolte des IA ».",
-    "type_temporel": "passé",
-    "lieu": "Pékin,Chine",
-    "date_depart_personnalisable": true,
-    "prix_base": 634,
-    "programme": [
-      {
-        "jour": 1,
-        "titre": "Jour 1",
-        "activite": "Arrivée, installation et familiarisation avec l’époque"
-      },
-      {
-        "jour": 2,
-        "titre": "Jour 2",
-        "activite": "Observation discrète de la situation locale"
-      },
-      {
-        "jour": 3,
-        "titre": "Jour 3",
-        "activite": "Présence sécurisée à l’événement historique principal"
-      },
-      {
-        "jour": 4,
-        "titre": "Jour 4",
-        "activite": "Exploration encadrée ou activité optionnelle"
-      },
-      {
-        "jour": 5,
-        "titre": "Jour 5",
-        "activite": "Exploration encadrée ou activité optionnelle"
-      },
-      {
-        "jour": 6,
-        "titre": "Jour 6",
-        "activite": "Exploration encadrée ou activité optionnelle"
-      },
-      {
-        "jour": 7,
-        "titre": "Jour 7",
-        "activite": "Exploration encadrée ou activité optionnelle"
-      },
-      {
-        "jour": 8,
-        "titre": "Jour 8",
-        "activite": "Temps libre, souvenirs personnels et retour sécurisé"
-      }
-    ],
-    "options": [
-      {
-        "type": "hébergement",
-        "nom": "Tente de l’époque",
-        "prix_par_personne": 90
-      },
-      {
-        "type": "expédition",
-        "nom": "Visite guidée historique",
-        "prix_par_personne": 180
-      },
-      {
-        "type": "repas",
-        "nom": "Repas typique de l’époque",
-        "prix_par_personne": 75
-      },
-      {
-        "type": "souvenir",
-        "nom": "Objet d’époque discret",
-        "prix_par_personne": 60
-      },
-      {
-        "type": "bonus",
-        "nom": "Accès à une scène secondaire confidentielle",
-        "prix_par_personne": 100
-      }
-    ],
-    "activites_incluses": [
-      {
-        "nom": "Briefing temporel",
-        "description": "Séance préparatoire avant immersion pour comprendre les enjeux historiques."
-      },
-      {
-        "nom": "Exploration encadrée",
-        "description": "Parcours dans l’environnement historique réel, sans modifier le cours du temps."
-      },
-      {
-        "nom": "Observation protégée de l’événement principal",
-        "description": "Point de vue sécurisé et dissimulé pour vivre l’instant tel qu’il s’est produit."
-      }
-    ],
-    "niveau_difficulte": "modéré",
-    "public_cible": [
-      "étudiants",
-      "curieux d'histoire",
-      "passionnés d'aventure"
-    ],
-    "note_moyenne": 4.0,
-    "nombre_avis": 39,
-    "infos_pratiques": [
-      "Langue du contexte : langue locale d’époque",
-      "Tenue sobre recommandée",
-      "Interaction directe avec les personnages historiques interdite"
-    ],
-    "conditions_annulation": "Annulation gratuite jusqu’à 48h avant le départ.",
-    "theme": "Révolte des IA"
-  },
-  {
-    "id": 8,
-    "titre": "Terre ré-ensauvagée",
-    "image": "8.png",
-    "duree": 8,
-    "description": "Voyage unique à Tromsø,Norvège lors de l'événement « Terre ré-ensauvagée ».",
-    "type_temporel": "futur",
-    "lieu": "Tromsø,Norvège",
-    "date_depart_personnalisable": true,
-    "prix_base": 2412,
-    "programme": [
-      {
-        "jour": 1,
-        "titre": "Jour 1",
-        "activite": "Arrivée, installation et familiarisation avec l’époque"
-      },
-      {
-        "jour": 2,
-        "titre": "Jour 2",
-        "activite": "Observation discrète de la situation locale"
-      },
-      {
-        "jour": 3,
-        "titre": "Jour 3",
-        "activite": "Présence sécurisée à l’événement historique principal"
-      },
-      {
-        "jour": 4,
-        "titre": "Jour 4",
-        "activite": "Exploration encadrée ou activité optionnelle"
-      },
-      {
-        "jour": 5,
-        "titre": "Jour 5",
-        "activite": "Exploration encadrée ou activité optionnelle"
-      },
-      {
-        "jour": 6,
-        "titre": "Jour 6",
-        "activite": "Exploration encadrée ou activité optionnelle"
-      },
-      {
-        "jour": 7,
-        "titre": "Jour 7",
-        "activite": "Exploration encadrée ou activité optionnelle"
-      },
-      {
-        "jour": 8,
-        "titre": "Jour 8",
-        "activite": "Temps libre, souvenirs personnels et retour sécurisé"
-      }
-    ],
-    "options": [
-      {
-        "type": "activité",
-        "nom": "Immersion 360°",
-        "prix_par_personne": 100
-      },
-      {
-        "type": "hébergement",
-        "nom": "Tente de l’époque",
-        "prix_par_personne": 90
-      },
-      {
-        "type": "repas",
-        "nom": "Repas typique de l’époque",
-        "prix_par_personne": 75
-      },
-      {
-        "type": "souvenir",
-        "nom": "Objet d’époque discret",
-        "prix_par_personne": 60
-      },
-      {
-        "type": "bonus",
-        "nom": "Accès à une scène secondaire confidentielle",
-        "prix_par_personne": 100
-      }
-    ],
-    "activites_incluses": [
-      {
-        "nom": "Briefing temporel",
-        "description": "Séance préparatoire avant immersion pour comprendre les enjeux historiques."
-      },
-      {
-        "nom": "Exploration encadrée",
-        "description": "Parcours dans l’environnement historique réel, sans modifier le cours du temps."
-      },
-      {
-        "nom": "Observation protégée de l’événement principal",
-        "description": "Point de vue sécurisé et dissimulé pour vivre l’instant tel qu’il s’est produit."
-      }
-    ],
-    "niveau_difficulte": "modéré",
-    "public_cible": [
-      "étudiants",
-      "curieux d'histoire",
-      "passionnés d'aventure"
-    ],
-    "note_moyenne": 4.3,
-    "nombre_avis": 41,
-    "infos_pratiques": [
-      "Langue du contexte : langue locale d’époque",
-      "Tenue sobre recommandée",
-      "Interaction directe avec les personnages historiques interdite"
-    ],
-    "conditions_annulation": "Annulation gratuite jusqu’à 48h avant le départ.",
-    "theme": "Terre ré-ensauvagée"
-  },
-  {
-    "id": 9,
-    "titre": "Découverte de l’Amérique",
-    "image": "9.png",
-    "duree": 6,
-    "description": "Voyage unique à San Salvador,Bahamas lors de l'événement « Découverte de l’Amérique ».",
-    "type_temporel": "passé",
-    "lieu": "San Salvador,Bahamas",
-    "date_depart_personnalisable": true,
-    "prix_base": 2353,
-    "programme": [
-      {
-        "jour": 1,
-        "titre": "Jour 1",
-        "activite": "Arrivée, installation et familiarisation avec l’époque"
-      },
-      {
-        "jour": 2,
-        "titre": "Jour 2",
-        "activite": "Observation discrète de la situation locale"
-      },
-      {
-        "jour": 3,
-        "titre": "Jour 3",
-        "activite": "Présence sécurisée à l’événement historique principal"
-      },
-      {
-        "jour": 4,
-        "titre": "Jour 4",
-        "activite": "Exploration encadrée ou activité optionnelle"
-      },
-      {
-        "jour": 5,
-        "titre": "Jour 5",
-        "activite": "Exploration encadrée ou activité optionnelle"
-      },
-      {
-        "jour": 6,
-        "titre": "Jour 6",
-        "activite": "Temps libre, souvenirs personnels et retour sécurisé"
-      }
-    ],
-    "options": [
-      {
-        "type": "hébergement",
-        "nom": "Auberge temporelle",
-        "prix_par_personne": 120
-      },
-      {
-        "type": "activité",
-        "nom": "Immersion 360°",
-        "prix_par_personne": 100
-      },
-      {
-        "type": "repas",
-        "nom": "Repas typique de l’époque",
-        "prix_par_personne": 75
-      },
-      {
-        "type": "souvenir",
-        "nom": "Objet d’époque discret",
-        "prix_par_personne": 60
-      },
-      {
-        "type": "bonus",
-        "nom": "Accès à une scène secondaire confidentielle",
-        "prix_par_personne": 100
-      }
-    ],
-    "activites_incluses": [
-      {
-        "nom": "Briefing temporel",
-        "description": "Séance préparatoire avant immersion pour comprendre les enjeux historiques."
-      },
-      {
-        "nom": "Exploration encadrée",
-        "description": "Parcours dans l’environnement historique réel, sans modifier le cours du temps."
-      },
-      {
-        "nom": "Observation protégée de l’événement principal",
-        "description": "Point de vue sécurisé et dissimulé pour vivre l’instant tel qu’il s’est produit."
-      }
-    ],
-    "niveau_difficulte": "modéré",
-    "public_cible": [
-      "étudiants",
-      "curieux d'histoire",
-      "passionnés d'aventure"
-    ],
-    "note_moyenne": 3.7,
-    "nombre_avis": 43,
-    "infos_pratiques": [
-      "Langue du contexte : langue locale d’époque",
-      "Tenue sobre recommandée",
-      "Interaction directe avec les personnages historiques interdite"
-    ],
-    "conditions_annulation": "Annulation gratuite jusqu’à 48h avant le départ.",
-    "theme": "Découverte de l’Amérique"
-  },
-  {
-    "id": 10,
-    "titre": "Débarquement de Normandie",
-    "image": "10.png",
-    "duree": 6,
-    "description": "Voyage unique à Plage d’Omaha,France lors de l'événement « Débarquement de Normandie ».",
-    "type_temporel": "futur",
-    "lieu": "Plage d’Omaha,France",
-    "date_depart_personnalisable": true,
-    "prix_base": 637,
-    "programme": [
-      {
-        "jour": 1,
-        "titre": "Jour 1",
-        "activite": "Arrivée, installation et familiarisation avec l’époque"
-      },
-      {
-        "jour": 2,
-        "titre": "Jour 2",
-        "activite": "Observation discrète de la situation locale"
-      },
-      {
-        "jour": 3,
-        "titre": "Jour 3",
-        "activite": "Présence sécurisée à l’événement historique principal"
-      },
-      {
-        "jour": 4,
-        "titre": "Jour 4",
-        "activite": "Exploration encadrée ou activité optionnelle"
-      },
-      {
-        "jour": 5,
-        "titre": "Jour 5",
-        "activite": "Exploration encadrée ou activité optionnelle"
-      },
-      {
-        "jour": 6,
-        "titre": "Jour 6",
-        "activite": "Temps libre, souvenirs personnels et retour sécurisé"
-      }
-    ],
-    "options": [
-      {
-        "type": "expédition",
-        "nom": "Visite guidée historique",
-        "prix_par_personne": 180
-      },
-      {
-        "type": "hébergement",
-        "nom": "Tente de l’époque",
-        "prix_par_personne": 90
-      },
-      {
-        "type": "repas",
-        "nom": "Repas typique de l’époque",
-        "prix_par_personne": 75
-      },
-      {
-        "type": "souvenir",
-        "nom": "Objet d’époque discret",
-        "prix_par_personne": 60
-      },
-      {
-        "type": "bonus",
-        "nom": "Accès à une scène secondaire confidentielle",
-        "prix_par_personne": 100
-      }
-    ],
-    "activites_incluses": [
-      {
-        "nom": "Briefing temporel",
-        "description": "Séance préparatoire avant immersion pour comprendre les enjeux historiques."
-      },
-      {
-        "nom": "Exploration encadrée",
-        "description": "Parcours dans l’environnement historique réel, sans modifier le cours du temps."
-      },
-      {
-        "nom": "Observation protégée de l’événement principal",
-        "description": "Point de vue sécurisé et dissimulé pour vivre l’instant tel qu’il s’est produit."
-      }
-    ],
-    "niveau_difficulte": "modéré",
-    "public_cible": [
-      "étudiants",
-      "curieux d'histoire",
-      "passionnés d'aventure"
-    ],
-    "note_moyenne": 4.0,
-    "nombre_avis": 45,
-    "infos_pratiques": [
-      "Langue du contexte : langue locale d’époque",
-      "Tenue sobre recommandée",
-      "Interaction directe avec les personnages historiques interdite"
-    ],
-    "conditions_annulation": "Annulation gratuite jusqu’à 48h avant le départ.",
-    "theme": "Débarquement de Normandie"
-  },
-  {
-    "id": 11,
-    "titre": "Assassinat de JFK",
-    "image": "11.png",
-    "duree": 3,
-    "description": "Voyage unique à Dallas,États-Unis lors de l'événement « Assassinat de JFK ».",
-    "type_temporel": "passé",
-    "lieu": "Dallas,États-Unis",
-    "date_depart_personnalisable": true,
-    "prix_base": 2181,
-    "programme": [
-      {
-        "jour": 1,
-        "titre": "Jour 1",
-        "activite": "Arrivée, installation et familiarisation avec l’époque"
-      },
-      {
-        "jour": 2,
-        "titre": "Jour 2",
-        "activite": "Observation discrète de la situation locale"
-      },
-      {
-        "jour": 3,
-        "titre": "Jour 3",
-        "activite": "Temps libre, souvenirs personnels et retour sécurisé"
-      }
-    ],
-    "options": [
-      {
-        "type": "activité",
-        "nom": "Immersion 360°",
-        "prix_par_personne": 100
-      },
-      {
-        "type": "expédition",
-        "nom": "Visite guidée historique",
-        "prix_par_personne": 180
-      },
-      {
-        "type": "repas",
-        "nom": "Repas typique de l’époque",
-        "prix_par_personne": 75
-      },
-      {
-        "type": "souvenir",
-        "nom": "Objet d’époque discret",
-        "prix_par_personne": 60
-      },
-      {
-        "type": "bonus",
-        "nom": "Accès à une scène secondaire confidentielle",
-        "prix_par_personne": 100
-      }
-    ],
-    "activites_incluses": [
-      {
-        "nom": "Briefing temporel",
-        "description": "Séance préparatoire avant immersion pour comprendre les enjeux historiques."
-      },
-      {
-        "nom": "Exploration encadrée",
-        "description": "Parcours dans l’environnement historique réel, sans modifier le cours du temps."
-      },
-      {
-        "nom": "Observation protégée de l’événement principal",
-        "description": "Point de vue sécurisé et dissimulé pour vivre l’instant tel qu’il s’est produit."
-      }
-    ],
-    "niveau_difficulte": "modéré",
-    "public_cible": [
-      "étudiants",
-      "curieux d'histoire",
-      "passionnés d'aventure"
-    ],
-    "note_moyenne": 4.3,
-    "nombre_avis": 47,
-    "infos_pratiques": [
-      "Langue du contexte : langue locale d’époque",
-      "Tenue sobre recommandée",
-      "Interaction directe avec les personnages historiques interdite"
-    ],
-    "conditions_annulation": "Annulation gratuite jusqu’à 48h avant le départ.",
-    "theme": "Assassinat de JFK"
-  },
-  {
-    "id": 12,
-    "titre": "Victoire de la France en Coupe du Monde",
-    "image": "12.png",
-    "duree": 5,
-    "description": "Voyage unique à Moscou,Russie lors de l'événement « Victoire de la France en Coupe du Monde ».",
-    "type_temporel": "futur",
-    "lieu": "Moscou,Russie",
-    "date_depart_personnalisable": true,
-    "prix_base": 2218,
-    "programme": [
-      {
-        "jour": 1,
-        "titre": "Jour 1",
-        "activite": "Arrivée, installation et familiarisation avec l’époque"
-      },
-      {
-        "jour": 2,
-        "titre": "Jour 2",
-        "activite": "Observation discrète de la situation locale"
-      },
-      {
-        "jour": 3,
-        "titre": "Jour 3",
-        "activite": "Présence sécurisée à l’événement historique principal"
-      },
-      {
-        "jour": 4,
-        "titre": "Jour 4",
-        "activite": "Exploration encadrée ou activité optionnelle"
-      },
-      {
-        "jour": 5,
-        "titre": "Jour 5",
-        "activite": "Temps libre, souvenirs personnels et retour sécurisé"
-      }
-    ],
-    "options": [
-      {
-        "type": "hébergement",
-        "nom": "Tente de l’époque",
-        "prix_par_personne": 90
-      },
-      {
-        "type": "expédition",
-        "nom": "Visite guidée historique",
-        "prix_par_personne": 180
-      },
-      {
-        "type": "repas",
-        "nom": "Repas typique de l’époque",
-        "prix_par_personne": 75
-      },
-      {
-        "type": "souvenir",
-        "nom": "Objet d’époque discret",
-        "prix_par_personne": 60
-      },
-      {
-        "type": "bonus",
-        "nom": "Accès à une scène secondaire confidentielle",
-        "prix_par_personne": 100
-      }
-    ],
-    "activites_incluses": [
-      {
-        "nom": "Briefing temporel",
-        "description": "Séance préparatoire avant immersion pour comprendre les enjeux historiques."
-      },
-      {
-        "nom": "Exploration encadrée",
-        "description": "Parcours dans l’environnement historique réel, sans modifier le cours du temps."
-      },
-      {
-        "nom": "Observation protégée de l’événement principal",
-        "description": "Point de vue sécurisé et dissimulé pour vivre l’instant tel qu’il s’est produit."
-      }
-    ],
-    "niveau_difficulte": "modéré",
-    "public_cible": [
-      "étudiants",
-      "curieux d'histoire",
-      "passionnés d'aventure"
-    ],
-    "note_moyenne": 3.7,
-    "nombre_avis": 49,
-    "infos_pratiques": [
-      "Langue du contexte : langue locale d’époque",
-      "Tenue sobre recommandée",
-      "Interaction directe avec les personnages historiques interdite"
-    ],
-    "conditions_annulation": "Annulation gratuite jusqu’à 48h avant le départ.",
-    "theme": "Victoire de la France en Coupe du Monde"
-  },
-  {
-    "id": 13,
-    "titre": "Couronnement de Napoléon",
-    "image": "13.png",
-    "duree": 10,
-    "description": "Voyage unique à Paris,France lors de l'événement « Couronnement de Napoléon ».",
-    "type_temporel": "passé",
-    "lieu": "Paris,France",
-    "date_depart_personnalisable": true,
-    "prix_base": 2485,
-    "programme": [
-      {
-        "jour": 1,
-        "titre": "Jour 1",
-        "activite": "Arrivée, installation et familiarisation avec l’époque"
-      },
-      {
-        "jour": 2,
-        "titre": "Jour 2",
-        "activite": "Observation discrète de la situation locale"
-      },
-      {
-        "jour": 3,
-        "titre": "Jour 3",
-        "activite": "Présence sécurisée à l’événement historique principal"
-      },
-      {
-        "jour": 4,
-        "titre": "Jour 4",
-        "activite": "Exploration encadrée ou activité optionnelle"
-      },
-      {
-        "jour": 5,
-        "titre": "Jour 5",
-        "activite": "Exploration encadrée ou activité optionnelle"
-      },
-      {
-        "jour": 6,
-        "titre": "Jour 6",
-        "activite": "Exploration encadrée ou activité optionnelle"
-      },
-      {
-        "jour": 7,
-        "titre": "Jour 7",
-        "activite": "Exploration encadrée ou activité optionnelle"
-      },
-      {
-        "jour": 8,
-        "titre": "Jour 8",
-        "activite": "Exploration encadrée ou activité optionnelle"
-      },
-      {
-        "jour": 9,
-        "titre": "Jour 9",
-        "activite": "Exploration encadrée ou activité optionnelle"
-      },
-      {
-        "jour": 10,
-        "titre": "Jour 10",
-        "activite": "Temps libre, souvenirs personnels et retour sécurisé"
-      }
-    ],
-    "options": [
-      {
-        "type": "hébergement",
-        "nom": "Auberge temporelle",
-        "prix_par_personne": 120
-      },
-      {
-        "type": "activité",
-        "nom": "Immersion 360°",
-        "prix_par_personne": 100
-      },
-      {
-        "type": "repas",
-        "nom": "Repas typique de l’époque",
-        "prix_par_personne": 75
-      },
-      {
-        "type": "souvenir",
-        "nom": "Objet d’époque discret",
-        "prix_par_personne": 60
-      },
-      {
-        "type": "bonus",
-        "nom": "Accès à une scène secondaire confidentielle",
-        "prix_par_personne": 100
-      }
-    ],
-    "activites_incluses": [
-      {
-        "nom": "Briefing temporel",
-        "description": "Séance préparatoire avant immersion pour comprendre les enjeux historiques."
-      },
-      {
-        "nom": "Exploration encadrée",
-        "description": "Parcours dans l’environnement historique réel, sans modifier le cours du temps."
-      },
-      {
-        "nom": "Observation protégée de l’événement principal",
-        "description": "Point de vue sécurisé et dissimulé pour vivre l’instant tel qu’il s’est produit."
-      }
-    ],
-    "niveau_difficulte": "modéré",
-    "public_cible": [
-      "étudiants",
-      "curieux d'histoire",
-      "passionnés d'aventure"
-    ],
-    "note_moyenne": 4.0,
-    "nombre_avis": 51,
-    "infos_pratiques": [
-      "Langue du contexte : langue locale d’époque",
-      "Tenue sobre recommandée",
-      "Interaction directe avec les personnages historiques interdite"
-    ],
-    "conditions_annulation": "Annulation gratuite jusqu’à 48h avant le départ.",
-    "theme": "Couronnement de Napoléon"
-  },
-  {
-    "id": 14,
-    "titre": "Chute du mur de Berlin",
-    "image": "14.png",
-    "duree": 7,
-    "description": "Voyage unique à Berlin,Allemagne lors de l'événement « Chute du mur de Berlin ».",
-    "type_temporel": "passé",
-    "lieu": "Berlin,Allemagne",
-    "date_depart_personnalisable": true,
-    "prix_base": 1863,
-    "programme": [
-      {
-        "jour": 1,
-        "titre": "Jour 1",
-        "activite": "Arrivée, installation et familiarisation avec l’époque"
-      },
-      {
-        "jour": 2,
-        "titre": "Jour 2",
-        "activite": "Observation discrète de la situation locale"
-      },
-      {
-        "jour": 3,
-        "titre": "Jour 3",
-        "activite": "Présence sécurisée à l’événement historique principal"
-      },
-      {
-        "jour": 4,
-        "titre": "Jour 4",
-        "activite": "Exploration encadrée ou activité optionnelle"
-      },
-      {
-        "jour": 5,
-        "titre": "Jour 5",
-        "activite": "Exploration encadrée ou activité optionnelle"
-      },
-      {
-        "jour": 6,
-        "titre": "Jour 6",
-        "activite": "Exploration encadrée ou activité optionnelle"
-      },
-      {
-        "jour": 7,
-        "titre": "Jour 7",
-        "activite": "Temps libre, souvenirs personnels et retour sécurisé"
-      }
-    ],
-    "options": [
-      {
-        "type": "hébergement",
-        "nom": "Tente de l’époque",
-        "prix_par_personne": 90
-      },
-      {
-        "type": "activité",
-        "nom": "Immersion 360°",
-        "prix_par_personne": 100
-      },
-      {
-        "type": "repas",
-        "nom": "Repas typique de l’époque",
-        "prix_par_personne": 75
-      },
-      {
-        "type": "souvenir",
-        "nom": "Objet d’époque discret",
-        "prix_par_personne": 60
-      },
-      {
-        "type": "bonus",
-        "nom": "Accès à une scène secondaire confidentielle",
-        "prix_par_personne": 100
-      }
-    ],
-    "activites_incluses": [
-      {
-        "nom": "Briefing temporel",
-        "description": "Séance préparatoire avant immersion pour comprendre les enjeux historiques."
-      },
-      {
-        "nom": "Exploration encadrée",
-        "description": "Parcours dans l’environnement historique réel, sans modifier le cours du temps."
-      },
-      {
-        "nom": "Observation protégée de l’événement principal",
-        "description": "Point de vue sécurisé et dissimulé pour vivre l’instant tel qu’il s’est produit."
-      }
-    ],
-    "niveau_difficulte": "modéré",
-    "public_cible": [
-      "étudiants",
-      "curieux d'histoire",
-      "passionnés d'aventure"
-    ],
-    "note_moyenne": 4.3,
-    "nombre_avis": 53,
-    "infos_pratiques": [
-      "Langue du contexte : langue locale d’époque",
-      "Tenue sobre recommandée",
-      "Interaction directe avec les personnages historiques interdite"
-    ],
-    "conditions_annulation": "Annulation gratuite jusqu’à 48h avant le départ.",
-    "theme": "Chute du mur de Berlin"
-  },
-  {
-    "id": 15,
-    "titre": "Premier vol des frères Wright",
-    "image": "15.png",
-    "duree": 9,
-    "description": "Voyage unique à Kitty Hawk,États-Unis lors de l'événement « Premier vol des frères Wright ».",
-    "type_temporel": "passé",
-    "lieu": "Kitty Hawk,États-Unis",
-    "date_depart_personnalisable": true,
-    "prix_base": 1711,
-    "programme": [
-      {
-        "jour": 1,
-        "titre": "Jour 1",
-        "activite": "Arrivée, installation et familiarisation avec l’époque"
-      },
-      {
-        "jour": 2,
-        "titre": "Jour 2",
-        "activite": "Observation discrète de la situation locale"
-      },
-      {
-        "jour": 3,
-        "titre": "Jour 3",
-        "activite": "Présence sécurisée à l’événement historique principal"
-      },
-      {
-        "jour": 4,
-        "titre": "Jour 4",
-        "activite": "Exploration encadrée ou activité optionnelle"
-      },
-      {
-        "jour": 5,
-        "titre": "Jour 5",
-        "activite": "Exploration encadrée ou activité optionnelle"
-      },
-      {
-        "jour": 6,
-        "titre": "Jour 6",
-        "activite": "Exploration encadrée ou activité optionnelle"
-      },
-      {
-        "jour": 7,
-        "titre": "Jour 7",
-        "activite": "Exploration encadrée ou activité optionnelle"
-      },
-      {
-        "jour": 8,
-        "titre": "Jour 8",
-        "activite": "Exploration encadrée ou activité optionnelle"
-      },
-      {
-        "jour": 9,
-        "titre": "Jour 9",
-        "activite": "Temps libre, souvenirs personnels et retour sécurisé"
-      }
-    ],
-    "options": [
-      {
-        "type": "expédition",
-        "nom": "Visite guidée historique",
-        "prix_par_personne": 180
-      },
-      {
-        "type": "activité",
-        "nom": "Immersion 360°",
-        "prix_par_personne": 100
-      },
-      {
-        "type": "repas",
-        "nom": "Repas typique de l’époque",
-        "prix_par_personne": 75
-      },
-      {
-        "type": "souvenir",
-        "nom": "Objet d’époque discret",
-        "prix_par_personne": 60
-      },
-      {
-        "type": "bonus",
-        "nom": "Accès à une scène secondaire confidentielle",
-        "prix_par_personne": 100
-      }
-    ],
-    "activites_incluses": [
-      {
-        "nom": "Briefing temporel",
-        "description": "Séance préparatoire avant immersion pour comprendre les enjeux historiques."
-      },
-      {
-        "nom": "Exploration encadrée",
-        "description": "Parcours dans l’environnement historique réel, sans modifier le cours du temps."
-      },
-      {
-        "nom": "Observation protégée de l’événement principal",
-        "description": "Point de vue sécurisé et dissimulé pour vivre l’instant tel qu’il s’est produit."
-      }
-    ],
-    "niveau_difficulte": "modéré",
-    "public_cible": [
-      "étudiants",
-      "curieux d'histoire",
-      "passionnés d'aventure"
-    ],
-    "note_moyenne": 3.7,
-    "nombre_avis": 55,
-    "infos_pratiques": [
-      "Langue du contexte : langue locale d’époque",
-      "Tenue sobre recommandée",
-      "Interaction directe avec les personnages historiques interdite"
-    ],
-    "conditions_annulation": "Annulation gratuite jusqu’à 48h avant le départ.",
-    "theme": "Premier vol des frères Wright"
-  },
-  {
-    "id": 16,
-    "titre": "Discours \"I Have a Dream\"",
-    "image": "16.png",
-    "duree": 7,
-    "description": "Voyage unique à Washington D.C.,États-Unis lors de l'événement « Discours \"I Have a Dream\" ».",
-    "type_temporel": "passé",
-    "lieu": "Washington D.C.,États-Unis",
-    "date_depart_personnalisable": true,
-    "prix_base": 1144,
-    "programme": [
-      {
-        "jour": 1,
-        "titre": "Jour 1",
-        "activite": "Arrivée, installation et familiarisation avec l’époque"
-      },
-      {
-        "jour": 2,
-        "titre": "Jour 2",
-        "activite": "Observation discrète de la situation locale"
-      },
-      {
-        "jour": 3,
-        "titre": "Jour 3",
-        "activite": "Présence sécurisée à l’événement historique principal"
-      },
-      {
-        "jour": 4,
-        "titre": "Jour 4",
-        "activite": "Exploration encadrée ou activité optionnelle"
-      },
-      {
-        "jour": 5,
-        "titre": "Jour 5",
-        "activite": "Exploration encadrée ou activité optionnelle"
-      },
-      {
-        "jour": 6,
-        "titre": "Jour 6",
-        "activite": "Exploration encadrée ou activité optionnelle"
-      },
-      {
-        "jour": 7,
-        "titre": "Jour 7",
-        "activite": "Temps libre, souvenirs personnels et retour sécurisé"
-      }
-    ],
-    "options": [
-      {
-        "type": "hébergement",
-        "nom": "Tente de l’époque",
-        "prix_par_personne": 90
-      },
-      {
-        "type": "expédition",
-        "nom": "Visite guidée historique",
-        "prix_par_personne": 180
-      },
-      {
-        "type": "repas",
-        "nom": "Repas typique de l’époque",
-        "prix_par_personne": 75
-      },
-      {
-        "type": "souvenir",
-        "nom": "Objet d’époque discret",
-        "prix_par_personne": 60
-      },
-      {
-        "type": "bonus",
-        "nom": "Accès à une scène secondaire confidentielle",
-        "prix_par_personne": 100
-      }
-    ],
-    "activites_incluses": [
-      {
-        "nom": "Briefing temporel",
-        "description": "Séance préparatoire avant immersion pour comprendre les enjeux historiques."
-      },
-      {
-        "nom": "Exploration encadrée",
-        "description": "Parcours dans l’environnement historique réel, sans modifier le cours du temps."
-      },
-      {
-        "nom": "Observation protégée de l’événement principal",
-        "description": "Point de vue sécurisé et dissimulé pour vivre l’instant tel qu’il s’est produit."
-      }
-    ],
-    "niveau_difficulte": "modéré",
-    "public_cible": [
-      "étudiants",
-      "curieux d'histoire",
-      "passionnés d'aventure"
-    ],
-    "note_moyenne": 4.0,
-    "nombre_avis": 57,
-    "infos_pratiques": [
-      "Langue du contexte : langue locale d’époque",
-      "Tenue sobre recommandée",
-      "Interaction directe avec les personnages historiques interdite"
-    ],
-    "conditions_annulation": "Annulation gratuite jusqu’à 48h avant le départ.",
-    "theme": "Discours \"I Have a Dream\""
-  },
-  {
-    "id": 17,
-    "titre": "Grande Pyramide en construction",
-    "image": "17.png",
-    "duree": 7,
-    "description": "Voyage unique à Gizeh,Égypte lors de l'événement « Grande Pyramide en construction ».",
-    "type_temporel": "futur",
-    "lieu": "Gizeh,Égypte",
-    "date_depart_personnalisable": true,
-    "prix_base": 1892,
-    "programme": [
-      {
-        "jour": 1,
-        "titre": "Jour 1",
-        "activite": "Arrivée, installation et familiarisation avec l’époque"
-      },
-      {
-        "jour": 2,
-        "titre": "Jour 2",
-        "activite": "Observation discrète de la situation locale"
-      },
-      {
-        "jour": 3,
-        "titre": "Jour 3",
-        "activite": "Présence sécurisée à l’événement historique principal"
-      },
-      {
-        "jour": 4,
-        "titre": "Jour 4",
-        "activite": "Exploration encadrée ou activité optionnelle"
-      },
-      {
-        "jour": 5,
-        "titre": "Jour 5",
-        "activite": "Exploration encadrée ou activité optionnelle"
-      },
-      {
-        "jour": 6,
-        "titre": "Jour 6",
-        "activite": "Exploration encadrée ou activité optionnelle"
-      },
-      {
-        "jour": 7,
-        "titre": "Jour 7",
-        "activite": "Temps libre, souvenirs personnels et retour sécurisé"
-      }
-    ],
-    "options": [
-      {
-        "type": "hébergement",
-        "nom": "Auberge temporelle",
-        "prix_par_personne": 120
-      },
-      {
-        "type": "expédition",
-        "nom": "Visite guidée historique",
-        "prix_par_personne": 180
-      },
-      {
-        "type": "repas",
-        "nom": "Repas typique de l’époque",
-        "prix_par_personne": 75
-      },
-      {
-        "type": "souvenir",
-        "nom": "Objet d’époque discret",
-        "prix_par_personne": 60
-      },
-      {
-        "type": "bonus",
-        "nom": "Accès à une scène secondaire confidentielle",
-        "prix_par_personne": 100
-      }
-    ],
-    "activites_incluses": [
-      {
-        "nom": "Briefing temporel",
-        "description": "Séance préparatoire avant immersion pour comprendre les enjeux historiques."
-      },
-      {
-        "nom": "Exploration encadrée",
-        "description": "Parcours dans l’environnement historique réel, sans modifier le cours du temps."
-      },
-      {
-        "nom": "Observation protégée de l’événement principal",
-        "description": "Point de vue sécurisé et dissimulé pour vivre l’instant tel qu’il s’est produit."
-      }
-    ],
-    "niveau_difficulte": "modéré",
-    "public_cible": [
-      "étudiants",
-      "curieux d'histoire",
-      "passionnés d'aventure"
-    ],
-    "note_moyenne": 4.3,
-    "nombre_avis": 59,
-    "infos_pratiques": [
-      "Langue du contexte : langue locale d’époque",
-      "Tenue sobre recommandée",
-      "Interaction directe avec les personnages historiques interdite"
-    ],
-    "conditions_annulation": "Annulation gratuite jusqu’à 48h avant le départ.",
-    "theme": "Grande Pyramide en construction"
-  },
-  {
-    "id": 18,
-    "titre": "Inauguration de la Tour Eiffel",
-    "image": "18.png",
-    "duree": 10,
-    "description": "Voyage unique à Paris,France lors de l'événement « Inauguration de la Tour Eiffel ».",
-    "type_temporel": "passé",
-    "lieu": "Paris,France",
-    "date_depart_personnalisable": true,
-    "prix_base": 1336,
-    "programme": [
-      {
-        "jour": 1,
-        "titre": "Jour 1",
-        "activite": "Arrivée, installation et familiarisation avec l’époque"
-      },
-      {
-        "jour": 2,
-        "titre": "Jour 2",
-        "activite": "Observation discrète de la situation locale"
-      },
-      {
-        "jour": 3,
-        "titre": "Jour 3",
-        "activite": "Présence sécurisée à l’événement historique principal"
-      },
-      {
-        "jour": 4,
-        "titre": "Jour 4",
-        "activite": "Exploration encadrée ou activité optionnelle"
-      },
-      {
-        "jour": 5,
-        "titre": "Jour 5",
-        "activite": "Exploration encadrée ou activité optionnelle"
-      },
-      {
-        "jour": 6,
-        "titre": "Jour 6",
-        "activite": "Exploration encadrée ou activité optionnelle"
-      },
-      {
-        "jour": 7,
-        "titre": "Jour 7",
-        "activite": "Exploration encadrée ou activité optionnelle"
-      },
-      {
-        "jour": 8,
-        "titre": "Jour 8",
-        "activite": "Exploration encadrée ou activité optionnelle"
-      },
-      {
-        "jour": 9,
-        "titre": "Jour 9",
-        "activite": "Exploration encadrée ou activité optionnelle"
-      },
-      {
-        "jour": 10,
-        "titre": "Jour 10",
-        "activite": "Temps libre, souvenirs personnels et retour sécurisé"
-      }
-    ],
-    "options": [
-      {
-        "type": "activité",
-        "nom": "Immersion 360°",
-        "prix_par_personne": 100
-      },
-      {
-        "type": "hébergement",
-        "nom": "Tente de l’époque",
-        "prix_par_personne": 90
-      },
-      {
-        "type": "repas",
-        "nom": "Repas typique de l’époque",
-        "prix_par_personne": 75
-      },
-      {
-        "type": "souvenir",
-        "nom": "Objet d’époque discret",
-        "prix_par_personne": 60
-      },
-      {
-        "type": "bonus",
-        "nom": "Accès à une scène secondaire confidentielle",
-        "prix_par_personne": 100
-      }
-    ],
-    "activites_incluses": [
-      {
-        "nom": "Briefing temporel",
-        "description": "Séance préparatoire avant immersion pour comprendre les enjeux historiques."
-      },
-      {
-        "nom": "Exploration encadrée",
-        "description": "Parcours dans l’environnement historique réel, sans modifier le cours du temps."
-      },
-      {
-        "nom": "Observation protégée de l’événement principal",
-        "description": "Point de vue sécurisé et dissimulé pour vivre l’instant tel qu’il s’est produit."
-      }
-    ],
-    "niveau_difficulte": "modéré",
-    "public_cible": [
-      "étudiants",
-      "curieux d'histoire",
-      "passionnés d'aventure"
-    ],
-    "note_moyenne": 3.7,
-    "nombre_avis": 61,
-    "infos_pratiques": [
-      "Langue du contexte : langue locale d’époque",
-      "Tenue sobre recommandée",
-      "Interaction directe avec les personnages historiques interdite"
-    ],
-    "conditions_annulation": "Annulation gratuite jusqu’à 48h avant le départ.",
-    "theme": "Inauguration de la Tour Eiffel"
-  },
-  {
-    "id": 19,
-    "titre": "Bataille de Waterloo",
-    "image": "19.png",
-    "duree": 7,
-    "description": "Voyage unique à Waterloo,Belgique lors de l'événement « Bataille de Waterloo ».",
-    "type_temporel": "passé",
-    "lieu": "Waterloo,Belgique",
-    "date_depart_personnalisable": true,
-    "prix_base": 1344,
-    "programme": [
-      {
-        "jour": 1,
-        "titre": "Jour 1",
-        "activite": "Arrivée, installation et familiarisation avec l’époque"
-      },
-      {
-        "jour": 2,
-        "titre": "Jour 2",
-        "activite": "Observation discrète de la situation locale"
-      },
-      {
-        "jour": 3,
-        "titre": "Jour 3",
-        "activite": "Présence sécurisée à l’événement historique principal"
-      },
-      {
-        "jour": 4,
-        "titre": "Jour 4",
-        "activite": "Exploration encadrée ou activité optionnelle"
-      },
-      {
-        "jour": 5,
-        "titre": "Jour 5",
-        "activite": "Exploration encadrée ou activité optionnelle"
-      },
-      {
-        "jour": 6,
-        "titre": "Jour 6",
-        "activite": "Exploration encadrée ou activité optionnelle"
-      },
-      {
-        "jour": 7,
-        "titre": "Jour 7",
-        "activite": "Temps libre, souvenirs personnels et retour sécurisé"
-      }
-    ],
-    "options": [
-      {
-        "type": "hébergement",
-        "nom": "Tente de l’époque",
-        "prix_par_personne": 90
-      },
-      {
-        "type": "hébergement",
-        "nom": "Auberge temporelle",
-        "prix_par_personne": 120
-      },
-      {
-        "type": "repas",
-        "nom": "Repas typique de l’époque",
-        "prix_par_personne": 75
-      },
-      {
-        "type": "souvenir",
-        "nom": "Objet d’époque discret",
-        "prix_par_personne": 60
-      },
-      {
-        "type": "bonus",
-        "nom": "Accès à une scène secondaire confidentielle",
-        "prix_par_personne": 100
-      }
-    ],
-    "activites_incluses": [
-      {
-        "nom": "Briefing temporel",
-        "description": "Séance préparatoire avant immersion pour comprendre les enjeux historiques."
-      },
-      {
-        "nom": "Exploration encadrée",
-        "description": "Parcours dans l’environnement historique réel, sans modifier le cours du temps."
-      },
-      {
-        "nom": "Observation protégée de l’événement principal",
-        "description": "Point de vue sécurisé et dissimulé pour vivre l’instant tel qu’il s’est produit."
-      }
-    ],
-    "niveau_difficulte": "modéré",
-    "public_cible": [
-      "étudiants",
-      "curieux d'histoire",
-      "passionnés d'aventure"
-    ],
-    "note_moyenne": 4.0,
-    "nombre_avis": 63,
-    "infos_pratiques": [
-      "Langue du contexte : langue locale d’époque",
-      "Tenue sobre recommandée",
-      "Interaction directe avec les personnages historiques interdite"
-    ],
-    "conditions_annulation": "Annulation gratuite jusqu’à 48h avant le départ.",
-    "theme": "Bataille de Waterloo"
-  },
-  {
-    "id": 20,
-    "titre": "Proclamation de la République",
-    "image": "20.png",
-    "duree": 10,
-    "description": "Voyage unique à Paris,France lors de l'événement « Proclamation de la République ».",
-    "type_temporel": "passé",
-    "lieu": "Paris,France",
-    "date_depart_personnalisable": true,
-    "prix_base": 1030,
-    "programme": [
-      {
-        "jour": 1,
-        "titre": "Jour 1",
-        "activite": "Arrivée, installation et familiarisation avec l’époque"
-      },
-      {
-        "jour": 2,
-        "titre": "Jour 2",
-        "activite": "Observation discrète de la situation locale"
-      },
-      {
-        "jour": 3,
-        "titre": "Jour 3",
-        "activite": "Présence sécurisée à l’événement historique principal"
-      },
-      {
-        "jour": 4,
-        "titre": "Jour 4",
-        "activite": "Exploration encadrée ou activité optionnelle"
-      },
-      {
-        "jour": 5,
-        "titre": "Jour 5",
-        "activite": "Exploration encadrée ou activité optionnelle"
-      },
-      {
-        "jour": 6,
-        "titre": "Jour 6",
-        "activite": "Exploration encadrée ou activité optionnelle"
-      },
-      {
-        "jour": 7,
-        "titre": "Jour 7",
-        "activite": "Exploration encadrée ou activité optionnelle"
-      },
-      {
-        "jour": 8,
-        "titre": "Jour 8",
-        "activite": "Exploration encadrée ou activité optionnelle"
-      },
-      {
-        "jour": 9,
-        "titre": "Jour 9",
-        "activite": "Exploration encadrée ou activité optionnelle"
-      },
-      {
-        "jour": 10,
-        "titre": "Jour 10",
-        "activite": "Temps libre, souvenirs personnels et retour sécurisé"
-      }
-    ],
-    "options": [
-      {
-        "type": "hébergement",
-        "nom": "Tente de l’époque",
-        "prix_par_personne": 90
-      },
-      {
-        "type": "expédition",
-        "nom": "Visite guidée historique",
-        "prix_par_personne": 180
-      },
-      {
-        "type": "repas",
-        "nom": "Repas typique de l’époque",
-        "prix_par_personne": 75
-      },
-      {
-        "type": "souvenir",
-        "nom": "Objet d’époque discret",
-        "prix_par_personne": 60
-      },
-      {
-        "type": "bonus",
-        "nom": "Accès à une scène secondaire confidentielle",
-        "prix_par_personne": 100
-      }
-    ],
-    "activites_incluses": [
-      {
-        "nom": "Briefing temporel",
-        "description": "Séance préparatoire avant immersion pour comprendre les enjeux historiques."
-      },
-      {
-        "nom": "Exploration encadrée",
-        "description": "Parcours dans l’environnement historique réel, sans modifier le cours du temps."
-      },
-      {
-        "nom": "Observation protégée de l’événement principal",
-        "description": "Point de vue sécurisé et dissimulé pour vivre l’instant tel qu’il s’est produit."
-      }
-    ],
-    "niveau_difficulte": "modéré",
-    "public_cible": [
-      "étudiants",
-      "curieux d'histoire",
-      "passionnés d'aventure"
-    ],
-    "note_moyenne": 4.3,
-    "nombre_avis": 65,
-    "infos_pratiques": [
-      "Langue du contexte : langue locale d’époque",
-      "Tenue sobre recommandée",
-      "Interaction directe avec les personnages historiques interdite"
-    ],
-    "conditions_annulation": "Annulation gratuite jusqu’à 48h avant le départ.",
-    "theme": "Proclamation de la République"
-  }
+    {
+        "id": 1,
+        "titre": "Prise de la Bastille",
+        "image": "1.png",
+        "duree": 6,
+        "description": "Voyage unique à Paris,France lors de l'événement « Prise de la Bastille ».",
+        "type_temporel": "passé",
+        "lieu": "Paris,France",
+        "date_depart_personnalisable": true,
+        "prix_base": 2222,
+        "programme": [
+            {
+                "jour": 1,
+                "titre": "Jour 1",
+                "activite": "Arrivée, installation et familiarisation avec l’époque"
+            },
+            {
+                "jour": 2,
+                "titre": "Jour 2",
+                "activite": "Observation discrète de la situation locale"
+            },
+            {
+                "jour": 3,
+                "titre": "Jour 3",
+                "activite": "Présence sécurisée à l’événement historique principal"
+            },
+            {
+                "jour": 4,
+                "titre": "Jour 4",
+                "activite": "Exploration encadrée ou activité optionnelle"
+            },
+            {
+                "jour": 5,
+                "titre": "Jour 5",
+                "activite": "Exploration encadrée ou activité optionnelle"
+            },
+            {
+                "jour": 6,
+                "titre": "Jour 6",
+                "activite": "Temps libre, souvenirs personnels et retour sécurisé"
+            }
+        ],
+        "options": [
+            {
+                "type": "hébergement",
+                "nom": "Auberge temporelle",
+                "prix_par_personne": 120
+            },
+            {
+                "type": "hébergement",
+                "nom": "Tente de l’époque",
+                "prix_par_personne": 90
+            },
+            {
+                "type": "repas",
+                "nom": "Repas typique de l’époque",
+                "prix_par_personne": 75
+            },
+            {
+                "type": "souvenir",
+                "nom": "Objet d’époque discret",
+                "prix_par_personne": 60
+            },
+            {
+                "type": "bonus",
+                "nom": "Accès à une scène secondaire confidentielle",
+                "prix_par_personne": 100
+            }
+        ],
+        "activites_incluses": [
+            {
+                "nom": "Briefing temporel",
+                "description": "Séance préparatoire avant immersion pour comprendre les enjeux historiques."
+            },
+            {
+                "nom": "Exploration encadrée",
+                "description": "Parcours dans l’environnement historique réel, sans modifier le cours du temps."
+            },
+            {
+                "nom": "Observation protégée de l’événement principal",
+                "description": "Point de vue sécurisé et dissimulé pour vivre l’instant tel qu’il s’est produit."
+            }
+        ],
+        "niveau_difficulte": "modéré",
+        "public_cible": [
+            "étudiants",
+            "curieux d'histoire",
+            "passionnés d'aventure"
+        ],
+        "note_moyenne": 4,
+        "nombre_avis": 27,
+        "infos_pratiques": [
+            "Langue du contexte : langue locale d’époque",
+            "Tenue sobre recommandée",
+            "Interaction directe avec les personnages historiques interdite"
+        ],
+        "conditions_annulation": "Annulation gratuite jusqu’à 48h avant le départ.",
+        "theme": "Prise de la Bastille"
+    },
+    {
+        "id": 2,
+        "titre": "Avant Apollo 11",
+        "image": "2.png",
+        "duree": 7,
+        "description": "Voyage unique à Mer de la Tranquillité,Lune lors de l'événement « Avant Apollo 11 ».",
+        "type_temporel": "futur",
+        "lieu": "Mer de la Tranquillité,Lune",
+        "date_depart_personnalisable": true,
+        "prix_base": 2554,
+        "programme": [
+            {
+                "jour": 1,
+                "titre": "Jour 1",
+                "activite": "Arrivée, installation et familiarisation avec l’époque"
+            },
+            {
+                "jour": 2,
+                "titre": "Jour 2",
+                "activite": "Observation discrète de la situation locale"
+            },
+            {
+                "jour": 3,
+                "titre": "Jour 3",
+                "activite": "Présence sécurisée à l’événement historique principal"
+            },
+            {
+                "jour": 4,
+                "titre": "Jour 4",
+                "activite": "Exploration encadrée ou activité optionnelle"
+            },
+            {
+                "jour": 5,
+                "titre": "Jour 5",
+                "activite": "Exploration encadrée ou activité optionnelle"
+            },
+            {
+                "jour": 6,
+                "titre": "Jour 6",
+                "activite": "Exploration encadrée ou activité optionnelle"
+            },
+            {
+                "jour": 7,
+                "titre": "Jour 7",
+                "activite": "Temps libre, souvenirs personnels et retour sécurisé"
+            }
+        ],
+        "options": [
+            {
+                "type": "hébergement",
+                "nom": "Tente de l’époque",
+                "prix_par_personne": 90
+            },
+            {
+                "type": "expédition",
+                "nom": "Visite guidée historique",
+                "prix_par_personne": 180
+            },
+            {
+                "type": "repas",
+                "nom": "Repas typique de l’époque",
+                "prix_par_personne": 75
+            },
+            {
+                "type": "souvenir",
+                "nom": "Objet d’époque discret",
+                "prix_par_personne": 60
+            },
+            {
+                "type": "bonus",
+                "nom": "Accès à une scène secondaire confidentielle",
+                "prix_par_personne": 100
+            }
+        ],
+        "activites_incluses": [
+            {
+                "nom": "Briefing temporel",
+                "description": "Séance préparatoire avant immersion pour comprendre les enjeux historiques."
+            },
+            {
+                "nom": "Exploration encadrée",
+                "description": "Parcours dans l’environnement historique réel, sans modifier le cours du temps."
+            },
+            {
+                "nom": "Observation protégée de l’événement principal",
+                "description": "Point de vue sécurisé et dissimulé pour vivre l’instant tel qu’il s’est produit."
+            }
+        ],
+        "niveau_difficulte": "modéré",
+        "public_cible": [
+            "étudiants",
+            "curieux d'histoire",
+            "passionnés d'aventure"
+        ],
+        "note_moyenne": 4.3,
+        "nombre_avis": 29,
+        "infos_pratiques": [
+            "Langue du contexte : langue locale d’époque",
+            "Tenue sobre recommandée",
+            "Interaction directe avec les personnages historiques interdite"
+        ],
+        "conditions_annulation": "Annulation gratuite jusqu’à 48h avant le départ.",
+        "theme": "Avant Apollo 11"
+    },
+    {
+        "id": 3,
+        "titre": "Ère des dinosaures",
+        "image": "3.png",
+        "duree": 8,
+        "description": "Voyage unique à Patagonie,Argentine lors de l'événement « Ère des dinosaures ».",
+        "type_temporel": "passé",
+        "lieu": "Patagonie,Argentine",
+        "date_depart_personnalisable": true,
+        "prix_base": 1429,
+        "programme": [
+            {
+                "jour": 1,
+                "titre": "Jour 1",
+                "activite": "Arrivée, installation et familiarisation avec l’époque"
+            },
+            {
+                "jour": 2,
+                "titre": "Jour 2",
+                "activite": "Observation discrète de la situation locale"
+            },
+            {
+                "jour": 3,
+                "titre": "Jour 3",
+                "activite": "Présence sécurisée à l’événement historique principal"
+            },
+            {
+                "jour": 4,
+                "titre": "Jour 4",
+                "activite": "Exploration encadrée ou activité optionnelle"
+            },
+            {
+                "jour": 5,
+                "titre": "Jour 5",
+                "activite": "Exploration encadrée ou activité optionnelle"
+            },
+            {
+                "jour": 6,
+                "titre": "Jour 6",
+                "activite": "Exploration encadrée ou activité optionnelle"
+            },
+            {
+                "jour": 7,
+                "titre": "Jour 7",
+                "activite": "Exploration encadrée ou activité optionnelle"
+            },
+            {
+                "jour": 8,
+                "titre": "Jour 8",
+                "activite": "Temps libre, souvenirs personnels et retour sécurisé"
+            }
+        ],
+        "options": [
+            {
+                "type": "hébergement",
+                "nom": "Tente de l’époque",
+                "prix_par_personne": 90
+            },
+            {
+                "type": "activité",
+                "nom": "Immersion 360°",
+                "prix_par_personne": 100
+            },
+            {
+                "type": "repas",
+                "nom": "Repas typique de l’époque",
+                "prix_par_personne": 75
+            },
+            {
+                "type": "souvenir",
+                "nom": "Objet d’époque discret",
+                "prix_par_personne": 60
+            },
+            {
+                "type": "bonus",
+                "nom": "Accès à une scène secondaire confidentielle",
+                "prix_par_personne": 100
+            }
+        ],
+        "activites_incluses": [
+            {
+                "nom": "Briefing temporel",
+                "description": "Séance préparatoire avant immersion pour comprendre les enjeux historiques."
+            },
+            {
+                "nom": "Exploration encadrée",
+                "description": "Parcours dans l’environnement historique réel, sans modifier le cours du temps."
+            },
+            {
+                "nom": "Observation protégée de l’événement principal",
+                "description": "Point de vue sécurisé et dissimulé pour vivre l’instant tel qu’il s’est produit."
+            }
+        ],
+        "niveau_difficulte": "modéré",
+        "public_cible": [
+            "étudiants",
+            "curieux d'histoire",
+            "passionnés d'aventure"
+        ],
+        "note_moyenne": 3.7,
+        "nombre_avis": 31,
+        "infos_pratiques": [
+            "Langue du contexte : langue locale d’époque",
+            "Tenue sobre recommandée",
+            "Interaction directe avec les personnages historiques interdite"
+        ],
+        "conditions_annulation": "Annulation gratuite jusqu’à 48h avant le départ.",
+        "theme": "Ère des dinosaures"
+    },
+    {
+        "id": 4,
+        "titre": "Assassinat de Jules César",
+        "image": "4.png",
+        "duree": 4,
+        "description": "Voyage unique à Rome,Italie lors de l'événement « Assassinat de Jules César ».",
+        "type_temporel": "passé",
+        "lieu": "Rome,Italie",
+        "date_depart_personnalisable": true,
+        "prix_base": 2378,
+        "programme": [
+            {
+                "jour": 1,
+                "titre": "Jour 1",
+                "activite": "Arrivée, installation et familiarisation avec l’époque"
+            },
+            {
+                "jour": 2,
+                "titre": "Jour 2",
+                "activite": "Observation discrète de la situation locale"
+            },
+            {
+                "jour": 3,
+                "titre": "Jour 3",
+                "activite": "Présence sécurisée à l’événement historique principal"
+            },
+            {
+                "jour": 4,
+                "titre": "Jour 4",
+                "activite": "Temps libre, souvenirs personnels et retour sécurisé"
+            }
+        ],
+        "options": [
+            {
+                "type": "activité",
+                "nom": "Immersion 360°",
+                "prix_par_personne": 100
+            },
+            {
+                "type": "hébergement",
+                "nom": "Auberge temporelle",
+                "prix_par_personne": 120
+            },
+            {
+                "type": "repas",
+                "nom": "Repas typique de l’époque",
+                "prix_par_personne": 75
+            },
+            {
+                "type": "souvenir",
+                "nom": "Objet d’époque discret",
+                "prix_par_personne": 60
+            },
+            {
+                "type": "bonus",
+                "nom": "Accès à une scène secondaire confidentielle",
+                "prix_par_personne": 100
+            }
+        ],
+        "activites_incluses": [
+            {
+                "nom": "Briefing temporel",
+                "description": "Séance préparatoire avant immersion pour comprendre les enjeux historiques."
+            },
+            {
+                "nom": "Exploration encadrée",
+                "description": "Parcours dans l’environnement historique réel, sans modifier le cours du temps."
+            },
+            {
+                "nom": "Observation protégée de l’événement principal",
+                "description": "Point de vue sécurisé et dissimulé pour vivre l’instant tel qu’il s’est produit."
+            }
+        ],
+        "niveau_difficulte": "modéré",
+        "public_cible": [
+            "étudiants",
+            "curieux d'histoire",
+            "passionnés d'aventure"
+        ],
+        "note_moyenne": 4,
+        "nombre_avis": 33,
+        "infos_pratiques": [
+            "Langue du contexte : langue locale d’époque",
+            "Tenue sobre recommandée",
+            "Interaction directe avec les personnages historiques interdite"
+        ],
+        "conditions_annulation": "Annulation gratuite jusqu’à 48h avant le départ.",
+        "theme": "Assassinat de Jules César"
+    },
+    {
+        "id": 5,
+        "titre": "Colonie martienne",
+        "image": "5.png",
+        "duree": 6,
+        "description": "Voyage unique à Valles Marineris,Mars lors de l'événement « Colonie martienne ».",
+        "type_temporel": "futur",
+        "lieu": "Valles Marineris,Mars",
+        "date_depart_personnalisable": true,
+        "prix_base": 1346,
+        "programme": [
+            {
+                "jour": 1,
+                "titre": "Jour 1",
+                "activite": "Arrivée, installation et familiarisation avec l’époque"
+            },
+            {
+                "jour": 2,
+                "titre": "Jour 2",
+                "activite": "Observation discrète de la situation locale"
+            },
+            {
+                "jour": 3,
+                "titre": "Jour 3",
+                "activite": "Présence sécurisée à l’événement historique principal"
+            },
+            {
+                "jour": 4,
+                "titre": "Jour 4",
+                "activite": "Exploration encadrée ou activité optionnelle"
+            },
+            {
+                "jour": 5,
+                "titre": "Jour 5",
+                "activite": "Exploration encadrée ou activité optionnelle"
+            },
+            {
+                "jour": 6,
+                "titre": "Jour 6",
+                "activite": "Temps libre, souvenirs personnels et retour sécurisé"
+            }
+        ],
+        "options": [
+            {
+                "type": "hébergement",
+                "nom": "Tente de l’époque",
+                "prix_par_personne": 90
+            },
+            {
+                "type": "expédition",
+                "nom": "Visite guidée historique",
+                "prix_par_personne": 180
+            },
+            {
+                "type": "repas",
+                "nom": "Repas typique de l’époque",
+                "prix_par_personne": 75
+            },
+            {
+                "type": "souvenir",
+                "nom": "Objet d’époque discret",
+                "prix_par_personne": 60
+            },
+            {
+                "type": "bonus",
+                "nom": "Accès à une scène secondaire confidentielle",
+                "prix_par_personne": 100
+            }
+        ],
+        "activites_incluses": [
+            {
+                "nom": "Briefing temporel",
+                "description": "Séance préparatoire avant immersion pour comprendre les enjeux historiques."
+            },
+            {
+                "nom": "Exploration encadrée",
+                "description": "Parcours dans l’environnement historique réel, sans modifier le cours du temps."
+            },
+            {
+                "nom": "Observation protégée de l’événement principal",
+                "description": "Point de vue sécurisé et dissimulé pour vivre l’instant tel qu’il s’est produit."
+            }
+        ],
+        "niveau_difficulte": "modéré",
+        "public_cible": [
+            "étudiants",
+            "curieux d'histoire",
+            "passionnés d'aventure"
+        ],
+        "note_moyenne": 4.3,
+        "nombre_avis": 35,
+        "infos_pratiques": [
+            "Langue du contexte : langue locale d’époque",
+            "Tenue sobre recommandée",
+            "Interaction directe avec les personnages historiques interdite"
+        ],
+        "conditions_annulation": "Annulation gratuite jusqu’à 48h avant le départ.",
+        "theme": "Colonie martienne"
+    },
+    {
+        "id": 6,
+        "titre": "Tokyo flottante",
+        "image": "6.png",
+        "duree": 3,
+        "description": "Voyage unique à Tokyo,Japon lors de l'événement « Tokyo flottante ».",
+        "type_temporel": "futur",
+        "lieu": "Tokyo,Japon",
+        "date_depart_personnalisable": true,
+        "prix_base": 2067,
+        "programme": [
+            {
+                "jour": 1,
+                "titre": "Jour 1",
+                "activite": "Arrivée, installation et familiarisation avec l’époque"
+            },
+            {
+                "jour": 2,
+                "titre": "Jour 2",
+                "activite": "Observation discrète de la situation locale"
+            },
+            {
+                "jour": 3,
+                "titre": "Jour 3",
+                "activite": "Temps libre, souvenirs personnels et retour sécurisé"
+            }
+        ],
+        "options": [
+            {
+                "type": "activité",
+                "nom": "Immersion 360°",
+                "prix_par_personne": 100
+            },
+            {
+                "type": "hébergement",
+                "nom": "Tente de l’époque",
+                "prix_par_personne": 90
+            },
+            {
+                "type": "repas",
+                "nom": "Repas typique de l’époque",
+                "prix_par_personne": 75
+            },
+            {
+                "type": "souvenir",
+                "nom": "Objet d’époque discret",
+                "prix_par_personne": 60
+            },
+            {
+                "type": "bonus",
+                "nom": "Accès à une scène secondaire confidentielle",
+                "prix_par_personne": 100
+            }
+        ],
+        "activites_incluses": [
+            {
+                "nom": "Briefing temporel",
+                "description": "Séance préparatoire avant immersion pour comprendre les enjeux historiques."
+            },
+            {
+                "nom": "Exploration encadrée",
+                "description": "Parcours dans l’environnement historique réel, sans modifier le cours du temps."
+            },
+            {
+                "nom": "Observation protégée de l’événement principal",
+                "description": "Point de vue sécurisé et dissimulé pour vivre l’instant tel qu’il s’est produit."
+            }
+        ],
+        "niveau_difficulte": "modéré",
+        "public_cible": [
+            "étudiants",
+            "curieux d'histoire",
+            "passionnés d'aventure"
+        ],
+        "note_moyenne": 3.7,
+        "nombre_avis": 37,
+        "infos_pratiques": [
+            "Langue du contexte : langue locale d’époque",
+            "Tenue sobre recommandée",
+            "Interaction directe avec les personnages historiques interdite"
+        ],
+        "conditions_annulation": "Annulation gratuite jusqu’à 48h avant le départ.",
+        "theme": "Tokyo flottante"
+    },
+    {
+        "id": 7,
+        "titre": "Révolte des IA",
+        "image": "7.png",
+        "duree": 8,
+        "description": "Voyage unique à Pékin,Chine lors de l'événement « Révolte des IA ».",
+        "type_temporel": "passé",
+        "lieu": "Pékin,Chine",
+        "date_depart_personnalisable": true,
+        "prix_base": 634,
+        "programme": [
+            {
+                "jour": 1,
+                "titre": "Jour 1",
+                "activite": "Arrivée, installation et familiarisation avec l’époque"
+            },
+            {
+                "jour": 2,
+                "titre": "Jour 2",
+                "activite": "Observation discrète de la situation locale"
+            },
+            {
+                "jour": 3,
+                "titre": "Jour 3",
+                "activite": "Présence sécurisée à l’événement historique principal"
+            },
+            {
+                "jour": 4,
+                "titre": "Jour 4",
+                "activite": "Exploration encadrée ou activité optionnelle"
+            },
+            {
+                "jour": 5,
+                "titre": "Jour 5",
+                "activite": "Exploration encadrée ou activité optionnelle"
+            },
+            {
+                "jour": 6,
+                "titre": "Jour 6",
+                "activite": "Exploration encadrée ou activité optionnelle"
+            },
+            {
+                "jour": 7,
+                "titre": "Jour 7",
+                "activite": "Exploration encadrée ou activité optionnelle"
+            },
+            {
+                "jour": 8,
+                "titre": "Jour 8",
+                "activite": "Temps libre, souvenirs personnels et retour sécurisé"
+            }
+        ],
+        "options": [
+            {
+                "type": "hébergement",
+                "nom": "Tente de l’époque",
+                "prix_par_personne": 90
+            },
+            {
+                "type": "expédition",
+                "nom": "Visite guidée historique",
+                "prix_par_personne": 180
+            },
+            {
+                "type": "repas",
+                "nom": "Repas typique de l’époque",
+                "prix_par_personne": 75
+            },
+            {
+                "type": "souvenir",
+                "nom": "Objet d’époque discret",
+                "prix_par_personne": 60
+            },
+            {
+                "type": "bonus",
+                "nom": "Accès à une scène secondaire confidentielle",
+                "prix_par_personne": 100
+            }
+        ],
+        "activites_incluses": [
+            {
+                "nom": "Briefing temporel",
+                "description": "Séance préparatoire avant immersion pour comprendre les enjeux historiques."
+            },
+            {
+                "nom": "Exploration encadrée",
+                "description": "Parcours dans l’environnement historique réel, sans modifier le cours du temps."
+            },
+            {
+                "nom": "Observation protégée de l’événement principal",
+                "description": "Point de vue sécurisé et dissimulé pour vivre l’instant tel qu’il s’est produit."
+            }
+        ],
+        "niveau_difficulte": "modéré",
+        "public_cible": [
+            "étudiants",
+            "curieux d'histoire",
+            "passionnés d'aventure"
+        ],
+        "note_moyenne": 4,
+        "nombre_avis": 39,
+        "infos_pratiques": [
+            "Langue du contexte : langue locale d’époque",
+            "Tenue sobre recommandée",
+            "Interaction directe avec les personnages historiques interdite"
+        ],
+        "conditions_annulation": "Annulation gratuite jusqu’à 48h avant le départ.",
+        "theme": "Révolte des IA"
+    },
+    {
+        "id": 8,
+        "titre": "Terre ré-ensauvagée",
+        "image": "8.png",
+        "duree": 8,
+        "description": "Voyage unique à Tromsø,Norvège lors de l'événement « Terre ré-ensauvagée ».",
+        "type_temporel": "futur",
+        "lieu": "Tromsø,Norvège",
+        "date_depart_personnalisable": true,
+        "prix_base": 2412,
+        "programme": [
+            {
+                "jour": 1,
+                "titre": "Jour 1",
+                "activite": "Arrivée, installation et familiarisation avec l’époque"
+            },
+            {
+                "jour": 2,
+                "titre": "Jour 2",
+                "activite": "Observation discrète de la situation locale"
+            },
+            {
+                "jour": 3,
+                "titre": "Jour 3",
+                "activite": "Présence sécurisée à l’événement historique principal"
+            },
+            {
+                "jour": 4,
+                "titre": "Jour 4",
+                "activite": "Exploration encadrée ou activité optionnelle"
+            },
+            {
+                "jour": 5,
+                "titre": "Jour 5",
+                "activite": "Exploration encadrée ou activité optionnelle"
+            },
+            {
+                "jour": 6,
+                "titre": "Jour 6",
+                "activite": "Exploration encadrée ou activité optionnelle"
+            },
+            {
+                "jour": 7,
+                "titre": "Jour 7",
+                "activite": "Exploration encadrée ou activité optionnelle"
+            },
+            {
+                "jour": 8,
+                "titre": "Jour 8",
+                "activite": "Temps libre, souvenirs personnels et retour sécurisé"
+            }
+        ],
+        "options": [
+            {
+                "type": "activité",
+                "nom": "Immersion 360°",
+                "prix_par_personne": 100
+            },
+            {
+                "type": "hébergement",
+                "nom": "Tente de l’époque",
+                "prix_par_personne": 90
+            },
+            {
+                "type": "repas",
+                "nom": "Repas typique de l’époque",
+                "prix_par_personne": 75
+            },
+            {
+                "type": "souvenir",
+                "nom": "Objet d’époque discret",
+                "prix_par_personne": 60
+            },
+            {
+                "type": "bonus",
+                "nom": "Accès à une scène secondaire confidentielle",
+                "prix_par_personne": 100
+            }
+        ],
+        "activites_incluses": [
+            {
+                "nom": "Briefing temporel",
+                "description": "Séance préparatoire avant immersion pour comprendre les enjeux historiques."
+            },
+            {
+                "nom": "Exploration encadrée",
+                "description": "Parcours dans l’environnement historique réel, sans modifier le cours du temps."
+            },
+            {
+                "nom": "Observation protégée de l’événement principal",
+                "description": "Point de vue sécurisé et dissimulé pour vivre l’instant tel qu’il s’est produit."
+            }
+        ],
+        "niveau_difficulte": "modéré",
+        "public_cible": [
+            "étudiants",
+            "curieux d'histoire",
+            "passionnés d'aventure"
+        ],
+        "note_moyenne": 4.3,
+        "nombre_avis": 41,
+        "infos_pratiques": [
+            "Langue du contexte : langue locale d’époque",
+            "Tenue sobre recommandée",
+            "Interaction directe avec les personnages historiques interdite"
+        ],
+        "conditions_annulation": "Annulation gratuite jusqu’à 48h avant le départ.",
+        "theme": "Terre ré-ensauvagée"
+    },
+    {
+        "id": 9,
+        "titre": "Découverte de l’Amérique",
+        "image": "9.png",
+        "duree": 6,
+        "description": "Voyage unique à San Salvador,Bahamas lors de l'événement « Découverte de l’Amérique ».",
+        "type_temporel": "passé",
+        "lieu": "San Salvador,Bahamas",
+        "date_depart_personnalisable": true,
+        "prix_base": 2353,
+        "programme": [
+            {
+                "jour": 1,
+                "titre": "Jour 1",
+                "activite": "Arrivée, installation et familiarisation avec l’époque"
+            },
+            {
+                "jour": 2,
+                "titre": "Jour 2",
+                "activite": "Observation discrète de la situation locale"
+            },
+            {
+                "jour": 3,
+                "titre": "Jour 3",
+                "activite": "Présence sécurisée à l’événement historique principal"
+            },
+            {
+                "jour": 4,
+                "titre": "Jour 4",
+                "activite": "Exploration encadrée ou activité optionnelle"
+            },
+            {
+                "jour": 5,
+                "titre": "Jour 5",
+                "activite": "Exploration encadrée ou activité optionnelle"
+            },
+            {
+                "jour": 6,
+                "titre": "Jour 6",
+                "activite": "Temps libre, souvenirs personnels et retour sécurisé"
+            }
+        ],
+        "options": [
+            {
+                "type": "hébergement",
+                "nom": "Auberge temporelle",
+                "prix_par_personne": 120
+            },
+            {
+                "type": "activité",
+                "nom": "Immersion 360°",
+                "prix_par_personne": 100
+            },
+            {
+                "type": "repas",
+                "nom": "Repas typique de l’époque",
+                "prix_par_personne": 75
+            },
+            {
+                "type": "souvenir",
+                "nom": "Objet d’époque discret",
+                "prix_par_personne": 60
+            },
+            {
+                "type": "bonus",
+                "nom": "Accès à une scène secondaire confidentielle",
+                "prix_par_personne": 100
+            }
+        ],
+        "activites_incluses": [
+            {
+                "nom": "Briefing temporel",
+                "description": "Séance préparatoire avant immersion pour comprendre les enjeux historiques."
+            },
+            {
+                "nom": "Exploration encadrée",
+                "description": "Parcours dans l’environnement historique réel, sans modifier le cours du temps."
+            },
+            {
+                "nom": "Observation protégée de l’événement principal",
+                "description": "Point de vue sécurisé et dissimulé pour vivre l’instant tel qu’il s’est produit."
+            }
+        ],
+        "niveau_difficulte": "modéré",
+        "public_cible": [
+            "étudiants",
+            "curieux d'histoire",
+            "passionnés d'aventure"
+        ],
+        "note_moyenne": 3.7,
+        "nombre_avis": 43,
+        "infos_pratiques": [
+            "Langue du contexte : langue locale d’époque",
+            "Tenue sobre recommandée",
+            "Interaction directe avec les personnages historiques interdite"
+        ],
+        "conditions_annulation": "Annulation gratuite jusqu’à 48h avant le départ.",
+        "theme": "Découverte de l’Amérique"
+    },
+    {
+        "id": 10,
+        "titre": "Débarquement de Normandie",
+        "image": "10.png",
+        "duree": 6,
+        "description": "Voyage unique à Plage d’Omaha,France lors de l'événement « Débarquement de Normandie ».",
+        "type_temporel": "futur",
+        "lieu": "Plage d’Omaha,France",
+        "date_depart_personnalisable": true,
+        "prix_base": 637,
+        "programme": [
+            {
+                "jour": 1,
+                "titre": "Jour 1",
+                "activite": "Arrivée, installation et familiarisation avec l’époque"
+            },
+            {
+                "jour": 2,
+                "titre": "Jour 2",
+                "activite": "Observation discrète de la situation locale"
+            },
+            {
+                "jour": 3,
+                "titre": "Jour 3",
+                "activite": "Présence sécurisée à l’événement historique principal"
+            },
+            {
+                "jour": 4,
+                "titre": "Jour 4",
+                "activite": "Exploration encadrée ou activité optionnelle"
+            },
+            {
+                "jour": 5,
+                "titre": "Jour 5",
+                "activite": "Exploration encadrée ou activité optionnelle"
+            },
+            {
+                "jour": 6,
+                "titre": "Jour 6",
+                "activite": "Temps libre, souvenirs personnels et retour sécurisé"
+            }
+        ],
+        "options": [
+            {
+                "type": "expédition",
+                "nom": "Visite guidée historique",
+                "prix_par_personne": 180
+            },
+            {
+                "type": "hébergement",
+                "nom": "Tente de l’époque",
+                "prix_par_personne": 90
+            },
+            {
+                "type": "repas",
+                "nom": "Repas typique de l’époque",
+                "prix_par_personne": 75
+            },
+            {
+                "type": "souvenir",
+                "nom": "Objet d’époque discret",
+                "prix_par_personne": 60
+            },
+            {
+                "type": "bonus",
+                "nom": "Accès à une scène secondaire confidentielle",
+                "prix_par_personne": 100
+            }
+        ],
+        "activites_incluses": [
+            {
+                "nom": "Briefing temporel",
+                "description": "Séance préparatoire avant immersion pour comprendre les enjeux historiques."
+            },
+            {
+                "nom": "Exploration encadrée",
+                "description": "Parcours dans l’environnement historique réel, sans modifier le cours du temps."
+            },
+            {
+                "nom": "Observation protégée de l’événement principal",
+                "description": "Point de vue sécurisé et dissimulé pour vivre l’instant tel qu’il s’est produit."
+            }
+        ],
+        "niveau_difficulte": "modéré",
+        "public_cible": [
+            "étudiants",
+            "curieux d'histoire",
+            "passionnés d'aventure"
+        ],
+        "note_moyenne": 4,
+        "nombre_avis": 45,
+        "infos_pratiques": [
+            "Langue du contexte : langue locale d’époque",
+            "Tenue sobre recommandée",
+            "Interaction directe avec les personnages historiques interdite"
+        ],
+        "conditions_annulation": "Annulation gratuite jusqu’à 48h avant le départ.",
+        "theme": "Débarquement de Normandie"
+    },
+    {
+        "id": 11,
+        "titre": "Assassinat de JFK",
+        "image": "11.png",
+        "duree": 3,
+        "description": "Voyage unique à Dallas,États-Unis lors de l'événement « Assassinat de JFK ».",
+        "type_temporel": "passé",
+        "lieu": "Dallas,États-Unis",
+        "date_depart_personnalisable": true,
+        "prix_base": 2181,
+        "programme": [
+            {
+                "jour": 1,
+                "titre": "Jour 1",
+                "activite": "Arrivée, installation et familiarisation avec l’époque"
+            },
+            {
+                "jour": 2,
+                "titre": "Jour 2",
+                "activite": "Observation discrète de la situation locale"
+            },
+            {
+                "jour": 3,
+                "titre": "Jour 3",
+                "activite": "Temps libre, souvenirs personnels et retour sécurisé"
+            }
+        ],
+        "options": [
+            {
+                "type": "activité",
+                "nom": "Immersion 360°",
+                "prix_par_personne": 100
+            },
+            {
+                "type": "expédition",
+                "nom": "Visite guidée historique",
+                "prix_par_personne": 180
+            },
+            {
+                "type": "repas",
+                "nom": "Repas typique de l’époque",
+                "prix_par_personne": 75
+            },
+            {
+                "type": "souvenir",
+                "nom": "Objet d’époque discret",
+                "prix_par_personne": 60
+            },
+            {
+                "type": "bonus",
+                "nom": "Accès à une scène secondaire confidentielle",
+                "prix_par_personne": 100
+            }
+        ],
+        "activites_incluses": [
+            {
+                "nom": "Briefing temporel",
+                "description": "Séance préparatoire avant immersion pour comprendre les enjeux historiques."
+            },
+            {
+                "nom": "Exploration encadrée",
+                "description": "Parcours dans l’environnement historique réel, sans modifier le cours du temps."
+            },
+            {
+                "nom": "Observation protégée de l’événement principal",
+                "description": "Point de vue sécurisé et dissimulé pour vivre l’instant tel qu’il s’est produit."
+            }
+        ],
+        "niveau_difficulte": "modéré",
+        "public_cible": [
+            "étudiants",
+            "curieux d'histoire",
+            "passionnés d'aventure"
+        ],
+        "note_moyenne": 4.3,
+        "nombre_avis": 47,
+        "infos_pratiques": [
+            "Langue du contexte : langue locale d’époque",
+            "Tenue sobre recommandée",
+            "Interaction directe avec les personnages historiques interdite"
+        ],
+        "conditions_annulation": "Annulation gratuite jusqu’à 48h avant le départ.",
+        "theme": "Assassinat de JFK"
+    },
+    {
+        "id": 12,
+        "titre": "Victoire de la France en Coupe du Monde",
+        "image": "12.png",
+        "duree": 5,
+        "description": "Voyage unique à Moscou,Russie lors de l'événement « Victoire de la France en Coupe du Monde ».",
+        "type_temporel": "futur",
+        "lieu": "Moscou,Russie",
+        "date_depart_personnalisable": true,
+        "prix_base": 2218,
+        "programme": [
+            {
+                "jour": 1,
+                "titre": "Jour 1",
+                "activite": "Arrivée, installation et familiarisation avec l’époque"
+            },
+            {
+                "jour": 2,
+                "titre": "Jour 2",
+                "activite": "Observation discrète de la situation locale"
+            },
+            {
+                "jour": 3,
+                "titre": "Jour 3",
+                "activite": "Présence sécurisée à l’événement historique principal"
+            },
+            {
+                "jour": 4,
+                "titre": "Jour 4",
+                "activite": "Exploration encadrée ou activité optionnelle"
+            },
+            {
+                "jour": 5,
+                "titre": "Jour 5",
+                "activite": "Temps libre, souvenirs personnels et retour sécurisé"
+            }
+        ],
+        "options": [
+            {
+                "type": "hébergement",
+                "nom": "Tente de l’époque",
+                "prix_par_personne": 90
+            },
+            {
+                "type": "expédition",
+                "nom": "Visite guidée historique",
+                "prix_par_personne": 180
+            },
+            {
+                "type": "repas",
+                "nom": "Repas typique de l’époque",
+                "prix_par_personne": 75
+            },
+            {
+                "type": "souvenir",
+                "nom": "Objet d’époque discret",
+                "prix_par_personne": 60
+            },
+            {
+                "type": "bonus",
+                "nom": "Accès à une scène secondaire confidentielle",
+                "prix_par_personne": 100
+            }
+        ],
+        "activites_incluses": [
+            {
+                "nom": "Briefing temporel",
+                "description": "Séance préparatoire avant immersion pour comprendre les enjeux historiques."
+            },
+            {
+                "nom": "Exploration encadrée",
+                "description": "Parcours dans l’environnement historique réel, sans modifier le cours du temps."
+            },
+            {
+                "nom": "Observation protégée de l’événement principal",
+                "description": "Point de vue sécurisé et dissimulé pour vivre l’instant tel qu’il s’est produit."
+            }
+        ],
+        "niveau_difficulte": "modéré",
+        "public_cible": [
+            "étudiants",
+            "curieux d'histoire",
+            "passionnés d'aventure"
+        ],
+        "note_moyenne": 3.7,
+        "nombre_avis": 49,
+        "infos_pratiques": [
+            "Langue du contexte : langue locale d’époque",
+            "Tenue sobre recommandée",
+            "Interaction directe avec les personnages historiques interdite"
+        ],
+        "conditions_annulation": "Annulation gratuite jusqu’à 48h avant le départ.",
+        "theme": "Victoire de la France en Coupe du Monde"
+    },
+    {
+        "id": 13,
+        "titre": "Couronnement de Napoléon",
+        "image": "13.png",
+        "duree": 10,
+        "description": "Voyage unique à Paris,France lors de l'événement « Couronnement de Napoléon ».",
+        "type_temporel": "passé",
+        "lieu": "Paris,France",
+        "date_depart_personnalisable": true,
+        "prix_base": 2485,
+        "programme": [
+            {
+                "jour": 1,
+                "titre": "Jour 1",
+                "activite": "Arrivée, installation et familiarisation avec l’époque"
+            },
+            {
+                "jour": 2,
+                "titre": "Jour 2",
+                "activite": "Observation discrète de la situation locale"
+            },
+            {
+                "jour": 3,
+                "titre": "Jour 3",
+                "activite": "Présence sécurisée à l’événement historique principal"
+            },
+            {
+                "jour": 4,
+                "titre": "Jour 4",
+                "activite": "Exploration encadrée ou activité optionnelle"
+            },
+            {
+                "jour": 5,
+                "titre": "Jour 5",
+                "activite": "Exploration encadrée ou activité optionnelle"
+            },
+            {
+                "jour": 6,
+                "titre": "Jour 6",
+                "activite": "Exploration encadrée ou activité optionnelle"
+            },
+            {
+                "jour": 7,
+                "titre": "Jour 7",
+                "activite": "Exploration encadrée ou activité optionnelle"
+            },
+            {
+                "jour": 8,
+                "titre": "Jour 8",
+                "activite": "Exploration encadrée ou activité optionnelle"
+            },
+            {
+                "jour": 9,
+                "titre": "Jour 9",
+                "activite": "Exploration encadrée ou activité optionnelle"
+            },
+            {
+                "jour": 10,
+                "titre": "Jour 10",
+                "activite": "Temps libre, souvenirs personnels et retour sécurisé"
+            }
+        ],
+        "options": [
+            {
+                "type": "hébergement",
+                "nom": "Auberge temporelle",
+                "prix_par_personne": 120
+            },
+            {
+                "type": "activité",
+                "nom": "Immersion 360°",
+                "prix_par_personne": 100
+            },
+            {
+                "type": "repas",
+                "nom": "Repas typique de l’époque",
+                "prix_par_personne": 75
+            },
+            {
+                "type": "souvenir",
+                "nom": "Objet d’époque discret",
+                "prix_par_personne": 60
+            },
+            {
+                "type": "bonus",
+                "nom": "Accès à une scène secondaire confidentielle",
+                "prix_par_personne": 100
+            }
+        ],
+        "activites_incluses": [
+            {
+                "nom": "Briefing temporel",
+                "description": "Séance préparatoire avant immersion pour comprendre les enjeux historiques."
+            },
+            {
+                "nom": "Exploration encadrée",
+                "description": "Parcours dans l’environnement historique réel, sans modifier le cours du temps."
+            },
+            {
+                "nom": "Observation protégée de l’événement principal",
+                "description": "Point de vue sécurisé et dissimulé pour vivre l’instant tel qu’il s’est produit."
+            }
+        ],
+        "niveau_difficulte": "modéré",
+        "public_cible": [
+            "étudiants",
+            "curieux d'histoire",
+            "passionnés d'aventure"
+        ],
+        "note_moyenne": 4,
+        "nombre_avis": 51,
+        "infos_pratiques": [
+            "Langue du contexte : langue locale d’époque",
+            "Tenue sobre recommandée",
+            "Interaction directe avec les personnages historiques interdite"
+        ],
+        "conditions_annulation": "Annulation gratuite jusqu’à 48h avant le départ.",
+        "theme": "Couronnement de Napoléon"
+    },
+    {
+        "id": 14,
+        "titre": "Chute du mur de Berlin",
+        "image": "14.png",
+        "duree": 7,
+        "description": "Voyage unique à Berlin,Allemagne lors de l'événement « Chute du mur de Berlin ».",
+        "type_temporel": "passé",
+        "lieu": "Berlin,Allemagne",
+        "date_depart_personnalisable": true,
+        "prix_base": 1863,
+        "programme": [
+            {
+                "jour": 1,
+                "titre": "Jour 1",
+                "activite": "Arrivée, installation et familiarisation avec l’époque"
+            },
+            {
+                "jour": 2,
+                "titre": "Jour 2",
+                "activite": "Observation discrète de la situation locale"
+            },
+            {
+                "jour": 3,
+                "titre": "Jour 3",
+                "activite": "Présence sécurisée à l’événement historique principal"
+            },
+            {
+                "jour": 4,
+                "titre": "Jour 4",
+                "activite": "Exploration encadrée ou activité optionnelle"
+            },
+            {
+                "jour": 5,
+                "titre": "Jour 5",
+                "activite": "Exploration encadrée ou activité optionnelle"
+            },
+            {
+                "jour": 6,
+                "titre": "Jour 6",
+                "activite": "Exploration encadrée ou activité optionnelle"
+            },
+            {
+                "jour": 7,
+                "titre": "Jour 7",
+                "activite": "Temps libre, souvenirs personnels et retour sécurisé"
+            }
+        ],
+        "options": [
+            {
+                "type": "hébergement",
+                "nom": "Tente de l’époque",
+                "prix_par_personne": 90
+            },
+            {
+                "type": "activité",
+                "nom": "Immersion 360°",
+                "prix_par_personne": 100
+            },
+            {
+                "type": "repas",
+                "nom": "Repas typique de l’époque",
+                "prix_par_personne": 75
+            },
+            {
+                "type": "souvenir",
+                "nom": "Objet d’époque discret",
+                "prix_par_personne": 60
+            },
+            {
+                "type": "bonus",
+                "nom": "Accès à une scène secondaire confidentielle",
+                "prix_par_personne": 100
+            }
+        ],
+        "activites_incluses": [
+            {
+                "nom": "Briefing temporel",
+                "description": "Séance préparatoire avant immersion pour comprendre les enjeux historiques."
+            },
+            {
+                "nom": "Exploration encadrée",
+                "description": "Parcours dans l’environnement historique réel, sans modifier le cours du temps."
+            },
+            {
+                "nom": "Observation protégée de l’événement principal",
+                "description": "Point de vue sécurisé et dissimulé pour vivre l’instant tel qu’il s’est produit."
+            }
+        ],
+        "niveau_difficulte": "modéré",
+        "public_cible": [
+            "étudiants",
+            "curieux d'histoire",
+            "passionnés d'aventure"
+        ],
+        "note_moyenne": 4.3,
+        "nombre_avis": 53,
+        "infos_pratiques": [
+            "Langue du contexte : langue locale d’époque",
+            "Tenue sobre recommandée",
+            "Interaction directe avec les personnages historiques interdite"
+        ],
+        "conditions_annulation": "Annulation gratuite jusqu’à 48h avant le départ.",
+        "theme": "Chute du mur de Berlin"
+    },
+    {
+        "id": 15,
+        "titre": "Premier vol des frères Wright",
+        "image": "15.png",
+        "duree": 9,
+        "description": "Voyage unique à Kitty Hawk,États-Unis lors de l'événement « Premier vol des frères Wright ».",
+        "type_temporel": "passé",
+        "lieu": "Kitty Hawk,États-Unis",
+        "date_depart_personnalisable": true,
+        "prix_base": 1711,
+        "programme": [
+            {
+                "jour": 1,
+                "titre": "Jour 1",
+                "activite": "Arrivée, installation et familiarisation avec l’époque"
+            },
+            {
+                "jour": 2,
+                "titre": "Jour 2",
+                "activite": "Observation discrète de la situation locale"
+            },
+            {
+                "jour": 3,
+                "titre": "Jour 3",
+                "activite": "Présence sécurisée à l’événement historique principal"
+            },
+            {
+                "jour": 4,
+                "titre": "Jour 4",
+                "activite": "Exploration encadrée ou activité optionnelle"
+            },
+            {
+                "jour": 5,
+                "titre": "Jour 5",
+                "activite": "Exploration encadrée ou activité optionnelle"
+            },
+            {
+                "jour": 6,
+                "titre": "Jour 6",
+                "activite": "Exploration encadrée ou activité optionnelle"
+            },
+            {
+                "jour": 7,
+                "titre": "Jour 7",
+                "activite": "Exploration encadrée ou activité optionnelle"
+            },
+            {
+                "jour": 8,
+                "titre": "Jour 8",
+                "activite": "Exploration encadrée ou activité optionnelle"
+            },
+            {
+                "jour": 9,
+                "titre": "Jour 9",
+                "activite": "Temps libre, souvenirs personnels et retour sécurisé"
+            }
+        ],
+        "options": [
+            {
+                "type": "expédition",
+                "nom": "Visite guidée historique",
+                "prix_par_personne": 180
+            },
+            {
+                "type": "activité",
+                "nom": "Immersion 360°",
+                "prix_par_personne": 100
+            },
+            {
+                "type": "repas",
+                "nom": "Repas typique de l’époque",
+                "prix_par_personne": 75
+            },
+            {
+                "type": "souvenir",
+                "nom": "Objet d’époque discret",
+                "prix_par_personne": 60
+            },
+            {
+                "type": "bonus",
+                "nom": "Accès à une scène secondaire confidentielle",
+                "prix_par_personne": 100
+            }
+        ],
+        "activites_incluses": [
+            {
+                "nom": "Briefing temporel",
+                "description": "Séance préparatoire avant immersion pour comprendre les enjeux historiques."
+            },
+            {
+                "nom": "Exploration encadrée",
+                "description": "Parcours dans l’environnement historique réel, sans modifier le cours du temps."
+            },
+            {
+                "nom": "Observation protégée de l’événement principal",
+                "description": "Point de vue sécurisé et dissimulé pour vivre l’instant tel qu’il s’est produit."
+            }
+        ],
+        "niveau_difficulte": "modéré",
+        "public_cible": [
+            "étudiants",
+            "curieux d'histoire",
+            "passionnés d'aventure"
+        ],
+        "note_moyenne": 3.7,
+        "nombre_avis": 55,
+        "infos_pratiques": [
+            "Langue du contexte : langue locale d’époque",
+            "Tenue sobre recommandée",
+            "Interaction directe avec les personnages historiques interdite"
+        ],
+        "conditions_annulation": "Annulation gratuite jusqu’à 48h avant le départ.",
+        "theme": "Premier vol des frères Wright"
+    },
+    {
+        "id": 16,
+        "titre": "Discours \"I Have a Dream\"",
+        "image": "16.png",
+        "duree": 7,
+        "description": "Voyage unique à Washington D.C.,États-Unis lors de l'événement « Discours \"I Have a Dream\" ».",
+        "type_temporel": "passé",
+        "lieu": "Washington D.C.,États-Unis",
+        "date_depart_personnalisable": true,
+        "prix_base": 1144,
+        "programme": [
+            {
+                "jour": 1,
+                "titre": "Jour 1",
+                "activite": "Arrivée, installation et familiarisation avec l’époque"
+            },
+            {
+                "jour": 2,
+                "titre": "Jour 2",
+                "activite": "Observation discrète de la situation locale"
+            },
+            {
+                "jour": 3,
+                "titre": "Jour 3",
+                "activite": "Présence sécurisée à l’événement historique principal"
+            },
+            {
+                "jour": 4,
+                "titre": "Jour 4",
+                "activite": "Exploration encadrée ou activité optionnelle"
+            },
+            {
+                "jour": 5,
+                "titre": "Jour 5",
+                "activite": "Exploration encadrée ou activité optionnelle"
+            },
+            {
+                "jour": 6,
+                "titre": "Jour 6",
+                "activite": "Exploration encadrée ou activité optionnelle"
+            },
+            {
+                "jour": 7,
+                "titre": "Jour 7",
+                "activite": "Temps libre, souvenirs personnels et retour sécurisé"
+            }
+        ],
+        "options": [
+            {
+                "type": "hébergement",
+                "nom": "Tente de l’époque",
+                "prix_par_personne": 90
+            },
+            {
+                "type": "expédition",
+                "nom": "Visite guidée historique",
+                "prix_par_personne": 180
+            },
+            {
+                "type": "repas",
+                "nom": "Repas typique de l’époque",
+                "prix_par_personne": 75
+            },
+            {
+                "type": "souvenir",
+                "nom": "Objet d’époque discret",
+                "prix_par_personne": 60
+            },
+            {
+                "type": "bonus",
+                "nom": "Accès à une scène secondaire confidentielle",
+                "prix_par_personne": 100
+            }
+        ],
+        "activites_incluses": [
+            {
+                "nom": "Briefing temporel",
+                "description": "Séance préparatoire avant immersion pour comprendre les enjeux historiques."
+            },
+            {
+                "nom": "Exploration encadrée",
+                "description": "Parcours dans l’environnement historique réel, sans modifier le cours du temps."
+            },
+            {
+                "nom": "Observation protégée de l’événement principal",
+                "description": "Point de vue sécurisé et dissimulé pour vivre l’instant tel qu’il s’est produit."
+            }
+        ],
+        "niveau_difficulte": "modéré",
+        "public_cible": [
+            "étudiants",
+            "curieux d'histoire",
+            "passionnés d'aventure"
+        ],
+        "note_moyenne": 4,
+        "nombre_avis": 57,
+        "infos_pratiques": [
+            "Langue du contexte : langue locale d’époque",
+            "Tenue sobre recommandée",
+            "Interaction directe avec les personnages historiques interdite"
+        ],
+        "conditions_annulation": "Annulation gratuite jusqu’à 48h avant le départ.",
+        "theme": "Discours \"I Have a Dream\""
+    },
+    {
+        "id": 17,
+        "titre": "Grande Pyramide en construction",
+        "image": "17.png",
+        "duree": 7,
+        "description": "Voyage unique à Gizeh,Égypte lors de l'événement « Grande Pyramide en construction ».",
+        "type_temporel": "futur",
+        "lieu": "Gizeh,Égypte",
+        "date_depart_personnalisable": true,
+        "prix_base": 1892,
+        "programme": [
+            {
+                "jour": 1,
+                "titre": "Jour 1",
+                "activite": "Arrivée, installation et familiarisation avec l’époque"
+            },
+            {
+                "jour": 2,
+                "titre": "Jour 2",
+                "activite": "Observation discrète de la situation locale"
+            },
+            {
+                "jour": 3,
+                "titre": "Jour 3",
+                "activite": "Présence sécurisée à l’événement historique principal"
+            },
+            {
+                "jour": 4,
+                "titre": "Jour 4",
+                "activite": "Exploration encadrée ou activité optionnelle"
+            },
+            {
+                "jour": 5,
+                "titre": "Jour 5",
+                "activite": "Exploration encadrée ou activité optionnelle"
+            },
+            {
+                "jour": 6,
+                "titre": "Jour 6",
+                "activite": "Exploration encadrée ou activité optionnelle"
+            },
+            {
+                "jour": 7,
+                "titre": "Jour 7",
+                "activite": "Temps libre, souvenirs personnels et retour sécurisé"
+            }
+        ],
+        "options": [
+            {
+                "type": "hébergement",
+                "nom": "Auberge temporelle",
+                "prix_par_personne": 120
+            },
+            {
+                "type": "expédition",
+                "nom": "Visite guidée historique",
+                "prix_par_personne": 180
+            },
+            {
+                "type": "repas",
+                "nom": "Repas typique de l’époque",
+                "prix_par_personne": 75
+            },
+            {
+                "type": "souvenir",
+                "nom": "Objet d’époque discret",
+                "prix_par_personne": 60
+            },
+            {
+                "type": "bonus",
+                "nom": "Accès à une scène secondaire confidentielle",
+                "prix_par_personne": 100
+            }
+        ],
+        "activites_incluses": [
+            {
+                "nom": "Briefing temporel",
+                "description": "Séance préparatoire avant immersion pour comprendre les enjeux historiques."
+            },
+            {
+                "nom": "Exploration encadrée",
+                "description": "Parcours dans l’environnement historique réel, sans modifier le cours du temps."
+            },
+            {
+                "nom": "Observation protégée de l’événement principal",
+                "description": "Point de vue sécurisé et dissimulé pour vivre l’instant tel qu’il s’est produit."
+            }
+        ],
+        "niveau_difficulte": "modéré",
+        "public_cible": [
+            "étudiants",
+            "curieux d'histoire",
+            "passionnés d'aventure"
+        ],
+        "note_moyenne": 4.3,
+        "nombre_avis": 59,
+        "infos_pratiques": [
+            "Langue du contexte : langue locale d’époque",
+            "Tenue sobre recommandée",
+            "Interaction directe avec les personnages historiques interdite"
+        ],
+        "conditions_annulation": "Annulation gratuite jusqu’à 48h avant le départ.",
+        "theme": "Grande Pyramide en construction"
+    },
+    {
+        "id": 18,
+        "titre": "Inauguration de la Tour Eiffel",
+        "image": "18.png",
+        "duree": 10,
+        "description": "Voyage unique à Paris,France lors de l'événement « Inauguration de la Tour Eiffel ».",
+        "type_temporel": "passé",
+        "lieu": "Paris,France",
+        "date_depart_personnalisable": true,
+        "prix_base": 1336,
+        "programme": [
+            {
+                "jour": 1,
+                "titre": "Jour 1",
+                "activite": "Arrivée, installation et familiarisation avec l’époque"
+            },
+            {
+                "jour": 2,
+                "titre": "Jour 2",
+                "activite": "Observation discrète de la situation locale"
+            },
+            {
+                "jour": 3,
+                "titre": "Jour 3",
+                "activite": "Présence sécurisée à l’événement historique principal"
+            },
+            {
+                "jour": 4,
+                "titre": "Jour 4",
+                "activite": "Exploration encadrée ou activité optionnelle"
+            },
+            {
+                "jour": 5,
+                "titre": "Jour 5",
+                "activite": "Exploration encadrée ou activité optionnelle"
+            },
+            {
+                "jour": 6,
+                "titre": "Jour 6",
+                "activite": "Exploration encadrée ou activité optionnelle"
+            },
+            {
+                "jour": 7,
+                "titre": "Jour 7",
+                "activite": "Exploration encadrée ou activité optionnelle"
+            },
+            {
+                "jour": 8,
+                "titre": "Jour 8",
+                "activite": "Exploration encadrée ou activité optionnelle"
+            },
+            {
+                "jour": 9,
+                "titre": "Jour 9",
+                "activite": "Exploration encadrée ou activité optionnelle"
+            },
+            {
+                "jour": 10,
+                "titre": "Jour 10",
+                "activite": "Temps libre, souvenirs personnels et retour sécurisé"
+            }
+        ],
+        "options": [
+            {
+                "type": "activité",
+                "nom": "Immersion 360°",
+                "prix_par_personne": 100
+            },
+            {
+                "type": "hébergement",
+                "nom": "Tente de l’époque",
+                "prix_par_personne": 90
+            },
+            {
+                "type": "repas",
+                "nom": "Repas typique de l’époque",
+                "prix_par_personne": 75
+            },
+            {
+                "type": "souvenir",
+                "nom": "Objet d’époque discret",
+                "prix_par_personne": 60
+            },
+            {
+                "type": "bonus",
+                "nom": "Accès à une scène secondaire confidentielle",
+                "prix_par_personne": 100
+            }
+        ],
+        "activites_incluses": [
+            {
+                "nom": "Briefing temporel",
+                "description": "Séance préparatoire avant immersion pour comprendre les enjeux historiques."
+            },
+            {
+                "nom": "Exploration encadrée",
+                "description": "Parcours dans l’environnement historique réel, sans modifier le cours du temps."
+            },
+            {
+                "nom": "Observation protégée de l’événement principal",
+                "description": "Point de vue sécurisé et dissimulé pour vivre l’instant tel qu’il s’est produit."
+            }
+        ],
+        "niveau_difficulte": "modéré",
+        "public_cible": [
+            "étudiants",
+            "curieux d'histoire",
+            "passionnés d'aventure"
+        ],
+        "note_moyenne": 3.7,
+        "nombre_avis": 61,
+        "infos_pratiques": [
+            "Langue du contexte : langue locale d’époque",
+            "Tenue sobre recommandée",
+            "Interaction directe avec les personnages historiques interdite"
+        ],
+        "conditions_annulation": "Annulation gratuite jusqu’à 48h avant le départ.",
+        "theme": "Inauguration de la Tour Eiffel"
+    },
+    {
+        "id": 19,
+        "titre": "Bataille de Waterloo",
+        "image": "19.png",
+        "duree": 7,
+        "description": "Voyage unique à Waterloo,Belgique lors de l'événement « Bataille de Waterloo ».",
+        "type_temporel": "passé",
+        "lieu": "Waterloo,Belgique",
+        "date_depart_personnalisable": true,
+        "prix_base": 1344,
+        "programme": [
+            {
+                "jour": 1,
+                "titre": "Jour 1",
+                "activite": "Arrivée, installation et familiarisation avec l’époque"
+            },
+            {
+                "jour": 2,
+                "titre": "Jour 2",
+                "activite": "Observation discrète de la situation locale"
+            },
+            {
+                "jour": 3,
+                "titre": "Jour 3",
+                "activite": "Présence sécurisée à l’événement historique principal"
+            },
+            {
+                "jour": 4,
+                "titre": "Jour 4",
+                "activite": "Exploration encadrée ou activité optionnelle"
+            },
+            {
+                "jour": 5,
+                "titre": "Jour 5",
+                "activite": "Exploration encadrée ou activité optionnelle"
+            },
+            {
+                "jour": 6,
+                "titre": "Jour 6",
+                "activite": "Exploration encadrée ou activité optionnelle"
+            },
+            {
+                "jour": 7,
+                "titre": "Jour 7",
+                "activite": "Temps libre, souvenirs personnels et retour sécurisé"
+            }
+        ],
+        "options": [
+            {
+                "type": "hébergement",
+                "nom": "Tente de l’époque",
+                "prix_par_personne": 90
+            },
+            {
+                "type": "hébergement",
+                "nom": "Auberge temporelle",
+                "prix_par_personne": 120
+            },
+            {
+                "type": "repas",
+                "nom": "Repas typique de l’époque",
+                "prix_par_personne": 75
+            },
+            {
+                "type": "souvenir",
+                "nom": "Objet d’époque discret",
+                "prix_par_personne": 60
+            },
+            {
+                "type": "bonus",
+                "nom": "Accès à une scène secondaire confidentielle",
+                "prix_par_personne": 100
+            }
+        ],
+        "activites_incluses": [
+            {
+                "nom": "Briefing temporel",
+                "description": "Séance préparatoire avant immersion pour comprendre les enjeux historiques."
+            },
+            {
+                "nom": "Exploration encadrée",
+                "description": "Parcours dans l’environnement historique réel, sans modifier le cours du temps."
+            },
+            {
+                "nom": "Observation protégée de l’événement principal",
+                "description": "Point de vue sécurisé et dissimulé pour vivre l’instant tel qu’il s’est produit."
+            }
+        ],
+        "niveau_difficulte": "modéré",
+        "public_cible": [
+            "étudiants",
+            "curieux d'histoire",
+            "passionnés d'aventure"
+        ],
+        "note_moyenne": 4,
+        "nombre_avis": 63,
+        "infos_pratiques": [
+            "Langue du contexte : langue locale d’époque",
+            "Tenue sobre recommandée",
+            "Interaction directe avec les personnages historiques interdite"
+        ],
+        "conditions_annulation": "Annulation gratuite jusqu’à 48h avant le départ.",
+        "theme": "Bataille de Waterloo"
+    },
+    {
+        "id": 20,
+        "titre": "Proclamation de la République",
+        "image": "20.png",
+        "duree": 10,
+        "description": "Voyage unique à Paris,France lors de l'événement « Proclamation de la République ».",
+        "type_temporel": "passé",
+        "lieu": "Paris,France",
+        "date_depart_personnalisable": true,
+        "prix_base": 1030,
+        "programme": [
+            {
+                "jour": 1,
+                "titre": "Jour 1",
+                "activite": "Arrivée, installation et familiarisation avec l’époque"
+            },
+            {
+                "jour": 2,
+                "titre": "Jour 2",
+                "activite": "Observation discrète de la situation locale"
+            },
+            {
+                "jour": 3,
+                "titre": "Jour 3",
+                "activite": "Présence sécurisée à l’événement historique principal"
+            },
+            {
+                "jour": 4,
+                "titre": "Jour 4",
+                "activite": "Exploration encadrée ou activité optionnelle"
+            },
+            {
+                "jour": 5,
+                "titre": "Jour 5",
+                "activite": "Exploration encadrée ou activité optionnelle"
+            },
+            {
+                "jour": 6,
+                "titre": "Jour 6",
+                "activite": "Exploration encadrée ou activité optionnelle"
+            },
+            {
+                "jour": 7,
+                "titre": "Jour 7",
+                "activite": "Exploration encadrée ou activité optionnelle"
+            },
+            {
+                "jour": 8,
+                "titre": "Jour 8",
+                "activite": "Exploration encadrée ou activité optionnelle"
+            },
+            {
+                "jour": 9,
+                "titre": "Jour 9",
+                "activite": "Exploration encadrée ou activité optionnelle"
+            },
+            {
+                "jour": 10,
+                "titre": "Jour 10",
+                "activite": "Temps libre, souvenirs personnels et retour sécurisé"
+            }
+        ],
+        "options": [
+            {
+                "type": "hébergement",
+                "nom": "Tente de l’époque",
+                "prix_par_personne": 90
+            },
+            {
+                "type": "expédition",
+                "nom": "Visite guidée historique",
+                "prix_par_personne": 180
+            },
+            {
+                "type": "repas",
+                "nom": "Repas typique de l’époque",
+                "prix_par_personne": 75
+            },
+            {
+                "type": "souvenir",
+                "nom": "Objet d’époque discret",
+                "prix_par_personne": 60
+            },
+            {
+                "type": "bonus",
+                "nom": "Accès à une scène secondaire confidentielle",
+                "prix_par_personne": 100
+            }
+        ],
+        "activites_incluses": [
+            {
+                "nom": "Briefing temporel",
+                "description": "Séance préparatoire avant immersion pour comprendre les enjeux historiques."
+            },
+            {
+                "nom": "Exploration encadrée",
+                "description": "Parcours dans l’environnement historique réel, sans modifier le cours du temps."
+            },
+            {
+                "nom": "Observation protégée de l’événement principal",
+                "description": "Point de vue sécurisé et dissimulé pour vivre l’instant tel qu’il s’est produit."
+            }
+        ],
+        "niveau_difficulte": "modéré",
+        "public_cible": [
+            "étudiants",
+            "curieux d'histoire",
+            "passionnés d'aventure"
+        ],
+        "note_moyenne": 4.3,
+        "nombre_avis": 65,
+        "infos_pratiques": [
+            "Langue du contexte : langue locale d’époque",
+            "Tenue sobre recommandée",
+            "Interaction directe avec les personnages historiques interdite"
+        ],
+        "conditions_annulation": "Annulation gratuite jusqu’à 48h avant le départ.",
+        "theme": "Proclamation de la République"
+    }
 ]

@@ -1,3 +1,9 @@
+<script>
+  console.log("JS chargé !");
+</script>
+
+
+
 <?php
 if (isset($_POST['submit'])) {
   $voyages = json_decode(file_get_contents('../../data/voyages.json'), true);
@@ -10,7 +16,7 @@ if (isset($_POST['submit'])) {
   if (!empty($_FILES['image']['name'])) {
     $info = pathinfo($_FILES['image']['name']);
     $image_filename = $nouvel_id . '.' . $info['extension'];
-    move_uploaded_file($_FILES['image']['tmp_name'], '../../img/' . $image_filename);
+    move_uploaded_file($_FILES['image']['tmp_name'], '../../data/images/' . $image_filename);
   }
 
   $voyage = [
@@ -20,41 +26,23 @@ if (isset($_POST['submit'])) {
     "duree" => (int) $_POST['duree'],
     "specificites" => $_POST['specificites'],
     "prix_total" => (int) $_POST['prix_total'],
-    "etapes" => [
-      [
-        "titre" => $_POST['etape_titre'],
-        "date_arrivee" => $_POST['date_arrivee'],
-        "date_depart" => $_POST['date_depart'],
-        "duree" => (int) $_POST['etape_duree'],
-        "position" => [
-          "gps" => $_POST['gps'],
-          "nom_lieu" => $_POST['lieu']
-        ],
-        "options" => [
-          [
-            "type" => $_POST['option_type'],
-            "nom" => $_POST['option_nom'],
-            "prix_par_personne" => (int) $_POST['option_prix']
-          ]
-        ]
-      ]
-    ],
-    "activites" => [
-      [
-        "nom" => $_POST['activite_nom'],
-        "description" => $_POST['activite_description'],
-        "prix" => (int) $_POST['activite_prix']
-      ]
-    ]
+    "type_temporel" => $_POST['type_temporel'],
+    "niveau_difficulte" => $_POST['niveau_difficulte'],
+    "note_moyenne" => (float) ($_POST['note_moyenne'] ?? 0),
+    "nombre_avis" => (int) ($_POST['nombre_avis'] ?? 0),
+    "public_cible" => $_POST['public_cible'] ?? [],
+    "infos_pratiques" => $_POST['infos_pratiques'] ?? [],
+    "programme" => [],
+    "options" => [],
+    "activites_incluses" => []
   ];
 
   $voyages[] = $voyage;
   file_put_contents('../../data/voyages.json', json_encode($voyages, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE));
-  header('Location: ./index.php');
+  header('Location: ./index.php?created=1');
   exit;
 }
 ?>
-
 
 <!DOCTYPE html>
 <html lang="fr">
@@ -65,56 +53,87 @@ if (isset($_POST['submit'])) {
   <link rel="stylesheet" href="../../css/base.css">
   <link rel="stylesheet" href="../../css/page_admin/base.css">
   <link rel="stylesheet" href="../../css/page_admin/edit_voyage.css">
+  <script defer src="../../js/page_admin/creer_voyages.js"></script>
 </head>
 <body>
 
-  <aside>
-    <header>
-      <a href="./index.php">
-        <img src="../../img/logo.svg" alt="Time to Travel" />
-      </a>
-    </header>
-    <nav>
-      <a href="./index.php">Voyages</a>
-      <a href="./utilisateur.php">Utilisateurs</a>
-    </nav>
-  </aside>
+<aside>
+  <header>
+    <a href="./index.php">
+      <img src="../../img/logo.svg" alt="Time to Travel" />
+    </a>
+  </header>
+  <nav>
+    <a href="./index.php">Voyages</a>
+    <a href="./utilisateur.php">Utilisateurs</a>
+  </nav>
+</aside>
 
-  <main>
-    <h1>Créer un nouveau voyage</h1>
-    <form action="" method="post" enctype="multipart/form-data">
-      <table>
-        <tr><th>Titre</th><td><input type="text" name="titre" required></td></tr>
-        <tr><th>Image</th><td><input type="file" name="image" accept="image/*" required></td></tr>
-        <tr><th>Durée (total)</th><td><input type="number" name="duree" required></td></tr>
-        <tr><th>Spécificités</th><td><textarea name="specificites" required></textarea></td></tr>
-        <tr><th>Prix total</th><td><input type="number" name="prix_total" required></td></tr>
+<main>
+  <h1>Créer un nouveau voyage</h1>
+  <form action="" method="post" enctype="multipart/form-data">
+    <table>
+      <tr><th>Titre</th><td><input type="text" name="titre" required></td></tr>
+      <tr><th>Image</th><td><input type="file" name="image" accept="image/*" required></td></tr>
+      <tr><th>Durée</th><td><input type="number" name="duree" id="duree" min="1" required></td></tr>
+      <tr><th>Spécificités</th><td><textarea name="specificites" required></textarea></td></tr>
+      <tr><th>Prix total</th><td><input type="number" name="prix_total" required></td></tr>
+      <tr><th>Type temporel</th>
+          <td>
+            <label><input type="radio" name="type_temporel" value="passé" checked> Passé</label>
+            <label><input type="radio" name="type_temporel" value="futur"> Futur</label>
+          </td>
+      </tr>
+      <tr><th>Niveau de difficulté</th>
+          <td>
+            <select name="niveau_difficulte">
+              <option value="facile">Facile</option>
+              <option value="intermédiaire">Intermédiaire</option>
+              <option value="difficile">Difficile</option>
+            </select>
+          </td>
+      </tr>
+      <tr><th>Note moyenne</th><td><input type="number" name="note_moyenne" step="0.1"></td></tr>
+      <tr><th>Nombre d'avis</th><td><input type="number" name="nombre_avis"></td></tr>
+      <tr><th>Public cible</th>
+          <td>
+            <label><input type="checkbox" name="public_cible[]" value="enfants"> Enfants</label>
+            <label><input type="checkbox" name="public_cible[]" value="adultes"> Adultes</label>
+            <label><input type="checkbox" name="public_cible[]" value="seniors"> Seniors</label>
+            <label><input type="checkbox" name="public_cible[]" value="tout public"> Tout public</label>
+          </td>
+      </tr>
+    </table>
 
-        <tr><th colspan="2">🧭 Étape</th></tr>
-        <tr><th>Titre</th><td><input type="text" name="etape_titre" required></td></tr>
-        <tr><th>Date arrivée</th><td><input type="date" name="date_arrivee" required></td></tr>
-        <tr><th>Date départ</th><td><input type="date" name="date_depart" required></td></tr>
-        <tr><th>Durée</th><td><input type="number" name="etape_duree" required></td></tr>
-        <tr><th>Lieu</th><td><input type="text" name="lieu" required></td></tr>
-        <tr><th>GPS</th><td><input type="text" name="gps" placeholder="0.0000, 0.0000" required></td></tr>
+    <section>
+      <h2>Infos pratiques</h2>
+      <div id="infos-container"></div>
+      <button type="button" onclick="ajouterInfo()">Ajouter une info</button>
+    </section>
 
-        <tr><th colspan="2">🏨 Option</th></tr>
-        <tr><th>Type</th><td><input type="text" name="option_type" required></td></tr>
-        <tr><th>Nom</th><td><input type="text" name="option_nom" required></td></tr>
-        <tr><th>Prix par personne</th><td><input type="number" name="option_prix" required></td></tr>
+    <section>
+      <h2>Programme (généré dynamiquement)</h2>
+      <div id="programme-container"></div>
+    </section>
 
-        <tr><th colspan="2">🎯 Activité</th></tr>
-        <tr><th>Nom</th><td><input type="text" name="activite_nom" required></td></tr>
-        <tr><th>Description</th><td><textarea name="activite_description" required></textarea></td></tr>
-        <tr><th>Prix</th><td><input type="number" name="activite_prix" required></td></tr>
-      </table>
+    <section>
+      <h2>Options disponibles</h2>
+      <div id="options-container"></div>
+      <button type="button" onclick="ajouterOption()">Ajouter une option</button>
+    </section>
 
-      <div>
-        <input type="submit" name="submit" value="Enregistrer">
-        <a href="./index.php">Annuler</a>
-      </div>
-    </form>
-  </main>
+    <section>
+      <h2>Activités incluses</h2>
+      <div id="activites-container"></div>
+      <button type="button" onclick="ajouterActivite()">Ajouter une activité</button>
+    </section>
+
+    <div>
+      <input type="submit" name="submit" value="Enregistrer">
+      <a href="./index.php">Annuler</a>
+    </div>
+  </form>
+</main>
 
 </body>
 </html>

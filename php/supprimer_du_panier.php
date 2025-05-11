@@ -2,15 +2,12 @@
 session_start();
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-  $id = $_POST['voyage_id'] ?? null;
+  $index = $_POST['index'] ?? null;
 
-  if (isset($_SESSION['panier'][$id])) {
-    unset($_SESSION['panier'][$id]);
+  if (is_numeric($index) && isset($_SESSION['panier'][(int)$index])) {
+    array_splice($_SESSION['panier'], (int)$index, 1);
   }
-
-  header("Location: page_panier.php");
-  exit;
-} else {
-  header("Location: page_panier.php");
-  exit;
 }
+
+header("Location: page_panier.php");
+exit;

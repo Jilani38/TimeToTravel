@@ -9,6 +9,7 @@ main form {
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
   max-width: 800px;
   margin: auto;
+  overflow-x: hidden;
 }
 
 table {
@@ -38,6 +39,7 @@ main div {
   margin-top: 30px;
   display: flex;
   gap: 10px;
+  flex-wrap: wrap;
 }
 
 main div input[type="submit"] {
@@ -69,4 +71,100 @@ main div a {
 main div a:hover {
   background-color: #123964;
   color: white;
+}
+
+/* Sections dynamiques */
+section {
+  margin-top: 40px;
+  padding-top: 10px;
+  border-top: 2px solid #eee;
+}
+
+section h2 {
+  color: #123964;
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+.option-bloc, .activite-bloc, .jour-bloc, .info-bloc {
+  background-color: #f9f9f9;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 100%;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.option-bloc label,
+.activite-bloc label,
+.jour-bloc label,
+.info-bloc label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+  color: #123964;
+}
+
+.option-bloc input,
+.activite-bloc input,
+.activite-bloc textarea,
+.jour-bloc input,
+.jour-bloc textarea,
+.info-bloc input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+button[type="button"].supprimer {
+  background-color: #e74c3c;
+  color: #fff;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 10px;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+}
+
+button[type="button"].supprimer:hover {
+  background-color: #c0392b;
+}
+
+button[type="button"].ajouter {
+  background-color: white;
+  color: #123964;
+  font-weight: bold;
+  padding: 10px 16px;
+  border: 2px solid #123964;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+  display: inline-block;
+}
+
+button[type="button"].ajouter:hover {
+  background-color: #123964;
+  color: white;
+  border-color: #123964;
+}
+
+/* Suppression de hr */
+.option-bloc hr,
+.activite-bloc hr,
+.jour-bloc hr,
+.info-bloc hr {
+  display: none;
 }
