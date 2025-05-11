@@ -24,7 +24,7 @@
 
     </header>
     <main>
-      <section id="choice">
+      <!--<section id="choice">
         <aside>
           <div>
             <span>
@@ -43,7 +43,16 @@
             <a href="./page_futur.php">Plus d'infos</a>
           </div>
         </aside>
-      </section>
+      </section>-->
+     <section class="section-voyages scroll-intro">
+  <h2 class="titre-voyages">Envie de partir à l’aventure ?</h2>
+  <div class="grid-voyages">
+    <?php require_once './get_random_voyages.php'; ?>
+  </div>
+</section>
+
+
+
       <section id="past">
         <img src="../img/accueil_past.avif" alt="Paysage du passé" />
         <aside>

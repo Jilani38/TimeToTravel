@@ -1,50 +1,43 @@
-
-
 <?php
 
+
+
+$names = array('id', 'titre', 'date', 'lieu', 'image');
+
 function read_csv(string $path): array {
-    if (!file_exists($path)) return [];
-
-    $csv = [];
-    $rows = file($path, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
-    if (!$rows || count($rows) < 2) return [];
-
-    $headers = str_getcsv($rows[0], ';');
-
-    for ($i = 1; $i < count($rows); $i++) {
-        $row = str_getcsv($rows[$i], ';');
-        if (count($row) === count($headers)) {
-            $csv[] = array_combine($headers, $row);
-        }
+  global $names;
+  $rows = file('../../data/voyages.csv');
+  $csv = [];
+  for($i = 1; $i < count($rows); $i++) {
+    $row = str_getcsv($rows[$i], ';', '"', "");
+    for ($j = 0; $j < count($names); $j++) {
+      $csv[$i - 1][$names[$j]] = $row[$j];
     }
-
-    return $csv;
-}
-
-function write_csv(array $csv, string $path) {
-    if (empty($csv)) return;
-
-    $headers = array_keys($csv[0]);
-    $lines = [implode(';', $headers)];
-
-    foreach ($csv as $row) {
-        $line = [];
-        foreach ($headers as $key) {
-            $line[] = $row[$key] ?? '';
-        }
-        $lines[] = implode(';', $line);
-    }
-
-    file_put_contents($path, implode("\n", $lines));
+  }
+  return $csv;
 }
 
 function array_find_key(array $array, callable $callback) {
-    foreach ($array as $key => $value) {
-        if ($callback($value)) {
-            return $key;
-        }
-    }
-    return null;
+  foreach ($array as $key => $value) {
+      if ($callback($value)) {
+          return $key;
+      }
+  }
+  return null;
 }
 
+
+function write_csv(array $csv, string $path) {
+  global $names;
+  $rows = [];
+  for ($i = 0; $i < count($csv); $i++) {
+    $row = [];
+    for ($j = 0; $j < count($names); $j++) {
+      $row[] = $csv[$i][$names[$j]];
+    }
+    $rows[] = implode(';', $row);
+  }
+  $csv = implode(';', $names) . "\n" . implode("\n", $rows);
+  file_put_contents($path, $csv);
+}
 ?>

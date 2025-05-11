@@ -79,11 +79,11 @@ main {
   gap: 5rem;
 }
 
-section#choice {
+/*section#choice {
   height: 50vh;
   display: grid;
   grid-template-columns: 1fr 1fr;
-}
+}*/
 
 section#choice aside {
   margin: 20px;
@@ -280,3 +280,149 @@ header nav div a:hover {
   background-color: #e0e0e0;
 }
 
+/* Section contenant le titre + les cartes */
+.section-voyages {
+  padding: 0 40px;
+  margin: 0 0 30px;
+  text-align: center;
+}
+
+/* Titre au-dessus des cartes */
+.titre-voyages {
+  font-size: 2.8rem;
+  font-weight: bold;
+  margin-top: -25px;
+  padding: 40px 0 20px;
+  color: #123964;
+}
+
+/* Conteneur des 4 cartes */
+.grid-voyages {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  gap: 20px;
+}
+
+/* Carte individuelle */
+.voyage-carte {
+  position: relative;
+  width: 23%;
+  aspect-ratio: 1 / 1;
+  border-radius: 15px;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  box-shadow: 0 4px 8px #0003;
+  transition: transform 0.3s;
+}
+
+.voyage-carte:hover {
+  transform: scale(1.02);
+}
+
+/* Titre visible en bas de carte avant hover */
+.voyage-carte .titre-visible {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 10px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+  color: white;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+  transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+.voyage-carte:hover .titre-visible {
+  transform: translateY(-100%);
+  opacity: 0;
+}
+
+/* Conteneur hover */
+.voyage-carte div {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  color: white;
+  z-index: 2;
+  pointer-events: none;
+  opacity: 0;
+  transform: translateY(100%);
+  transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+.voyage-carte:hover div {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Voile noir flouté */
+.voyage-carte div::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+  z-index: -1;
+  border-radius: 0 0 15px 15px;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.voyage-carte:hover div::before {
+  opacity: 1;
+}
+
+/* Contenu hover animé */
+.voyage-carte div .titre-hover,
+.voyage-carte div a {
+  transform: translateY(100%);
+  opacity: 0;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+.voyage-carte:hover div .titre-hover,
+.voyage-carte:hover div a {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.voyage-carte div .titre-hover {
+  font-size: 18px;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* Bouton */
+.voyage-carte div a {
+  background-color: #fff;
+  color: #123964;
+  padding: 10px 15px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+  pointer-events: auto; /* ✅ bouton cliquable */
+}
+
+.voyage-carte div a:hover {
+  background-color: #e0e0e0;
+  transform: scale(1.05);
+  box-shadow: 0 2px 8px #0002;
+}
