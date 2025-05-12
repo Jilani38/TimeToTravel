@@ -6,6 +6,7 @@
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="../css/base.css" />
     <link rel="stylesheet" href="../css/page_accueil.css" />
+    <script src="../js/base.js" defer></script>
     <script src="../js/page_accueil.js" defer></script>
     <title>Time to Travel</title>
   </head>

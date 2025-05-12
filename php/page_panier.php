@@ -17,6 +17,7 @@ $total = 0;
   <title>Panier - Time2Travel</title>
   <link rel="stylesheet" href="../css/base.css" />
   <link rel="stylesheet" href="../css/page_panier.css" />
+  <script src="../js/base.js" defer></script>
 </head>
 <body>
 
@@ -56,7 +57,7 @@ $total = 0;
           $sous_total = $prix_unitaire * $quantite;
           $total += $sous_total;
         ?>
-        <div class="carte-voyage">
+        <div class="card carte-voyage">
           <div class="entete">
             <h2><?= htmlspecialchars($voyage['titre']) ?></h2>
             <span class="prix"><?= $sous_total ?> €</span>

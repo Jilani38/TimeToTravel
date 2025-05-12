@@ -9,13 +9,16 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Fait en sorte que la vidéo prenne tout l'espace */
-  z-index: -2; /* Met la vidéo derrière les éléments */
+  object-fit: cover;
+  /* Fait en sorte que la vidéo prenne tout l'espace */
+  z-index: -2;
+  /* Met la vidéo derrière les éléments */
 }
 
 header {
   position: relative;
-  height: 50vh; /* Même hauteur que l'ancien header */
+  height: 50vh;
+  /* Même hauteur que l'ancien header */
   display: grid;
   place-items: center;
   color: white;
@@ -29,7 +32,8 @@ header::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgb(0, 0, 0, 0.4); /* Assombrit légèrement */
+  background: rgb(0, 0, 0, 0.4);
+  /* Assombrit légèrement */
   z-index: -1;
 }
 
@@ -152,7 +156,7 @@ section#choice aside:nth-child(1) div a {
 }
 
 section#choice aside:nth-child(2) div a {
-  background: #123964;
+  background: var(--primary-background);
   color: white;
 }
 
@@ -213,25 +217,32 @@ section#future aside {
 }
 
 nav .icone-panier {
-  width: 35px;              /* Largeur */
-  height: auto;             /* Hauteur  */
-  vertical-align: middle;   /* Alignement vertical  */
+  width: 35px;
+  /* Largeur */
+  height: auto;
+  /* Hauteur  */
+  vertical-align: middle;
+  /* Alignement vertical  */
   transition: transform 0.3s ease;
 }
 
 nav .icone-panier:hover {
-  transform: scale(1.2);    /* zoom au survol */
+  transform: scale(1.2);
+  /* zoom au survol */
 }
 
 /* survol boutton */
 
 header nav div a {
-  display: inline-block; /* nécessaire pour que le zoom fonctionne proprement */
-  transition: transform 0.3s ease; /* Animation fluide */
+  display: inline-block;
+  /* nécessaire pour que le zoom fonctionne proprement */
+  transition: transform 0.3s ease;
+  /* Animation fluide */
 }
 
 header nav div a:hover {
-  transform: scale(1.2); /* Zoom de 20% au survol */
+  transform: scale(1.2);
+  /* Zoom de 20% au survol */
 }
 
 
@@ -267,7 +278,8 @@ header nav div a:hover {
 
 .form-recherche button {
   background-color: white;
-  color: #123964;
+  /* background-color: var(--background); */
+  color: var(--primary-background);
   border: none;
   border-radius: 25px;
   padding: 12px 20px;
@@ -293,7 +305,7 @@ header nav div a:hover {
   font-weight: bold;
   margin-top: -25px;
   padding: 40px 0 20px;
-  color: #123964;
+  color: var(--primary-background);
 }
 
 /* Conteneur des 4 cartes */
@@ -412,13 +424,14 @@ header nav div a:hover {
 /* Bouton */
 .voyage-carte div a {
   background-color: #fff;
-  color: #123964;
+  color: var(--primary-background);
   padding: 10px 15px;
   border-radius: 10px;
   text-decoration: none;
   font-weight: bold;
   transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
-  pointer-events: auto; /* ✅ bouton cliquable */
+  pointer-events: auto;
+  /* ✅ bouton cliquable */
 }
 
 .voyage-carte div a:hover {

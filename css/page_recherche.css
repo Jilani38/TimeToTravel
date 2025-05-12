@@ -3,7 +3,6 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  color: white;
   font-family: sans-serif;
   margin: 0;
   padding: 0;
@@ -11,7 +10,6 @@ body {
 
 main {
   padding: 30px;
-  background-color: rgba(0, 0, 0, 0.7);
   border-radius: 10px;
   max-width: 1200px;
   margin: 50px auto;
@@ -37,8 +35,7 @@ h1 {
   font-size: 1em;
   border-radius: 6px;
   border: 1px solid white;
-  background: rgba(255, 255, 255, 0.1);
-  color: white;
+  /* color: var(--color); */
 }
 
 .filtres select {
@@ -48,14 +45,14 @@ h1 {
 }
 
 .filtres select option {
-  background-color: #123964;
+  background-color: var(--primary-background);
   color: white;
 }
 
 .filtres button:hover,
 .actions-tri button:hover {
-  background-color: #123964;
-  color: white;
+  background-color: var(--primary-background);
+  color: var(--background);
 }
 
 .resultats {
@@ -93,8 +90,8 @@ h1 {
 
 .actions-tri button {
   padding: 8px 15px;
-  background: white;
-  color: #123964;
+  background: var(--background);
+  color: var(--primary-background);
   border-radius: 5px;
   cursor: pointer;
   border: none;

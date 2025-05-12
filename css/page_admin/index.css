@@ -4,7 +4,7 @@ main {
 
 main h1 {
   font-size: 2em;
-  color: #123964;
+  color: var(--primary-background);
   margin-bottom: 10px;
 }
 
@@ -83,7 +83,7 @@ dialog {
 .btn-ajouter-voyage {
   display: inline-block;
   margin: 15px 0;
-  background-color: #123964;
+  background-color: var(--primary-background);
   color: white;
   padding: 10px 20px;
   border-radius: 10px;
@@ -101,7 +101,7 @@ dialog {
 .btn-changer-role {
   background: none;
   border: none;
-  color: #123964;
+  color: var(--primary-background);
   cursor: pointer;
   font-size: 20px;
   margin-left: 8px;

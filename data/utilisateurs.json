@@ -115,10 +115,10 @@
         "date_naissance": "1900-01-01",
         "genre": "Homme",
         "email": "me@polnio.dev",
-        "motdepasse": "$2y$12$khnCq6gjcOOVRzMi2wnNJ.OF7GW3tJdeARFPDM\/eD0lLrQ\/rixCjO",
+        "motdepasse": "$2y$10$JL2pAwy22J9XEYSf7MtL2enZZ9zxFNtBgmWYxMsVXSrINgwdCEBie",
         "telephone": "",
         "date_inscription": "2025-05-09",
-        "derniere_connexion": "2025-05-09 14:10:42",
+        "derniere_connexion": "2025-05-12 12:44:54",
         "role": "admin",
         "commandes": []
     },

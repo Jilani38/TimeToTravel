@@ -25,6 +25,10 @@
     padding: 10px 15px;
     position: relative;
   }
+
+  body.dark .entete {
+    background-color: #11111b;
+  }
   
   .entete h2 {
     margin: 0;

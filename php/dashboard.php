@@ -29,6 +29,7 @@ $commandes = $utilisateur['commandes'] ?? [];
   <title>Mon tableau de bord</title>
   <link rel="stylesheet" href="../css/base.css">
   <link rel="stylesheet" href="../css/dashboard.css">
+  <script defer src="../js/base.js"></script>
   <script defer src="../js/dashboard.js"></script>
 </head>
 <body>
@@ -36,11 +37,11 @@ $commandes = $utilisateur['commandes'] ?? [];
     <?php require_once './partials/nav.php'; ?>
   </header>
 
-  <main class="dashboard">
+  <main class="card dashboard">
     <h1>Bienvenue, <?= htmlspecialchars($utilisateur['prenom']) ?> !</h1>
 
     <div class="onglets">
-      <button class="onglet-actif" data-target="#profil">Mon profil</button>
+      <button class="bbtn-primary onglet-actif" data-target="#profil">Mon profil</button>
       <button data-target="#commandes">Mes commandes</button>
     </div>
 

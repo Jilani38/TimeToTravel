@@ -79,6 +79,7 @@ fclose($fichier);
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="../css/base.css" />
   <link rel="stylesheet" href="../css/page_profil.css" />
+  <script src="../js/base.js" defer></script>
   <title>Mon profil</title>
 </head>
 <body>

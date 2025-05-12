@@ -11,6 +11,7 @@ $voyages = json_decode(file_get_contents('../data/voyages.json'), true);
     <title>Nos Destinations</title>
     <link rel="stylesheet" href="../css/base.css">
     <link rel="stylesheet" href="../css/page_destination.css">
+    <script src="../js/base.js" defer></script>
 </head>
 <body>
     <header>

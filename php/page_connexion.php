@@ -44,6 +44,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     <title>Connexion</title>
     <link rel="stylesheet" href="../css/base.css" />
     <link rel="stylesheet" href="../css/page_connexion.css" />
+    <script src="../js/base.js" defer></script>
   </head>
   <body>
     <header>

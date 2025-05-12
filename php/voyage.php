@@ -23,7 +23,9 @@ if (!$voyage) {
 <head>
   <meta charset="UTF-8">
   <title><?= htmlspecialchars($voyage['titre']) ?></title>
+  <link rel="stylesheet" href="../css/base.css">
   <link rel="stylesheet" href="../css/voyage.css">
+  <script src="../js/base.js" defer></script>
 </head>
 <body>
   <header>
@@ -35,7 +37,7 @@ if (!$voyage) {
       <img src="../data/images/<?= htmlspecialchars($voyage['image']) ?>" alt="<?= htmlspecialchars($voyage['titre']) ?>">
     </div>
 
-    <div class="infos">
+    <div class="card infos">
       <h1><?= htmlspecialchars($voyage['titre']) ?></h1>
       <p class="description"><?= htmlspecialchars($voyage['description']) ?></p>
       <p><strong>Lieu :</strong> <?= htmlspecialchars($voyage['lieu']) ?></p>

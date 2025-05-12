@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="../css/base.css" />
     <link rel="stylesheet" type="text/css" href="../css/page_a_propos.css" />
+    <script src="../js/base.js" defer></script>
     <title>À propos de nous</title>
   </head>
   <body>

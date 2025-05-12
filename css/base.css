@@ -3,10 +3,20 @@
 }
 
 body {
+  --background: #f4f7fb;
+  --color: #000;
+  --primary-background: #123964;
   font-family: Arial, sans-serif;
-  background-color: #f4f7fb;
+  background-color: var(--background);
+  color: var(--color);
   margin: 0;
   min-height: 100vh;
+}
+
+body.dark {
+  --background: #1e1e2e;
+  --primary-background: #f4f7fb;
+  --color: #f4f7fb;
 }
 
 button {
@@ -35,14 +45,14 @@ header nav a {
   color: white;
 }
 
-header nav div a {
+header nav div :is(a, button) {
   padding: 10px;
   border-radius: 10px;
 
   &:nth-child(5) {
     position: relative;
-    color: #123964;
-    background: #ffffff;
+    color: var(--primary-background);
+    background: var(--background);
 
     &::before {
       content: "";
@@ -65,25 +75,41 @@ header img {
 }
 
 header nav .icone-panier {
-  width: 35px; /* Largeur */
-  height: auto; /* Hauteur  */
-  vertical-align: middle; /* Alignement vertical  */
+  width: 35px;
+  /* Largeur */
+  height: auto;
+  /* Hauteur  */
+  vertical-align: middle;
+  /* Alignement vertical  */
   transition: transform 0.3s ease;
 }
 
 header nav .icone-panier:hover {
-  transform: scale(1.2); /* zoom au survol */
+  transform: scale(1.2);
+  /* zoom au survol */
 }
 
 /* survol boutton */
 
-header nav div a {
-  display: inline-block; /* nécessaire pour que le zoom fonctionne proprement */
-  transition: transform 0.3s ease; /* Animation fluide */
+header nav div :is(a, button) {
+  display: inline-block;
+  /* nécessaire pour que le zoom fonctionne proprement */
+  transition: transform 0.3s ease;
+  /* Animation fluide */
 }
 
-header nav div a:hover {
-  transform: scale(1.2); /* Zoom de 20% au survol */
+header nav div :is(a, button):hover {
+  transform: scale(1.2);
+  /* Zoom de 20% au survol */
+}
+
+button#toggle-dark-mode {
+  cursor: pointer;
+}
+
+button#toggle-dark-mode svg {
+  stroke: white;
+  cursor: pointer;
 }
 
 
@@ -92,7 +118,11 @@ header nav div a:hover {
   background-color: #fff;
   border-radius: 12px;
   padding: 20px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+body.dark .card {
+  background-color: #11111b;
 }
 
 input[type="text"],
@@ -128,7 +158,8 @@ input:focus {
 .input-group label {
   font-weight: bold;
   margin-bottom: 0.3rem;
-  align-self: flex-start; /* Assure que les labels restent bien à gauche */
+  align-self: flex-start;
+  /* Assure que les labels restent bien à gauche */
 }
 
 /* ====== Boutons stylés ====== */
@@ -203,7 +234,8 @@ input:focus {
 
 .input-password input {
   width: 100%;
-  padding-right: 80px; /* Laisse bien la place */
+  padding-right: 80px;
+  /* Laisse bien la place */
   box-sizing: border-box;
 }
 
@@ -217,7 +249,7 @@ input:focus {
   border: none;
   cursor: pointer;
   font-size: 20px;
-  color: #123964;
+  color: var(--primary-background);
   padding: 0;
 }
 

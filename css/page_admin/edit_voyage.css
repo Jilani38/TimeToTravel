@@ -22,7 +22,7 @@ table th {
   text-align: left;
   padding: 10px;
   width: 150px;
-  color: #123964;
+  color: var(--primary-background);
 }
 
 table td {
@@ -43,7 +43,7 @@ main div {
 }
 
 main div input[type="submit"] {
-  background-color: #123964;
+  background-color: var(--primary-background);
   color: white;
   border: none;
   padding: 12px 20px;
@@ -59,17 +59,17 @@ main div input[type="submit"]:hover {
 
 main div a {
   background-color: white;
-  border: 1px solid #123964;
+  border: 1px solid var(--primary-background);
   padding: 12px 20px;
   border-radius: 8px;
   text-decoration: none;
-  color: #123964;
+  color: var(--primary-background);
   font-weight: bold;
   transition: all 0.3s ease;
 }
 
 main div a:hover {
-  background-color: #123964;
+  background-color: var(--primary-background);
   color: white;
 }
 
@@ -81,7 +81,7 @@ section {
 }
 
 section h2 {
-  color: #123964;
+  color: var(--primary-background);
   margin-bottom: 15px;
   font-size: 20px;
 }
@@ -104,7 +104,7 @@ section h2 {
   display: block;
   margin-bottom: 6px;
   font-weight: bold;
-  color: #123964;
+  color: var(--primary-background);
 }
 
 .option-bloc input,
@@ -144,10 +144,10 @@ button[type="button"].supprimer:hover {
 
 button[type="button"].ajouter {
   background-color: white;
-  color: #123964;
+  color: var(--primary-background);
   font-weight: bold;
   padding: 10px 16px;
-  border: 2px solid #123964;
+  border: 2px solid var(--primary-background);
   border-radius: 8px;
   cursor: pointer;
   margin-top: 10px;
@@ -156,9 +156,9 @@ button[type="button"].ajouter {
 }
 
 button[type="button"].ajouter:hover {
-  background-color: #123964;
+  background-color: var(--primary-background);
   color: white;
-  border-color: #123964;
+  border-color: var(--primary-background);
 }
 
 /* Suppression de hr */

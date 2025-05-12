@@ -27,6 +27,7 @@ $control = md5($api_key . "#" . $transaction . "#" . $total . "#" . $vendeur . "
     <meta charset="UTF-8">
     <link rel="stylesheet" href="../css/base.css">
     <link rel="stylesheet" href="../css/page_paiement.css">
+    <script src="../js/base.js" defer></script>
     <title>Paiement - Time2Travel</title>
 </head>
 <body>

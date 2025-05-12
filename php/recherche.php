@@ -55,6 +55,7 @@ if ($mot_cle !== '') {
   <title>Résultats de recherche</title>
   <link rel="stylesheet" href="../css/base.css">
   <link rel="stylesheet" href="../css/recherche.css">
+  <script src="../js/base.js" defer></script>
 </head>
 <body>
 

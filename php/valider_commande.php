@@ -17,6 +17,7 @@ $total = 0;
   <meta charset="UTF-8">
   <title>Confirmation de commande</title>
   <link rel="stylesheet" href="../css/valider_commande.css">
+  <script src="../js/base.js" defer></script>
 </head>
 <body>
 
