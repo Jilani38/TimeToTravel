@@ -63,7 +63,7 @@
         "telephone": "99999",
         "date_inscription": "2025-03-31",
         "derniere_connexion": "2025-03-31 19:14:44",
-        "role": "client",
+        "role": "admin",
         "commandes": []
     },
     {
@@ -308,5 +308,44 @@
         "derniere_connexion": "2025-05-11 23:20:58",
         "role": "admin",
         "commandes": []
+    },
+    {
+        "id": "6821f58adbdd3",
+        "prenom": "Gabin",
+        "nom": "Landier",
+        "date_naissance": "2005-03-02",
+        "genre": "Homme",
+        "email": "gabin@cy.fr",
+        "motdepasse": "$2y$10$K6x7GZw4RBLYla1JPmkdlespD7QWwWtp4GiTKtFWSjwjYhSZckbGu",
+        "telephone": "0788968842",
+        "date_inscription": "2025-05-12",
+        "derniere_connexion": "2025-05-12 13:23:53",
+        "role": "admin",
+        "commandes": [
+            {
+                "titre": "Débarquement de Normandie",
+                "date": "2025-05-12",
+                "date_depart": "2025-05-12",
+                "voyageurs": 1,
+                "options": [
+                    {
+                        "type": "expédition",
+                        "nom": "Visite guidée historique",
+                        "prix_par_personne": 180
+                    },
+                    {
+                        "type": "souvenir",
+                        "nom": "Objet d’époque discret",
+                        "prix_par_personne": 60
+                    },
+                    {
+                        "type": "bonus",
+                        "nom": "Accès à une scène secondaire confidentielle",
+                        "prix_par_personne": 100
+                    }
+                ],
+                "total": 977
+            }
+        ]
     }
 ]
