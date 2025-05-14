@@ -69,12 +69,15 @@ main.dashboard {
 }
 
 .onglet-section h2 {
+  text-align: center;
   margin-top: 0;
   color: var(--primary-background);
 }
 
 /* ✅ Profil inline */
 .profil-inline {
+  width: max-content;
+  margin: 0 auto;
   list-style: none;
   padding: 0;
 }
@@ -85,6 +88,7 @@ main.dashboard {
   align-items: center;
   gap: 10px;
   font-size: 15px;
+  width: max-content;
   /* color: #333; */
 }
 
