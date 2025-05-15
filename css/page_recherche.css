@@ -46,7 +46,7 @@ h1 {
 
 .filtres select option {
   background-color: var(--primary-background);
-  color: white;
+  color: var(--background);
 }
 
 .filtres button:hover,
