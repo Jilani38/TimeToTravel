@@ -25,6 +25,10 @@ header {
   text-align: center;
 }
 
+header nav {
+  position: absolute;
+}
+
 header::before {
   content: "";
   position: absolute;

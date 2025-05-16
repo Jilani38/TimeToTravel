@@ -27,7 +27,7 @@ button {
 }
 
 header nav {
-  position: absolute;
+  position: fixed;
   z-index: 1;
   background-color: #123964;
   display: flex;
