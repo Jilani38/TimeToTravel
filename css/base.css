@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'TitilliumWeb';
+  src: url('../font/TitilliumWeb/TitilliumWeb-Regular.ttf') format('truetype');
+}
+
 * {
   box-sizing: border-box;
 }
@@ -6,7 +11,8 @@ body {
   --background: #f4f7fb;
   --color: #000;
   --primary-background: #123964;
-  font-family: Arial, sans-serif;
+  font-family: TitilliumWeb, Arial, sans-serif;
+  font-size: 1.1em;
   background-color: var(--background);
   color: var(--color);
   margin: 0;
@@ -20,6 +26,7 @@ body.dark {
 }
 
 button {
+  font: inherit;
   background: transparent;
   border: none;
   padding: 0;
@@ -143,7 +150,7 @@ select {
   padding: 10px;
   border-radius: 8px;
   border: 1px solid #ccc;
-  font-size: 1em;
+  font: inherit;
   box-sizing: border-box;
 }
 
