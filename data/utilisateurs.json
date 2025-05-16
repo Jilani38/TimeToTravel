@@ -142,7 +142,7 @@
         "motdepasse": "$2y$10$JL2pAwy22J9XEYSf7MtL2enZZ9zxFNtBgmWYxMsVXSrINgwdCEBie",
         "telephone": "",
         "date_inscription": "2025-05-09",
-        "derniere_connexion": "2025-05-15 17:36:03",
+        "derniere_connexion": "2025-05-16 16:15:24",
         "role": "admin",
         "commandes": []
     },
@@ -422,7 +422,6 @@
         ]
     },
     {
-<<<<<<< Updated upstream
         "id": "68230f6210005",
         "prenom": "Romain",
         "nom": "M",
@@ -470,7 +469,8 @@
                 "total": 24264
             }
         ]
-=======
+    },
+    {
         "id": "68274c993015a",
         "prenom": "Ethann",
         "nom": "Pencole",
@@ -483,6 +483,5 @@
         "derniere_connexion": "2025-05-16 14:36:33",
         "role": "client",
         "commandes": []
->>>>>>> Stashed changes
     }
 ]
