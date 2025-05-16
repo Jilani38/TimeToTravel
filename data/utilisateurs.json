@@ -118,7 +118,7 @@
         "motdepasse": "$2y$10$JL2pAwy22J9XEYSf7MtL2enZZ9zxFNtBgmWYxMsVXSrINgwdCEBie",
         "telephone": "",
         "date_inscription": "2025-05-09",
-        "derniere_connexion": "2025-05-12 12:44:54",
+        "derniere_connexion": "2025-05-15 17:36:03",
         "role": "admin",
         "commandes": []
     },
@@ -394,6 +394,55 @@
                     }
                 ],
                 "total": 19859
+            }
+        ]
+    },
+    {
+        "id": "68230f6210005",
+        "prenom": "Romain",
+        "nom": "M",
+        "date_naissance": "2025-05-15",
+        "genre": "Homme",
+        "email": "romain@mail.com",
+        "motdepasse": "$2y$10$vO2711gUBBNgOm64KcXXxeHnMWB6MxvuBvvWhpOaGdLN5ga.mD2dq",
+        "telephone": "0898786765",
+        "date_inscription": "2025-05-13",
+        "derniere_connexion": "2025-05-13 09:23:06",
+        "role": "client",
+        "commandes": [
+            {
+                "titre": "Assassinat de JFK",
+                "date": "2025-05-13",
+                "date_depart": "2025-05-13",
+                "voyageurs": 9,
+                "options": [
+                    {
+                        "type": "activité",
+                        "nom": "Immersion 360°",
+                        "prix_par_personne": 100
+                    },
+                    {
+                        "type": "expédition",
+                        "nom": "Visite guidée historique",
+                        "prix_par_personne": 180
+                    },
+                    {
+                        "type": "repas",
+                        "nom": "Repas typique de l’époque",
+                        "prix_par_personne": 75
+                    },
+                    {
+                        "type": "souvenir",
+                        "nom": "Objet d’époque discret",
+                        "prix_par_personne": 60
+                    },
+                    {
+                        "type": "bonus",
+                        "nom": "Accès à une scène secondaire confidentielle",
+                        "prix_par_personne": 100
+                    }
+                ],
+                "total": 24264
             }
         ]
     }
