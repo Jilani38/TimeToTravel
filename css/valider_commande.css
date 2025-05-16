@@ -6,37 +6,6 @@ body {
     animation: fadeInPage 1s ease-in;
   }
 
-  header {
-    position: relative;
-    height: 50px;
-    display: grid;
-    place-items: center;
-    color: white;
-    text-align: center;
-  }
-  
-
-  header nav {
-    position: absolute;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-right: 20px;
-    top: 0;
-    left: 0;
-    right: 0;
-  }
-  
-  header nav a {
-    text-decoration: none;
-    color: white;
-  
-  }
-
-  header img {
-    width: 200px;
-  }
-  
   @keyframes fadeInPage {
     from {
       opacity: 0;
@@ -46,29 +15,6 @@ body {
       opacity: 1;
       transform: translateY(0);
     }
-  }
-  
-  header {
-    padding: 1em;
-    background-color: #1d3557;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-  }
-  
-  header a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    margin-right: 1em;
-  }
-  
-  header div {
-    display: flex;
-    align-items: center;
-    gap: 1em;
   }
   
   .icone-panier {

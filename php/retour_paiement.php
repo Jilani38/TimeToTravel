@@ -82,6 +82,7 @@ if ($paiement_accepte && isset($_SESSION['id']) && !empty($panier)) {
 <head>
   <meta charset="UTF-8">
   <title>Confirmation de commande</title>
+  <link rel="stylesheet" href="../css/base.css">
   <link rel="stylesheet" href="../css/valider_commande.css">
   <script src="../js/base.js" defer></script>
   <style>
