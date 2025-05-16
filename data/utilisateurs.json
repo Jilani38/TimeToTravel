@@ -9,7 +9,7 @@
         "motdepasse": "$2y$10$WegyZTDNYsmbuvviME\/wr.9ULjrjJ\/LPNpdOeoZPyrWw9LJ\/yoEhO",
         "telephone": "0641104600",
         "date_inscription": "2025-03-31",
-        "derniere_connexion": "2025-05-14 07:39:09",
+        "derniere_connexion": "2025-05-16 15:09:11",
         "role": "admin",
         "commandes": [
             {
@@ -35,6 +35,30 @@
                     }
                 ],
                 "total": 6876
+            },
+            {
+                "titre": "Ère des dinosaures",
+                "date": "2025-05-16",
+                "date_depart": "2025-05-16",
+                "voyageurs": 5,
+                "options": [
+                    {
+                        "type": "activité",
+                        "nom": "Immersion 360°",
+                        "prix_par_personne": 100
+                    },
+                    {
+                        "type": "repas",
+                        "nom": "Repas typique de l’époque",
+                        "prix_par_personne": 75
+                    },
+                    {
+                        "type": "souvenir",
+                        "nom": "Objet d’époque discret",
+                        "prix_par_personne": 60
+                    }
+                ],
+                "total": 8320
             }
         ]
     },
@@ -398,6 +422,7 @@
         ]
     },
     {
+<<<<<<< Updated upstream
         "id": "68230f6210005",
         "prenom": "Romain",
         "nom": "M",
@@ -445,5 +470,19 @@
                 "total": 24264
             }
         ]
+=======
+        "id": "68274c993015a",
+        "prenom": "Ethann",
+        "nom": "Pencole",
+        "date_naissance": "2025-05-17",
+        "genre": "Homme",
+        "email": "ethann.pencolepro@gmail.com",
+        "motdepasse": "$2y$10$AQgTIKG4ltnp\/R7gMwmeEOx5mYfC4y5.KPxphR8x2LgPEaU9z1UWq",
+        "telephone": "0601234567",
+        "date_inscription": "2025-05-16",
+        "derniere_connexion": "2025-05-16 14:36:33",
+        "role": "client",
+        "commandes": []
+>>>>>>> Stashed changes
     }
 ]
