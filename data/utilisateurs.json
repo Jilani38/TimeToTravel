@@ -9,7 +9,7 @@
         "motdepasse": "$2y$10$WegyZTDNYsmbuvviME\/wr.9ULjrjJ\/LPNpdOeoZPyrWw9LJ\/yoEhO",
         "telephone": "0641104600",
         "date_inscription": "2025-03-31",
-        "derniere_connexion": "2025-05-11 23:21:31",
+        "derniere_connexion": "2025-05-14 07:39:09",
         "role": "admin",
         "commandes": [
             {
@@ -345,6 +345,55 @@
                     }
                 ],
                 "total": 977
+            }
+        ]
+    },
+    {
+        "id": "682447d1ed635",
+        "prenom": "gege",
+        "nom": "lefou",
+        "date_naissance": "1998-10-12",
+        "genre": "Femme",
+        "email": "gegelefou@cy.fr",
+        "motdepasse": "$2y$10$tb3oILNBApZG63mchOcRT.5lWYXkYDU9dwFEGeTYysjoTGlOt.DM.",
+        "telephone": "0643565789",
+        "date_inscription": "2025-05-14",
+        "derniere_connexion": "2025-05-14 07:36:06",
+        "role": "client",
+        "commandes": [
+            {
+                "titre": "Terre ré-ensauvagée",
+                "date": "2025-05-14",
+                "date_depart": "2025-05-14",
+                "voyageurs": 7,
+                "options": [
+                    {
+                        "type": "activité",
+                        "nom": "Immersion 360°",
+                        "prix_par_personne": 100
+                    },
+                    {
+                        "type": "hébergement",
+                        "nom": "Tente de l’époque",
+                        "prix_par_personne": 90
+                    },
+                    {
+                        "type": "repas",
+                        "nom": "Repas typique de l’époque",
+                        "prix_par_personne": 75
+                    },
+                    {
+                        "type": "souvenir",
+                        "nom": "Objet d’époque discret",
+                        "prix_par_personne": 60
+                    },
+                    {
+                        "type": "bonus",
+                        "nom": "Accès à une scène secondaire confidentielle",
+                        "prix_par_personne": 100
+                    }
+                ],
+                "total": 19859
             }
         ]
     }
