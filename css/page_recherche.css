@@ -46,7 +46,7 @@ h1 {
 
 .filtres select option {
   background-color: var(--primary-background);
-  color: white;
+  color: var(--background);
 }
 
 .filtres button:hover,
@@ -62,6 +62,8 @@ h1 {
 }
 
 .carte-voyage {
+  color: inherit;
+  text-decoration: none;
   background: rgba(255, 255, 255, 0.1);
   border-radius: 8px;
   padding: 15px;

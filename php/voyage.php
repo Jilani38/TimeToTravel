@@ -1,4 +1,5 @@
 <?php
+session_start();
 if (!isset($_GET['id'])) {
   die("ID du voyage manquant.");
 }

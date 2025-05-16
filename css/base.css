@@ -69,12 +69,12 @@ header nav div :is(a, button) {
   }
 }
 
-header img {
+header nav a:first-of-type img {
   width: 160px;
-  margin-top: 1px;
+  margin-top: 10px;
 }
 
-header nav .icone-panier {
+header nav img {
   width: 35px;
   /* Largeur */
   height: auto;
@@ -84,7 +84,7 @@ header nav .icone-panier {
   transition: transform 0.3s ease;
 }
 
-header nav .icone-panier:hover {
+header nav img:hover {
   transform: scale(1.2);
   /* zoom au survol */
 }
@@ -104,12 +104,19 @@ header nav div :is(a, button):hover {
 }
 
 button#toggle-dark-mode {
+  padding-inline: 0;
   cursor: pointer;
 }
 
 button#toggle-dark-mode svg {
   stroke: white;
   cursor: pointer;
+  display: block;
+  margin: auto;
+  /* position: absolute; */
+  /* top: 50%; */
+  /* left: 50%; */
+  /* transform: translate(-50%, -50%); */
 }
 
 

@@ -1,8 +1,12 @@
+h1 {
+  margin-top: 100px;
+  text-align: center;
+}
+
   /* Mise en page panier */
   .panier-container {
-    margin-top: 50px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: flex-start;
   }
   
@@ -88,7 +92,6 @@
   
   /* Bulle de total à droite */
   .bulle-total {
-    margin-top: 70px;
     width: 300px;
   }
   

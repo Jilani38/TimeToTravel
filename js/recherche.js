@@ -7,7 +7,7 @@ fetch('../data/voyages.json')
   .then(response => response.json())
   .then(data => {
     voyages.push(...data);
-    afficherVoyages(voyages);
+    appliquerFiltres()
   });
 
 // Gestion des filtres et tri
@@ -23,9 +23,14 @@ function appliquerFiltres() {
   let filtres = voyages;
 
   const search = rechercheInput.value.trim().toLowerCase();
+  const url = new URL(window.location);
   if (search) {
+    url.searchParams.set('q', search);
     filtres = filtres.filter(v => v.titre.toLowerCase().includes(search) || v.lieu.toLowerCase().includes(search));
+  } else {
+    url.searchParams.delete('q');
   }
+  history.replaceState(null, '', url);
 
   if (filtreTypeTemporel.value) {
     filtres = filtres.filter(v => v.type_temporel === filtreTypeTemporel.value);
@@ -62,13 +67,13 @@ function afficherVoyages(voyages) {
   }
   voyages.forEach(v => {
     resultatsDiv.innerHTML += `
-      <div class="carte-voyage">
+      <a href="http://localhost:8000/php/voyage.php?id=${v.id}" class="carte-voyage">
         <img src="../data/images/${v.image}" alt="${v.titre}">
         <h3>${v.titre}</h3>
         <p>Durée : ${v.duree} jours</p>
         <p>Prix : ${v.prix_base}€</p>
         <p>Note : ${v.note_moyenne} / 5 (${v.nombre_avis} avis)</p>
-      </div>
+      </a>
     `;
   });
 }
@@ -99,6 +104,9 @@ triButtons.forEach(button => {
 
 // Reset filtres
 resetFiltresBtn.addEventListener('click', () => {
+  const url = new URL(window.location);
+  url.searchParams.delete('q');
+  history.replaceState(null, '', url);
   rechercheInput.value = '';
   filtreTypeTemporel.value = '';
   filtrePrix.value = '';

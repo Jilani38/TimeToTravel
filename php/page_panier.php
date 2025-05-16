@@ -25,9 +25,9 @@ $total = 0;
   <?php require_once './partials/nav.php'; ?>
 </header>
 
+<h1>Votre panier</h1>
 <div class="panier-container">
   <div class="container">
-    <h1>Votre panier</h1>
 
     <?php if (empty($panier)): ?>
       <p>Votre panier est vide.</p>

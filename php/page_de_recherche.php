@@ -1,3 +1,7 @@
+<?php
+session_start();
+$q = isset($_GET['q']) ? $_GET['q'] : '';
+?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -15,7 +19,7 @@
   <main>
     <h1>Recherchez votre aventure temporelle</h1>
     <div class="filtres">
-      <input type="search" id="recherche-input" placeholder="Rechercher un voyage...">
+      <input type="search" id="recherche-input" placeholder="Rechercher un voyage..." value="<?= htmlspecialchars($q) ?>">
       <select id="filtre-type-temporel">
         <option value="">Passé & Futur</option>
         <option value="passé">Passé</option>

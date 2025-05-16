@@ -1,4 +1,5 @@
 <?php
+session_start();
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
   $fichier = "../data/utilisateurs.json";
   $utilisateurs = file_exists($fichier) ? json_decode(file_get_contents($fichier), true) : [];
