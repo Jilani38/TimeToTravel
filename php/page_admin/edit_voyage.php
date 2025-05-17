@@ -77,17 +77,7 @@ if (isset($_POST['submit'])) {
   <title>Modifier un voyage</title>
 </head>
 <body>
-  <aside>
-    <header>
-      <a href="./index.php">
-        <img src="../../img/logo.svg" alt="Time to Travel">
-      </a>
-    </header>
-    <nav>
-      <a href="./index.php">Voyages</a>
-      <a href="./utilisateur.php">Utilisateurs</a>
-    </nav>
-  </aside>
+  <?php require '../partials/admin-nav.php'; ?>
   <main>
     <h1>Modifier le voyage</h1>
     <form action="" method="post" enctype="multipart/form-data">

@@ -65,17 +65,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   <title>Modifier un utilisateur</title>
 </head>
 <body>
-<aside>
-  <header>
-    <a href="../page_accueil.php">
-      <img src="../../img/logo.svg" alt="Time to Travel" />
-    </a>
-  </header>
-  <nav>
-    <a href="./index.php">Voyages</a>
-    <a href="./utilisateur.php">Utilisateurs</a>
-  </nav>
-</aside>
+<?php require '../partials/admin-nav.php'; ?>
 
 <main>
   <h1>Modifier un utilisateur</h1>
