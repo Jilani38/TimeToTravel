@@ -8,7 +8,7 @@
     <a href="./page_destination.php">Destination</a>
 
     <?php if (isset($_SESSION['role']) && $_SESSION['role'] === 'admin'): ?>
-      <a href="./page_admin/index.php">Gestion des voyages</a>
+      <a href="./page_admin/index.php">Page admin</a>
     <?php else: ?>
       <a href="./page_a_propos.php">À propos de nous</a>
     <?php endif; ?>

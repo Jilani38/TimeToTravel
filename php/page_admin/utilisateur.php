@@ -19,19 +19,7 @@ $utilisateurs = json_decode(file_get_contents('../../data/utilisateurs.json'), t
 </head>
 
 <body>
-  <aside>
-    <header>
-      <a href="./index.php">
-        <img src="../../img/logo.svg" alt="Time to Travel" />
-      </a>
-    </header>
-    <nav>
-      <a href="./index.php">Voyages</a>
-      <a href="./utilisateur.php">Utilisateurs</a>
-      <a href="../page_accueil.php">Retour au site</a>
-      <a href="../deconnexion.php">Déconnexion</a>
-    </nav>
-  </aside>
+  <?php require_once '../partials/admin-nav.php'; ?>
 
   <main>
     <h1>Liste des utilisateurs</h1>
