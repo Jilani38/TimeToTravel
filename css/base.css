@@ -140,11 +140,13 @@ body.dark .card {
 }
 
 input[type="text"],
+input[type="number"],
 input[type="password"],
 input[type="email"],
 input[type="date"],
 input[type="file"],
 input[type="tel"],
+textarea,
 select {
   width: 100%;
   padding: 10px;
