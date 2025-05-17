@@ -36,16 +36,20 @@ if (isset($_POST['submit'])) {
     "image" => $voyage['image'],
     "duree" => (int) $_POST['duree'],
     "description" => $_POST['description'],
-    "prix_base" => (int) $_POST['prix_base'],
     "type_temporel" => $_POST['type_temporel'],
-    "niveau_difficulte" => $_POST['niveau_difficulte'],
-    "note_moyenne" => (float) ($_POST['note_moyenne'] ?? 0),
-    "nombre_avis" => (int) ($_POST['nombre_avis'] ?? 0),
-    "public_cible" => $_POST['public_cible'] ?? [],
-    "infos_pratiques" => $_POST['infos_pratiques'] ?? [],
+    "lieu" => $_POST['lieu'],
+    "date_depart_personnalisable" => $_POST['date_depart_personnalisable'],
+    "prix_base" => (int) $_POST['prix_base'],
     "programme" => $_POST['programme'] ?? [],
     "options" => $_POST['options'] ?? [],
-    "activites_incluses" => $_POST['activites'] ?? []
+    "activites_incluses" => $_POST['activites'] ?? [],
+    "niveau_difficulte" => $_POST['niveau_difficulte'],
+    "public_cible" => $_POST['public_cible'] ?? [],
+    "note_moyenne" => (float) ($_POST['note_moyenne'] ?? 0),
+    "nombre_avis" => (int) ($_POST['nombre_avis'] ?? 0),
+    "infos_pratiques" => $_POST['infos_pratiques'] ?? [],
+    "conditions_annulation" => $_POST['conditions_annulation'],
+    "theme" => $_POST['theme']
   ];
 
   if (!empty($_FILES['image']['name'])) {
@@ -91,13 +95,15 @@ if (isset($_POST['submit'])) {
         </tr>
         <tr><th>Durée</th><td><input type="number" name="duree" id="duree" value="<?= $voyage['duree'] ?>" required></td></tr>
         <tr><th>Description</th><td><textarea name="description" required><?= htmlspecialchars($voyage['description']) ?></textarea></td></tr>
-        <tr><th>Prix total</th><td><input type="number" name="prix_base" value="<?= $voyage['prix_base'] ?>" required></td></tr>
         <tr><th>Type temporel</th>
           <td>
             <label><input type="radio" name="type_temporel" value="passé" <?= $voyage['type_temporel'] === 'passé' ? 'checked' : '' ?>> Passé</label>
             <label><input type="radio" name="type_temporel" value="futur" <?= $voyage['type_temporel'] === 'futur' ? 'checked' : '' ?>> Futur</label>
           </td>
         </tr>
+        <tr><th>Lieu</th><td><input type="text" name="lieu" value="<?= htmlspecialchars($voyage['lieu']) ?>" required></td></tr>
+        <tr><th>Date de départ personnalisable</th><td><input type="checkbox" name="date_depart_personnalisable" <?= $voyage['date_depart_personnalisable'] ? 'checked' : '' ?>></td></tr>
+        <tr><th>Prix de base</th><td><input type="number" name="prix_base" value="<?= $voyage['prix_base'] ?>" required></td></tr>
         <tr><th>Niveau de difficulté</th>
           <td>
             <select name="niveau_difficulte">
@@ -107,8 +113,6 @@ if (isset($_POST['submit'])) {
             </select>
           </td>
         </tr>
-        <tr><th>Note moyenne</th><td><input type="number" name="note_moyenne" step="0.1" value="<?= $voyage['note_moyenne'] ?>"></td></tr>
-        <tr><th>Nombre d'avis</th><td><input type="number" name="nombre_avis" value="<?= $voyage['nombre_avis'] ?>"></td></tr>
         <tr><th>Public cible</th>
           <td>
             <?php
@@ -120,6 +124,10 @@ if (isset($_POST['submit'])) {
             ?>
           </td>
         </tr>
+        <tr><th>Note moyenne</th><td><input type="number" name="note_moyenne" step="0.1" value="<?= $voyage['note_moyenne'] ?>"></td></tr>
+        <tr><th>Nombre d'avis</th><td><input type="number" name="nombre_avis" value="<?= $voyage['nombre_avis'] ?>"></td></tr>
+        <tr><th>Conditions d'annulation</th><td><textarea name="conditions_annulation" required><?= htmlspecialchars($voyage['conditions_annulation']) ?></textarea></td></tr>
+        <tr><th>Thème</th><td><input type="text" name="theme" value="<?= htmlspecialchars($voyage['theme']) ?>" required></td></tr>
       </table>
 
       <section>
