@@ -24,7 +24,7 @@ $voyages = json_decode(file_get_contents("../data/voyages.json"), true);
 $panier = $_SESSION['panier'] ?? [];
 $total = 0;
 
-// Enregistrement dans utilisateurs.json si paiement ok
+// Enregistrement si paiement accepté
 if ($paiement_accepte && isset($_SESSION['id']) && !empty($panier)) {
   $utilisateurs = json_decode(file_get_contents("../data/utilisateurs.json"), true);
   foreach ($utilisateurs as &$u) {
@@ -34,7 +34,7 @@ if ($paiement_accepte && isset($_SESSION['id']) && !empty($panier)) {
       foreach ($panier as $reservation) {
         $id = $reservation['id'];
         $quantite = $reservation['nombre'];
-        $options_selectionnees = $reservation['options'] ?? [];
+        $options = $reservation['options'] ?? [];
 
         $voyage = array_filter($voyages, fn($v) => $v['id'] == $id);
         $voyage = reset($voyage);
@@ -42,26 +42,24 @@ if ($paiement_accepte && isset($_SESSION['id']) && !empty($panier)) {
         $prix_options = 0;
         $options_detail = [];
 
-        foreach ($options_selectionnees as $opt_index) {
-          if (isset($voyage['options'][$opt_index])) {
-            $opt = $voyage['options'][$opt_index];
-            $prix_options += $opt['prix_par_personne'];
-            $options_detail[] = [
-              'type' => $opt['type'],
-              'nom' => $opt['nom'],
-              'prix_par_personne' => $opt['prix_par_personne']
-            ];
-          }
+        foreach ($options as $opt) {
+          $prix_options += $opt['total_option'];
+          $options_detail[] = [
+            'type' => $opt['type'],
+            'nom' => $opt['nom'],
+            'quantite' => $opt['quantite'],
+            'prix_par_personne' => $opt['prix_par_personne'],
+            'total_option' => $opt['total_option']
+          ];
         }
 
-        $prix_unitaire = $voyage['prix_base'] + $prix_options;
-        $sous_total = $prix_unitaire * $quantite;
+        $sous_total = $voyage['prix_base'] * $quantite + $prix_options;
         $total += $sous_total;
 
         $u['commandes'][] = [
           'titre' => $voyage['titre'],
           'date' => date("Y-m-d"),
-          'date_depart' => $voyage['etapes'][0]['date_arrivee'] ?? date("Y-m-d"),
+          'date_depart' => $reservation['date_depart'] ?? date("Y-m-d"),
           'voyageurs' => $quantite,
           'options' => $options_detail,
           'total' => $sous_total
@@ -75,7 +73,6 @@ if ($paiement_accepte && isset($_SESSION['id']) && !empty($panier)) {
   unset($_SESSION['panier']);
 }
 ?>
-
 
 <!DOCTYPE html>
 <html lang="fr">
@@ -130,6 +127,16 @@ if ($paiement_accepte && isset($_SESSION['id']) && !empty($panier)) {
     .btn-ajouter:hover {
       background-color: #1b65b9;
     }
+    .options-lignes {
+      margin-top: 8px;
+      font-size: 0.88em;
+      line-height: 1.6;
+      color: #222;
+      padding-left: 5px;
+    }
+    .opt-ligne {
+      margin-bottom: 2px;
+    }
   </style>
 </head>
 <body>
@@ -147,43 +154,37 @@ if ($paiement_accepte && isset($_SESSION['id']) && !empty($panier)) {
 
       <?php foreach ($panier as $reservation): ?>
         <?php
-          $id = $reservation['id'];
+          $titre = $reservation['titre'];
           $quantite = $reservation['nombre'];
-          $options_selectionnees = $reservation['options'] ?? [];
-
-          $voyage = array_filter($voyages, fn($v) => $v['id'] == $id);
-          $voyage = reset($voyage);
-
-          $prix_options = 0;
-          $texte_options = [];
-
-          foreach ($options_selectionnees as $opt_index) {
-            if (isset($voyage['options'][$opt_index])) {
-              $opt = $voyage['options'][$opt_index];
-              $prix_options += $opt['prix_par_personne'];
-              $texte_options[] = htmlspecialchars($opt['nom']) . " (" . $opt['prix_par_personne'] . " €)";
-            }
-          }
-
-          $prix_unitaire = $voyage['prix_base'] + $prix_options;
-          $sous_total = $prix_unitaire * $quantite;
+          $options = $reservation['options'] ?? [];
+          $prix_base = $reservation['prix_base'];
+          $prix_total = $reservation['prix_total'];
         ?>
         <div class="carte-voyage">
           <div class="entete">
-            <h2><?= htmlspecialchars($voyage['titre']) ?></h2>
-            <span class="prix"><?= $sous_total ?> €</span>
+            <h2><?= htmlspecialchars($titre) ?></h2>
+            <span class="prix"><?= number_format($prix_total, 2, ',', ' ') ?> €</span>
           </div>
           <div class="details">
-            <p><strong>Quantité :</strong> <?= $quantite ?> voyageur<?= $quantite > 1 ? 's' : '' ?></p>
-            <?php if (!empty($texte_options)): ?>
-              <p><strong>Options choisies :</strong><br><?= implode('<br>', $texte_options) ?></p>
+            <p><strong>Nombre de voyageurs :</strong> <?= $quantite ?></p>
+            <p><strong>Prix de base :</strong> <?= $prix_base ?> € × <?= $quantite ?> = <?= $prix_base * $quantite ?> €</p>
+
+            <?php if (!empty($options)): ?>
+              <p><strong>Options :</strong></p>
+              <div class="options-lignes">
+                <?php foreach ($options as $opt): ?>
+                  <div class="opt-ligne">
+                    <?= htmlspecialchars($opt['nom']) ?> · Qté <?= $opt['quantite'] ?> · <?= $opt['total_option'] ?> €
+                  </div>
+                <?php endforeach; ?>
+              </div>
             <?php endif; ?>
           </div>
         </div>
       <?php endforeach; ?>
 
       <hr>
-      <h2 style="text-align:center;">Total payé : <?= $total ?> €</h2>
+      <h2 style="text-align:center;">Total payé : <?= number_format($total, 2, ',', ' ') ?> €</h2>
 
     <?php else: ?>
       <h1>❌ Paiement refusé</h1>

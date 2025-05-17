@@ -67,10 +67,13 @@ if (!$voyage) {
         <input type="hidden" name="voyage_id" value="<?= $voyage['id'] ?>">
         <?php foreach ($voyage['options'] as $index => $option): ?>
           <div class="option">
-            <label>
-              <input type="checkbox" name="options[]" value="<?= $index ?>" data-prix="<?= $option['prix_par_personne'] ?>">
-              <?= htmlspecialchars($option['type']) ?> : <?= htmlspecialchars($option['nom']) ?> (<?= $option['prix_par_personne'] ?> €)
+            <label for="option_<?= $index ?>">
+              <?= htmlspecialchars($option['type']) ?> : <?= htmlspecialchars($option['nom']) ?> (<?= $option['prix_par_personne'] ?> € / personne)
             </label>
+            <select name="options[<?= $index ?>]" id="option_<?= $index ?>" class="option-select" data-prix="<?= $option['prix_par_personne'] ?>">
+              <option value="0">0</option>
+              <!-- autres options générées par JS -->
+            </select>
           </div>
         <?php endforeach; ?>
 
@@ -98,25 +101,55 @@ if (!$voyage) {
   </main>
 
   <script>
-    const checkboxes = document.querySelectorAll('input[type="checkbox"][name="options[]"]');
-    const nbInput = document.getElementById('nombre');
-    const prixTotal = document.getElementById('prix-total');
     const prixBase = <?= $voyage['prix_base'] ?>;
+    const prixTotal = document.getElementById('prix-total');
+    const nbInput = document.getElementById('nombre');
+    const selectOptions = document.querySelectorAll('.option-select');
 
-    function recalculerPrix() {
-      let total = prixBase;
-      checkboxes.forEach(cb => {
-        if (cb.checked) {
-          total += parseFloat(cb.dataset.prix || 0);
+    function remplirSelects(max) {
+      selectOptions.forEach(select => {
+        const currentValue = parseInt(select.value) || 0;
+        select.innerHTML = '<option value="0">0</option>';
+        for (let i = 1; i <= max; i++) {
+          const opt = document.createElement('option');
+          opt.value = i;
+          opt.textContent = i;
+          select.appendChild(opt);
+        }
+        // Réappliquer l'ancienne valeur si possible
+        if (currentValue <= max) {
+          select.value = currentValue;
         }
       });
-      const nb = parseInt(nbInput.value) || 1;
-      prixTotal.textContent = (total * nb).toFixed(2) + ' €';
     }
 
-    checkboxes.forEach(cb => cb.addEventListener('change', recalculerPrix));
-    nbInput.addEventListener('input', recalculerPrix);
-    window.addEventListener('DOMContentLoaded', recalculerPrix);
+    function recalculerPrix() {
+      const nb = parseInt(nbInput.value) || 1;
+      let total = prixBase * nb;
+
+      selectOptions.forEach(select => {
+        const quantite = parseInt(select.value) || 0;
+        const prix = parseFloat(select.dataset.prix || 0);
+        total += prix * quantite;
+      });
+
+      prixTotal.textContent = total.toFixed(2) + ' €';
+    }
+
+    nbInput.addEventListener('input', () => {
+      const max = parseInt(nbInput.value) || 1;
+      remplirSelects(max);
+      recalculerPrix();
+    });
+
+    selectOptions.forEach(select => {
+      select.addEventListener('change', recalculerPrix);
+    });
+
+    window.addEventListener('DOMContentLoaded', () => {
+      remplirSelects(parseInt(nbInput.value) || 1);
+      recalculerPrix();
+    });
   </script>
 </body>
 </html>

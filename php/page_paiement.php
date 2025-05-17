@@ -29,6 +29,19 @@ $control = md5($api_key . "#" . $transaction . "#" . $total . "#" . $vendeur . "
     <link rel="stylesheet" href="../css/page_paiement.css">
     <script src="../js/base.js" defer></script>
     <title>Paiement - Time2Travel</title>
+    <style>
+      .options-lignes {
+        margin-top: 8px;
+        font-size: 0.88em;
+        line-height: 1.6;
+        color: #222;
+        padding-left: 5px;
+      }
+
+      .opt-ligne {
+        margin-bottom: 2px;
+      }
+    </style>
 </head>
 <body>
 
@@ -41,40 +54,36 @@ $control = md5($api_key . "#" . $transaction . "#" . $total . "#" . $vendeur . "
 
     <?php foreach ($panier as $reservation): ?>
         <?php
-            $id = $reservation['id'];
+            $titre = $reservation['titre'];
             $quantite = $reservation['nombre'];
-            $options_selectionnees = $reservation['options'] ?? [];
-            $voyage = array_filter($voyages, fn($v) => $v['id'] == $id);
-            $voyage = reset($voyage);
-
-            $prix_options = 0;
-            $texte_options = [];
-            foreach ($options_selectionnees as $opt_index) {
-                if (isset($voyage['options'][$opt_index])) {
-                    $opt = $voyage['options'][$opt_index];
-                    $prix_options += $opt['prix_par_personne'];
-                    $texte_options[] = htmlspecialchars($opt['nom']) . " (" . $opt['prix_par_personne'] . " €)";
-                }
-            }
-            $prix_unitaire = $voyage['prix_base'] + $prix_options;
-            $sous_total = $prix_unitaire * $quantite;
+            $options = $reservation['options'] ?? [];
+            $prix_base = $reservation['prix_base'] ?? 0;
+            $prix_total = $reservation['prix_total'] ?? 0;
         ?>
-        <div class="bubble" style="--bg-url: url('../img/<?= $voyage['image'] ?>');">
-           <div class="title"><?= htmlspecialchars($voyage['titre']) ?></div>
+        <div class="bubble" style="--bg-url: url('../img/<?= $reservation['id'] ?>.jpg');">
+            <div class="title"><?= htmlspecialchars($titre) ?></div>
             <div class="details">
-                <p><strong>Durée :</strong> <?= $voyage['duree'] ?> jours</p>
-                <p><strong>Lieu :</strong> <?= htmlspecialchars($voyage['lieu']) ?></p>
                 <p><strong>Quantité :</strong> <?= $quantite ?> voyageur<?= $quantite > 1 ? 's' : '' ?></p>
-                <?php if (!empty($texte_options)): ?>
-                    <p><strong>Options choisies :</strong><br><?= implode('<br>', $texte_options) ?></p>
+                <p><strong>Prix de base :</strong> <?= $prix_base ?> € × <?= $quantite ?> = <?= $prix_base * $quantite ?> €</p>
+
+                <?php if (!empty($options)): ?>
+                    <p><strong>Options choisies :</strong></p>
+                    <div class="options-lignes">
+                      <?php foreach ($options as $opt): ?>
+                        <div class="opt-ligne">
+                          <?= htmlspecialchars($opt['nom']) ?> · Qté <?= $opt['quantite'] ?> · <?= $opt['total_option'] ?> €
+                        </div>
+                      <?php endforeach; ?>
+                    </div>
                 <?php endif; ?>
-                <p><strong>Total :</strong> <?= $sous_total ?> €</p>
+
+                <p><strong>Sous-total :</strong> <?= number_format($prix_total, 2, ',', ' ') ?> €</p>
             </div>
         </div>
     <?php endforeach; ?>
 
     <div class="recap-final">
-        <h3>Total global : <?= $total ?> €</h3>
+        <h3>Total global : <?= number_format($total, 2, ',', ' ') ?> €</h3>
 
         <form action="https://www.plateforme-smc.fr/cybank/index.php" method="POST" class="payment-form">
             <input type="hidden" name="transaction" value="<?= $transaction ?>">

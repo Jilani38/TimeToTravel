@@ -31,6 +31,18 @@ $commandes = $utilisateur['commandes'] ?? [];
   <link rel="stylesheet" href="../css/dashboard.css">
   <script defer src="../js/base.js"></script>
   <script defer src="../js/dashboard.js"></script>
+  <style>
+    .options-lignes {
+      margin-top: 5px;
+      font-size: 0.88em;
+      line-height: 1.5;
+      color: #222;
+      padding-left: 5px;
+    }
+    .opt-ligne {
+      margin-bottom: 2px;
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -91,9 +103,18 @@ $commandes = $utilisateur['commandes'] ?? [];
                 <p><strong>Date de départ :</strong> <?= htmlspecialchars($c['date_depart']) ?></p>
               <?php endif; ?>
               <p><strong>Voyageurs :</strong> <?= (int)$c['voyageurs'] ?></p>
+
               <?php if (!empty($c['options'])): ?>
-                <p><strong>Options :</strong><br><?= implode(", ", array_map(fn($opt) => htmlspecialchars($opt['nom']), $c['options'])) ?></p>
+                <p><strong>Options :</strong></p>
+                <div class="options-lignes">
+                  <?php foreach ($c['options'] as $opt): ?>
+                    <div class="opt-ligne">
+                      <?= htmlspecialchars($opt['nom']) ?> · Qté <?= $opt['quantite'] ?> · <?= $opt['total_option'] ?> €
+                    </div>
+                  <?php endforeach; ?>
+                </div>
               <?php endif; ?>
+
               <p><strong>Montant total :</strong> <?= $c['total'] ?> €</p>
             </div>
           <?php endforeach; ?>

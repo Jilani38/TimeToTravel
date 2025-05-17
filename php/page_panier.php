@@ -5,7 +5,6 @@ if (!isset($_SESSION['id'])) {
   exit();
 }
 
-$voyages = json_decode(file_get_contents("../data/voyages.json"), true);
 $panier = $_SESSION['panier'] ?? [];
 $total = 0;
 ?>
@@ -18,6 +17,19 @@ $total = 0;
   <link rel="stylesheet" href="../css/base.css" />
   <link rel="stylesheet" href="../css/page_panier.css" />
   <script src="../js/base.js" defer></script>
+  <style>
+    .options-lignes {
+      margin-top: 8px;
+      font-size: 0.88em;
+      line-height: 1.6;
+      color: #222;
+      padding-left: 5px;
+    }
+
+    .options-lignes .opt-ligne {
+      margin-bottom: 2px;
+    }
+  </style>
 </head>
 <body>
 
@@ -34,42 +46,36 @@ $total = 0;
     <?php else: ?>
       <?php foreach ($panier as $index => $reservation): ?>
         <?php
-          $id = $reservation['id'];
+          $titre = $reservation['titre'];
           $quantite = $reservation['nombre'];
           $date_depart = $reservation['date_depart'] ?? 'Non spécifiée';
-          $options_selectionnees = $reservation['options'] ?? [];
+          $options = $reservation['options'] ?? [];
+          $prix_base = $reservation['prix_base'] ?? 0;
+          $prix_total = $reservation['prix_total'] ?? 0;
 
-          $voyage = array_filter($voyages, fn($v) => $v['id'] == $id);
-          $voyage = reset($voyage);
-
-          $prix_options = 0;
-          $texte_options = [];
-
-          foreach ($options_selectionnees as $opt_index) {
-            if (isset($voyage['options'][$opt_index])) {
-              $opt = $voyage['options'][$opt_index];
-              $prix_options += $opt['prix_par_personne'];
-              $texte_options[] = htmlspecialchars($opt['nom']) . " (" . $opt['prix_par_personne'] . " €)";
-            }
-          }
-
-          $prix_unitaire = $voyage['prix_base'] + $prix_options;
-          $sous_total = $prix_unitaire * $quantite;
-          $total += $sous_total;
+          $total += $prix_total;
         ?>
         <div class="card carte-voyage">
           <div class="entete">
-            <h2><?= htmlspecialchars($voyage['titre']) ?></h2>
-            <span class="prix"><?= $sous_total ?> €</span>
+            <h2><?= htmlspecialchars($titre) ?></h2>
+            <span class="prix"><?= number_format($prix_total, 2, ',', ' ') ?> €</span>
           </div>
           <div class="details">
-            <p><strong>Lieu :</strong> <?= htmlspecialchars($voyage['lieu']) ?></p>
-            <p><strong>Durée :</strong> <?= $voyage['duree'] ?> jours</p>
             <p><strong>Date de départ :</strong> <?= htmlspecialchars($date_depart) ?></p>
-            <p><strong>Quantité :</strong> <?= $quantite ?> voyageur<?= $quantite > 1 ? 's' : '' ?></p>
-            <?php if (!empty($texte_options)): ?>
-              <p><strong>Options :</strong><br><?= implode('<br>', $texte_options) ?></p>
+            <p><strong>Nombre de voyageurs :</strong> <?= $quantite ?></p>
+            <p><strong>Prix de base :</strong> <?= $prix_base ?> € × <?= $quantite ?> = <?= $prix_base * $quantite ?> €</p>
+
+            <?php if (!empty($options)): ?>
+              <p><strong>Options sélectionnées :</strong></p>
+              <div class="options-lignes">
+                <?php foreach ($options as $opt): ?>
+                  <div class="opt-ligne">
+                    <?= htmlspecialchars($opt['nom']) ?> · Qté <?= $opt['quantite'] ?> · <?= $opt['total_option'] ?> €
+                  </div>
+                <?php endforeach; ?>
+              </div>
             <?php endif; ?>
+
             <form action="supprimer_du_panier.php" method="post" style="margin-top: 10px;">
               <input type="hidden" name="index" value="<?= $index ?>">
               <button type="submit" class="btn-supprimer">🗑️ Supprimer</button>
@@ -83,11 +89,11 @@ $total = 0;
 
   <div class="card bulle-total">
     <h3>Détail de la commande</h3>
-    <p><strong><?= count($panier) ?> voyage<?= count($panier) > 1 ? 's' : '' ?></strong> <span><?= $total ?> €</span></p>
+    <p><strong><?= count($panier) ?> voyage<?= count($panier) > 1 ? 's' : '' ?></strong> <span><?= number_format($total, 2, ',', ' ') ?> €</span></p>
     <hr>
     <div class="total-commande">
       <strong>Total commande</strong>
-      <span class="prix-total"><?= $total ?> €</span>
+      <span class="prix-total"><?= number_format($total, 2, ',', ' ') ?> €</span>
     </div>
     <form method="POST" action="page_paiement.php">
       <input type="hidden" name="total" value="<?= $total ?>">
