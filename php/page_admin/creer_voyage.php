@@ -24,8 +24,8 @@ if (isset($_POST['submit'])) {
     "titre" => $_POST['titre'],
     "image" => $image_filename,
     "duree" => (int) $_POST['duree'],
-    "specificites" => $_POST['specificites'],
-    "prix_total" => (int) $_POST['prix_total'],
+    "description" => $_POST['description'],
+    "prix_base" => (int) $_POST['prix_base'],
     "type_temporel" => $_POST['type_temporel'],
     "niveau_difficulte" => $_POST['niveau_difficulte'],
     "note_moyenne" => (float) ($_POST['note_moyenne'] ?? 0),
@@ -66,8 +66,8 @@ if (isset($_POST['submit'])) {
       <tr><th>Titre</th><td><input type="text" name="titre" required></td></tr>
       <tr><th>Image</th><td><input type="file" name="image" accept="image/*" required></td></tr>
       <tr><th>Durée</th><td><input type="number" name="duree" id="duree" min="1" required></td></tr>
-      <tr><th>Spécificités</th><td><textarea name="specificites" required></textarea></td></tr>
-      <tr><th>Prix total</th><td><input type="number" name="prix_total" required></td></tr>
+      <tr><th>Spécificités</th><td><textarea name="description" required></textarea></td></tr>
+      <tr><th>Prix total</th><td><input type="number" name="prix_base" required></td></tr>
       <tr><th>Type temporel</th>
           <td>
             <label><input type="radio" name="type_temporel" value="passé" checked> Passé</label>

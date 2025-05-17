@@ -35,8 +35,8 @@ if (isset($_POST['submit'])) {
     "titre" => $_POST['titre'],
     "image" => $voyage['image'],
     "duree" => (int) $_POST['duree'],
-    "specificites" => $_POST['specificites'],
-    "prix_total" => (int) $_POST['prix_total'],
+    "description" => $_POST['description'],
+    "prix_base" => (int) $_POST['prix_base'],
     "type_temporel" => $_POST['type_temporel'],
     "niveau_difficulte" => $_POST['niveau_difficulte'],
     "note_moyenne" => (float) ($_POST['note_moyenne'] ?? 0),
@@ -90,8 +90,8 @@ if (isset($_POST['submit'])) {
           </td>
         </tr>
         <tr><th>Durée</th><td><input type="number" name="duree" id="duree" value="<?= $voyage['duree'] ?>" required></td></tr>
-        <tr><th>Spécificités</th><td><textarea name="specificites" required><?= htmlspecialchars($voyage['specificites']) ?></textarea></td></tr>
-        <tr><th>Prix total</th><td><input type="number" name="prix_total" value="<?= $voyage['prix_total'] ?>" required></td></tr>
+        <tr><th>Description</th><td><textarea name="description" required><?= htmlspecialchars($voyage['description']) ?></textarea></td></tr>
+        <tr><th>Prix total</th><td><input type="number" name="prix_base" value="<?= $voyage['prix_base'] ?>" required></td></tr>
         <tr><th>Type temporel</th>
           <td>
             <label><input type="radio" name="type_temporel" value="passé" <?= $voyage['type_temporel'] === 'passé' ? 'checked' : '' ?>> Passé</label>

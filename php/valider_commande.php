@@ -34,7 +34,7 @@ $total = 0;
       <?php
         $voyage = array_filter($voyages, fn($v) => $v['id'] == $id);
         $voyage = reset($voyage);
-        $sous_total = $voyage['prix_total'] * $quantite;
+        $sous_total = $voyage['prix_base'] * $quantite;
         $total += $sous_total;
       ?>
       <div class="carte-voyage">

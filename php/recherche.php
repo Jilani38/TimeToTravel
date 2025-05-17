@@ -10,7 +10,7 @@ if ($voyages === null) die('Erreur de lecture du fichier voyages.json.');
 function texte_complet_du_voyage(array $v): string {
     $contenu = [
         $v['titre'] ?? '',
-        $v['specificites'] ?? '',
+        $v['description'] ?? '',
         $v['lieu'] ?? '',
         $v['type_temporel'] ?? '',
         $v['niveau_difficulte'] ?? '',
@@ -71,7 +71,7 @@ if ($mot_cle !== '') {
             <img src="../data/images/<?= htmlspecialchars($voyage['image']) ?>" alt="<?= htmlspecialchars($voyage['titre']) ?>">
             <div class="texte">
               <h3><?= htmlspecialchars($voyage['titre']) ?></h3>
-              <p><?= htmlspecialchars($voyage['specificites'] ?? '') ?></p>
+              <p><?= htmlspecialchars($voyage['description'] ?? '') ?></p>
               <p><strong>Durée :</strong> <?= htmlspecialchars($voyage['duree']) ?> jours</p>
             </div>
           </a>
