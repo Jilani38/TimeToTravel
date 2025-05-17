@@ -34,69 +34,81 @@ if (!$voyage) {
   </header>
 
   <main class="voyage-container">
-    <div class="image">
-      <img src="../data/images/<?= htmlspecialchars($voyage['image']) ?>" alt="<?= htmlspecialchars($voyage['titre']) ?>">
-    </div>
+    <div class="ligne-haut">
+      <!-- Colonne gauche : image -->
+      <div class="colonne-gauche">
+        <div class="image">
+          <img src="../data/images/<?= htmlspecialchars($voyage['image']) ?>" alt="<?= htmlspecialchars($voyage['titre']) ?>">
+        </div>
 
-    <div class="card infos">
-      <h1><?= htmlspecialchars($voyage['titre']) ?></h1>
-      <p class="description"><?= htmlspecialchars($voyage['description']) ?></p>
-      <p><strong>Lieu :</strong> <?= htmlspecialchars($voyage['lieu']) ?></p>
-      <p><strong>Type :</strong> <?= htmlspecialchars($voyage['type_temporel']) ?></p>
-      <p><strong>Durée :</strong> <?= $voyage['duree'] ?> jours</p>
-      <p><strong>Niveau :</strong> <?= htmlspecialchars($voyage['niveau_difficulte']) ?></p>
-      <p><strong>Public :</strong> <?= implode(", ", $voyage['public_cible']) ?></p>
-      <p><strong>Note moyenne :</strong> <?= $voyage['note_moyenne'] ?> / 5 (<?= $voyage['nombre_avis'] ?> avis)</p>
+        <!-- Infos en dessous de l’image uniquement -->
+        <div class="card infos">
+          <h1><?= htmlspecialchars($voyage['titre']) ?></h1>
+          <p class="description"><?= htmlspecialchars($voyage['description']) ?></p>
+          <p><strong>Lieu :</strong> <?= htmlspecialchars($voyage['lieu']) ?></p>
+          <p><strong>Type :</strong> <?= htmlspecialchars($voyage['type_temporel']) ?></p>
+          <p><strong>Durée :</strong> <?= $voyage['duree'] ?> jours</p>
+          <p><strong>Niveau :</strong> <?= htmlspecialchars($voyage['niveau_difficulte']) ?></p>
+          <p><strong>Public :</strong> <?= implode(", ", $voyage['public_cible']) ?></p>
+          <p><strong>Note moyenne :</strong> <?= $voyage['note_moyenne'] ?> / 5 (<?= $voyage['nombre_avis'] ?> avis)</p>
 
-      <h2>Programme</h2>
-      <ul>
-        <?php foreach ($voyage['programme'] as $jour): ?>
-          <li><strong><?= htmlspecialchars($jour['titre']) ?>:</strong> <?= htmlspecialchars($jour['activite']) ?></li>
-        <?php endforeach; ?>
-      </ul>
+          <h2>Programme</h2>
+          <ul>
+            <?php foreach ($voyage['programme'] as $jour): ?>
+              <li><strong><?= htmlspecialchars($jour['titre']) ?>:</strong> <?= htmlspecialchars($jour['activite']) ?></li>
+            <?php endforeach; ?>
+          </ul>
 
-      <h2>Activités incluses</h2>
-      <ul>
-        <?php foreach ($voyage['activites_incluses'] as $act): ?>
-          <li><strong><?= htmlspecialchars($act['nom']) ?>:</strong> <?= htmlspecialchars($act['description']) ?></li>
-        <?php endforeach; ?>
-      </ul>
+          <h2>Activités incluses</h2>
+          <ul>
+            <?php foreach ($voyage['activites_incluses'] as $act): ?>
+              <li><strong><?= htmlspecialchars($act['nom']) ?>:</strong> <?= htmlspecialchars($act['description']) ?></li>
+            <?php endforeach; ?>
+          </ul>
 
-      <h2>Options disponibles</h2>
-      <form method="POST" action="ajouter_panier.php">
-        <input type="hidden" name="voyage_id" value="<?= $voyage['id'] ?>">
-        <?php foreach ($voyage['options'] as $index => $option): ?>
-          <div class="option">
-            <label for="option_<?= $index ?>">
-              <?= htmlspecialchars($option['type']) ?> : <?= htmlspecialchars($option['nom']) ?> (<?= $option['prix_par_personne'] ?> € / personne)
-            </label>
-            <select name="options[<?= $index ?>]" id="option_<?= $index ?>" class="option-select" data-prix="<?= $option['prix_par_personne'] ?>">
-              <option value="0">0</option>
-              <!-- autres options générées par JS -->
-            </select>
-          </div>
-        <?php endforeach; ?>
+          <h2>Infos pratiques</h2>
+          <ul>
+            <?php foreach ($voyage['infos_pratiques'] as $info): ?>
+              <li><?= htmlspecialchars($info) ?></li>
+            <?php endforeach; ?>
+          </ul>
+        </div>
+      </div>
 
-        <h2>Infos pratiques</h2>
-        <ul>
-          <?php foreach ($voyage['infos_pratiques'] as $info): ?>
-            <li><?= htmlspecialchars($info) ?></li>
-          <?php endforeach; ?>
-        </ul>
+      <!-- Colonne droite : titre + personnalisation -->
+      <div class="colonne-droite">
+        <h1 class="titre-voyage-reservation"><?= htmlspecialchars($voyage['titre']) ?></h1>
 
-        <h2>Tarif de base</h2>
-        <p class="prix"><?= $voyage['prix_base'] ?> € / personne</p>
+        <div class="card reservation">
+          <h2>Personnalisez votre voyage</h2>
+          <form method="POST" action="ajouter_panier.php">
+            <input type="hidden" name="voyage_id" value="<?= $voyage['id'] ?>">
 
-        <p><strong>Prix total estimé :</strong> <span id="prix-total"><?= $voyage['prix_base'] ?> €</span></p>
+            <label for="nombre"><strong>Nombre de voyageurs :</strong></label>
+            <input type="number" name="nombre" id="nombre" value="1" min="1">
 
-        <label for="date_depart">Date de départ :</label>
-        <input type="date" name="date_depart" id="date_depart" min="<?= date('Y-m-d') ?>" required>
+            <label for="date_depart"><strong>Date de départ :</strong></label>
+            <input type="date" name="date_depart" id="date_depart" min="<?= date('Y-m-d') ?>" required>
 
-        <label for="nombre">Nombre de voyageurs :</label>
-        <input type="number" name="nombre" id="nombre" value="1" min="1">
+            <h3>Options disponibles</h3>
+            <?php foreach ($voyage['options'] as $index => $option): ?>
+              <div class="option">
+                <label for="option_<?= $index ?>">
+                  <?= htmlspecialchars($option['type']) ?> : <?= htmlspecialchars($option['nom']) ?> (<?= $option['prix_par_personne'] ?> € / personne)
+                </label>
+                <select name="options[<?= $index ?>]" id="option_<?= $index ?>" class="option-select" data-prix="<?= $option['prix_par_personne'] ?>">
+                  <option value="0">0</option>
+                </select>
+              </div>
+            <?php endforeach; ?>
 
-        <button type="submit">Je choisis ce voyage</button>
-      </form>
+            <p class="prix-base"><strong>Tarif de base :</strong> <?= $voyage['prix_base'] ?> € / personne</p>
+            <p class="total-prix">Prix total estimé : <span id="prix-total"><?= $voyage['prix_base'] ?> €</span></p>
+
+            <button type="submit">Je choisis ce voyage</button>
+          </form>
+        </div>
+      </div>
     </div>
   </main>
 
@@ -116,7 +128,6 @@ if (!$voyage) {
           opt.textContent = i;
           select.appendChild(opt);
         }
-        // Réappliquer l'ancienne valeur si possible
         if (currentValue <= max) {
           select.value = currentValue;
         }

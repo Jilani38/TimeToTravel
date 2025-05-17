@@ -1,104 +1,178 @@
-  .voyage-container {
-    margin-top: 50px;
-    display: flex;
-    flex-wrap: wrap;
-    padding: 2em;
-    gap: 2em;
-    justify-content: center;
-    opacity: 0;
-    transform: translateY(20px);
-    animation: fadeInUp 1s ease forwards;
-  }
-  
-  @keyframes fadeInUp {
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-  
-  .image img {
-    max-width: 500px;
-    border-radius: 15px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.2);
-  }
-  
-  .infos {
-    flex: 1;
-    min-width: 300px;
-    max-width: 600px;
-  }
-  
-  .infos h1 {
-    font-size: 2em;
-    color: #1d3557;
-    margin-bottom: 0.5em;
-  }
-  
-  .description {
-    font-style: italic;
-    margin-bottom: 1.5em;
-  }
-  
-  .etape, .infos ul, .infos form {
-    margin-bottom: 1.5em;
-  }
-  
-  h2 {
-    margin-top: 1.5em;
-    color: #457b9d;
-  }
-  
-  ul {
-    padding-left: 1em;
-  }
-  
-  .prix {
-    font-size: 1.4em;
-    color: #e63946;
-    font-weight: bold;
-  }
-  
-  form {
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
-  }
-  
-  input[type="number"] {
-    width: 80px;
-    padding: 0.5em;
-    font-size: 1em;
-  }
-  
-  button {
-    background-color: #1d3557;
-    color: white;
-    padding: 0.8em;
-    font-size: 1em;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background 0.3s;
-  }
-  
-  button:hover {
-    background-color: #457b9d;
-  }
+.voyage-container {
+  margin-top: 50px;
+  padding: 2em;
+  gap: 2em;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s ease forwards;
+}
 
-.option {
+/* Animation d'entrée */
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Ligne contenant image + réservation */
+.ligne-haut {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 2em;
+}
+
+/* Colonne gauche = image + infos */
+.colonne-gauche {
   display: flex;
   flex-direction: column;
+  gap: 2em;
+  max-width: 500px;
+  flex: 1;
+}
+
+/* Colonne droite = titre + formulaire */
+.colonne-droite {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1em;
+  flex: 1;
+  max-width: 600px;
+  margin-top: 0;
+}
+
+/* Image */
+.image img {
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+/* Titre du voyage (au-dessus du formulaire) */
+.titre-voyage-reservation {
+  font-size: 2em;
+  font-weight: bold;
+  color: #457b9d;
+  margin: 0 0 0.5em 0;
+}
+
+/* Infos (sous l'image) */
+.card.infos {
+  background-color: white;
+  padding: 1.5em;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  width: 100%;
+  margin-top: 0;
+}
+
+.card.infos h1 {
+  font-size: 2em;
+  color: #1d3557;
+  margin: 0 0 0.5em 0;
+}
+
+.description {
+  font-style: italic;
+  margin-bottom: 1.5em;
+}
+
+.etape,
+.infos ul,
+.infos form {
+  margin-bottom: 1.5em;
+}
+
+h2 {
+  margin-top: 1.2em;
+  color: #457b9d;
+}
+
+ul {
+  padding-left: 1em;
+}
+
+.prix {
+  font-size: 1.4em;
+  color: #e63946;
+  font-weight: bold;
+}
+
+/* Carte personnalisation à droite */
+.card.reservation {
+  background-color: #f9f9f9;
+  padding: 1.5em;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 600px;
+  flex: 1;
+  margin-top: 0;
+}
+
+.card.reservation h2 {
+  color: #1d3557;
+}
+
+/* Formulaire */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+input[type="number"],
+input[type="date"] {
+  padding: 0.5em;
+  font-size: 1em;
+  width: fit-content;
+  max-width: 200px;
+}
+
+button {
+  background-color: #1d3557;
+  color: white;
+  padding: 0.8em;
+  font-size: 1em;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #457b9d;
+}
+
+/* Options alignées horizontalement */
+.option {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
   margin-bottom: 1em;
+  gap: 1em;
+  flex-wrap: wrap;
 }
 
 .option label {
   font-weight: bold;
-  margin-bottom: 0.3em;
+  margin: 0;
+  flex: 1;
 }
 
 .option select {
   padding: 0.4em;
   font-size: 1em;
   max-width: 120px;
+}
+
+/* Prix total mis en valeur */
+#prix-total {
+  font-size: 1.6em;
+  color: #e63946;
+  font-weight: bold;
 }
