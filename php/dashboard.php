@@ -20,6 +20,7 @@ if (!$utilisateur) {
 }
 
 $commandes = $utilisateur['commandes'] ?? [];
+$role = $utilisateur['role'] ?? 'client';
 ?>
 
 <!DOCTYPE html>
@@ -31,18 +32,6 @@ $commandes = $utilisateur['commandes'] ?? [];
   <link rel="stylesheet" href="../css/dashboard.css">
   <script defer src="../js/base.js"></script>
   <script defer src="../js/dashboard.js"></script>
-  <style>
-    .options-lignes {
-      margin-top: 5px;
-      font-size: 0.88em;
-      line-height: 1.5;
-      color: #222;
-      padding-left: 5px;
-    }
-    .opt-ligne {
-      margin-bottom: 2px;
-    }
-  </style>
 </head>
 <body>
   <header>
@@ -51,6 +40,18 @@ $commandes = $utilisateur['commandes'] ?? [];
 
   <main class="card dashboard">
     <h1>Bienvenue, <?= htmlspecialchars($utilisateur['prenom']) ?> !</h1>
+
+    <?php if ($role === 'client'): ?>
+      <a href="page_paiement_vip.php" class="btn-vip">
+       👑 Devenir VIP Traveleur pour 1500 € et bénéficier de -10% sur vos commandes
+      </a>
+
+
+    <?php elseif ($role === 'vip'): ?>
+      <div class="btn-vip-message">
+        ✨ Vous êtes un VIP Traveller !
+      </div>
+    <?php endif; ?>
 
     <div class="onglets">
       <button class="bbtn-primary onglet-actif" data-target="#profil">Mon profil</button>
@@ -77,9 +78,11 @@ $commandes = $utilisateur['commandes'] ?? [];
           <li>
             <label><?= $label ?> :</label>
             <input type="text" id="<?= $champ ?>" value="<?= htmlspecialchars($utilisateur[$champ]) ?>" disabled <?= $readonly ?>>
-            <button class="btn-edit">✏️</button>
-            <button class="btn-valider" style="display:none;">✅</button>
-            <button class="btn-annuler" style="display:none;">❌</button>
+            <?php if (!in_array($champ, ["date_inscription", "derniere_connexion"])): ?>
+              <button class="btn-edit">✏️</button>
+              <button class="btn-valider" style="display:none;">✅</button>
+              <button class="btn-annuler" style="display:none;">❌</button>
+            <?php endif; ?>
           </li>
         <?php endforeach; ?>
       </ul>

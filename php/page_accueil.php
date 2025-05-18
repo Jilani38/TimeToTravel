@@ -13,7 +13,7 @@
 
   <body>
     <header>
-      <video autoplay loop muted playsinline id="background-video">
+      <video autoplay loop muted playsinline disablePictureInPicture id="background-video">
         <source src="../img/video_fond.mp4" type="video/mp4" />
         Votre navigateur ne supporte pas la vidéo.
       </video>

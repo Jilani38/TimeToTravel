@@ -61,3 +61,22 @@ function validateEmail(email) {
   const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   return re.test(email.toLowerCase());
 }
+document.addEventListener("DOMContentLoaded", () => {
+  const cguCheckbox = document.getElementById("accept-cgu");
+  const submitButtons = document.querySelectorAll("form button[type='submit']");
+
+  if (cguCheckbox) {
+    // Fonction pour activer/désactiver tous les boutons
+    const toggleSubmitButtons = () => {
+      submitButtons.forEach(btn => {
+        btn.disabled = !cguCheckbox.checked;
+      });
+    };
+
+    // Applique l’état dès le chargement
+    toggleSubmitButtons();
+
+    // Réagit à chaque changement
+    cguCheckbox.addEventListener("change", toggleSubmitButtons);
+  }
+});

@@ -37,7 +37,7 @@ $total = 0;
         $sous_total = $voyage['prix_base'] * $quantite;
         $total += $sous_total;
       ?>
-      <div class="carte-voyage">
+      <div class="card carte-voyage">
         <div class="entete">
           <h2><?= htmlspecialchars($voyage['titre']) ?></h2>
           <span class="prix"><?= $sous_total ?> €</span>

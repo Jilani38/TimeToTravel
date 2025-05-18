@@ -140,6 +140,7 @@ body.dark .card {
 }
 
 input[type="text"],
+input[type="search"],
 input[type="number"],
 input[type="password"],
 input[type="email"],
@@ -179,46 +180,42 @@ input:focus {
 }
 
 /* ====== Boutons stylés ====== */
-.btn-primary {
-  display: inline-block;
-  text-decoration: none;
-  background-color: #007bff;
+button.btn-primary {
+  background-color: #123964;
   color: white;
-  margin-top: 15px;
-  margin-bottom: 5px;
   border: none;
-  padding: 10px 15px;
-  width: 100%;
-  border-radius: 5px;
-  font-size: 1rem;
+  padding: 12px;
+  border-radius: 8px;
   cursor: pointer;
-  transition: 0.3s;
-  margin-top: 15px;
+  font-weight: bold;
+  width: 100%;
 }
 
-.btn-primary:hover {
-  background-color: #0056b3;
+button.btn-primary:hover {
+  background-color: #19508a;
 }
 
 /* ====== Boutons stylés ====== */
 .btn-secondary {
-  display: inline-block;
+  display: block;
+  margin-top: 15px;
+  padding: 12px;
+  background-color: white;
+  border: 2px solid var(--primary-background);
+  color: #123964;
   text-decoration: none;
-  color: #007bff;
-  margin-top: 15px;
-  margin-bottom: 5px;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 8px;
+}
+
+body.dark .btn-secondary {
   border: none;
-  padding: 10px 15px;
-  width: 100%;
-  border-radius: 5px;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: 0.3s;
-  margin-top: 15px;
 }
 
 .btn-secondary:hover {
-  color: #0056b3;
+  background-color: #123964;
+  color: white;
 }
 
 .btn-error {

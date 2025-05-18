@@ -94,3 +94,35 @@ h2 {
 .payment-form button:hover {
     background-color: #1b65b9;
 }
+
+
+/*partie paiement vip*/
+
+.vip-container {
+  max-width: 700px;
+  margin: 100px auto;
+  padding: 2em;
+}
+
+.vip-header {
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+.cgu {
+  font-size: 0.9em;
+  color: #666;
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.cgu input {
+  transform: scale(1.2);
+}
+
+.submit-disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}

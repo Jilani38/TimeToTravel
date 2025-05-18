@@ -28,29 +28,3 @@ p {
   max-width: 300px;
   height: auto;
 }
-
-.btn-primary {
-  background-color: #064a74;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.btn-primary:hover {
-  background-color: #053b59;
-}
-
-.btn-secondary {
-  background-color: #b11d0d; /* Rouge foncé */
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.btn-secondary:hover {
-  background-color: #c0392b; /* Rouge encore plus foncé au survol */
-}

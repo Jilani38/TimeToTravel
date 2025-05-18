@@ -1,6 +1,9 @@
 <?php
 session_start();
 
+$messageErreur = "";
+$email = "";
+
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
   $email = trim($_POST['email']);
   $motdepasse = $_POST['motdepasse'];
@@ -12,11 +15,17 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
   $utilisateurs = json_decode(file_get_contents($fichier), true);
   $connecte = false;
+  $messageErreur = "Email ou mot de passe incorrect.";
 
   foreach ($utilisateurs as &$u) {
     if ($u['email'] === $email && password_verify($motdepasse, $u['motdepasse'])) {
-      $connecte = true;
 
+      if ($u['role'] === 'banni') {
+        $messageErreur = "Votre compte a été banni. Connexion impossible.";
+        break;
+      }
+
+      $connecte = true;
       $_SESSION['id'] = $u['id'];
       $_SESSION['prenom'] = $u['prenom'];
       $_SESSION['nom'] = $u['nom'];
@@ -32,7 +41,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     header("Location: page_accueil.php");
     exit();
   } else {
-    die("Email ou mot de passe incorrect.");
+    $messageErreur = "Email ou mot de passe incorrect.";
   }
 }
 ?>
@@ -54,15 +63,21 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     <div class="card login-container">
       <h2>Connecte-toi !</h2>
 
+      <?php if ($messageErreur !== ""): ?>
+        <span class="message-error">
+          <?= $messageErreur ?>
+        </span>
+      <?php endif; ?>
+
       <form action="page_connexion.php" method="POST">
         <div class="input-group">
           <label for="email">E-mail :</label>
-          <input type="email" id="email" name="email" required />
+          <input type="email" id="email" name="email" value="<?= $email ?>" required />
         </div>
 
         <div class="input-group input-password">
           <label for="motdepasse">Mot de passe :</label>
-          <input type="password" id="motdepasse" name="motdepasse" maxlength="20" required />
+          <input type="password" id="motdepasse" name="motdepasse" maxlength="20" required <?= $email != "" ? 'autofocus' : '' ?> />
           <button type="button" class="toggle-password" title="Afficher/Masquer le mot de passe">👁️</button>
           <span class="char-count">0 / 20</span>
         </div>
@@ -71,7 +86,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
       </form>
 
       <p class="register-link">
-        <a href="page_inscription.php">Je n'ai pas de compte</a>
+        <a href="page_inscription.php" class="btn-secondary">Je n'ai pas de compte</a>
         <br />
         <a href="./page_admin/index.php">Admin</a>
       </p>

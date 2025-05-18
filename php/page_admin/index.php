@@ -1,6 +1,8 @@
 <?php
 session_start();
 
+$q = isset($_GET['q']) ? $_GET['q'] : '';
+
 if (!isset($_SESSION['role']) || $_SESSION['role'] !== 'admin') {
     header('Location: ../page_accueil.php');
     exit();
@@ -16,6 +18,7 @@ $voyages = json_decode(file_get_contents('../../data/voyages.json'), true);
   <link rel="stylesheet" href="../../css/page_admin/base.css" />
   <link rel="stylesheet" href="../../css/page_admin/index.css" />
   <script src="https://unpkg.com/lucide@latest" defer></script>
+  <script src="../../js/page_admin/recherche.js" defer></script>
   <script src="../../js/page_admin/index.js" defer></script>
   <title>Time to Travel - Admin</title>
 </head>
@@ -32,6 +35,8 @@ $voyages = json_decode(file_get_contents('../../data/voyages.json'), true);
   <h1>Tableau de bord - Administration</h1>
   <p>Bienvenue <?= htmlspecialchars($_SESSION['prenom'] ?? 'Admin') ?> 👋</p>
   <a href="./creer_voyage.php" class="btn-ajouter-voyage">+ Créer un nouveau voyage</a>
+
+  <input type="search" id="recherche-input" placeholder="Rechercher un voyage..." value="<?= htmlspecialchars($q) ?>">
 
   <table>
     <thead>

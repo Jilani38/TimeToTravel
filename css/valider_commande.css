@@ -65,11 +65,7 @@ body {
   }
   
   .carte-voyage {
-    background-color: #f8f9fa;
-    border: 1px solid #ccc;
-    padding: 1em;
     margin-bottom: 1em;
-    border-radius: 10px;
   }
   
   .entete {
