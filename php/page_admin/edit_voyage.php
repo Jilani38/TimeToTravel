@@ -1,6 +1,8 @@
 <?php
 session_start();
 
+$retour = $_SERVER['HTTP_REFERER'] ?? './index.php';
+
 if (!isset($_SESSION['role']) || $_SESSION['role'] !== 'admin') {
   header('Location: ../page_accueil.php');
   exit;
@@ -205,7 +207,7 @@ if (isset($_POST['submit'])) {
 
       <div>
         <input type="submit" name="submit" value="Enregistrer">
-        <a href="./index.php">Annuler</a>
+        <a href="<?= $retour ?>">Annuler</a>
       </div>
     </form>
   </main>
