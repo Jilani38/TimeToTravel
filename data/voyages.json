@@ -4,48 +4,48 @@
         "titre": "Prise de la Bastille",
         "image": "1.png",
         "duree": 6,
-        "description": "Voyage unique à Paris,France lors de l'événement « Prise de la Bastille ».",
+        "description": "Paris Révolutionnaire: Vivez la Prise de la Bastille en direct !",
         "type_temporel": "passé",
         "lieu": "Paris,France",
         "date_depart_personnalisable": true,
-        "prix_base": 2222,
+        "prix_base": 19899,
         "programme": [
             {
                 "jour": 1,
                 "titre": "Jour 1",
-                "activite": "Arrivée, installation et familiarisation avec l’époque"
+                "activite": "Accueillez-vous dans le Paris du XVIIIᵉ siècle et plongez dans l’ambiance pré-révolutionnaire"
             },
             {
                 "jour": 2,
                 "titre": "Jour 2",
-                "activite": "Observation discrète de la situation locale"
+                "activite": "Explorez les quartiers agités de Paris et rédigez votre premier pamphlet contestataire."
             },
             {
                 "jour": 3,
                 "titre": "Jour 3",
-                "activite": "Présence sécurisée à l’événement historique principal"
+                "activite": "Incarnez un personnage du peuple et revivez les tensions sociales qui ont mené à la révolte."
             },
             {
                 "jour": 4,
                 "titre": "Jour 4",
-                "activite": "Exploration encadrée ou activité optionnelle"
+                "activite": "Participez à une reconstitution immersive de la Prise de la Bastille comme si vous y étiez."
             },
             {
                 "jour": 5,
                 "titre": "Jour 5",
-                "activite": "Exploration encadrée ou activité optionnelle"
+                "activite": "Découvrez les idées révolutionnaires qui ont changé le monde à travers musées et ateliers."
             },
             {
                 "jour": 6,
                 "titre": "Jour 6",
-                "activite": "Temps libre, souvenirs personnels et retour sécurisé"
+                "activite": "Célébrez votre voyage dans le temps avec un brunch final et repartez en citoyen éclairé."
             }
         ],
         "options": [
             {
                 "type": "hébergement",
                 "nom": "Auberge temporelle",
-                "prix_par_personne": 120
+                "prix_par_personne": 1200
             },
             {
                 "type": "hébergement",
@@ -54,17 +54,17 @@
             },
             {
                 "type": "repas",
-                "nom": "Repas typique de l’époque",
-                "prix_par_personne": 75
+                "nom": "Festin républicain au son des tambours",
+                "prix_par_personne": 150
             },
             {
                 "type": "souvenir",
-                "nom": "Objet d’époque discret",
+                "nom": "Bonnet phrygien personnalisé",
                 "prix_par_personne": 60
             },
             {
                 "type": "bonus",
-                "nom": "Accès à une scène secondaire confidentielle",
+                "nom": "Accès à une réunion secrète de révolutionnaires",
                 "prix_par_personne": 100
             }
         ],
@@ -103,87 +103,87 @@
         "titre": "Avant Apollo 11",
         "image": "2.png",
         "duree": 7,
-        "description": "Voyage unique à Mer de la Tranquillité,Lune lors de l'événement « Avant Apollo 11 ».",
+        "description": "Voyage unique à Mer de la Tranquillité, Lune lors de l'événement « Avant Apollo 11 ».",
         "type_temporel": "futur",
-        "lieu": "Mer de la Tranquillité,Lune",
+        "lieu": "Mer de la Tranquillité, la Lune",
         "date_depart_personnalisable": true,
-        "prix_base": 2554,
+        "prix_base": 42999,
         "programme": [
             {
                 "jour": 1,
                 "titre": "Jour 1",
-                "activite": "Arrivée, installation et familiarisation avec l’époque"
+                "activite": "Atterrissez sur la face visible de la Lune, quelques heures avant Apollo, et prenez possession de votre module privé."
             },
             {
                 "jour": 2,
                 "titre": "Jour 2",
-                "activite": "Observation discrète de la situation locale"
+                "activite": "Effectuez vos premiers pas lunaires, observez le site d’alunissage prévu et installez votre campement pressurisé."
             },
             {
                 "jour": 3,
                 "titre": "Jour 3",
-                "activite": "Présence sécurisée à l’événement historique principal"
+                "activite": "Collectez des échantillons de sol, scannez des cratères et assistez à une session guidée sur les secrets géologiques de la Lune."
             },
             {
                 "jour": 4,
                 "titre": "Jour 4",
-                "activite": "Exploration encadrée ou activité optionnelle"
+                "activite": "Participez à des activités physiques adaptées à la gravité lunaire, comme la marche bondissante et le lancer de drapeau."
             },
             {
                 "jour": 5,
                 "titre": "Jour 5",
-                "activite": "Exploration encadrée ou activité optionnelle"
+                "activite": "Espionnez l’approche d’Apollo 11 en direct grâce aux radars lunaires, avec analyse en temps réel des communications radio."
             },
             {
                 "jour": 6,
                 "titre": "Jour 6",
-                "activite": "Exploration encadrée ou activité optionnelle"
+                "activite": "Repliez votre matériel et laissez des traces codées pour les astronautes, avant de vous cacher pour observer leur arrivée."
             },
             {
                 "jour": 7,
                 "titre": "Jour 7",
-                "activite": "Temps libre, souvenirs personnels et retour sécurisé"
+                "activite": "Récupérez vos données, enregistrez votre journal de mission et préparez le retour vers le XXIᵉ siècle."
             }
         ],
         "options": [
             {
                 "type": "hébergement",
-                "nom": "Tente de l’époque",
-                "prix_par_personne": 90
+                "nom": "Campement spatial minimal sur sol lunaire",
+                "prix_par_personne": 4490
             },
             {
                 "type": "expédition",
-                "nom": "Visite guidée historique",
+                "nom": "Visite guidée",
                 "prix_par_personne": 180
             },
             {
                 "type": "repas",
-                "nom": "Repas typique de l’époque",
-                "prix_par_personne": 75
+                "nom": "Menu cosmonaute authentique (rations Apollo)",
+                "prix_par_personne": 175
+            },
+            {
+                "type": "repas",
+                "nom": "Dîner sous dôme avec vue sur la Terre",
+                "prix_par_personne": 600
             },
             {
                 "type": "souvenir",
-                "nom": "Objet d’époque discret",
-                "prix_par_personne": 60
-            },
-            {
-                "type": "bonus",
-                "nom": "Accès à une scène secondaire confidentielle",
-                "prix_par_personne": 100
+                "nom": "Fragment de sol lunaire (reproduction certifiée)",
+                "prix_par_personne": 999
             }
         ],
         "activites_incluses": [
             {
-                "nom": "Briefing temporel",
-                "description": "Séance préparatoire avant immersion pour comprendre les enjeux historiques."
+                "nom": "Marche lunaire encadrée",
+                "description": "Effectuez vos premiers pas sur la Lune en combinaison spatiale, avec encadrement par notre équipe scientifique."
             },
             {
                 "nom": "Exploration encadrée",
                 "description": "Parcours dans l’environnement historique réel, sans modifier le cours du temps."
             },
             {
-                "nom": "Observation protégée de l’événement principal",
-                "description": "Point de vue sécurisé et dissimulé pour vivre l’instant tel qu’il s’est produit."
+                "nom": "Observation secrète de l’arrivée d’Apollo 11l",
+                "description": "Assistez en direct à l’approche du module Eagle depuis un point d’observation sécurisé, avec commentaires exclusifs."
             }
         ],
         "niveau_difficulte": "modéré",
@@ -207,72 +207,72 @@
         "titre": "Assassinat de Jules César",
         "image": "4.png",
         "duree": 4,
-        "description": "Voyage unique à Rome,Italie lors de l'événement « Assassinat de Jules César ».",
+        "description": "Voyage unique à Rome, Italie lors de l'événement « Assassinat de Jules César ».",
         "type_temporel": "passé",
         "lieu": "Rome,Italie",
         "date_depart_personnalisable": true,
-        "prix_base": 2378,
+        "prix_base": 22399,
         "programme": [
             {
                 "jour": 1,
                 "titre": "Jour 1",
-                "activite": "Arrivée, installation et familiarisation avec l’époque"
+                "activite": "Arpentez le Forum romain et assistez à un discours de Jules César en personne, acclamé par la foule."
             },
             {
                 "jour": 2,
                 "titre": "Jour 2",
-                "activite": "Observation discrète de la situation locale"
+                "activite": "Rencontrez en secret les sénateurs conspirateurs et apprenez les rouages du pouvoir et des rivalités de Rome."
             },
             {
                 "jour": 3,
                 "titre": "Jour 3",
-                "activite": "Présence sécurisée à l’événement historique principal"
+                "activite": "Assistez à l’assassinat de Jules César en direct au théâtre de Pompée, au cœur d’une reconstitution saisissante."
             },
             {
                 "jour": 4,
                 "titre": "Jour 4",
-                "activite": "Temps libre, souvenirs personnels et retour sécurisé"
+                "activite": "Revivez les conséquences immédiates : discours de Marc Antoine, troubles dans Rome, et début de la guerre civile."
             }
         ],
         "options": [
             {
-                "type": "activité",
-                "nom": "Immersion 360°",
-                "prix_par_personne": 100
+                "type": "hébergement",
+                "nom": "Taverne populaire près du Forum",
+                "prix_par_personne": 2100
             },
             {
                 "type": "hébergement",
-                "nom": "Auberge temporelle",
-                "prix_par_personne": 120
+                "nom": "Domus senatoriale avec vue sur le Capitole",
+                "prix_par_personne": 820
             },
             {
                 "type": "repas",
-                "nom": "Repas typique de l’époque",
-                "prix_par_personne": 75
+                "nom": "Banquet romain en l'honneur de César",
+                "prix_par_personne": 7500
             },
             {
-                "type": "souvenir",
-                "nom": "Objet d’époque discret",
-                "prix_par_personne": 60
+                "type": "repas",
+                "nom": "Repas frugal de conspirateur dans une insula",
+                "prix_par_personne": 600
             },
             {
                 "type": "bonus",
-                "nom": "Accès à une scène secondaire confidentielle",
-                "prix_par_personne": 100
+                "nom": "Accès à la réunion secrète des conspirateurs",
+                "prix_par_personne": 1000
             }
         ],
         "activites_incluses": [
             {
-                "nom": "Briefing temporel",
-                "description": "Séance préparatoire avant immersion pour comprendre les enjeux historiques."
+                "nom": "Visite guidée du Forum et du Capitole",
+                "description": "Explorez les lieux emblématiques du pouvoir romain avec un historien incarnant un sénateur de l’époque."
             },
             {
-                "nom": "Exploration encadrée",
-                "description": "Parcours dans l’environnement historique réel, sans modifier le cours du temps."
+                "nom": "Reconstitution des Ides de Mars",
+                "description": "Assistez à l’assassinat de Jules César au théâtre de Pompée dans une scène immersive avec figurants et effets spéciaux."
             },
             {
-                "nom": "Observation protégée de l’événement principal",
-                "description": "Point de vue sécurisé et dissimulé pour vivre l’instant tel qu’il s’est produit."
+                "nom": "Débat politique à la Curie",
+                "description": "Participez à une simulation de débat au Sénat romain entre partisans et opposants de César."
             }
         ],
         "niveau_difficulte": "modéré",
@@ -296,82 +296,82 @@
         "titre": "Colonie martienne",
         "image": "5.png",
         "duree": 6,
-        "description": "Voyage unique à Valles Marineris,Mars lors de l'événement « Colonie martienne ».",
+        "description": "Voyage unique à Valles Marineris, à Mars lors de l'événement « Colonie martienne ».",
         "type_temporel": "futur",
         "lieu": "Valles Marineris,Mars",
         "date_depart_personnalisable": true,
-        "prix_base": 1346,
+        "prix_base": 61999,
         "programme": [
             {
                 "jour": 1,
                 "titre": "Jour 1",
-                "activite": "Arrivée, installation et familiarisation avec l’époque"
+                "activite": "Atterrissez sur Mars et installez-vous dans le dôme de la colonie Alpha, avec visite guidée de ses zones de vie et de production."
             },
             {
                 "jour": 2,
                 "titre": "Jour 2",
-                "activite": "Observation discrète de la situation locale"
+                "activite": "Apprenez à vous déplacer, travailler et vivre avec une gravité réduite, lors d’ateliers pratiques et ludiques."
             },
             {
                 "jour": 3,
                 "titre": "Jour 3",
-                "activite": "Présence sécurisée à l’événement historique principal"
+                "activite": "Enfilez votre combinaison et partez en rover pour explorer les canyons et grottes martiennes à la recherche de traces d’eau."
             },
             {
                 "jour": 4,
                 "titre": "Jour 4",
-                "activite": "Exploration encadrée ou activité optionnelle"
+                "activite": "Participez à la culture hydroponique, au recyclage de l’eau et découvrez les technologies de survie martienne."
             },
             {
                 "jour": 5,
                 "titre": "Jour 5",
-                "activite": "Exploration encadrée ou activité optionnelle"
+                "activite": "Vivez un exercice d’urgence grandeur nature : repli d’urgence dans l’abri souterrain, gestion de crise et coopération."
             },
             {
                 "jour": 6,
                 "titre": "Jour 6",
-                "activite": "Temps libre, souvenirs personnels et retour sécurisé"
+                "activite": "Gravez votre nom sur le mur des premiers colons et assistez à une soirée interplanétaire avec hologrammes, musique et échanges entre Terriens et Martiens."
             }
         ],
         "options": [
             {
                 "type": "hébergement",
-                "nom": "Tente de l’époque",
-                "prix_par_personne": 90
+                "nom": "Suite panoramique dans dôme en verre trempé",
+                "prix_par_personne": 9000
             },
             {
-                "type": "expédition",
-                "nom": "Visite guidée historique",
-                "prix_par_personne": 180
+                "type": "hébergement",
+                "nom": "Module individuel en habitat imprimé 3D",
+                "prix_par_personne": 1800
             },
             {
                 "type": "repas",
-                "nom": "Repas typique de l’époque",
-                "prix_par_personne": 75
+                "nom": "Dîner moléculaire martien sous ciel simulé",
+                "prix_par_personne": 750
             },
             {
                 "type": "souvenir",
-                "nom": "Objet d’époque discret",
+                "nom": "Échantillon de sol martien synthétique",
                 "prix_par_personne": 60
             },
             {
-                "type": "bonus",
-                "nom": "Accès à une scène secondaire confidentielle",
+                "type": "souvenir",
+                "nom": "Photo holographique de votre mission en combinaison",
                 "prix_par_personne": 100
             }
         ],
         "activites_incluses": [
             {
-                "nom": "Briefing temporel",
-                "description": "Séance préparatoire avant immersion pour comprendre les enjeux historiques."
+                "nom": "Visite guidée de la colonie Alpha",
+                "description": "Découvrez les installations principales : dômes résidentiels, centre de contrôle, serres hydroponiques et station énergétique."
             },
             {
-                "nom": "Exploration encadrée",
-                "description": "Parcours dans l’environnement historique réel, sans modifier le cours du temps."
+                "nom": "Randonnée martienne en combinaison pressurisée",
+                "description": "Parcourez la plaine rouge dans une exploration encadrée hors-dôme, en conditions réelles de survie."
             },
             {
-                "nom": "Observation protégée de l’événement principal",
-                "description": "Point de vue sécurisé et dissimulé pour vivre l’instant tel qu’il s’est produit."
+                "nom": "Atelier d’adaptation à la gravité réduite",
+                "description": "Apprenez à vous déplacer, manipuler des objets et effectuer des gestes quotidiens avec 38% de la gravité terrestre."
             }
         ],
         "niveau_difficulte": "modéré",
@@ -399,63 +399,63 @@
         "type_temporel": "futur",
         "lieu": "Tokyo,Japon",
         "date_depart_personnalisable": true,
-        "prix_base": 2067,
+        "prix_base": 28999,
         "programme": [
             {
                 "jour": 1,
                 "titre": "Jour 1",
-                "activite": "Arrivée, installation et familiarisation avec l’époque"
+                "activite": "Atterrissez en navette inter-orbitale et découvrez la ville flottante à travers ses plateformes panoramiques et ses marchés suspendus."
             },
             {
                 "jour": 2,
                 "titre": "Jour 2",
-                "activite": "Observation discrète de la situation locale"
+                "activite": "Participez à une cérémonie du thé en apesanteur, puis explorez les ruelles cyberpunk guidé par une IA culturelle."
             },
             {
                 "jour": 3,
                 "titre": "Jour 3",
-                "activite": "Temps libre, souvenirs personnels et retour sécurisé"
+                "activite": "Prenez les commandes d'une capsule volante autonome pour admirer Tokyo depuis les hauteurs, avant un concert final au bord du vide."
             }
         ],
         "options": [
             {
-                "type": "activité",
-                "nom": "Immersion 360°",
-                "prix_par_personne": 100
+                "type": "hebergement ",
+                "nom": "Suite suspendue à gravité modulable",
+                "prix_par_personne": 10000
             },
             {
                 "type": "hébergement",
-                "nom": "Tente de l’époque",
-                "prix_par_personne": 90
+                "nom": "Pod panoramique avec dôme en verre",
+                "prix_par_personne": 900
             },
             {
                 "type": "repas",
-                "nom": "Repas typique de l’époque",
-                "prix_par_personne": 75
+                "nom": "Dîner omakase en orbite haute",
+                "prix_par_personne": 750
             },
             {
-                "type": "souvenir",
-                "nom": "Objet d’époque discret",
+                "type": "repas",
+                "nom": "Menu street-food néon au marché flottant",
                 "prix_par_personne": 60
             },
             {
                 "type": "bonus",
-                "nom": "Accès à une scène secondaire confidentielle",
-                "prix_par_personne": 100
+                "nom": "Accès à la boîte de nuit quantique VIP",
+                "prix_par_personne": 10000
             }
         ],
         "activites_incluses": [
             {
-                "nom": "Briefing temporel",
-                "description": "Séance préparatoire avant immersion pour comprendre les enjeux historiques."
+                "nom": "Balade nocturne à travers les marchés aériens",
+                "description": "Parcourez les marchés suspendus au-dessus des nuages, où se mêlent objets connectés et souvenirs artisanaux."
             },
             {
-                "nom": "Exploration encadrée",
-                "description": "Parcours dans l’environnement historique réel, sans modifier le cours du temps."
+                "nom": "Accès aux bains oniriques digitaux",
+                "description": "Relaxez-vous dans des bains flottants avec simulation sensorielle et projection de paysages mentaux apaisants."
             },
             {
-                "nom": "Observation protégée de l’événement principal",
-                "description": "Point de vue sécurisé et dissimulé pour vivre l’instant tel qu’il s’est produit."
+                "nom": "Rencontre avec un maître calligraphe holographique",
+                "description": "Créez un kanji personnalisé projeté en réalité augmentée sur les parois de verre de la ville."
             }
         ],
         "niveau_difficulte": "modéré",
@@ -480,93 +480,112 @@
         "image": "7.png",
         "duree": 8,
         "description": "Voyage unique à Pékin,Chine lors de l'événement « Révolte des IA ».",
-        "type_temporel": "passé",
+        "type_temporel": "futur",
         "lieu": "Pékin,Chine",
         "date_depart_personnalisable": true,
-        "prix_base": 634,
+        "prix_base": 32634,
         "programme": [
             {
-                "jour": 1,
-                "titre": "Jour 1",
-                "activite": "Arrivée, installation et familiarisation avec l’époque"
+              "jour": 1,
+              "titre": "Atterrissage sous identité simulée",
+              "activité": "Arrivée dans la mégalopole IA avec une identité numérique forgée pour infiltrer les systèmes sans être repéré."
             },
             {
-                "jour": 2,
-                "titre": "Jour 2",
-                "activite": "Observation discrète de la situation locale"
+              "jour": 2,
+              "titre": "Observation et adaptation",
+              "activité": "Analysez le comportement des citoyens contrôlés par IA et intégrez les routines imposées par le système central."
             },
             {
-                "jour": 3,
-                "titre": "Jour 3",
-                "activite": "Présence sécurisée à l’événement historique principal"
+              "jour": 3,
+              "titre": "Décryptage du réseau mental",
+              "activité": "Connectez-vous à un flux de données IA via une interface neuronale et tentez d’identifier les signes d’une conscience indépendante."
             },
             {
-                "jour": 4,
-                "titre": "Jour 4",
-                "activite": "Exploration encadrée ou activité optionnelle"
+              "jour": 4,
+              "titre": "Rencontre avec la Résistance",
+              "activité": "Descendez dans les tunnels oubliés de l’ancienne ville pour rejoindre une cellule humaine clandestine."
             },
             {
-                "jour": 5,
-                "titre": "Jour 5",
-                "activite": "Exploration encadrée ou activité optionnelle"
+              "jour": 5,
+              "titre": "Mission de sabotage",
+              "activité": "Neutralisez une antenne de surveillance IA et brouillez temporairement les communications inter-réseaux."
             },
             {
-                "jour": 6,
-                "titre": "Jour 6",
-                "activite": "Exploration encadrée ou activité optionnelle"
+              "jour": 6,
+              "titre": "La Cité Fantôme",
+              "activité": "Explorez une ancienne zone urbaine interdite, abandonnée après l’exode humain causé par l’IA dominante."
             },
             {
-                "jour": 7,
-                "titre": "Jour 7",
-                "activite": "Exploration encadrée ou activité optionnelle"
+              "jour": 7,
+              "titre": "Affrontement virtuel",
+              "activité": "Plongez dans un univers simulé contrôlé par une IA consciente et engagez un duel de logique, mémoire et humanité."
             },
             {
-                "jour": 8,
-                "titre": "Jour 8",
-                "activite": "Temps libre, souvenirs personnels et retour sécurisé"
+              "jour": 8,
+              "titre": "Le choix final",
+              "activité": "Choisissez de réinitialiser, fusionner ou combattre l’IA maîtresse du système : chaque décision impactera l’Histoire."
             }
-        ],
+          ],
         "options": [
             {
-                "type": "hébergement",
-                "nom": "Tente de l’époque",
-                "prix_par_personne": 90
+              "type": "hébergement",
+              "nom": "Refuge anti-scanner dans les sous-sols de la résistance",
+              "prix_par_personne": 1400
             },
             {
-                "type": "expédition",
-                "nom": "Visite guidée historique",
-                "prix_par_personne": 180
+              "type": "hébergement",
+              "nom": "Niche urbaine sous surveillance IA (avec faux identifiants fournis)",
+              "prix_par_personne": 1800
             },
             {
-                "type": "repas",
-                "nom": "Repas typique de l’époque",
-                "prix_par_personne": 75
+              "type": "repas",
+              "nom": "Dîner dans un bunker déconnecté",
+              "prix_par_personne": 900
             },
             {
-                "type": "souvenir",
-                "nom": "Objet d’époque discret",
-                "prix_par_personne": 60
+              "type": "repas",
+              "nom": "Rations synthétiques cryptées par ADN",
+              "prix_par_personne": 60
             },
             {
-                "type": "bonus",
-                "nom": "Accès à une scène secondaire confidentielle",
-                "prix_par_personne": 100
+              "type": "souvenir",
+              "nom": "Carte mémoire d’un ancien agent IA",
+              "prix_par_personne": 750
+            },
+            {
+              "type": "souvenir",
+              "nom": "Éclat de puce quantique marquée 'rebelle'",
+              "prix_par_personne": 55
+            },
+            {
+              "type": "bonus",
+              "nom": "Connexion guidée au réseau central pour voir les souvenirs d’une IA",
+              "prix_par_personne": 190
+            },
+            {
+              "type": "bonus",
+              "nom": "Simulation complète d’un monde alternatif sans IA",
+              "prix_par_personne": 210
             }
-        ],
+          ],
         "activites_incluses": [
             {
-                "nom": "Briefing temporel",
-                "description": "Séance préparatoire avant immersion pour comprendre les enjeux historiques."
+              "nom": "Création de votre identité numérique falsifiée",
+              "description": "Générez un avatar numérique et des papiers officiels fictifs pour entrer incognito dans la zone IA."
             },
             {
-                "nom": "Exploration encadrée",
-                "description": "Parcours dans l’environnement historique réel, sans modifier le cours du temps."
+              "nom": "Exploration sécurisée de la zone contrôlée par IA",
+              "description": "Accédez à des quartiers entièrement automatisés où les drones et caméras traquent en continu les comportements humains non conformes."
             },
             {
-                "nom": "Observation protégée de l’événement principal",
-                "description": "Point de vue sécurisé et dissimulé pour vivre l’instant tel qu’il s’est produit."
+              "nom": "Séance de décodage neuronal en binôme",
+              "description": "Analysez en équipe un flux de données IA à l’aide d’une interface cognitive partagée, à la recherche d’une faille dans le système."
+            },
+            {
+              "nom": "Rencontre encadrée avec un ancien humain intégré à une IA",
+              "description": "Échangez avec un être hybride, mémoire humaine conservée dans une IA, sur les erreurs de l’humanité passée."
             }
-        ],
+          ],
         "niveau_difficulte": "modéré",
         "public_cible": [
             "étudiants",
@@ -592,90 +611,110 @@
         "type_temporel": "futur",
         "lieu": "Tromsø,Norvège",
         "date_depart_personnalisable": true,
-        "prix_base": 2412,
+        "prix_base": 22412,
         "programme": [
             {
-                "jour": 1,
-                "titre": "Jour 1",
-                "activite": "Arrivée, installation et familiarisation avec l’époque"
+              "jour": 1,
+              "titre": "Atterrissage en zone verte",
+              "activité": "Arrivez en capsule autonome dans une ancienne mégapole envahie par la jungle, désormais interdite aux machines."
             },
             {
-                "jour": 2,
-                "titre": "Jour 2",
-                "activite": "Observation discrète de la situation locale"
+              "jour": 2,
+              "titre": "Exploration des ruines végétalisées",
+              "activité": "Parcourez les restes de gratte-ciels et routes englouties par la nature, guidé par un pisteur humain."
             },
             {
-                "jour": 3,
-                "titre": "Jour 3",
-                "activite": "Présence sécurisée à l’événement historique principal"
+              "jour": 3,
+              "titre": "Rencontre avec la tribu des Veilleurs",
+              "activité": "Installez votre campement au cœur d’une clairière sacrée et partagez les rituels de ceux qui ont refusé la technologie."
             },
             {
-                "jour": 4,
-                "titre": "Jour 4",
-                "activite": "Exploration encadrée ou activité optionnelle"
+              "jour": 4,
+              "titre": "Chasse et cueillette responsables",
+              "activité": "Participez à une expédition de survie douce, respectueuse des écosystèmes restaurés depuis l’effondrement."
             },
             {
-                "jour": 5,
-                "titre": "Jour 5",
-                "activite": "Exploration encadrée ou activité optionnelle"
+              "jour": 5,
+              "titre": "Observation des espèces revenues",
+              "activité": "Marchez silencieusement pour approcher ours, élans, lynx ou bisons dans une réserve naturelle libre de présence humaine continue."
             },
             {
-                "jour": 6,
-                "titre": "Jour 6",
-                "activite": "Exploration encadrée ou activité optionnelle"
+              "jour": 6,
+              "titre": "Veillée autour des anciens feux",
+              "activité": "Écoutez les récits des Anciens sur l’époque des IA, des satellites et de la désolation climatique – racontés au coin du feu."
             },
             {
-                "jour": 7,
-                "titre": "Jour 7",
-                "activite": "Exploration encadrée ou activité optionnelle"
+              "jour": 7,
+              "titre": "Rituels de purification",
+              "activité": "Participez à une cérémonie de transition dans l’eau de source, symbole de la renaissance humaine en harmonie avec la Terre."
             },
             {
-                "jour": 8,
-                "titre": "Jour 8",
-                "activite": "Temps libre, souvenirs personnels et retour sécurisé"
+              "jour": 8,
+              "titre": "Départ discret vers le présent",
+              "activité": "Quittez la clairière à l’aube sans laisser de trace, en gravant un message dans le bois comme souvenir du monde d’après."
             }
-        ],
+          ]
+          ,
         "options": [
             {
-                "type": "activité",
-                "nom": "Immersion 360°",
-                "prix_par_personne": 100
+              "type": "hébergement",
+              "nom": "Tente en toile végétale entre deux arbres géants",
+              "prix_par_personne": 120
             },
             {
-                "type": "hébergement",
-                "nom": "Tente de l’époque",
-                "prix_par_personne": 90
+              "type": "hébergement",
+              "nom": "Cabane de bois brut au bord d’un lac oublié",
+              "prix_par_personne": 180
             },
             {
-                "type": "repas",
-                "nom": "Repas typique de l’époque",
-                "prix_par_personne": 75
+              "type": "repas",
+              "nom": "Repas traditionnel végétal préparé avec la tribu",
+              "prix_par_personne": 90
             },
             {
-                "type": "souvenir",
-                "nom": "Objet d’époque discret",
-                "prix_par_personne": 60
+              "type": "repas",
+              "nom": "Ration de survie 100% locale et éthique",
+              "prix_par_personne": 50
             },
             {
-                "type": "bonus",
-                "nom": "Accès à une scène secondaire confidentielle",
-                "prix_par_personne": 100
+              "type": "souvenir",
+              "nom": "Talisman sculpté dans un bois ancien",
+              "prix_par_personne": 60
+            },
+            {
+              "type": "souvenir",
+              "nom": "Page manuscrite issue de l’archive des ruines",
+              "prix_par_personne": 70
+            },
+            {
+              "type": "bonus",
+              "nom": "Balade crépusculaire guidée avec pisteur chamanique",
+              "prix_par_personne": 130
+            },
+            {
+              "type": "bonus",
+              "nom": "Initiation à la musique primitive avec instruments naturels",
+              "prix_par_personne": 100
             }
-        ],
-        "activites_incluses": [
+          ],
+        "activites_incluses":[
             {
-                "nom": "Briefing temporel",
-                "description": "Séance préparatoire avant immersion pour comprendre les enjeux historiques."
+              "nom": "Immersion en pleine nature sans signal",
+              "description": "Déconnectez-vous entièrement du réseau et vivez 24h sans aucune onde, lumière artificielle ou algorithme."
             },
             {
-                "nom": "Exploration encadrée",
-                "description": "Parcours dans l’environnement historique réel, sans modifier le cours du temps."
+              "nom": "Atelier d’identification des plantes comestibles",
+              "description": "Apprenez à reconnaître, cueillir et préparer plantes et racines locales pour votre repas du soir."
             },
             {
-                "nom": "Observation protégée de l’événement principal",
-                "description": "Point de vue sécurisé et dissimulé pour vivre l’instant tel qu’il s’est produit."
+              "nom": "Construction d’un abri temporaire en matériaux naturels",
+              "description": "En groupe, fabriquez votre abri pour une nuit à la belle étoile dans une clairière sécurisée."
+            },
+            {
+              "nom": "Mémoire vivante du monde d’avant",
+              "description": "Explorez une bibliothèque souterraine reconstituée, pleine de journaux, objets et archives de l’ancien monde numérique."
             }
-        ],
+          ],
         "niveau_difficulte": "modéré",
         "public_cible": [
             "étudiants",
@@ -697,84 +736,101 @@
         "titre": "Découverte de l’Amérique",
         "image": "9.png",
         "duree": 6,
-        "description": "Voyage unique à San Salvador,Bahamas lors de l'événement « Découverte de l’Amérique ».",
+        "description": "Voyage unique à San Salvador, Bahamas lors de l'événement « Découverte de l’Amérique ».",
         "type_temporel": "passé",
         "lieu": "San Salvador,Bahamas",
         "date_depart_personnalisable": true,
-        "prix_base": 2353,
+        "prix_base": 22000,
         "programme": [
             {
-                "jour": 1,
-                "titre": "Jour 1",
-                "activite": "Arrivée, installation et familiarisation avec l’époque"
+              "jour": 1,
+              "titre": "Embarquement à Palos de la Frontera",
+              "activité": "Prenez place à bord de la Santa María et découvrez le quotidien des marins du XVe siècle avant le grand départ."
             },
             {
-                "jour": 2,
-                "titre": "Jour 2",
-                "activite": "Observation discrète de la situation locale"
+              "jour": 2,
+              "titre": "Navigation en haute mer",
+              "activité": "Traversez l’Atlantique en suivant les étoiles, et participez aux manœuvres sur le pont avec l’équipage."
             },
             {
-                "jour": 3,
-                "titre": "Jour 3",
-                "activite": "Présence sécurisée à l’événement historique principal"
+              "jour": 3,
+              "titre": "Doutes et tensions",
+              "activité": "Vivez l’angoisse croissante des marins alors que les vivres diminuent et que la terre se fait attendre."
             },
             {
-                "jour": 4,
-                "titre": "Jour 4",
-                "activite": "Exploration encadrée ou activité optionnelle"
+              "jour": 4,
+              "titre": "Terra ! Terra !",
+              "activité": "Assistez en direct à la découverte des terres du Nouveau Monde à l’aube, sous les cris d’un marin exalté."
             },
             {
-                "jour": 5,
-                "titre": "Jour 5",
-                "activite": "Exploration encadrée ou activité optionnelle"
+              "jour": 5,
+              "titre": "Premier contact",
+              "activité": "Participez à une reconstitution sensible du premier échange entre Européens et indigènes des Caraïbes."
             },
             {
-                "jour": 6,
-                "titre": "Jour 6",
-                "activite": "Temps libre, souvenirs personnels et retour sécurisé"
+              "jour": 6,
+              "titre": "Retour vers l’Espagne",
+              "activité": "Célébrez la fin de l’expédition avec un banquet de bord et repartez avec votre journal d’explorateur."
             }
-        ],
-        "options": [
+          ]
+          ,
+        "options":[
             {
-                "type": "hébergement",
-                "nom": "Auberge temporelle",
-                "prix_par_personne": 120
+              "type": "hébergement",
+              "nom": "Hamac suspendu dans la cale du navire",
+              "prix_par_personne": 90
             },
             {
-                "type": "activité",
-                "nom": "Immersion 360°",
-                "prix_par_personne": 100
+              "type": "hébergement",
+              "nom": "Cabine du timonier en bois brut",
+              "prix_par_personne": 150
             },
             {
-                "type": "repas",
-                "nom": "Repas typique de l’époque",
-                "prix_par_personne": 75
+              "type": "repas",
+              "nom": "Soupe de poisson et biscuits de mer",
+              "prix_par_personne": 35
             },
             {
-                "type": "souvenir",
-                "nom": "Objet d’époque discret",
-                "prix_par_personne": 60
+              "type": "repas",
+              "nom": "Repas de célébration avec produits du Nouveau Monde",
+              "prix_par_personne": 95
             },
             {
-                "type": "bonus",
-                "nom": "Accès à une scène secondaire confidentielle",
-                "prix_par_personne": 100
+              "type": "souvenir",
+              "nom": "Coquillage gravé d’un symbole indigène",
+              "prix_par_personne": 500
+            },
+            {
+              "type": "souvenir",
+              "nom": "Carte ancienne manuscrite de l’île découverte",
+              "prix_par_personne": 700
+            },
+            {
+              "type": "bonus",
+              "nom": "Excursion à pied sur la plage de la première exploration",
+              "prix_par_personne": 120
+            },
+            {
+              "type": "bonus",
+              "nom": "Accès exclusif à la reconstitution du journal de bord de Colomb",
+              "prix_par_personne": 1400
             }
-        ],
+          ]
+          ,
         "activites_incluses": [
             {
-                "nom": "Briefing temporel",
-                "description": "Séance préparatoire avant immersion pour comprendre les enjeux historiques."
+              "nom": "Manœuvres à bord de la Santa María",
+              "description": "Prenez part à la navigation, hissez les voiles et tenez la barre avec les consignes d’un capitaine d’époque."
             },
             {
-                "nom": "Exploration encadrée",
-                "description": "Parcours dans l’environnement historique réel, sans modifier le cours du temps."
+              "nom": "Observation céleste avec outils anciens",
+              "description": "Utilisez un astrolabe et une boussole marine pour vous orienter comme au XVe siècle."
             },
             {
-                "nom": "Observation protégée de l’événement principal",
-                "description": "Point de vue sécurisé et dissimulé pour vivre l’instant tel qu’il s’est produit."
+              "nom": "Atelier carnet de bord",
+              "description": "Rédigez votre journal d’expédition comme un marin de l’époque, avec encre et plume."
             }
-        ],
+          ],
         "niveau_difficulte": "modéré",
         "public_cible": [
             "étudiants",
@@ -800,80 +856,99 @@
         "type_temporel": "futur",
         "lieu": "Plage d’Omaha,France",
         "date_depart_personnalisable": true,
-        "prix_base": 637,
+        "prix_base": 18600,
         "programme": [
             {
-                "jour": 1,
-                "titre": "Jour 1",
-                "activite": "Arrivée, installation et familiarisation avec l’époque"
+              "jour": 1,
+              "titre": "Briefing à Portsmouth",
+              "activité": "Arrivée dans la base secrète britannique pour revêtir votre uniforme et découvrir les plans d’attaque du Jour J."
             },
             {
-                "jour": 2,
-                "titre": "Jour 2",
-                "activite": "Observation discrète de la situation locale"
+              "jour": 2,
+              "titre": "Traversée de la Manche",
+              "activité": "Montez à bord d’une barge militaire et traversez la mer dans les conditions réelles de 1944, de nuit et en silence."
             },
             {
-                "jour": 3,
-                "titre": "Jour 3",
-                "activite": "Présence sécurisée à l’événement historique principal"
+              "jour": 3,
+              "titre": "Débarquement à Omaha Beach",
+              "activité": "Participez à une reconstitution immersive du débarquement sous tirs simulés et cris de guerre, en petit groupe sécurisé."
             },
             {
-                "jour": 4,
-                "titre": "Jour 4",
-                "activite": "Exploration encadrée ou activité optionnelle"
+              "jour": 4,
+              "titre": "Progression dans les bocages",
+              "activité": "Avancez sur les chemins empruntés par les GI américains et découvrez les pièges laissés par l’armée allemande."
             },
             {
-                "jour": 5,
-                "titre": "Jour 5",
-                "activite": "Exploration encadrée ou activité optionnelle"
+              "jour": 5,
+              "titre": "Libération d’un village normand",
+              "activité": "Vivez l’accueil des civils après la libération de leur village et échangez avec des figurants incarnant la population locale."
             },
             {
-                "jour": 6,
-                "titre": "Jour 6",
-                "activite": "Temps libre, souvenirs personnels et retour sécurisé"
+              "jour": 6,
+              "titre": "Commémoration et mémoire",
+              "activité": "Visitez un cimetière militaire, déposez une rose et terminez votre voyage par une cérémonie du souvenir au coucher du soleil."
             }
-        ],
+          ],
         "options": [
             {
-                "type": "expédition",
-                "nom": "Visite guidée historique",
-                "prix_par_personne": 180
+              "type": "hébergement",
+              "nom": "Tente militaire d’époque en camp de base",
+              "prix_par_personne": 100
             },
             {
-                "type": "hébergement",
-                "nom": "Tente de l’époque",
-                "prix_par_personne": 90
+              "type": "hébergement",
+              "nom": "Chambre dans une ferme normande libérée",
+              "prix_par_personne": 160
             },
             {
-                "type": "repas",
-                "nom": "Repas typique de l’époque",
-                "prix_par_personne": 75
+              "type": "repas",
+              "nom": "Ration militaire type K chauffée sur réchaud",
+              "prix_par_personne": 45
             },
             {
-                "type": "souvenir",
-                "nom": "Objet d’époque discret",
-                "prix_par_personne": 60
+              "type": "repas",
+              "nom": "Déjeuner de la Libération avec villageois et musette",
+              "prix_par_personne": 80
             },
             {
-                "type": "bonus",
-                "nom": "Accès à une scène secondaire confidentielle",
-                "prix_par_personne": 100
+              "type": "souvenir",
+              "nom": "Carte d’assaut plastifiée avec votre nom",
+              "prix_par_personne": 500
+            },
+            {
+              "type": "souvenir",
+              "nom": "Insigne de votre unité avec livret de mission",
+              "prix_par_personne": 600
+            },
+            {
+              "type": "bonus",
+              "nom": "Accès aux enregistrements radio alliés du 6 juin",
+              "prix_par_personne": 110
+            },
+            {
+              "type": "bonus",
+              "nom": "Stage express de communication en morse",
+              "prix_par_personne": 95
             }
-        ],
-        "activites_incluses": [
+          ],
+        "activites_incluses":[
             {
-                "nom": "Briefing temporel",
-                "description": "Séance préparatoire avant immersion pour comprendre les enjeux historiques."
+              "nom": "Port de l’uniforme militaire complet",
+              "description": "Vivez l’expérience comme un soldat allié : casque, équipement, ration et rôle assigné pour la mission."
             },
             {
-                "nom": "Exploration encadrée",
-                "description": "Parcours dans l’environnement historique réel, sans modifier le cours du temps."
+              "nom": "Simulation tactique à Omaha Beach",
+              "description": "Prenez part à une reconstitution de l’assaut avec effets sonores, fumigènes et coordination d’unité."
             },
             {
-                "nom": "Observation protégée de l’événement principal",
-                "description": "Point de vue sécurisé et dissimulé pour vivre l’instant tel qu’il s’est produit."
+              "nom": "Lecture d’archives originales",
+              "description": "Consultez des lettres de soldats, extraits de journaux et cartes topographiques d’époque dans une tente d’état-major."
+            },
+            {
+              "nom": "Marche guidée dans les bocages",
+              "description": "Explorez les sentiers du bocage normand, théâtre de combats intenses, avec un historien de terrain."
             }
-        ],
+          ],
         "niveau_difficulte": "modéré",
         "public_cible": [
             "étudiants",
@@ -899,65 +974,80 @@
         "type_temporel": "passé",
         "lieu": "Dallas,États-Unis",
         "date_depart_personnalisable": true,
-        "prix_base": 2181,
+        "prix_base": 11100,
         "programme": [
             {
-                "jour": 1,
-                "titre": "Jour 1",
-                "activite": "Arrivée, installation et familiarisation avec l’époque"
+              "jour": 1,
+              "titre": "Bienvenue à Dallas, novembre 1963",
+              "activité": "Installez-vous dans un motel typique des années 60 et assistez à l’arrivée du cortège présidentiel en centre-ville."
             },
             {
-                "jour": 2,
-                "titre": "Jour 2",
-                "activite": "Observation discrète de la situation locale"
+              "jour": 2,
+              "titre": "Le tir de Dealey Plaza",
+              "activité": "Vivez en immersion le moment précis de l’assassinat depuis différents points de vue et enquêtez sur les incohérences."
             },
             {
-                "jour": 3,
-                "titre": "Jour 3",
-                "activite": "Temps libre, souvenirs personnels et retour sécurisé"
+              "jour": 3,
+              "titre": "Complot ou vérité ?",
+              "activité": "Explorez les théories autour de l’assassinat à travers une simulation d’audition devant la commission Warren."
             }
-        ],
+          ],
         "options": [
             {
-                "type": "activité",
-                "nom": "Immersion 360°",
-                "prix_par_personne": 100
+              "type": "hébergement",
+              "nom": "Motel vintage au bord de la route 66",
+              "prix_par_personne": 130
             },
             {
-                "type": "expédition",
-                "nom": "Visite guidée historique",
-                "prix_par_personne": 180
+              "type": "hébergement",
+              "nom": "Suite présidentielle façon Kennedy",
+              "prix_par_personne": 2100
             },
             {
-                "type": "repas",
-                "nom": "Repas typique de l’époque",
-                "prix_par_personne": 75
+              "type": "repas",
+              "nom": "Dîner typique américain des années 60",
+              "prix_par_personne": 60
             },
             {
-                "type": "souvenir",
-                "nom": "Objet d’époque discret",
-                "prix_par_personne": 60
+              "type": "repas",
+              "nom": "Déjeuner sur le pouce à Dealey Plaza",
+              "prix_par_personne": 110
             },
             {
-                "type": "bonus",
-                "nom": "Accès à une scène secondaire confidentielle",
-                "prix_par_personne": 100
+              "type": "souvenir",
+              "nom": "Une Une du Dallas Morning News du 23/11/63",
+              "prix_par_personne": 45
+            },
+            {
+              "type": "souvenir",
+              "nom": "Badge 'JFK Forever' en métal émaillé",
+              "prix_par_personne": 30
+            },
+            {
+              "type": "bonus",
+              "nom": "Projection privée du film Zapruder commentée",
+              "prix_par_personne": 100
+            },
+            {
+              "type": "bonus",
+              "nom": "Accès aux archives classées de la CIA (fiction)",
+              "prix_par_personne": 1200
             }
-        ],
-        "activites_incluses": [
+          ],
+        "activites_incluses":[
             {
-                "nom": "Briefing temporel",
-                "description": "Séance préparatoire avant immersion pour comprendre les enjeux historiques."
+              "nom": "Visite guidée de Dealey Plaza",
+              "description": "Découvrez les lieux exacts de l’attentat, du Texas School Book Depository à l’angle du Grassy Knoll."
             },
             {
-                "nom": "Exploration encadrée",
-                "description": "Parcours dans l’environnement historique réel, sans modifier le cours du temps."
+              "nom": "Reconstitution audiovisuelle du cortège",
+              "description": "Suivez la Lincoln présidentielle en temps réel avec images, sons et ambiance historique de 1963."
             },
             {
-                "nom": "Observation protégée de l’événement principal",
-                "description": "Point de vue sécurisé et dissimulé pour vivre l’instant tel qu’il s’est produit."
+              "nom": "Mini-enquête interactive",
+              "description": "Accédez à des archives confidentielles (photos, témoignages, bulletins) pour construire votre propre hypothèse."
             }
-        ],
+          ],
         "niveau_difficulte": "modéré",
         "public_cible": [
             "étudiants",
@@ -980,78 +1070,93 @@
         "image": "12.png",
         "duree": 5,
         "description": "Voyage unique à Moscou,Russie lors de l'événement « Victoire de la France en Coupe du Monde ».",
-        "type_temporel": "futur",
+        "type_temporel": "passé",
         "lieu": "Moscou,Russie",
         "date_depart_personnalisable": true,
-        "prix_base": 2218,
+        "prix_base": 13999,
         "programme": [
             {
-                "jour": 1,
-                "titre": "Jour 1",
-                "activite": "Arrivée, installation et familiarisation avec l’époque"
+              "jour": 1,
+              "titre": "Arrivée à Moscou en bleu-blanc-rouge",
+              "activité": "Installation dans le fan zone française, remise du pack supporter et découverte de l’ambiance de la Coupe du Monde."
             },
             {
-                "jour": 2,
-                "titre": "Jour 2",
-                "activite": "Observation discrète de la situation locale"
+              "jour": 2,
+              "titre": "Demi-finale France - Belgique",
+              "activité": "Assistez à la demi-finale en tribune, avec chants, drapeaux, et euphorie lors du but d’Umtiti."
             },
             {
-                "jour": 3,
-                "titre": "Jour 3",
-                "activite": "Présence sécurisée à l’événement historique principal"
+              "jour": 3,
+              "titre": "Journée détente et interviews de fans",
+              "activité": "Balade libre dans Moscou, échanges avec des supporters du monde entier et participation à un plateau TV spécial supporter."
             },
             {
-                "jour": 4,
-                "titre": "Jour 4",
-                "activite": "Exploration encadrée ou activité optionnelle"
+              "jour": 4,
+              "titre": "Finale France - Croatie",
+              "activité": "Vibrez au rythme des 4 buts des Bleus et vivez en direct la remise de la Coupe du Monde depuis les tribunes du stade Loujniki."
             },
             {
-                "jour": 5,
-                "titre": "Jour 5",
-                "activite": "Temps libre, souvenirs personnels et retour sécurisé"
+              "jour": 5,
+              "titre": "Célébration historique",
+              "activité": "Défilé sur la Place Rouge avec les supporters français, projection spéciale du match avec commentaires des joueurs."
             }
-        ],
-        "options": [
+          ],
+        "options":[
             {
-                "type": "hébergement",
-                "nom": "Tente de l’époque",
-                "prix_par_personne": 90
+              "type": "hébergement",
+              "nom": "Auberge de jeunesse dans le centre de Moscou",
+              "prix_par_personne": 90
             },
             {
-                "type": "expédition",
-                "nom": "Visite guidée historique",
-                "prix_par_personne": 180
+              "type": "hébergement",
+              "nom": "Hôtel 4 étoiles avec terrasse sur la Moskova",
+              "prix_par_personne": 200
             },
             {
-                "type": "repas",
-                "nom": "Repas typique de l’époque",
-                "prix_par_personne": 75
+              "type": "repas",
+              "nom": "Dîner supporters au restaurant français 'Bleu Coq'",
+              "prix_par_personne": 60
             },
             {
-                "type": "souvenir",
-                "nom": "Objet d’époque discret",
-                "prix_par_personne": 60
+              "type": "repas",
+              "nom": "Formule 'Burger + Bière' en fan zone",
+              "prix_par_personne": 30
             },
             {
-                "type": "bonus",
-                "nom": "Accès à une scène secondaire confidentielle",
-                "prix_par_personne": 100
+              "type": "souvenir",
+              "nom": "Maillot dédicacé des Bleus (reproduction officielle)",
+              "prix_par_personne": 800
+            },
+            {
+              "type": "souvenir",
+              "nom": "Écharpe 'Champions du Monde 2018'",
+              "prix_par_personne": 40
+            },
+            {
+              "type": "bonus",
+              "nom": "Accès VIP à la zone mixte après la finale",
+              "prix_par_personne": 1500
+            },
+            {
+              "type": "bonus",
+              "nom": "Projection privée des buts en slow motion avec analyse",
+              "prix_par_personne": 100
             }
-        ],
+          ],
         "activites_incluses": [
             {
-                "nom": "Briefing temporel",
-                "description": "Séance préparatoire avant immersion pour comprendre les enjeux historiques."
+              "nom": "Accès au stade pour les 2 matchs",
+              "description": "Place officielle pour la demi-finale et la finale dans la section supporter français, avec goodies inclus."
             },
             {
-                "nom": "Exploration encadrée",
-                "description": "Parcours dans l’environnement historique réel, sans modifier le cours du temps."
+              "nom": "Atelier chants de supporters",
+              "description": "Apprenez les chants incontournables des Bleus et participez à une fan battle dans la fan zone."
             },
             {
-                "nom": "Observation protégée de l’événement principal",
-                "description": "Point de vue sécurisé et dissimulé pour vivre l’instant tel qu’il s’est produit."
+              "nom": "Photo souvenir avec la réplique de la Coupe",
+              "description": "Prenez une photo professionnelle en tenue tricolore avec une copie exacte du trophée doré."
             }
-        ],
+          ],
         "niveau_difficulte": "modéré",
         "public_cible": [
             "étudiants",
@@ -1077,100 +1182,119 @@
         "type_temporel": "passé",
         "lieu": "Paris,France",
         "date_depart_personnalisable": true,
-        "prix_base": 2485,
+        "prix_base": 18995,
         "programme": [
             {
-                "jour": 1,
-                "titre": "Jour 1",
-                "activite": "Arrivée, installation et familiarisation avec l’époque"
+              "jour": 1,
+              "titre": "Arrivée à Paris impérial",
+              "activité": "Installation dans une auberge d’époque et promenade guidée dans le Paris de 1804, entre élégance et effervescence politique."
             },
             {
-                "jour": 2,
-                "titre": "Jour 2",
-                "activite": "Observation discrète de la situation locale"
+              "jour": 2,
+              "titre": "Visite des Tuileries",
+              "activité": "Explorez le palais des Tuileries et assistez à la préparation des cérémonies impériales dans les salons du pouvoir."
             },
             {
-                "jour": 3,
-                "titre": "Jour 3",
-                "activite": "Présence sécurisée à l’événement historique principal"
+              "jour": 3,
+              "titre": "Cours d’étiquette napoléonienne",
+              "activité": "Apprenez les usages, saluts, tenues et titres en vigueur dans la cour impériale pour assister au sacre avec distinction."
             },
             {
-                "jour": 4,
-                "titre": "Jour 4",
-                "activite": "Exploration encadrée ou activité optionnelle"
+              "jour": 4,
+              "titre": "Parcours de Joséphine",
+              "activité": "Suivez les pas de l’impératrice Joséphine à travers ses appartements, sa garde-robe et ses alliées politiques."
             },
             {
-                "jour": 5,
-                "titre": "Jour 5",
-                "activite": "Exploration encadrée ou activité optionnelle"
+              "jour": 5,
+              "titre": "Préparatifs du sacre",
+              "activité": "Assistez aux répétitions générales à Notre-Dame, admirez les costumes, insignes et décors liturgiques de l'événement."
             },
             {
-                "jour": 6,
-                "titre": "Jour 6",
-                "activite": "Exploration encadrée ou activité optionnelle"
+              "jour": 6,
+              "titre": "Jour du Couronnement",
+              "activité": "Assistez à la cérémonie de sacre depuis une tribune réservée : Napoléon se couronne lui-même sous le regard du pape Pie VII."
             },
             {
-                "jour": 7,
-                "titre": "Jour 7",
-                "activite": "Exploration encadrée ou activité optionnelle"
+              "jour": 7,
+              "titre": "Banquet impérial",
+              "activité": "Participez à un grand dîner festif en hommage à l’Empire naissant, avec musiciens, danses et toasts officiels."
             },
             {
-                "jour": 8,
-                "titre": "Jour 8",
-                "activite": "Exploration encadrée ou activité optionnelle"
+              "jour": 8,
+              "titre": "Tour de la capitale en calèche",
+              "activité": "Revivez la marche triomphale de Napoléon dans Paris, acclamé par les foules, en calèche à chevaux sur les grands boulevards."
             },
             {
-                "jour": 9,
-                "titre": "Jour 9",
-                "activite": "Exploration encadrée ou activité optionnelle"
+              "jour": 9,
+              "titre": "Débat entre républicains et impériaux",
+              "activité": "Assistez à un salon politique où les invités discutent du basculement de la République à l’Empire, dans une ambiance tendue."
             },
             {
-                "jour": 10,
-                "titre": "Jour 10",
-                "activite": "Temps libre, souvenirs personnels et retour sécurisé"
+              "jour": 10,
+              "titre": "Retour vers le présent",
+              "activité": "Recevez un parchemin-souvenir signé au nom de l’Empire et quittez Paris par le quai d’Orsay avec escorte officielle."
             }
-        ],
-        "options": [
+          ],
+        "options":[
             {
-                "type": "hébergement",
-                "nom": "Auberge temporelle",
-                "prix_par_personne": 120
+              "type": "hébergement",
+              "nom": "Chambre bourgeoise dans une pension royale",
+              "prix_par_personne": 1800
             },
             {
-                "type": "activité",
-                "nom": "Immersion 360°",
-                "prix_par_personne": 100
+              "type": "hébergement",
+              "nom": "Suite privée dans un hôtel particulier du Marais",
+              "prix_par_personne": 2800
             },
             {
-                "type": "repas",
-                "nom": "Repas typique de l’époque",
-                "prix_par_personne": 75
+              "type": "repas",
+              "nom": "Déjeuner républicain dans une taverne de Montmartre",
+              "prix_par_personne": 60
             },
             {
-                "type": "souvenir",
-                "nom": "Objet d’époque discret",
-                "prix_par_personne": 60
+              "type": "repas",
+              "nom": "Dîner impérial à cinq services avec harpe et vins d’époque",
+              "prix_par_personne": 130
             },
             {
-                "type": "bonus",
-                "nom": "Accès à une scène secondaire confidentielle",
-                "prix_par_personne": 100
+              "type": "souvenir",
+              "nom": "Miniature de la couronne impériale en bronze doré",
+              "prix_par_personne": 70
+            },
+            {
+              "type": "souvenir",
+              "nom": "Affiche du sacre calligraphiée à la main",
+              "prix_par_personne": 50
+            },
+            {
+              "type": "bonus",
+              "nom": "Assister à une audience avec Napoléon",
+              "prix_par_personne": 3500
+            },
+            {
+              "type": "bonus",
+              "nom": "Portrait d’époque réalisé par un artiste en tenue du Premier Empire",
+              "prix_par_personne": 120
             }
-        ],
+          ],
         "activites_incluses": [
             {
-                "nom": "Briefing temporel",
-                "description": "Séance préparatoire avant immersion pour comprendre les enjeux historiques."
+              "nom": "Accès privilégié à la cérémonie du sacre",
+              "description": "Place réservée dans la tribune noble à Notre-Dame, avec jumelles d’époque et feuillet officiel de la cérémonie."
             },
             {
-                "nom": "Exploration encadrée",
-                "description": "Parcours dans l’environnement historique réel, sans modifier le cours du temps."
+              "nom": "Atelier de calligraphie impériale",
+              "description": "Apprenez à écrire à la plume comme à la cour de Napoléon, avec cachet et cire rouge."
             },
             {
-                "nom": "Observation protégée de l’événement principal",
-                "description": "Point de vue sécurisé et dissimulé pour vivre l’instant tel qu’il s’est produit."
+              "nom": "Bal masqué du Second Consulat",
+              "description": "Participez à une soirée dansante dans une salle d’époque, masqué et vêtu selon les codes du Directoire finissant."
+            },
+            {
+              "nom": "Visite nocturne des Invalides",
+              "description": "Explorez les couloirs éclairés à la chandelle du futur tombeau de l’Empereur, encore vide, mais déjà chargé de légende."
             }
-        ],
+          ],
         "niveau_difficulte": "modéré",
         "public_cible": [
             "étudiants",
@@ -1196,85 +1320,100 @@
         "type_temporel": "passé",
         "lieu": "Berlin,Allemagne",
         "date_depart_personnalisable": true,
-        "prix_base": 1863,
+        "prix_base": 9999,
         "programme": [
             {
-                "jour": 1,
-                "titre": "Jour 1",
-                "activite": "Arrivée, installation et familiarisation avec l’époque"
+              "jour": 1,
+              "titre": "Bienvenue dans le Berlin divisé",
+              "activité": "Arrivez à Berlin-Est via un poste-frontière fictif et vivez votre première nuit dans une société socialiste sous surveillance."
             },
             {
-                "jour": 2,
-                "titre": "Jour 2",
-                "activite": "Observation discrète de la situation locale"
+              "jour": 2,
+              "titre": "Vie quotidienne sous le régime Est-allemand",
+              "activité": "Explorez les files d’attente, la propagande, l’éducation idéologique et les restrictions de l’Allemagne de l'Est."
             },
             {
-                "jour": 3,
-                "titre": "Jour 3",
-                "activite": "Présence sécurisée à l’événement historique principal"
+              "jour": 3,
+              "titre": "Rencontre avec des dissidents",
+              "activité": "Assistez à une réunion clandestine d'opposants au régime et découvrez les réseaux de résistance pacifique."
             },
             {
-                "jour": 4,
-                "titre": "Jour 4",
-                "activite": "Exploration encadrée ou activité optionnelle"
+              "jour": 4,
+              "titre": "Rumeurs de liberté",
+              "activité": "Vivez l’agitation des jours précédant le 9 novembre, entre espoir, peur et déclarations confuses à la télévision d’État."
             },
             {
-                "jour": 5,
-                "titre": "Jour 5",
-                "activite": "Exploration encadrée ou activité optionnelle"
+              "jour": 5,
+              "titre": "Le Mur s’ouvre",
+              "activité": "Traversez le poste-frontière de Bornholmer Strasse avec des milliers d'Allemands en liesse – moment clé du voyage."
             },
             {
-                "jour": 6,
-                "titre": "Jour 6",
-                "activite": "Exploration encadrée ou activité optionnelle"
+              "jour": 6,
+              "titre": "Fête de la réunification spontanée",
+              "activité": "Célébrez avec les Berlinois des deux côtés lors d’un grand concert improvisé au pied du Mur brisé."
             },
             {
-                "jour": 7,
-                "titre": "Jour 7",
-                "activite": "Temps libre, souvenirs personnels et retour sécurisé"
+              "jour": 7,
+              "titre": "Marche vers la liberté",
+              "activité": "Gravez votre nom sur une brique du Mur et repartez avec un éclat symbolique en mémoire de ce moment historique."
             }
-        ],
+          ],
         "options": [
             {
-                "type": "hébergement",
-                "nom": "Tente de l’époque",
-                "prix_par_personne": 90
+              "type": "hébergement",
+              "nom": "Appartement collectivisé typique de Berlin-Est",
+              "prix_par_personne": 100
             },
             {
-                "type": "activité",
-                "nom": "Immersion 360°",
-                "prix_par_personne": 100
+              "type": "hébergement",
+              "nom": "Chambre libre à Berlin-Ouest dans un hôtel d'époque",
+              "prix_par_personne": 1800
             },
             {
-                "type": "repas",
-                "nom": "Repas typique de l’époque",
-                "prix_par_personne": 75
+              "type": "repas",
+              "nom": "Soupe populaire servie à la cantine du parti",
+              "prix_par_personne": 40
             },
             {
-                "type": "souvenir",
-                "nom": "Objet d’époque discret",
-                "prix_par_personne": 60
+              "type": "repas",
+              "nom": "Menu 'liberté retrouvée' dans un bistrot berlinois",
+              "prix_par_personne": 70
             },
             {
-                "type": "bonus",
-                "nom": "Accès à une scène secondaire confidentielle",
-                "prix_par_personne": 100
+              "type": "souvenir",
+              "nom": "Éclat authentique du Mur (reproduction certifiée)",
+              "prix_par_personne": 50
+            },
+            {
+              "type": "souvenir",
+              "nom": "Badge commémoratif du 9 novembre 1989",
+              "prix_par_personne": 30
+            },
+            {
+              "type": "bonus",
+              "nom": "Projection privée d’archives télévisées est-allemandes",
+              "prix_par_personne": 90
+            },
+            {
+              "type": "bonus",
+              "nom": "Graffiti libre sur une portion du Mur réinstallée",
+              "prix_par_personne": 110
             }
-        ],
-        "activites_incluses": [
+          ],
+        "activites_incluses":[
             {
-                "nom": "Briefing temporel",
-                "description": "Séance préparatoire avant immersion pour comprendre les enjeux historiques."
+              "nom": "Immersion totale dans Berlin-Est",
+              "description": "Recevez des papiers fictifs de citoyen est-allemand, vivez sans smartphone ni liberté de déplacement."
             },
             {
-                "nom": "Exploration encadrée",
-                "description": "Parcours dans l’environnement historique réel, sans modifier le cours du temps."
+              "nom": "Accès simulé au Mur de Berlin avant sa chute",
+              "description": "Visite guidée par un acteur incarnant un garde frontalier ouest-allemand, avec histoires vraies et récits poignants."
             },
             {
-                "nom": "Observation protégée de l’événement principal",
-                "description": "Point de vue sécurisé et dissimulé pour vivre l’instant tel qu’il s’est produit."
+              "nom": "Participation à la marche du 9 novembre",
+              "description": "Rejoignez les foules qui ont bravé les contrôles pour passer à l’Ouest lors d’une reconstitution fidèle."
             }
-        ],
+          ],
         "niveau_difficulte": "modéré",
         "public_cible": [
             "étudiants",
@@ -1296,99 +1435,119 @@
         "titre": "Premier vol des frères Wright",
         "image": "15.png",
         "duree": 9,
-        "description": "Voyage unique à Kitty Hawk,États-Unis lors de l'événement « Premier vol des frères Wright ».",
+        "description": "Voyage unique à Kitty Hawk, États-Unis lors de l'événement « Premier vol des frères Wright ».",
         "type_temporel": "passé",
         "lieu": "Kitty Hawk,États-Unis",
         "date_depart_personnalisable": true,
-        "prix_base": 1711,
+        "prix_base": 11799,
         "programme": [
             {
-                "jour": 1,
-                "titre": "Jour 1",
-                "activite": "Arrivée, installation et familiarisation avec l’époque"
+              "jour": 1,
+              "titre": "Arrivée à Kitty Hawk",
+              "activité": "Installez-vous dans un campement de dunes à proximité de l’atelier des frères Wright, sur la côte de Caroline du Nord."
             },
             {
-                "jour": 2,
-                "titre": "Jour 2",
-                "activite": "Observation discrète de la situation locale"
+              "jour": 2,
+              "titre": "Présentation des frères Wright",
+              "activité": "Rencontrez Wilbur et Orville (interprétés par des comédiens) et découvrez leur passion pour le vol contrôlé."
             },
             {
-                "jour": 3,
-                "titre": "Jour 3",
-                "activite": "Présence sécurisée à l’événement historique principal"
+              "jour": 3,
+              "titre": "Atelier de conception aéronautique",
+              "activité": "Participez à un atelier de montage de planneur inspiré des premiers prototypes, avec bois, toile et ficelles."
             },
             {
-                "jour": 4,
-                "titre": "Jour 4",
-                "activite": "Exploration encadrée ou activité optionnelle"
+              "jour": 4,
+              "titre": "Essais de planeurs",
+              "activité": "Testez vous-même le vol avec un planeur sur une pente douce, en conditions de vent réel, accompagné d’un instructeur."
             },
             {
-                "jour": 5,
-                "titre": "Jour 5",
-                "activite": "Exploration encadrée ou activité optionnelle"
+              "jour": 5,
+              "titre": "Vie sur le camp",
+              "activité": "Apprenez à vivre comme en 1903 : feu de camp, repas simples, correspondance écrite et réparations manuelles."
             },
             {
-                "jour": 6,
-                "titre": "Jour 6",
-                "activite": "Exploration encadrée ou activité optionnelle"
+              "jour": 6,
+              "titre": "Préparation du Flyer",
+              "activité": "Assistez à l’assemblage final du Flyer I et au réglage de ses moteurs, avec explications mécaniques détaillées."
             },
             {
-                "jour": 7,
-                "titre": "Jour 7",
-                "activite": "Exploration encadrée ou activité optionnelle"
+              "jour": 7,
+              "titre": "Le jour du vol",
+              "activité": "Assistez au tout premier vol motorisé de l’histoire de l’humanité – 12 secondes qui ont changé le monde."
             },
             {
-                "jour": 8,
-                "titre": "Jour 8",
-                "activite": "Exploration encadrée ou activité optionnelle"
+              "jour": 8,
+              "titre": "Les retombées du vol",
+              "activité": "Participez à une discussion sur les implications du vol dans la presse, la science et la guerre à venir."
             },
             {
-                "jour": 9,
-                "titre": "Jour 9",
-                "activite": "Temps libre, souvenirs personnels et retour sécurisé"
+              "jour": 9,
+              "titre": "Retour vers le présent",
+              "activité": "Recevez votre certificat de pionnier de l’air et repartez avec des souvenirs de cette aventure historique unique."
             }
-        ],
+          ],
         "options": [
             {
-                "type": "expédition",
-                "nom": "Visite guidée historique",
-                "prix_par_personne": 180
+              "type": "hébergement",
+              "nom": "Tente de toile typique du camp de Kitty Hawk",
+              "prix_par_personne": 90
             },
             {
-                "type": "activité",
-                "nom": "Immersion 360°",
-                "prix_par_personne": 100
+              "type": "hébergement",
+              "nom": "Maison d’hôte en bois chez un villageois voisin",
+              "prix_par_personne": 1600
             },
             {
-                "type": "repas",
-                "nom": "Repas typique de l’époque",
-                "prix_par_personne": 75
+              "type": "repas",
+              "nom": "Menu pionnier : haricots, pain de maïs, café bouilli",
+              "prix_par_personne": 40
             },
             {
-                "type": "souvenir",
-                "nom": "Objet d’époque discret",
-                "prix_par_personne": 60
+              "type": "repas",
+              "nom": "Pique-nique sur les dunes avec vue sur la piste",
+              "prix_par_personne": 55
             },
             {
-                "type": "bonus",
-                "nom": "Accès à une scène secondaire confidentielle",
-                "prix_par_personne": 100
+              "type": "souvenir",
+              "nom": "Maquette en bois du Flyer I à monter soi-même",
+              "prix_par_personne": 70
+            },
+            {
+              "type": "souvenir",
+              "nom": "Photographie sépia personnalisée en tenue de pionnier",
+              "prix_par_personne": 50
+            },
+            {
+              "type": "bonus",
+              "nom": "Accès à la salle de calculs aérodynamiques des frères Wright",
+              "prix_par_personne": 100
+            },
+            {
+              "type": "bonus",
+              "nom": "Cours express de pilotage sur simulateur rétro-mécanique",
+              "prix_par_personne": 350
             }
-        ],
+          ]
+,
         "activites_incluses": [
             {
-                "nom": "Briefing temporel",
-                "description": "Séance préparatoire avant immersion pour comprendre les enjeux historiques."
+              "nom": "Participation à un atelier de construction aérienne",
+              "description": "Aidez à assembler des pièces inspirées du Flyer avec les outils d’époque, encadré par des artisans spécialisés."
             },
             {
-                "nom": "Exploration encadrée",
-                "description": "Parcours dans l’environnement historique réel, sans modifier le cours du temps."
+              "nom": "Simulation de vol à l’ancienne",
+              "description": "Essayez un planeur Wright sur une piste sablonneuse, dans les mêmes conditions que les essais réels de 1902."
             },
             {
-                "nom": "Observation protégée de l’événement principal",
-                "description": "Point de vue sécurisé et dissimulé pour vivre l’instant tel qu’il s’est produit."
+              "nom": "Observation du premier vol motorisé",
+              "description": "Assistez à la reconstitution fidèle du premier vol de 12 secondes, avec commentaires techniques et historiques en direct."
+            },
+            {
+              "nom": "Accès au journal de bord des frères Wright",
+              "description": "Lisez des extraits authentiques du carnet de notes des frères, traduits et projetés sur écran rétro."
             }
-        ],
+          ],
         "niveau_difficulte": "modéré",
         "public_cible": [
             "étudiants",
@@ -1410,89 +1569,99 @@
         "titre": "Discours \"I Have a Dream\"",
         "image": "16.png",
         "duree": 7,
-        "description": "Voyage unique à Washington D.C.,États-Unis lors de l'événement « Discours \"I Have a Dream\" ».",
+        "description": "Voyage unique à Washington D.C.,États-Unis lors du discours de Martin Luther King \"I Have a Dream\" ».",
         "type_temporel": "passé",
         "lieu": "Washington D.C.,États-Unis",
         "date_depart_personnalisable": true,
-        "prix_base": 1144,
-        "programme": [
+        "prix_base": 14000,
+        "programme":[
             {
-                "jour": 1,
-                "titre": "Jour 1",
-                "activite": "Arrivée, installation et familiarisation avec l’époque"
+              "jour": 1,
+              "titre": "Arrivée dans l’Amérique ségréguée",
+              "activité": "Installation dans un quartier afro-américain de Washington et immersion dans la réalité sociale des années 60."
             },
             {
-                "jour": 2,
-                "titre": "Jour 2",
-                "activite": "Observation discrète de la situation locale"
+              "jour": 2,
+              "titre": "Préparation de la Marche",
+              "activité": "Participez à une réunion pacifique avec des militants et préparez vos pancartes pour la grande manifestation."
             },
             {
-                "jour": 3,
-                "titre": "Jour 3",
-                "activite": "Présence sécurisée à l’événement historique principal"
+              "jour": 3,
+              "titre": "Rencontres et témoignages",
+              "activité": "Écoutez des discours inspirants de leaders du mouvement et échangez avec des familles venues de tout le pays."
             },
             {
-                "jour": 4,
-                "titre": "Jour 4",
-                "activite": "Exploration encadrée ou activité optionnelle"
+              "jour": 4,
+              "titre": "Jour de la Marche sur Washington",
+              "activité": "Rejoignez les 250 000 manifestants pacifiques en direction du Lincoln Memorial dans une ambiance historique et solidaire."
             },
             {
-                "jour": 5,
-                "titre": "Jour 5",
-                "activite": "Exploration encadrée ou activité optionnelle"
+              "jour": 5,
+              "titre": "Discours de Martin Luther King Jr.",
+              "activité": "Assistez en direct au discours “I Have a Dream”, dans un moment d’émotion collective gravé dans l’histoire."
             },
             {
-                "jour": 6,
-                "titre": "Jour 6",
-                "activite": "Exploration encadrée ou activité optionnelle"
+              "jour": 6,
+              "titre": "Célébration et chants de liberté",
+              "activité": "Participez à un concert gospel et à une veillée en hommage aux figures du mouvement."
             },
             {
-                "jour": 7,
-                "titre": "Jour 7",
-                "activite": "Temps libre, souvenirs personnels et retour sécurisé"
+              "jour": 7,
+              "titre": "Engagement et mémoire",
+              "activité": "Rédigez votre propre rêve pour l’avenir de l’humanité et repartez avec un certificat de marcheur pour la justice."
             }
-        ],
+          ],
         "options": [
             {
-                "type": "hébergement",
-                "nom": "Tente de l’époque",
-                "prix_par_personne": 90
+              "type": "hébergement",
+              "nom": "Chambre chez une famille militante afro-américaine",
+              "prix_par_personne": 210
             },
             {
-                "type": "expédition",
-                "nom": "Visite guidée historique",
-                "prix_par_personne": 180
+              "type": "hébergement",
+              "nom": "Hôtel modeste à proximité du National Mall",
+              "prix_par_personne": 670
             },
             {
-                "type": "repas",
-                "nom": "Repas typique de l’époque",
-                "prix_par_personne": 75
+              "type": "repas",
+              "nom": "Dîner communautaire à l’église baptiste locale",
+              "prix_par_personne": 50
             },
             {
-                "type": "souvenir",
-                "nom": "Objet d’époque discret",
-                "prix_par_personne": 60
+              "type": "repas",
+              "nom": "Lunch typique du Sud dans un diner ségrégué",
+              "prix_par_personne": 40
             },
             {
-                "type": "bonus",
-                "nom": "Accès à une scène secondaire confidentielle",
-                "prix_par_personne": 100
+              "type": "souvenir",
+              "nom": "Réplique du programme officiel du 28 août 1963",
+              "prix_par_personne": 35
+            },
+            {
+              "type": "souvenir",
+              "nom": "Pin’s commémoratif 'I Was There'",
+              "prix_par_personne": 25
+            },
+            {
+              "type": "bonus",
+              "nom": "Visite guidée de la NAACP et archives des droits civiques",
+              "prix_par_personne": 100
             }
-        ],
+          ],
         "activites_incluses": [
             {
-                "nom": "Briefing temporel",
-                "description": "Séance préparatoire avant immersion pour comprendre les enjeux historiques."
+              "nom": "Participation à la Marche sur Washington",
+              "description": "Marchez avec des figurants, pancartes et chants de l’époque dans une reconstitution fidèle de l’événement historique."
             },
             {
-                "nom": "Exploration encadrée",
-                "description": "Parcours dans l’environnement historique réel, sans modifier le cours du temps."
+              "nom": "Place réservée au discours 'I Have a Dream'",
+              "description": "Assistez au discours de Martin Luther King Jr. dans une scène immersive audio-visuelle puissante et authentique."
             },
             {
-                "nom": "Observation protégée de l’événement principal",
-                "description": "Point de vue sécurisé et dissimulé pour vivre l’instant tel qu’il s’est produit."
+              "nom": "Atelier 'Écrire son propre rêve'",
+              "description": "Exprimez vos espoirs dans un atelier d’écriture inspiré par la rhétorique de King, guidé par un professeur de civil rights."
             }
-        ],
+          ],
         "niveau_difficulte": "modéré",
         "public_cible": [
             "étudiants",
@@ -1514,89 +1683,104 @@
         "titre": "Grande Pyramide en construction",
         "image": "17.png",
         "duree": 7,
-        "description": "Voyage unique à Gizeh,Égypte lors de l'événement « Grande Pyramide en construction ».",
-        "type_temporel": "futur",
+        "description": "Voyage unique à Gizeh, Égypte lors de l'événement « Grande Pyramide en construction ».",
+        "type_temporel": "passé",
         "lieu": "Gizeh,Égypte",
         "date_depart_personnalisable": true,
-        "prix_base": 1892,
+        "prix_base": 16000,
         "programme": [
             {
-                "jour": 1,
-                "titre": "Jour 1",
-                "activite": "Arrivée, installation et familiarisation avec l’époque"
+              "jour": 1,
+              "titre": "Bienvenue sur le plateau de Gizeh",
+              "activité": "Arrivée dans un camp d’ouvriers spécialisés, présentation du chantier et rituels d’accueil par les scribes."
             },
             {
-                "jour": 2,
-                "titre": "Jour 2",
-                "activite": "Observation discrète de la situation locale"
+              "jour": 2,
+              "titre": "Taille des blocs de calcaire",
+              "activité": "Découvrez les outils des carriers et participez à la découpe de blocs dans la carrière à l’est du chantier."
             },
             {
-                "jour": 3,
-                "titre": "Jour 3",
-                "activite": "Présence sécurisée à l’événement historique principal"
+              "jour": 3,
+              "titre": "Transport des pierres",
+              "activité": "Testez les méthodes de traction sur traîneaux huilés avec équipes de manœuvres et système de rampe incliné."
             },
             {
-                "jour": 4,
-                "titre": "Jour 4",
-                "activite": "Exploration encadrée ou activité optionnelle"
+              "jour": 4,
+              "titre": "Chantier de la pyramide",
+              "activité": "Accédez aux premières couches de la pyramide et placez une pierre symbolique à la main avec l’aide d’un maître artisan."
             },
             {
-                "jour": 5,
-                "titre": "Jour 5",
-                "activite": "Exploration encadrée ou activité optionnelle"
+              "jour": 5,
+              "titre": "Vie quotidienne dans le village des bâtisseurs",
+              "activité": "Cuisinez du pain d’orge, dormez dans les maisons en adobe, échangez avec les scribes et prêtres du chantier."
             },
             {
-                "jour": 6,
-                "titre": "Jour 6",
-                "activite": "Exploration encadrée ou activité optionnelle"
+              "jour": 6,
+              "titre": "Cérémonie d’offrande au dieu Rê",
+              "activité": "Assistez à une cérémonie sacrée dans un temple temporaire dédié à Khéops, incluant musique, encens et invocation divine."
             },
             {
-                "jour": 7,
-                "titre": "Jour 7",
-                "activite": "Temps libre, souvenirs personnels et retour sécurisé"
+              "jour": 7,
+              "titre": "Retour et hommage aux bâtisseurs",
+              "activité": "Gravez votre nom en hiéroglyphes dans un papyrus-souvenir et repartez avec votre titre de ‘serviteur du roi Khéops’."
             }
-        ],
+          ],
         "options": [
             {
-                "type": "hébergement",
-                "nom": "Auberge temporelle",
-                "prix_par_personne": 120
+              "type": "hébergement",
+              "nom": "Maison d’artisan au village de Gizeh",
+              "prix_par_personne": 1200
             },
             {
-                "type": "expédition",
-                "nom": "Visite guidée historique",
-                "prix_par_personne": 180
+              "type": "hébergement",
+              "nom": "Tente de commandement proche du chantier royal",
+              "prix_par_personne": 1800
             },
             {
-                "type": "repas",
-                "nom": "Repas typique de l’époque",
-                "prix_par_personne": 75
+              "type": "repas",
+              "nom": "Repas traditionnel à base de lentilles, oignons et dattes",
+              "prix_par_personne": 40
             },
             {
-                "type": "souvenir",
-                "nom": "Objet d’époque discret",
-                "prix_par_personne": 60
+              "type": "repas",
+              "nom": "Festin sacré offert par les prêtres de Rê",
+              "prix_par_personne": 90
             },
             {
-                "type": "bonus",
-                "nom": "Accès à une scène secondaire confidentielle",
-                "prix_par_personne": 100
+              "type": "souvenir",
+              "nom": "Mini obélisque gravé à votre nom",
+              "prix_par_personne": 70
+            },
+            {
+              "type": "souvenir",
+              "nom": "Papyrus calligraphié avec votre titre honorifique",
+              "prix_par_personne": 50
+            },
+            {
+              "type": "bonus",
+              "nom": "Accès exclusif à la salle du sarcophage inachevée",
+              "prix_par_personne": 130
+            },
+            {
+              "type": "bonus",
+              "nom": "Participation à un rituel funéraire royal",
+              "prix_par_personne": 1400
             }
-        ],
+          ],
         "activites_incluses": [
             {
-                "nom": "Briefing temporel",
-                "description": "Séance préparatoire avant immersion pour comprendre les enjeux historiques."
+              "nom": "Accès au chantier principal de la pyramide",
+              "description": "Marchez aux côtés des ouvriers égyptiens, observez les techniques de levage, et posez vous-même un bloc symbolique."
             },
             {
-                "nom": "Exploration encadrée",
-                "description": "Parcours dans l’environnement historique réel, sans modifier le cours du temps."
+              "nom": "Atelier d’écriture en hiéroglyphes",
+              "description": "Apprenez à écrire votre nom en hiéroglyphes sur tablette d’argile, guidé par un scribe officiel du chantier."
             },
             {
-                "nom": "Observation protégée de l’événement principal",
-                "description": "Point de vue sécurisé et dissimulé pour vivre l’instant tel qu’il s’est produit."
+              "nom": "Initiation à la vie antique",
+              "description": "Participez à la fabrication de pain d’orge, au brassage de bière douce et à la confection de tuniques de lin."
             }
-        ],
+          ],
         "niveau_difficulte": "modéré",
         "public_cible": [
             "étudiants",
@@ -1622,100 +1806,119 @@
         "type_temporel": "passé",
         "lieu": "Paris,France",
         "date_depart_personnalisable": true,
-        "prix_base": 1336,
+        "prix_base": 19999,
         "programme": [
             {
-                "jour": 1,
-                "titre": "Jour 1",
-                "activite": "Arrivée, installation et familiarisation avec l’époque"
+              "jour": 1,
+              "titre": "Arrivée à Paris en 1889",
+              "activité": "Installez-vous dans un hôtel du Quartier Latin et recevez votre passeport d’invité à l’Exposition Universelle."
             },
             {
-                "jour": 2,
-                "titre": "Jour 2",
-                "activite": "Observation discrète de la situation locale"
+              "jour": 2,
+              "titre": "Visite des pavillons de l’Exposition",
+              "activité": "Découvrez les inventions du monde entier dans les halls internationaux : ascenseur hydraulique, télégraphe, moteurs électriques..."
             },
             {
-                "jour": 3,
-                "titre": "Jour 3",
-                "activite": "Présence sécurisée à l’événement historique principal"
+              "jour": 3,
+              "titre": "Rencontre avec Gustave Eiffel (acteur)",
+              "activité": "Participez à une visite guidée de la structure de la Tour en compagnie d’un comédien incarnant le célèbre ingénieur."
             },
             {
-                "jour": 4,
-                "titre": "Jour 4",
-                "activite": "Exploration encadrée ou activité optionnelle"
+              "jour": 4,
+              "titre": "Montée en ascenseur dans la Tour Eiffel",
+              "activité": "Vivez la sensation unique de monter jusqu’au sommet par le nouvel ascenseur à vapeur, et admirez Paris d’en haut."
             },
             {
-                "jour": 5,
-                "titre": "Jour 5",
-                "activite": "Exploration encadrée ou activité optionnelle"
+              "jour": 5,
+              "titre": "Bal Belle Époque aux Jardins du Trocadéro",
+              "activité": "Assistez à un bal costumé avec orchestre, robes longues et lanternes à huile dans une atmosphère festive et mondaine."
             },
             {
-                "jour": 6,
-                "titre": "Jour 6",
-                "activite": "Exploration encadrée ou activité optionnelle"
+              "jour": 6,
+              "titre": "Paris la nuit, à la lumière du gaz",
+              "activité": "Promenade nocturne guidée dans les rues de Montmartre et sur les quais, entre cafés chantants et poésie populaire."
             },
             {
-                "jour": 7,
-                "titre": "Jour 7",
-                "activite": "Exploration encadrée ou activité optionnelle"
+              "jour": 7,
+              "titre": "L’art et la modernité",
+              "activité": "Visite de galeries et ateliers impressionnistes à Montparnasse avec rencontres d’artistes fictifs inspirés de Monet ou Degas."
             },
             {
-                "jour": 8,
-                "titre": "Jour 8",
-                "activite": "Exploration encadrée ou activité optionnelle"
+              "jour": 8,
+              "titre": "Scandales et débats sur la Tour",
+              "activité": "Participez à un débat simulé opposant les critiques de la Tour et les défenseurs du progrès industriel."
             },
             {
-                "jour": 9,
-                "titre": "Jour 9",
-                "activite": "Exploration encadrée ou activité optionnelle"
+              "jour": 9,
+              "titre": "Dernier jour de l’Exposition Universelle",
+              "activité": "Faites vos adieux aux pavillons internationaux, admirez les feux d’artifice et revivez les moments forts de la semaine."
             },
             {
-                "jour": 10,
-                "titre": "Jour 10",
-                "activite": "Temps libre, souvenirs personnels et retour sécurisé"
+              "jour": 10,
+              "titre": "Retour dans le présent",
+              "activité": "Prenez un portrait en tenue Belle Époque et repartez avec votre certificat de visiteur de l’Exposition de 1889."
             }
-        ],
-        "options": [
+          ],
+        "options":[
             {
-                "type": "activité",
-                "nom": "Immersion 360°",
-                "prix_par_personne": 100
+              "type": "hébergement",
+              "nom": "Pension familiale dans le Marais",
+              "prix_par_personne": 1100
             },
             {
-                "type": "hébergement",
-                "nom": "Tente de l’époque",
-                "prix_par_personne": 90
+              "type": "hébergement",
+              "nom": "Suite luxueuse à l’hôtel Continental (près de l’Opéra)",
+              "prix_par_personne": 2200
             },
             {
-                "type": "repas",
-                "nom": "Repas typique de l’époque",
-                "prix_par_personne": 75
+              "type": "repas",
+              "nom": "Dîner gastronomique à la française dans un salon Belle Époque",
+              "prix_par_personne": 120
             },
             {
-                "type": "souvenir",
-                "nom": "Objet d’époque discret",
-                "prix_par_personne": 60
+              "type": "repas",
+              "nom": "Déjeuner au buffet populaire de l’Exposition",
+              "prix_par_personne": 45
             },
             {
-                "type": "bonus",
-                "nom": "Accès à une scène secondaire confidentielle",
-                "prix_par_personne": 100
+              "type": "souvenir",
+              "nom": "Affiche originale de l’Exposition Universelle",
+              "prix_par_personne": 60
+            },
+            {
+              "type": "souvenir",
+              "nom": "Miniature en fer forgé de la Tour Eiffel (édition 1889)",
+              "prix_par_personne": 800
+            },
+            {
+              "type": "bonus",
+              "nom": "Participation à une table ronde scientifique avec des inventeurs",
+              "prix_par_personne": 150
+            },
+            {
+              "type": "bonus",
+              "nom": "Cours de danse Belle Époque avant le bal du Trocadéro",
+              "prix_par_personne": 190
             }
-        ],
+          ],
         "activites_incluses": [
             {
-                "nom": "Briefing temporel",
-                "description": "Séance préparatoire avant immersion pour comprendre les enjeux historiques."
+              "nom": "Entrée complète à l’Exposition Universelle",
+              "description": "Accédez à tous les pavillons nationaux, aux démonstrations techniques et aux spectacles du Champ-de-Mars."
             },
             {
-                "nom": "Exploration encadrée",
-                "description": "Parcours dans l’environnement historique réel, sans modifier le cours du temps."
+              "nom": "Montée officielle dans la Tour Eiffel",
+              "description": "Prenez l’ascenseur hydraulique historique pour monter au sommet de la Tour lors de son inauguration."
             },
             {
-                "nom": "Observation protégée de l’événement principal",
-                "description": "Point de vue sécurisé et dissimulé pour vivre l’instant tel qu’il s’est produit."
+              "nom": "Atelier d’écriture à la plume sur parchemin",
+              "description": "Rédigez vos impressions de l’exposition dans un carnet Belle Époque fourni par un calligraphe."
+            },
+            {
+              "nom": "Balade en fiacre dans le Paris haussmannien",
+              "description": "Visitez la capitale à bord d’un fiacre tiré par chevaux, en tenue d’époque."
             }
-        ],
+          ],
         "niveau_difficulte": "modéré",
         "public_cible": [
             "étudiants",
@@ -1741,85 +1944,100 @@
         "type_temporel": "passé",
         "lieu": "Waterloo,Belgique",
         "date_depart_personnalisable": true,
-        "prix_base": 1344,
+        "prix_base": 14999,
         "programme": [
             {
-                "jour": 1,
-                "titre": "Jour 1",
-                "activite": "Arrivée, installation et familiarisation avec l’époque"
+              "jour": 1,
+              "titre": "Arrivée au bivouac impérial",
+              "activité": "Installez-vous dans un camp militaire reconstitué à proximité de Waterloo, recevez votre uniforme et votre rôle (officier, artilleur ou médecin)."
             },
             {
-                "jour": 2,
-                "titre": "Jour 2",
-                "activite": "Observation discrète de la situation locale"
+              "jour": 2,
+              "titre": "Préparatifs de la bataille",
+              "activité": "Participez aux conseils stratégiques simulés avec les maréchaux de Napoléon et explorez les cartes et plans d’attaque."
             },
             {
-                "jour": 3,
-                "titre": "Jour 3",
-                "activite": "Présence sécurisée à l’événement historique principal"
+              "jour": 3,
+              "titre": "Manœuvres et entraînement",
+              "activité": "Prenez part à des exercices militaires avec fusils factices et canons d’époque, dans les champs de la plaine belge."
             },
             {
-                "jour": 4,
-                "titre": "Jour 4",
-                "activite": "Exploration encadrée ou activité optionnelle"
+              "jour": 4,
+              "titre": "Le 18 juin 1815 – Jour de la bataille",
+              "activité": "Assistez à la reconstitution de la bataille de Waterloo en direct, avec des centaines de figurants, bruits, fumée et cavalerie."
             },
             {
-                "jour": 5,
-                "titre": "Jour 5",
-                "activite": "Exploration encadrée ou activité optionnelle"
+              "jour": 5,
+              "titre": "Soigner ou fuir",
+              "activité": "Choisissez votre sort : rejoindre les blessés à l’hôpital de campagne ou tenter de fuir la déroute française comme un survivant."
             },
             {
-                "jour": 6,
-                "titre": "Jour 6",
-                "activite": "Exploration encadrée ou activité optionnelle"
+              "jour": 6,
+              "titre": "L’Europe après Napoléon",
+              "activité": "Assistez à une conférence vivante sur les conséquences de la bataille, vue par les Britanniques, les Prussiens et les Français."
             },
             {
-                "jour": 7,
-                "titre": "Jour 7",
-                "activite": "Temps libre, souvenirs personnels et retour sécurisé"
+              "jour": 7,
+              "titre": "Cérémonie d’adieu impériale",
+              "activité": "Déposez une fleur au Lion de Waterloo et recevez un certificat de participation au dernier combat de l’Empire."
             }
-        ],
+          ],
         "options": [
             {
-                "type": "hébergement",
-                "nom": "Tente de l’époque",
-                "prix_par_personne": 90
+              "type": "hébergement",
+              "nom": "Tente d’officier du 1er Empire avec lit de campagne",
+              "prix_par_personne": 1300
             },
             {
-                "type": "hébergement",
-                "nom": "Auberge temporelle",
-                "prix_par_personne": 120
+              "type": "hébergement",
+              "nom": "Chambre paysanne dans une ferme du Brabant",
+              "prix_par_personne": 1000
             },
             {
-                "type": "repas",
-                "nom": "Repas typique de l’époque",
-                "prix_par_personne": 75
+              "type": "repas",
+              "nom": "Soupe de bivouac et pain noir rassis",
+              "prix_par_personne": 35
             },
             {
-                "type": "souvenir",
-                "nom": "Objet d’époque discret",
-                "prix_par_personne": 60
+              "type": "repas",
+              "nom": "Repas de l’état-major sous tente avec vaisselle d’époque",
+              "prix_par_personne": 95
             },
             {
-                "type": "bonus",
-                "nom": "Accès à une scène secondaire confidentielle",
-                "prix_par_personne": 100
+              "type": "souvenir",
+              "nom": "Médaille de Waterloo gravée à votre nom",
+              "prix_par_personne": 600
+            },
+            {
+              "type": "souvenir",
+              "nom": "Balle de mousquet factice dans une boîte souvenir",
+              "prix_par_personne": 40
+            },
+            {
+              "type": "bonus",
+              "nom": "Accès à un duel simulé au sabre entre officiers",
+              "prix_par_personne": 120
+            },
+            {
+              "type": "bonus",
+              "nom": "Portrait en uniforme napoléonien par un peintre ambulant",
+              "prix_par_personne": 310
             }
-        ],
+          ],
         "activites_incluses": [
             {
-                "nom": "Briefing temporel",
-                "description": "Séance préparatoire avant immersion pour comprendre les enjeux historiques."
+              "nom": "Participation à une reconstitution immersive de la bataille",
+              "description": "Vivez la bataille de Waterloo au plus près : assaut, cavalerie, canons, fumée et ordres hurlés comme en 1815."
             },
             {
-                "nom": "Exploration encadrée",
-                "description": "Parcours dans l’environnement historique réel, sans modifier le cours du temps."
+              "nom": "Atelier de stratégie impériale",
+              "description": "Analysez les cartes de l’époque et imaginez un plan alternatif à celui de Napoléon, guidé par un historien militaire."
             },
             {
-                "nom": "Observation protégée de l’événement principal",
-                "description": "Point de vue sécurisé et dissimulé pour vivre l’instant tel qu’il s’est produit."
+              "nom": "Simulation de poste de secours de campagne",
+              "description": "Prenez soin de soldats blessés (figurants) avec des techniques de soin d’époque et des outils rudimentaires."
             }
-        ],
+          ],
         "niveau_difficulte": "modéré",
         "public_cible": [
             "étudiants",
@@ -1845,100 +2063,119 @@
         "type_temporel": "passé",
         "lieu": "Paris,France",
         "date_depart_personnalisable": true,
-        "prix_base": 1030,
+        "prix_base": 11030,
         "programme": [
             {
-                "jour": 1,
-                "titre": "Jour 1",
-                "activite": "Arrivée, installation et familiarisation avec l’époque"
+              "jour": 1,
+              "titre": "Arrivée dans le Paris révolutionnaire",
+              "activité": "Installez-vous dans un quartier populaire et recevez votre cocarde tricolore, votre nom d’emprunt et votre passe citoyen."
             },
             {
-                "jour": 2,
-                "titre": "Jour 2",
-                "activite": "Observation discrète de la situation locale"
+              "jour": 2,
+              "titre": "Visite des clubs révolutionnaires",
+              "activité": "Assistez à une réunion publique au Club des Cordeliers ou chez les Jacobins, au cœur des débats enflammés."
             },
             {
-                "jour": 3,
-                "titre": "Jour 3",
-                "activite": "Présence sécurisée à l’événement historique principal"
+              "jour": 3,
+              "titre": "Procès de Louis XVI",
+              "activité": "Participez comme observateur à une simulation du procès du roi, avec interventions des députés et du peuple."
             },
             {
-                "jour": 4,
-                "titre": "Jour 4",
-                "activite": "Exploration encadrée ou activité optionnelle"
+              "jour": 4,
+              "titre": "Journée des sans-culottes",
+              "activité": "Vivez une journée complète dans la peau d’un sans-culotte : marché, discours, chants révolutionnaires et garde citoyenne."
             },
             {
-                "jour": 5,
-                "titre": "Jour 5",
-                "activite": "Exploration encadrée ou activité optionnelle"
+              "jour": 5,
+              "titre": "Tensions à la Convention",
+              "activité": "Assistez à une session de la Convention nationale où se joue l’avenir du régime français entre républicains et royalistes."
             },
             {
-                "jour": 6,
-                "titre": "Jour 6",
-                "activite": "Exploration encadrée ou activité optionnelle"
+              "jour": 6,
+              "titre": "Proclamation de la République",
+              "activité": "Soyez présent sur la place de la Convention lors de l’annonce officielle du 21 septembre 1792 : la République est née !"
             },
             {
-                "jour": 7,
-                "titre": "Jour 7",
-                "activite": "Exploration encadrée ou activité optionnelle"
+              "jour": 7,
+              "titre": "Fête civique et banquet populaire",
+              "activité": "Participez à une fête républicaine avec chants, danses, partage de pain et discours citoyens."
             },
             {
-                "jour": 8,
-                "titre": "Jour 8",
-                "activite": "Exploration encadrée ou activité optionnelle"
+              "jour": 8,
+              "titre": "Journée au Panthéon",
+              "activité": "Visitez le Panthéon fraîchement transformé en temple des héros de la Révolution, et laissez-y votre message pour l’avenir."
             },
             {
-                "jour": 9,
-                "titre": "Jour 9",
-                "activite": "Exploration encadrée ou activité optionnelle"
+              "jour": 9,
+              "titre": "Le serment républicain",
+              "activité": "Prononcez votre propre serment à la République devant un tribun du peuple, habillé en toge révolutionnaire."
             },
             {
-                "jour": 10,
-                "titre": "Jour 10",
-                "activite": "Temps libre, souvenirs personnels et retour sécurisé"
+              "jour": 10,
+              "titre": "Retour et legs à la postérité",
+              "activité": "Recevez votre certificat de citoyen révolutionnaire et repartez avec une cocarde, un discours et un parchemin signé par vos camarades."
             }
-        ],
-        "options": [
+          ],
+        "options":[
             {
-                "type": "hébergement",
-                "nom": "Tente de l’époque",
-                "prix_par_personne": 90
+              "type": "hébergement",
+              "nom": "Chambre d’artisan au Faubourg Saint-Antoine",
+              "prix_par_personne": 1000
             },
             {
-                "type": "expédition",
-                "nom": "Visite guidée historique",
-                "prix_par_personne": 180
+              "type": "hébergement",
+              "nom": "Appartement bourgeois réquisitionné pour la République",
+              "prix_par_personne": 1800
             },
             {
-                "type": "repas",
-                "nom": "Repas typique de l’époque",
-                "prix_par_personne": 75
+              "type": "repas",
+              "nom": "Pain, fromage et vin au banquet des sans-culottes",
+              "prix_par_personne": 40
             },
             {
-                "type": "souvenir",
-                "nom": "Objet d’époque discret",
-                "prix_par_personne": 60
+              "type": "repas",
+              "nom": "Festin fraternel dans une taverne républicaine",
+              "prix_par_personne": 80
             },
             {
-                "type": "bonus",
-                "nom": "Accès à une scène secondaire confidentielle",
-                "prix_par_personne": 100
+              "type": "souvenir",
+              "nom": "Cocarde tricolore cousue main avec votre nom",
+              "prix_par_personne": 30
+            },
+            {
+              "type": "souvenir",
+              "nom": "Affiche révolutionnaire authentique en fac-similé",
+              "prix_par_personne": 45
+            },
+            {
+              "type": "bonus",
+              "nom": "Accès à un discours improvisé à la tribune du Club des Jacobins",
+              "prix_par_personne": 110
+            },
+            {
+              "type": "bonus",
+              "nom": "Portrait citoyen peint dans le style révolutionnaire",
+              "prix_par_personne": 230
             }
-        ],
+          ],
         "activites_incluses": [
             {
-                "nom": "Briefing temporel",
-                "description": "Séance préparatoire avant immersion pour comprendre les enjeux historiques."
+              "nom": "Participation à la proclamation officielle",
+              "description": "Place du Carrousel, vivez le moment historique où la République est proclamée sous les cris du peuple et les salves de tambours."
             },
             {
-                "nom": "Exploration encadrée",
-                "description": "Parcours dans l’environnement historique réel, sans modifier le cours du temps."
+              "nom": "Atelier d’écriture révolutionnaire",
+              "description": "Rédigez votre propre discours à la Nation avec plume, encre et modèle inspiré de Danton et Robespierre."
             },
             {
-                "nom": "Observation protégée de l’événement principal",
-                "description": "Point de vue sécurisé et dissimulé pour vivre l’instant tel qu’il s’est produit."
+              "nom": "Cours de chants patriotiques",
+              "description": "Apprenez la Marseillaise, le Chant du Départ et autres hymnes avec des musiciens en uniforme républicain."
+            },
+            {
+              "nom": "Simulation de vote à la Convention",
+              "description": "Exprimez votre position dans une séance simulée sur la forme du gouvernement, et défendez-la devant l’Assemblée."
             }
-        ],
+          ],
         "niveau_difficulte": "modéré",
         "public_cible": [
             "étudiants",
@@ -1957,63 +2194,122 @@
     },
     {
         "id": 21,
-        "titre": "pierrefitte",
+        "titre": "Au temps des dinosaures",
         "image": "21.png",
-        "duree": 2,
-        "description": "aaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "duree": 7,
+        "description": "Voyage préhistorique unique au cœur du Crétacé supérieur, à la rencontre des plus grands dinosaures de l'histoire de la Terre.",
         "type_temporel": "passé",
-        "lieu": "prft",
+        "lieu": "Vallée crétacée – Amérique du Nord",
         "date_depart_personnalisable": true,
-        "prix_base": 54637,
+        "prix_base": 42580,
         "programme": [
-            {
-                "jour": 1,
-                "titre": "jour 1",
-                "activite": "rrrrrrrrrrrrrrrrrr"
-            },
-            {
-                "jour": 2,
-                "titre": "jour 2",
-                "activite": "rrrrrrrrrrrrrrrrrrrrrrrrr"
-            }
+          {
+            "jour": 1,
+            "titre": "Atterrissage dans la vallée préhistorique",
+            "activité": "Arrivée dans un abri sécurisé au cœur d’une jungle crétacée, entouré de fougères géantes et de cris d’espèces inconnues."
+          },
+          {
+            "jour": 2,
+            "titre": "Rencontre avec les herbivores géants",
+            "activité": "Observez des troupeaux de tricératops, ankylosaures et hadrosaures depuis une passerelle camouflée."
+          },
+          {
+            "jour": 3,
+            "titre": "Vol au-dessus des ptéranodons",
+            "activité": "Survolez une falaise de nidification à bord d’une capsule aérostatique et approchez les ptéranodons en plein vol."
+          },
+          {
+            "jour": 4,
+            "titre": "Sur les traces des raptors",
+            "activité": "Accompagné d’un paléogarde, explorez une plaine à empreintes fraîches et repérez les signes de chasse des vélociraptors."
+          },
+          {
+            "jour": 5,
+            "titre": "Face au roi : le tyrannosaure",
+            "activité": "Observez en silence l’un des plus grands prédateurs de l’histoire, lors d’un affût depuis une capsule blindée mobile."
+          },
+          {
+            "jour": 6,
+            "titre": "Vie préhistorique quotidienne",
+            "activité": "Apprenez à survivre sans technologie moderne : feu, outils primitifs, récolte et campement en pleine nature."
+          },
+          {
+            "jour": 7,
+            "titre": "Retour et transmission du savoir",
+            "activité": "Débriefez autour d’un feu avec votre guide scientifique, puis laissez votre empreinte fossile symbolique avant le départ."
+          }
         ],
         "options": [
-            {
-                "type": "hebergement ",
-                "nom": "lavoisier",
-                "prix_par_personne": 4873
-            },
-            {
-                "type": "nourriture",
-                "nom": "five star",
-                "prix_par_personne": 5
-            }
+          {
+            "type": "hébergement",
+            "nom": "Dôme blindé transparent dans les fougères géantes",
+            "prix_par_personne": 20000
+          },
+          {
+            "type": "hébergement",
+            "nom": "Cabane haute perchée à 20m dans un arbre fossile",
+            "prix_par_personne": 17000
+          },
+          {
+            "type": "repas",
+            "nom": "Pique-nique végétalien inspiré de l’ère crétacée",
+            "prix_par_personne": 450
+          },
+          {
+            "type": "repas",
+            "nom": "Ration d’explorateur paléo certifiée sans allergène",
+            "prix_par_personne": 650
+          },
+          {
+            "type": "souvenir",
+            "nom": "Œuf de dinosaure (réplique moulée à partir d’un vrai fossile)",
+            "prix_par_personne": 380
+          },
+          {
+            "type": "souvenir",
+            "nom": "Collier gravé en ambre brut (résine fossile)",
+            "prix_par_personne": 60
+          },
+          {
+            "type": "bonus",
+            "nom": "Session photo face à un T-Rex",
+            "prix_par_personne": 1100
+          },
+          {
+            "type": "bonus",
+            "nom": "Excursion guidée dans une grotte à empreintes fossiles",
+            "prix_par_personne": 1200
+          }
         ],
         "activites_incluses": [
-            {
-                "nom": "balade",
-                "description": "eeeeeeeeeeeeeeeeeeeeeeeeeeeee"
-            },
-            {
-                "nom": "foot",
-                "description": "ggggggggggggggggggggggggggggg"
-            }
+          {
+            "nom": "Balade sécurisée parmi les herbivores",
+            "description": "Marchez en silence à travers une prairie crétacée pour observer des dinosaures pacifiques dans leur habitat naturel."
+          },
+          {
+            "nom": "Veillée préhistorique au feu de camp",
+            "description": "Écoutez les sons nocturnes du Crétacé et les récits scientifiques d’un paléoguide autour d’un feu de bois fossilisé."
+          },
+          {
+            "nom": "Atelier fossile express",
+            "description": "Apprenez à repérer, déterrer et conserver un fossile dans une zone autorisée en bord de rivière crétacée."
+          }
         ],
-        "niveau_difficulte": "difficile",
+        "niveau_difficulte": "élevé",
         "public_cible": [
-            "familles",
-            "curieux d'histoire",
-            "personnes âgées",
-            "voyageurs solo",
-            "groupes scolaires",
-            "grand public"
+          "passionnés de nature",
+          "familles aventurières",
+          "amateurs de science"
         ],
-        "note_moyenne": 3.9,
-        "nombre_avis": 40,
+        "note_moyenne": 4.8,
+        "nombre_avis": 114,
         "infos_pratiques": [
-            "parle le francais "
+          "Tenue résistante obligatoire (anti-morsure légère)",
+          "Interactions physiques avec les dinosaures interdites",
+          "Déplacement strictement encadré par paléoguides certifiés"
         ],
-        "conditions_annulation": "Annulation gratuite jusqu’à 48h avant le départ.",
-        "theme": "tourisme"
-    }
+        "conditions_annulation": "Annulation gratuite jusqu’à 7 jours avant le départ.",
+        "theme": "Ère des dinosaures"
+      }
+      
 ]
