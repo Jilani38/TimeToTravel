@@ -9,7 +9,7 @@
         "motdepasse": "$2y$10$WegyZTDNYsmbuvviME\/wr.9ULjrjJ\/LPNpdOeoZPyrWw9LJ\/yoEhO",
         "telephone": "0641104600",
         "date_inscription": "2025-03-31",
-        "derniere_connexion": "2025-05-17 22:18:57",
+        "derniere_connexion": "2025-05-18 18:41:17",
         "role": "admin",
         "commandes": [
             {
@@ -691,19 +691,5 @@
                 "total": 24264
             }
         ]
-    },
-    {
-        "id": "68274c993015a",
-        "prenom": "Ethann",
-        "nom": "Pencole",
-        "date_naissance": "2025-05-17",
-        "genre": "Homme",
-        "email": "ethann.pencolepro@gmail.com",
-        "motdepasse": "$2y$10$AQgTIKG4ltnp\/R7gMwmeEOx5mYfC4y5.KPxphR8x2LgPEaU9z1UWq",
-        "telephone": "0601234567",
-        "date_inscription": "2025-05-16",
-        "derniere_connexion": "2025-05-16 14:36:33",
-        "role": "client",
-        "commandes": []
     }
 ]

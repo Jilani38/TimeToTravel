@@ -11,7 +11,17 @@ if (!isset($_SESSION['id']) || !isset($_POST['total']) || empty($_SESSION['panie
 
 $voyages = json_decode(file_get_contents("../data/voyages.json"), true);
 $panier = $_SESSION['panier'];
-$total = number_format((float)$_POST['total'], 2, '.', '');
+
+$role = $_SESSION['role'] ?? 'client';
+$total_brut = 0;
+
+foreach ($panier as $reservation) {
+    $total_brut += $reservation['prix_total'] ?? 0;
+}
+
+$est_vip = in_array($role, ['vip', 'admin']);
+$remise = $est_vip ? $total_brut * 0.10 : 0;
+$total = $total_brut - $remise;
 
 $transaction = uniqid();
 $vendeur = "MI-5_H";
@@ -83,7 +93,11 @@ $control = md5($api_key . "#" . $transaction . "#" . $total . "#" . $vendeur . "
     <?php endforeach; ?>
 
     <div class="recap-final">
-        <h3>Total global : <?= number_format($total, 2, ',', ' ') ?> €</h3>
+        <h3>Sous-total global : <?= number_format($total_brut, 2, ',', ' ') ?> €</h3>
+        <?php if ($est_vip): ?>
+            <p><strong>Remise VIP (-10%) :</strong> -<?= number_format($remise, 2, ',', ' ') ?> €</p>
+        <?php endif; ?>
+        <h3>Total à régler : <?= number_format($total, 2, ',', ' ') ?> €</h3>
 
         <form action="https://www.plateforme-smc.fr/cybank/index.php" method="POST" class="payment-form">
             <input type="hidden" name="transaction" value="<?= $transaction ?>">

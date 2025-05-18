@@ -40,8 +40,14 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
   $utilisateurs[] = $nouvel_utilisateur;
   file_put_contents($fichier, json_encode($utilisateurs, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE));
-  header("Location: page_connexion.php");
-  exit();
+
+  if (isset($_POST['vip'])) {
+    header("Location: page_paiement_vip_inscription.php?id=" . $nouvel_utilisateur['id']);
+    exit();
+  } else {
+    header("Location: page_connexion.php");
+    exit();
+  }
 }
 ?>
 
@@ -113,7 +119,16 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         <span class="char-count">0 / 20</span>
       </div>
 
-      <button type="submit" class="btn-primary">Créer mon compte</button>
+      <div class="input-group cgu">
+        <label>
+       <input type="checkbox" id="accept-cgu" required />
+       <span>En créant un compte, vous acceptez nos <a href="#">Conditions Générales d'Utilisation</a> et notre politique de confidentialité.</span>
+       </label>
+      </div>
+
+
+      <button type="submit" name="vip" class="btn-vip" disabled>👑 Je veux devenir VIP Traveleur !</button>
+      <button type="submit" class="btn-primary"disabled>Créer mon compte</button>
       <a href="page_connexion.php" class="btn-secondary">J'ai déjà un compte</a>
     </form>
 

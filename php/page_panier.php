@@ -7,6 +7,7 @@ if (!isset($_SESSION['id'])) {
 
 $panier = $_SESSION['panier'] ?? [];
 $total = 0;
+$role = $_SESSION['role'] ?? 'client';
 ?>
 
 <!DOCTYPE html>
@@ -87,16 +88,33 @@ $total = 0;
 
   </div>
 
+  <?php
+    $remise = 0;
+    if ($role === 'vip' || $role === 'admin') {
+      $remise = 0.10 * $total;
+    }
+    $total_final = $total - $remise;
+  ?>
+
   <div class="card bulle-total">
     <h3>Détail de la commande</h3>
     <p><strong><?= count($panier) ?> voyage<?= count($panier) > 1 ? 's' : '' ?></strong> <span><?= number_format($total, 2, ',', ' ') ?> €</span></p>
     <hr>
-    <div class="total-commande">
-      <strong>Total commande</strong>
-      <span class="prix-total"><?= number_format($total, 2, ',', ' ') ?> €</span>
-    </div>
+    <?php if ($remise > 0): ?>
+      <p><strong>Remise VIP (-10%) :</strong> -<?= number_format($remise, 2, ',', ' ') ?> €</p>
+      <div class="total-commande">
+        <strong>Total remise : </strong>
+        <span class="prix-total"><?= number_format($total_final, 2, ',', ' ') ?> €</span>
+      </div>
+    <?php else: ?>
+      <div class="total-commande">
+        <strong>Total commande</strong>
+        <span class="prix-total"><?= number_format($total, 2, ',', ' ') ?> €</span>
+      </div>
+    <?php endif; ?>
+
     <form method="POST" action="page_paiement.php">
-      <input type="hidden" name="total" value="<?= $total ?>">
+      <input type="hidden" name="total" value="<?= number_format($total_final, 2, '.', '') ?>">
       <button class="btn-payer" type="submit">Valider et payer</button>
     </form>
     <a class="btn-ajouter" href="./page_accueil.php">Poursuivre mes achats</a>

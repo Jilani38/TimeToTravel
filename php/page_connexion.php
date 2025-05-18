@@ -12,11 +12,17 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
   $utilisateurs = json_decode(file_get_contents($fichier), true);
   $connecte = false;
+  $messageErreur = "Email ou mot de passe incorrect.";
 
   foreach ($utilisateurs as &$u) {
     if ($u['email'] === $email && password_verify($motdepasse, $u['motdepasse'])) {
-      $connecte = true;
 
+      if ($u['role'] === 'banni') {
+        $messageErreur = "Votre compte a été banni. Connexion impossible.";
+        break;
+      }
+
+      $connecte = true;
       $_SESSION['id'] = $u['id'];
       $_SESSION['prenom'] = $u['prenom'];
       $_SESSION['nom'] = $u['nom'];
@@ -32,7 +38,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     header("Location: page_accueil.php");
     exit();
   } else {
-    die("Email ou mot de passe incorrect.");
+    die($messageErreur);
   }
 }
 ?>

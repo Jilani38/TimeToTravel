@@ -89,3 +89,49 @@ a.btn-secondary:hover {
   background-color: var(--primary-background);
   color: white;
 }
+
+/* bouton vip */
+
+.btn-vip {
+  display: inline-block;
+  width: 100%;
+  padding: 12px 20px;
+  background-color: #ffcf33;
+  color: #000;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 1.1em;
+  cursor: pointer;
+  margin-bottom: 15px;
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.btn-vip:hover {
+  background-color: #ffc400;
+  transform: scale(1.03);
+}
+
+
+/*pour les cgu*/
+
+.cgu {
+  font-size: 0.9em;
+  color: #666;
+  margin-bottom: 1.5em;
+}
+
+.cgu a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.cgu a:hover {
+  text-decoration: underline;
+}
+
+.cgu input[type="checkbox"] {
+  margin-right: 10px;
+  transform: scale(1.2);
+  accent-color: #007bff;
+}
