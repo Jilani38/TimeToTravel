@@ -30,25 +30,63 @@ if ($index === null) {
 $voyage = $voyages[$index];
 
 if (isset($_POST['submit'])) {
+  $programme = [];
+  if (!empty($_POST['programme']) && is_array($_POST['programme'])) {
+    foreach ($_POST['programme'] as $index => $etape) {
+      $programme[] = [
+        "jour" => (int) $index,
+        "titre" => trim($etape['titre'] ?? ''),
+        "activite" => trim($etape['activite'] ?? '')
+      ];
+    }
+  }
+
+  $options = [];
+  if (!empty($_POST['options']) && is_array($_POST['options'])) {
+    foreach ($_POST['options'] as $opt) {
+      $prix = max(0, (int)($opt['prix_par_personne'] ?? 0));
+      $options[] = [
+        "type" => $opt['type'] ?? '',
+        "nom" => $opt['nom'] ?? '',
+        "prix_par_personne" => $prix
+      ];
+    }
+  }
+
+  $activites = [];
+  if (!empty($_POST['activites']) && is_array($_POST['activites'])) {
+    foreach ($_POST['activites'] as $act) {
+      $activites[] = [
+        "nom" => trim($act['nom'] ?? ''),
+        "description" => trim($act['description'] ?? '')
+      ];
+    }
+  }
+
+  $prix_base = max(0, (int) $_POST['prix_base']);
+  $note_moyenne = min(5, max(0, (float) ($_POST['note_moyenne'] ?? 0)));
+  $nombre_avis = max(0, (int) ($_POST['nombre_avis'] ?? 0));
+  $duree = max(1, (int) $_POST['duree']);
+
   $voyages[$index] = [
     "id" => $voyage['id'],
     "titre" => $_POST['titre'],
     "image" => $voyage['image'],
-    "duree" => (int) $_POST['duree'],
+    "duree" => $duree,
     "description" => $_POST['description'],
     "type_temporel" => $_POST['type_temporel'],
     "lieu" => $_POST['lieu'],
-    "date_depart_personnalisable" => $_POST['date_depart_personnalisable'],
-    "prix_base" => (int) $_POST['prix_base'],
-    "programme" => $_POST['programme'] ?? [],
-    "options" => $_POST['options'] ?? [],
-    "activites_incluses" => $_POST['activites'] ?? [],
+    "date_depart_personnalisable" => true,
+    "prix_base" => $prix_base,
+    "programme" => $programme,
+    "options" => $options,
+    "activites_incluses" => $activites,
     "niveau_difficulte" => $_POST['niveau_difficulte'],
     "public_cible" => $_POST['public_cible'] ?? [],
-    "note_moyenne" => (float) ($_POST['note_moyenne'] ?? 0),
-    "nombre_avis" => (int) ($_POST['nombre_avis'] ?? 0),
+    "note_moyenne" => $note_moyenne,
+    "nombre_avis" => $nombre_avis,
     "infos_pratiques" => $_POST['infos_pratiques'] ?? [],
-    "conditions_annulation" => $_POST['conditions_annulation'],
+    "conditions_annulation" => $_POST['conditions_annulation'] ?? '',
     "theme" => $_POST['theme']
   ];
 
@@ -93,7 +131,7 @@ if (isset($_POST['submit'])) {
             <img src="../../data/images/<?= htmlspecialchars($voyage['image']) ?>" alt="<?= htmlspecialchars($voyage['titre']) ?>" style="max-height: 120px; margin-top: 10px;">
           </td>
         </tr>
-        <tr><th>Durée</th><td><input type="number" name="duree" id="duree" value="<?= $voyage['duree'] ?>" required></td></tr>
+        <tr><th>Durée</th><td><input type="number" name="duree" id="duree" value="<?= $voyage['duree'] ?>" min="1" required></td></tr>
         <tr><th>Description</th><td><textarea name="description" required><?= htmlspecialchars($voyage['description']) ?></textarea></td></tr>
         <tr><th>Type temporel</th>
           <td>
@@ -102,13 +140,13 @@ if (isset($_POST['submit'])) {
           </td>
         </tr>
         <tr><th>Lieu</th><td><input type="text" name="lieu" value="<?= htmlspecialchars($voyage['lieu']) ?>" required></td></tr>
-        <tr><th>Date de départ personnalisable</th><td><input type="checkbox" name="date_depart_personnalisable" <?= $voyage['date_depart_personnalisable'] ? 'checked' : '' ?>></td></tr>
-        <tr><th>Prix de base</th><td><input type="number" name="prix_base" value="<?= $voyage['prix_base'] ?>" required></td></tr>
+        <tr><th>Prix de base</th><td><input type="number" name="prix_base" value="<?= $voyage['prix_base'] ?>" min="0" required></td></tr>
         <tr><th>Niveau de difficulté</th>
           <td>
             <select name="niveau_difficulte">
               <option value="facile" <?= $voyage['niveau_difficulte'] === 'facile' ? 'selected' : '' ?>>Facile</option>
               <option value="intermédiaire" <?= $voyage['niveau_difficulte'] === 'intermédiaire' ? 'selected' : '' ?>>Intermédiaire</option>
+              <option value="modéré" <?= $voyage['niveau_difficulte'] === 'modéré' ? 'selected' : '' ?>>Modéré</option>
               <option value="difficile" <?= $voyage['niveau_difficulte'] === 'difficile' ? 'selected' : '' ?>>Difficile</option>
             </select>
           </td>
@@ -116,7 +154,11 @@ if (isset($_POST['submit'])) {
         <tr><th>Public cible</th>
           <td>
             <?php
-              $options = ["enfants", "adultes", "seniors", "tout public"];
+              $options = [
+                "étudiants", "familles", "curieux d'histoire", "aventuriers",
+                "passionnés de science-fiction", "personnes âgées",
+                "voyageurs solo", "groupes scolaires", "grand public"
+              ];
               foreach ($options as $opt) {
                 $checked = in_array($opt, $voyage['public_cible']) ? 'checked' : '';
                 echo "<label><input type='checkbox' name='public_cible[]' value='$opt' $checked> $opt</label> ";
@@ -124,8 +166,8 @@ if (isset($_POST['submit'])) {
             ?>
           </td>
         </tr>
-        <tr><th>Note moyenne</th><td><input type="number" name="note_moyenne" step="0.1" value="<?= $voyage['note_moyenne'] ?>"></td></tr>
-        <tr><th>Nombre d'avis</th><td><input type="number" name="nombre_avis" value="<?= $voyage['nombre_avis'] ?>"></td></tr>
+        <tr><th>Note moyenne</th><td><input type="number" name="note_moyenne" step="0.1" min="0" max="5" value="<?= $voyage['note_moyenne'] ?>"></td></tr>
+        <tr><th>Nombre d'avis</th><td><input type="number" name="nombre_avis" min="0" value="<?= $voyage['nombre_avis'] ?>"></td></tr>
         <tr><th>Conditions d'annulation</th><td><textarea name="conditions_annulation" required><?= htmlspecialchars($voyage['conditions_annulation']) ?></textarea></td></tr>
         <tr><th>Thème</th><td><input type="text" name="theme" value="<?= htmlspecialchars($voyage['theme']) ?>" required></td></tr>
       </table>

@@ -203,115 +203,6 @@
         "theme": "Avant Apollo 11"
     },
     {
-        "id": 3,
-        "titre": "Ère des dinosaures",
-        "image": "3.png",
-        "duree": 8,
-        "description": "Voyage unique à Patagonie,Argentine lors de l'événement « Ère des dinosaures ».",
-        "type_temporel": "passé",
-        "lieu": "Patagonie,Argentine",
-        "date_depart_personnalisable": true,
-        "prix_base": 1429,
-        "programme": [
-            {
-                "jour": 1,
-                "titre": "Jour 1",
-                "activite": "Arrivée, installation et familiarisation avec l’époque"
-            },
-            {
-                "jour": 2,
-                "titre": "Jour 2",
-                "activite": "Observation discrète de la situation locale"
-            },
-            {
-                "jour": 3,
-                "titre": "Jour 3",
-                "activite": "Présence sécurisée à l’événement historique principal"
-            },
-            {
-                "jour": 4,
-                "titre": "Jour 4",
-                "activite": "Exploration encadrée ou activité optionnelle"
-            },
-            {
-                "jour": 5,
-                "titre": "Jour 5",
-                "activite": "Exploration encadrée ou activité optionnelle"
-            },
-            {
-                "jour": 6,
-                "titre": "Jour 6",
-                "activite": "Exploration encadrée ou activité optionnelle"
-            },
-            {
-                "jour": 7,
-                "titre": "Jour 7",
-                "activite": "Exploration encadrée ou activité optionnelle"
-            },
-            {
-                "jour": 8,
-                "titre": "Jour 8",
-                "activite": "Temps libre, souvenirs personnels et retour sécurisé"
-            }
-        ],
-        "options": [
-            {
-                "type": "hébergement",
-                "nom": "Tente de l’époque",
-                "prix_par_personne": 90
-            },
-            {
-                "type": "activité",
-                "nom": "Immersion 360°",
-                "prix_par_personne": 100
-            },
-            {
-                "type": "repas",
-                "nom": "Repas typique de l’époque",
-                "prix_par_personne": 75
-            },
-            {
-                "type": "souvenir",
-                "nom": "Objet d’époque discret",
-                "prix_par_personne": 60
-            },
-            {
-                "type": "bonus",
-                "nom": "Accès à une scène secondaire confidentielle",
-                "prix_par_personne": 100
-            }
-        ],
-        "activites_incluses": [
-            {
-                "nom": "Briefing temporel",
-                "description": "Séance préparatoire avant immersion pour comprendre les enjeux historiques."
-            },
-            {
-                "nom": "Exploration encadrée",
-                "description": "Parcours dans l’environnement historique réel, sans modifier le cours du temps."
-            },
-            {
-                "nom": "Observation protégée de l’événement principal",
-                "description": "Point de vue sécurisé et dissimulé pour vivre l’instant tel qu’il s’est produit."
-            }
-        ],
-        "niveau_difficulte": "modéré",
-        "public_cible": [
-            "étudiants",
-            "curieux d'histoire",
-            "passionnés d'aventure"
-        ],
-        "note_moyenne": 3.7,
-        "nombre_avis": 31,
-        "infos_pratiques": [
-            "Langue du contexte : langue locale d’époque",
-            "Tenue sobre recommandée",
-            "Interaction directe avec les personnages historiques interdite"
-        ],
-        "conditions_annulation": "Annulation gratuite jusqu’à 48h avant le départ.",
-        "theme": "Ère des dinosaures"
-    },
-    {
         "id": 4,
         "titre": "Assassinat de Jules César",
         "image": "4.png",
@@ -2063,5 +1954,66 @@
         ],
         "conditions_annulation": "Annulation gratuite jusqu’à 48h avant le départ.",
         "theme": "Proclamation de la République"
+    },
+    {
+        "id": 21,
+        "titre": "pierrefitte",
+        "image": "21.png",
+        "duree": 2,
+        "description": "aaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "type_temporel": "passé",
+        "lieu": "prft",
+        "date_depart_personnalisable": true,
+        "prix_base": 54637,
+        "programme": [
+            {
+                "jour": 1,
+                "titre": "jour 1",
+                "activite": "rrrrrrrrrrrrrrrrrr"
+            },
+            {
+                "jour": 2,
+                "titre": "jour 2",
+                "activite": "rrrrrrrrrrrrrrrrrrrrrrrrr"
+            }
+        ],
+        "options": [
+            {
+                "type": "hebergement ",
+                "nom": "lavoisier",
+                "prix_par_personne": 4873
+            },
+            {
+                "type": "nourriture",
+                "nom": "five star",
+                "prix_par_personne": 5
+            }
+        ],
+        "activites_incluses": [
+            {
+                "nom": "balade",
+                "description": "eeeeeeeeeeeeeeeeeeeeeeeeeeeee"
+            },
+            {
+                "nom": "foot",
+                "description": "ggggggggggggggggggggggggggggg"
+            }
+        ],
+        "niveau_difficulte": "difficile",
+        "public_cible": [
+            "familles",
+            "curieux d'histoire",
+            "personnes âgées",
+            "voyageurs solo",
+            "groupes scolaires",
+            "grand public"
+        ],
+        "note_moyenne": 3.9,
+        "nombre_avis": 40,
+        "infos_pratiques": [
+            "parle le francais "
+        ],
+        "conditions_annulation": "Annulation gratuite jusqu’à 48h avant le départ.",
+        "theme": "tourisme"
     }
 ]

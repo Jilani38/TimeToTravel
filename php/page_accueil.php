@@ -55,24 +55,24 @@
 
 
       <section id="past">
-        <img src="../img/accueil_past.avif" alt="Paysage du passé" />
+        <img id="img-past" src="../img/passé.png" alt="Paysage du passé" />
         <aside>
-          <h2>Passé</h2>
-          <p>Un texte</p>
-          <p>Un autre texte</p>
-          <p>J'ai pas d'idée</p>
-          <p>C'est pas grave on verra plus tard</p>
+          <h2>Le Passé</h2>
+          <p>Et si vous pouviez revivre l’Histoire ?</p>
+          <p>Un voyage à travers les siècles vous attend…</p>
+          <p>Découvrez ce que vous n’auriez jamais imaginé voir.</p>
+          <p>← Cliquez ici pour découvrir les différentes aventure qui vous attendent !</p>
         </aside>
       </section>
       <section id="future">
         <aside>
-          <h2>Futur</h2>
-          <p>Un texte</p>
-          <p>Un autre texte</p>
-          <p>J'ai pas d'idée</p>
-          <p>C'est pas grave on verra plus tard</p>
+          <h2>Le Futur</h2>
+          <p>Et si vous pouviez explorer le futur ?</p>
+          <p>Un monde nouveau vous tend les bras…</p>
+          <p>Découvrez ce que demain vous réserve, dès aujourd’hui.</p>
+          <p>Cliquez ici pour découvrir les voyages du futur les plus fous ! →</p>
         </aside>
-        <img src="../img/accueil_future.jpg" alt="Paysage du futur" />
+        <img id="img-future" src="../img/future.png" alt="Paysage du futur" />
       </section>
     </main>
   </body>

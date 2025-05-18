@@ -443,3 +443,42 @@ header nav div a:hover {
   transform: scale(1.05);
   box-shadow: 0 2px 8px #0002;
 }
+
+
+/*style texte passé et futur*/
+
+
+/* Style général */
+section#past aside p,
+section#future aside p {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  color: #e6e6e6;
+  text-shadow: 0 0 4px rgba(255, 255, 255, 0.2);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+/* Accent spécifique pour la dernière ligne (CTA) */
+section#past aside p:last-child {
+  font-weight: bold;
+  color: #ffcf99;
+  text-shadow: 0 0 6px rgba(255, 223, 186, 0.5);
+}
+
+section#future aside p:last-child {
+  font-weight: bold;
+  color: #00f7ff;
+  text-shadow: 0 0 6px rgba(0, 255, 255, 0.5);
+}
+
+#img-past,
+#img-future {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+#img-past:hover,
+#img-future:hover {
+  transform: scale(1.05);
+}
+

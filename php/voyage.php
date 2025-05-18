@@ -26,8 +26,10 @@ if (!$voyage) {
   <title><?= htmlspecialchars($voyage['titre']) ?></title>
   <link rel="stylesheet" href="../css/base.css">
   <link rel="stylesheet" href="../css/voyage.css">
-  <script src="../js/base.js" defer></script>
+  <script defer src="../js/base.js"></script>
+  <script defer src="../js/voyage.js"></script>
 </head>
+
 <body>
   <header>
     <?php require_once './partials/nav.php'; ?>
@@ -103,7 +105,9 @@ if (!$voyage) {
             <?php endforeach; ?>
 
             <p class="prix-base"><strong>Tarif de base :</strong> <?= $voyage['prix_base'] ?> € / personne</p>
-            <p class="total-prix">Prix total estimé : <span id="prix-total"><?= $voyage['prix_base'] ?> €</span></p>
+            <p class="total-prix">Prix total estimé : 
+              <span id="prix-total" data-base="<?= $voyage['prix_base'] ?>"><?= $voyage['prix_base'] ?> €</span>
+            </p>
 
             <button type="submit">Je choisis ce voyage</button>
           </form>
@@ -111,56 +115,5 @@ if (!$voyage) {
       </div>
     </div>
   </main>
-
-  <script>
-    const prixBase = <?= $voyage['prix_base'] ?>;
-    const prixTotal = document.getElementById('prix-total');
-    const nbInput = document.getElementById('nombre');
-    const selectOptions = document.querySelectorAll('.option-select');
-
-    function remplirSelects(max) {
-      selectOptions.forEach(select => {
-        const currentValue = parseInt(select.value) || 0;
-        select.innerHTML = '<option value="0">0</option>';
-        for (let i = 1; i <= max; i++) {
-          const opt = document.createElement('option');
-          opt.value = i;
-          opt.textContent = i;
-          select.appendChild(opt);
-        }
-        if (currentValue <= max) {
-          select.value = currentValue;
-        }
-      });
-    }
-
-    function recalculerPrix() {
-      const nb = parseInt(nbInput.value) || 1;
-      let total = prixBase * nb;
-
-      selectOptions.forEach(select => {
-        const quantite = parseInt(select.value) || 0;
-        const prix = parseFloat(select.dataset.prix || 0);
-        total += prix * quantite;
-      });
-
-      prixTotal.textContent = total.toFixed(2) + ' €';
-    }
-
-    nbInput.addEventListener('input', () => {
-      const max = parseInt(nbInput.value) || 1;
-      remplirSelects(max);
-      recalculerPrix();
-    });
-
-    selectOptions.forEach(select => {
-      select.addEventListener('change', recalculerPrix);
-    });
-
-    window.addEventListener('DOMContentLoaded', () => {
-      remplirSelects(parseInt(nbInput.value) || 1);
-      recalculerPrix();
-    });
-  </script>
 </body>
 </html>

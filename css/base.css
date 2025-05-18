@@ -20,7 +20,7 @@ body {
 }
 
 body.dark {
-  --background: #1e1e2e;
+  --background: #0e0e17f0;
   --primary-background: #f4f7fb;
   --color: #f4f7fb;
 }

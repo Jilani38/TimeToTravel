@@ -251,6 +251,36 @@
                     }
                 ],
                 "total": 13505
+            },
+            {
+                "titre": "pierrefitte",
+                "date": "2025-05-18",
+                "date_depart": "2025-05-29",
+                "voyageurs": 4,
+                "options": [
+                    {
+                        "type": "hebergement ",
+                        "nom": "lavoisier",
+                        "quantite": 3,
+                        "prix_par_personne": "5000",
+                        "total_option": 15000
+                    },
+                    {
+                        "type": "nourriture",
+                        "nom": "five star",
+                        "quantite": 4,
+                        "prix_par_personne": "5",
+                        "total_option": 20
+                    },
+                    {
+                        "type": "deplacement ",
+                        "nom": "location megane 3",
+                        "quantite": 4,
+                        "prix_par_personne": "487",
+                        "total_option": 1948
+                    }
+                ],
+                "total": 27768
             }
         ]
     },

@@ -25,3 +25,19 @@ function onScroll() {
 document.addEventListener("scroll", onScroll);
 onScroll();
 
+document.addEventListener("DOMContentLoaded", () => {
+  const imgPast = document.getElementById("img-past");
+  const imgFuture = document.getElementById("img-future");
+
+  if (imgPast) {
+    imgPast.addEventListener("click", () => {
+      window.location.href = "page_de_recherche.php?filtre=passé";
+    });
+  }
+
+  if (imgFuture) {
+    imgFuture.addEventListener("click", () => {
+      window.location.href = "page_de_recherche.php?filtre=futur";
+    });
+  }
+});
