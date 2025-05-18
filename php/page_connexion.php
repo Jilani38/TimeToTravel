@@ -1,6 +1,9 @@
 <?php
 session_start();
 
+$message = "";
+$email = "";
+
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
   $email = trim($_POST['email']);
   $motdepasse = $_POST['motdepasse'];
@@ -32,7 +35,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     header("Location: page_accueil.php");
     exit();
   } else {
-    die("Email ou mot de passe incorrect.");
+    $message = "Email ou mot de passe incorrect.";
   }
 }
 ?>
@@ -54,15 +57,21 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     <div class="card login-container">
       <h2>Connecte-toi !</h2>
 
+      <?php if ($message !== ""): ?>
+        <span class="message-error">
+          <?= $message ?>
+        </span>
+      <?php endif; ?>
+
       <form action="page_connexion.php" method="POST">
         <div class="input-group">
           <label for="email">E-mail :</label>
-          <input type="email" id="email" name="email" required />
+          <input type="email" id="email" name="email" value="<?= $email ?>" required />
         </div>
 
         <div class="input-group input-password">
           <label for="motdepasse">Mot de passe :</label>
-          <input type="password" id="motdepasse" name="motdepasse" maxlength="20" required />
+          <input type="password" id="motdepasse" name="motdepasse" maxlength="20" required <?= $message != "" ? 'autofocus' : '' ?> />
           <button type="button" class="toggle-password" title="Afficher/Masquer le mot de passe">👁️</button>
           <span class="char-count">0 / 20</span>
         </div>
