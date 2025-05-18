@@ -59,7 +59,7 @@ input[type="date"] {
 }
 
 button.btn-primary {
-  background-color: var(--primary-background);
+  background-color: #123964;
   color: white;
   border: none;
   padding: 12px;
@@ -71,23 +71,6 @@ button.btn-primary {
 
 button.btn-primary:hover {
   background-color: #19508a;
-}
-
-a.btn-secondary {
-  display: block;
-  margin-top: 15px;
-  padding: 12px;
-  background-color: white;
-  border: 2px solid var(--primary-background);
-  color: var(--primary-background);
-  text-decoration: none;
-  font-weight: bold;
-  border-radius: 8px;
-}
-
-a.btn-secondary:hover {
-  background-color: var(--primary-background);
-  color: white;
 }
 
 /* bouton vip */

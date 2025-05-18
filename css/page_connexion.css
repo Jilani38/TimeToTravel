@@ -36,13 +36,13 @@ main {
   margin-top: 1rem;
 }
 
-.register-link a {
+.register-link a:not(.btn-secondary) {
   color: #00aaff;
   text-decoration: none;
   font-weight: bold;
 }
 
-.register-link a:hover {
+.register-link a:not(.btn-secondary):hover {
   text-decoration: underline;
 }
 

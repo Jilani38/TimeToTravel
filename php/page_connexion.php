@@ -86,7 +86,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
       </form>
 
       <p class="register-link">
-        <a href="page_inscription.php">Je n'ai pas de compte</a>
+        <a href="page_inscription.php" class="btn-secondary">Je n'ai pas de compte</a>
         <br />
         <a href="./page_admin/index.php">Admin</a>
       </p>
