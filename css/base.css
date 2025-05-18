@@ -140,6 +140,7 @@ body.dark .card {
 }
 
 input[type="text"],
+input[type="search"],
 input[type="number"],
 input[type="password"],
 input[type="email"],

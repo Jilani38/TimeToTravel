@@ -55,7 +55,7 @@ body.dark .left-section {
     transition: transform 0.3s ease;
 }
 
-.bubble:hover {
+.bubble:is(:hover, :focus-within) {
     transform: scale(1.1);
 }
 
@@ -73,7 +73,7 @@ body.dark .left-section {
     opacity: 0;
 }
 
-.bubble:hover .overlay {
+.bubble:is(:hover, :focus-within) .overlay {
     background-color: rgba(0,0,0,0.6);
     opacity: 1;
 }

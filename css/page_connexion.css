@@ -45,3 +45,7 @@ main {
 .register-link a:hover {
   text-decoration: underline;
 }
+
+.message-error {
+  color: red;
+}

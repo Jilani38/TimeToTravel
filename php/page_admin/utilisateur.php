@@ -1,6 +1,8 @@
 <?php
 session_start();
 
+$q = isset($_GET['q']) ? $_GET['q'] : '';
+
 if (!isset($_SESSION['role']) || $_SESSION['role'] !== 'admin') {
     header('Location: ../page_accueil.php');
     exit();
@@ -15,6 +17,7 @@ $utilisateurs = json_decode(file_get_contents('../../data/utilisateurs.json'), t
   <link rel="stylesheet" href="../../css/base.css" />
   <link rel="stylesheet" href="../../css/page_admin/base.css" />
   <link rel="stylesheet" href="../../css/page_admin/index.css" />
+  <script src="../../js/page_admin/recherche.js" defer></script>
   <title>Time to Travel - Utilisateurs</title>
 </head>
 
@@ -24,6 +27,8 @@ $utilisateurs = json_decode(file_get_contents('../../data/utilisateurs.json'), t
   <main>
     <h1>Liste des utilisateurs</h1>
     <p>Bienvenue <?= htmlspecialchars($_SESSION['prenom'] ?? 'Admin') ?> 👋</p>
+
+    <input type="search" id="recherche-input" placeholder="Rechercher un voyage..." value="<?= htmlspecialchars($q) ?>">
 
     <?php if (!empty($utilisateurs)): ?>
       <table>

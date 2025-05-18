@@ -169,7 +169,7 @@ section#choice aside:is(:hover, :focus-within) div {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-section#choice aside div a:hover::before {
+section#choice aside div a:is(:hover, :focus-within)::before {
   opacity: 1;
 }
 
@@ -357,7 +357,7 @@ header nav div a:hover {
   transition: transform 0.4s ease, opacity 0.4s ease;
 }
 
-.voyage-carte:hover .titre-visible {
+.voyage-carte:is(:hover, :focus-within) .titre-visible {
   transform: translateY(-100%);
   opacity: 0;
 }
@@ -381,7 +381,7 @@ header nav div a:hover {
   transition: transform 0.4s ease, opacity 0.4s ease;
 }
 
-.voyage-carte:hover div {
+.voyage-carte:is(:hover, :focus-within) div {
   opacity: 1;
   transform: translateY(0);
 }
@@ -399,7 +399,7 @@ header nav div a:hover {
   transition: opacity 0.4s ease;
 }
 
-.voyage-carte:hover div::before {
+.voyage-carte:is(:hover, :focus-within) div::before {
   opacity: 1;
 }
 
@@ -411,8 +411,8 @@ header nav div a:hover {
   transition: transform 0.4s ease, opacity 0.4s ease;
 }
 
-.voyage-carte:hover div .titre-hover,
-.voyage-carte:hover div a {
+.voyage-carte:is(:hover, :focus-within) div .titre-hover,
+.voyage-carte:is(:hover, :focus-within) div a {
   transform: translateY(0);
   opacity: 1;
 }

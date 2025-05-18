@@ -1,4 +1,6 @@
 <?php
+$retour = $_SERVER['HTTP_REFERER'] ?? './index.php';
+
 session_start();
 ini_set('display_errors', 1);
 error_reporting(E_ALL);
@@ -90,7 +92,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     <div>
       <input type="submit" name="submit" value="Enregistrer">
-      <a href="./utilisateur.php">Annuler</a>
+      <a href="<?= $retour ?>">Annuler</a>
     </div>
   </form>
 </main>
