@@ -9,6 +9,12 @@ if (!isset($_SESSION['role']) || $_SESSION['role'] !== 'admin') {
 }
 
 $utilisateurs = json_decode(file_get_contents('../../data/utilisateurs.json'), true);
+
+// Fonction pour format fr
+function formatDateFr($dateIso) {
+    $date = DateTime::createFromFormat('Y-m-d', $dateIso);
+    return $date ? $date->format('d/m/Y') : '-';
+}
 ?>
 <!doctype html>
 <html lang="fr">
@@ -21,14 +27,14 @@ $utilisateurs = json_decode(file_get_contents('../../data/utilisateurs.json'), t
   <title>Time to Travel - Utilisateurs</title>
 </head>
 
-<body>
+<body data-user-id="<?= htmlspecialchars($_SESSION['id']) ?>">
   <?php require_once '../partials/admin-nav.php'; ?>
 
   <main>
     <h1>Liste des utilisateurs</h1>
     <p>Bienvenue <?= htmlspecialchars($_SESSION['prenom'] ?? 'Admin') ?> 👋</p>
 
-    <input type="search" id="recherche-input" placeholder="Rechercher un voyage..." value="<?= htmlspecialchars($q) ?>">
+    <input type="search" id="recherche-input" placeholder="Rechercher un utilisateur..." value="<?= htmlspecialchars($q) ?>">
 
     <?php if (!empty($utilisateurs)): ?>
       <table>
@@ -39,25 +45,29 @@ $utilisateurs = json_decode(file_get_contents('../../data/utilisateurs.json'), t
             <th>Nom</th>
             <th>Email</th>
             <th>Rôle</th>
-            <th>Status</th>
+            <th>Date d'inscription</th>
             <th>Actions</th>
           </tr>
         </thead>
         <tbody>
           <?php foreach ($utilisateurs as $utilisateur): ?>
-          <tr>
+          <tr data-user-id="<?= htmlspecialchars($utilisateur['id']) ?>">
             <td><?= htmlspecialchars($utilisateur['id']) ?></td>
             <td><?= htmlspecialchars($utilisateur['prenom']) ?></td>
             <td><?= htmlspecialchars($utilisateur['nom']) ?></td>
             <td><?= htmlspecialchars($utilisateur['email']) ?></td>
             <td><span class="role"><?= htmlspecialchars($utilisateur['role']) ?></span></td>
-            <td><span class="statut"><?= !empty($utilisateur['banni']) ? 'Banni' : 'Actif' ?></span></td>
+            <td><?= formatDateFr($utilisateur['date_inscription'] ?? '') ?></td>
             <td>
               <a href="./edit_utilisateur.php?id=<?= urlencode($utilisateur['id']) ?>" title="Modifier infos">
                 <i data-lucide="pencil"></i>
               </a>
-              <button class="btn-bannir" title="Bannir ou débannir">❌</button>
-              <button class="btn-changer-role" title="Changer rôle">🔁</button>
+              <?php if ($_SESSION['id'] !== $utilisateur['id']): ?>
+                <button class="btn-bannir" title="Bannir ou réactiver">❌</button>
+                <button class="btn-changer-role" title="Changer rôle">🔁</button>
+              <?php else: ?>
+                <span style="opacity: 0.5;">(vous)</span>
+              <?php endif; ?>
             </td>
           </tr>
           <?php endforeach; ?>

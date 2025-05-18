@@ -1,46 +1,60 @@
 document.addEventListener('DOMContentLoaded', () => {
-  // Bannir / débannir avec icône ❌
+  const userIdSession = document.body.dataset.userId;
+
+  // --- Bannir / débannir ---
   document.querySelectorAll('.btn-bannir').forEach(button => {
     button.addEventListener('click', () => {
-      button.disabled = true;
-      button.textContent = '...';
-      button.style.cursor = 'not-allowed';
+      const row = button.closest('tr');
+      const userId = row.dataset.userId;
+      const roleCell = row.querySelector('.role');
+      const roleActuel = roleCell.textContent.trim();
 
-      setTimeout(() => {
-        const row = button.closest('tr');
-        const statutSpan = row.querySelector('.statut');
-        if (statutSpan.textContent === 'Banni') {
-          statutSpan.textContent = 'Actif';
-          button.textContent = '❌';
+      if (userId === userIdSession) {
+        return;
+      }
+
+      fetch('../../php/page_admin/utils/bannir_utilisateur.php', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ id: userId })
+      })
+      .then(res => res.json())
+      .then(data => {
+        if (data.success) {
+          roleCell.textContent = data.nouveau_role;
         } else {
-          statutSpan.textContent = 'Banni';
-          button.textContent = '❌';
+          alert("Erreur : " + data.message);
         }
-        button.disabled = false;
-        button.style.cursor = 'pointer';
-      }, 2000);
+      })
+      .catch(() => alert("Erreur lors de la requête au serveur."));
     });
   });
 
-  // Changer rôle Admin / Client avec icône 🔁
+  // --- Changer rôle ---
   document.querySelectorAll('.btn-changer-role').forEach(button => {
     button.addEventListener('click', () => {
-      button.disabled = true;
-      button.textContent = '...';
-      button.style.cursor = 'not-allowed';
+      const row = button.closest('tr');
+      const userId = row.dataset.userId;
+      const roleCell = row.querySelector('.role');
 
-      setTimeout(() => {
-        const row = button.closest('tr');
-        const roleSpan = row.querySelector('.role');
-        if (roleSpan.textContent === 'admin') {
-          roleSpan.textContent = 'client';
+      if (userId === userIdSession) {
+        return;
+      }
+
+      fetch('../../php/page_admin/utils/changer_role.php', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ id: userId })
+      })
+      .then(res => res.json())
+      .then(data => {
+        if (data.success) {
+          roleCell.textContent = data.nouveau_role;
         } else {
-          roleSpan.textContent = 'admin';
+          alert("Erreur : " + data.message);
         }
-        button.textContent = '🔁';
-        button.disabled = false;
-        button.style.cursor = 'pointer';
-      }, 2000);
+      })
+      .catch(() => alert("Erreur lors de la requête au serveur."));
     });
   });
 });
