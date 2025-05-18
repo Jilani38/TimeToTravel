@@ -23,7 +23,6 @@ $role = $_SESSION['role'] ?? 'client';
       margin-top: 8px;
       font-size: 0.88em;
       line-height: 1.6;
-      color: #222;
       padding-left: 5px;
     }
 

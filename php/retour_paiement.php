@@ -103,7 +103,7 @@ if ($paiement_accepte && isset($_SESSION['id']) && !empty($panier)) {
           $prix_base = $reservation['prix_base'];
           $prix_total = $reservation['prix_total'];
         ?>
-        <div class="carte-voyage">
+        <div class="card carte-voyage">
           <div class="entete">
             <h2><?= htmlspecialchars($titre) ?></h2>
             <span class="prix"><?= number_format($prix_total, 2, ',', ' ') ?> €</span>
