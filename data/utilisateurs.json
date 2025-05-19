@@ -715,5 +715,19 @@
                 "total": 24264
             }
         ]
+    },
+    {
+        "id": "682b20aa3e47f",
+        "prenom": "Alexia",
+        "nom": "Segui aracil",
+        "date_naissance": "2004-03-08",
+        "genre": "Femme",
+        "email": "asegui@gmail.com",
+        "motdepasse": "$2y$12$SI1Z7oVgqWXo9ZBPLQpy5OFRlyOIFgysFw1G8caFc4vFLtXTuO9xa",
+        "telephone": "0744713502",
+        "date_inscription": "2025-05-19",
+        "derniere_connexion": "2025-05-19 12:14:34",
+        "role": "client",
+        "commandes": []
     }
 ]

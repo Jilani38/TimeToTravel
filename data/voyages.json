@@ -853,7 +853,7 @@
         "image": "10.png",
         "duree": 6,
         "description": "Voyage unique à Plage d’Omaha,France lors de l'événement « Débarquement de Normandie ».",
-        "type_temporel": "futur",
+        "type_temporel": "passé",
         "lieu": "Plage d’Omaha,France",
         "date_depart_personnalisable": true,
         "prix_base": 18600,
@@ -2311,5 +2311,238 @@
         "conditions_annulation": "Annulation gratuite jusqu’à 7 jours avant le départ.",
         "theme": "Ère des dinosaures"
       }
-      
+      {
+        "id": 22,
+        "titre": "Ibiza 90's – L'âge d'or de la fête",
+        "image": "22.png",
+        "duree": 7,
+        "description": "Un voyage électrisant au cœur d’Ibiza dans les années 90 : vivez l'explosion des raves, des plages sans limites et des clubs mythiques.",
+        "type_temporel": "passé",
+        "lieu": "Ibiza, Espagne",
+        "date_depart_personnalisable": true,
+        "prix_base": 18999,
+        "programme": [
+          {
+            "jour": 1,
+            "titre": "Arrivée sur l’île blanche",
+            "activité": "Installation dans une finca colorée des années 90, distribution de bracelets fluorescents et tour des spots underground."
+          },
+          {
+            "jour": 2,
+            "titre": "Pool party & chill sur la plage",
+            "activité": "Journée détente au rythme des DJs sur la plage de Salinas, cocktails, bouées et sets house non-stop."
+          },
+          {
+            "jour": 3,
+            "titre": "Nuit au KU Club",
+            "activité": "Plongez dans l’atmosphère mythique du KU (futur Privilege) avec lumière laser, podiums, et défilé de looks rétro."
+          },
+          {
+            "jour": 4,
+            "titre": "Coucher de soleil à Café del Mar",
+            "activité": "Assistez à un coucher de soleil culte avec bande-son ambient, mojito à la main, ambiance douce et nostalgique."
+          },
+          {
+            "jour": 5,
+            "titre": "Rave dans une grotte secrète",
+            "activité": "Participez à une rave 100% années 90 dans une crique isolée, avec sonorisation analogique et fluos partout."
+          },
+          {
+            "jour": 6,
+            "titre": "Défilé et fête costumée à Pacha",
+            "activité": "Soirée spéciale au Pacha version 1994 : fleurs, vinyles, techno funky et bodypainting sous les stroboscopes."
+          },
+          {
+            "jour": 7,
+            "titre": "After sur la plage et retour",
+            "activité": "Dernier lever de soleil avec mix live sur la plage, bain du matin et clôture autour d’un feu chill."
+          }
+        ],
+        "options": [
+          {
+            "type": "hébergement",
+            "nom": "Finca communautaire avec jardin partagé",
+            "prix_par_personne": 1500
+          },
+          {
+            "type": "hébergement",
+            "nom": "Villa 90's privatisée avec piscine et platines",
+            "prix_par_personne": 9000
+          },
+          {
+            "type": "repas",
+            "nom": "Tapas locales servies en bord de mer",
+            "prix_par_personne": 55
+          },
+          {
+            "type": "repas",
+            "nom": "Paella géante après rave",
+            "prix_par_personne": 75
+          },
+          {
+            "type": "souvenir",
+            "nom": "Vinyle collector mixé sur l'île",
+            "prix_par_personne": 60
+          },
+          {
+            "type": "souvenir",
+            "nom": "Lunettes néon + t-shirt officiel 'Ibiza 94'",
+            "prix_par_personne": 50
+          },
+          {
+            "type": "bonus",
+            "nom": "Masterclass DJ avec platines Technics",
+            "prix_par_personne": 120
+          },
+          {
+            "type": "bonus",
+            "nom": "Balade en jeep vers les criques secrètes",
+            "prix_par_personne": 100
+          }
+        ],
+        "activites_incluses": [
+          {
+            "nom": "Entrées dans 3 clubs emblématiques",
+            "description": "Accès garanti aux soirées les plus folles des années 90 : KU, Pacha et Amnesia dans leur âge d’or."
+          },
+          {
+            "nom": "Soirée open-air au rythme de la house",
+            "description": "Participez à une fête extérieure style warehouse en bord de mer, avec déco vintage et lasers analogiques."
+          },
+          {
+            "nom": "Bracelet VIP Ibiza 90's",
+            "description": "Bracelet souvenir fluorescent avec accès express aux meilleures zones de fête et cocktails signatures inclus."
+          }
+        ],
+        "niveau_difficulte": "élevé",
+        "public_cible": [
+          "fêtards",
+          "nostalgiques des 90s",
+          "amateurs d’électro"
+        ],
+        "note_moyenne": 4.9,
+        "nombre_avis": 201,
+        "infos_pratiques": [
+          "Prévoir lunettes de soleil, crème solaire et chaussures confortables",
+          "Activités nocturnes très intenses, sieste recommandée l’après-midi",
+          "Interaction avec les DJs et danseurs possible selon soirées"
+        ],
+        "conditions_annulation": "Annulation gratuite jusqu’à 72h avant le départ.",
+        "theme": "Fête rétro à Ibiza"
+      }
+      {
+        "id": 23,
+        "titre": "Lune de miel à bord du Titanic",
+        "image": "23.png",
+        "duree": 6,
+        "description": "Une croisière de rêve au cœur de l'année 1912, à bord du légendaire Titanic, quelques jours avant le naufrage. Une parenthèse luxueuse et romantique, suspendue dans le temps.",
+        "type_temporel": "passé",
+        "lieu": "Océan Atlantique Nord",
+        "date_depart_personnalisable": true,
+        "prix_base": 24099,
+        "programme": [
+          {
+            "jour": 1,
+            "titre": "Embarquement à Southampton",
+            "activité": "Accueil en première classe, installation dans votre suite nuptiale avec vue sur mer et promenade sur le pont supérieur du Titanic."
+          },
+          {
+            "jour": 2,
+            "titre": "Journée de détente en mer",
+            "activité": "Massage en cabine, lecture sur les transats, promenade bras dessus bras dessous sur le pont promenade, cocktail au salon Palm Court."
+          },
+          {
+            "jour": 3,
+            "titre": "Déjeuner chic et salon de thé",
+            "activité": "Dégustez un déjeuner 6 services dans la salle à manger de première classe, suivi d'un thé dansant en musique."
+          },
+          {
+            "jour": 4,
+            "titre": "Dîner romantique et soirée étoilée",
+            "activité": "Profitez d’un dîner de gala en robe de soirée dans le restaurant à la carte, suivi d’une observation des étoiles sur le pont arrière."
+          },
+          {
+            "jour": 5,
+            "titre": "Séance photo et balade privée",
+            "activité": "Immortalisez votre voyage lors d’un shooting en tenue d’époque, puis partez pour une balade en couple guidée dans les lieux secrets du paquebot."
+          },
+          {
+            "jour": 6,
+            "titre": "Fin de croisière anticipée",
+            "activité": "Retour sécurisé à bord d’un navire temporel juste avant les événements tragiques. Clôture par une cérémonie intime au coucher du soleil."
+          }
+        ],
+        "options": [
+          {
+            "type": "hébergement",
+            "nom": "Suite nuptiale en première classe",
+            "prix_par_personne": 4200
+          },
+          {
+            "type": "hébergement",
+            "nom": "Cabine double de luxe avec balcon privé",
+            "prix_par_personne": 3600
+          },
+          {
+            "type": "repas",
+            "nom": "Dîner gastronomique au restaurant à la carte",
+            "prix_par_personne": 120
+          },
+          {
+            "type": "repas",
+            "nom": "Brunch romantique servi en cabine",
+            "prix_par_personne": 85
+          },
+          {
+            "type": "souvenir",
+            "nom": "Portrait officiel dans le Grand Escalier",
+            "prix_par_personne": 70
+          },
+          {
+            "type": "souvenir",
+            "nom": "Carnet de bord personnalisé avec cachet du Titanic",
+            "prix_par_personne": 60
+          },
+          {
+            "type": "bonus",
+            "nom": "Cours de danse de salon avec orchestre en direct",
+            "prix_par_personne": 400
+          },
+          {
+            "type": "bonus",
+            "nom": "Accès privé au pont d’observation à minuit",
+            "prix_par_personne": 250
+          }
+        ],
+        "activites_incluses": [
+          {
+            "nom": "Dîner de gala à la table du commandant (simulation)",
+            "description": "Participez à une reconstitution luxueuse du dîner du 11 avril 1912, servi à la perfection par des majordomes d'époque."
+          },
+          {
+            "nom": "Balade sur le pont promenade",
+            "description": "Profitez d’un moment intime en couple, face à l’océan infini, à la lueur des lanternes de bord."
+          },
+          {
+            "nom": "Concert de quatuor romantique",
+            "description": "Assistez à un concert de musique classique joué en direct dans le salon de première classe."
+          }
+        ],
+        "niveau_difficulte": "faible",
+        "public_cible": [
+          "jeunes mariés",
+          "passionnés de romance",
+          "curieux d’histoire maritime"
+        ],
+        "note_moyenne": 4.9,
+        "nombre_avis": 97,
+        "infos_pratiques": [
+          "Tenue élégante d’époque fournie",
+          "Aucune interaction avec l'équipage réel",
+          "Retour avant la nuit du 14 avril garanti par protocole"
+        ],
+        "conditions_annulation": "Annulation gratuite jusqu’à 5 jours avant l’embarquement.",
+        "theme": "Lune de miel historique"
+      }
+
 ]
