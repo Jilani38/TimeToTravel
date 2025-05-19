@@ -715,5 +715,155 @@
                 "total": 24264
             }
         ]
+    },
+    {
+        "id": "682b2137c5b7c",
+        "prenom": "jules",
+        "nom": "pel",
+        "date_naissance": "2025-05-01",
+        "genre": "Homme",
+        "email": "jp@cy.fr",
+        "motdepasse": "$2y$10$FNx241z7FWJ8xrN9QgK4OerIoQupwoJFcJvzMkJU28vRA\/w4pKKZS",
+        "telephone": "0641104600",
+        "date_inscription": "2025-05-19",
+        "derniere_connexion": "2025-05-19 12:16:55",
+        "role": "vip",
+        "commandes": [
+            {
+                "titre": "Abonnement VIP",
+                "date": "2025-05-19",
+                "date_depart": "2025-05-19",
+                "voyageurs": 1,
+                "options": [],
+                "total": 1500
+            },
+            {
+                "titre": "Tokyo flottante",
+                "date": "2025-05-19",
+                "date_depart": "2025-05-20",
+                "voyageurs": 6,
+                "options": [
+                    {
+                        "type": "hebergement ",
+                        "nom": "Suite suspendue à gravité modulable",
+                        "quantite": 3,
+                        "prix_par_personne": 10000,
+                        "total_option": 30000
+                    },
+                    {
+                        "type": "hébergement",
+                        "nom": "Pod panoramique avec dôme en verre",
+                        "quantite": 3,
+                        "prix_par_personne": 900,
+                        "total_option": 2700
+                    },
+                    {
+                        "type": "repas",
+                        "nom": "Dîner omakase en orbite haute",
+                        "quantite": 6,
+                        "prix_par_personne": 750,
+                        "total_option": 4500
+                    },
+                    {
+                        "type": "repas",
+                        "nom": "Menu street-food néon au marché flottant",
+                        "quantite": 6,
+                        "prix_par_personne": 60,
+                        "total_option": 360
+                    },
+                    {
+                        "type": "bonus",
+                        "nom": "Accès à la boîte de nuit quantique VIP",
+                        "quantite": 6,
+                        "prix_par_personne": 10000,
+                        "total_option": 60000
+                    }
+                ],
+                "total": 271554
+            }
+        ]
+    },
+    {
+        "id": "682b30727a3f2",
+        "prenom": "benoit",
+        "nom": "bar",
+        "date_naissance": "1993-07-21",
+        "genre": "Homme",
+        "email": "b@gmail.com",
+        "motdepasse": "$2y$10$OMkBAqU.hQBhQgvMEi2ZAOifz7k6kBGTYBPyXxb9giFCZ6IyuYaWu",
+        "telephone": "1234567891",
+        "date_inscription": "2025-05-19",
+        "derniere_connexion": "2025-05-19 13:21:54",
+        "role": "vip",
+        "commandes": [
+            {
+                "titre": "Abonnement VIP",
+                "date": "2025-05-19",
+                "date_depart": "2025-05-19",
+                "voyageurs": 1,
+                "options": [],
+                "total": 1500
+            },
+            {
+                "titre": "Tokyo flottante",
+                "date": "2025-05-19",
+                "date_depart": "2025-05-21",
+                "voyageurs": 3,
+                "options": [
+                    {
+                        "type": "hebergement ",
+                        "nom": "Suite suspendue à gravité modulable",
+                        "quantite": 1,
+                        "prix_par_personne": 10000,
+                        "total_option": 10000
+                    },
+                    {
+                        "type": "hébergement",
+                        "nom": "Pod panoramique avec dôme en verre",
+                        "quantite": 3,
+                        "prix_par_personne": 900,
+                        "total_option": 2700
+                    },
+                    {
+                        "type": "repas",
+                        "nom": "Dîner omakase en orbite haute",
+                        "quantite": 1,
+                        "prix_par_personne": 750,
+                        "total_option": 750
+                    }
+                ],
+                "total": 100447
+            },
+            {
+                "titre": "Avant Apollo 11",
+                "date": "2025-05-19",
+                "date_depart": "2025-05-28",
+                "voyageurs": 3,
+                "options": [
+                    {
+                        "type": "hébergement",
+                        "nom": "Campement spatial minimal sur sol lunaire",
+                        "quantite": 2,
+                        "prix_par_personne": 4490,
+                        "total_option": 8980
+                    },
+                    {
+                        "type": "repas",
+                        "nom": "Menu cosmonaute authentique (rations Apollo)",
+                        "quantite": 1,
+                        "prix_par_personne": 175,
+                        "total_option": 175
+                    },
+                    {
+                        "type": "souvenir",
+                        "nom": "Fragment de sol lunaire (reproduction certifiée)",
+                        "quantite": 3,
+                        "prix_par_personne": 999,
+                        "total_option": 2997
+                    }
+                ],
+                "total": 127034.1
+            }
+        ]
     }
 ]

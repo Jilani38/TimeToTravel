@@ -24,10 +24,17 @@ $voyages = json_decode(file_get_contents("../data/voyages.json"), true);
 $panier = $_SESSION['panier'] ?? [];
 $total = 0;
 
+$isVIP = false;
+
 if ($paiement_accepte && isset($_SESSION['id']) && !empty($panier)) {
   $utilisateurs = json_decode(file_get_contents("../data/utilisateurs.json"), true);
   foreach ($utilisateurs as &$u) {
     if ($u['id'] === $_SESSION['id']) {
+
+      if (isset($u['role']) && $u['role'] === 'vip') {
+        $isVIP = true;
+      }
+
       if (!isset($u['commandes'])) $u['commandes'] = [];
 
       foreach ($panier as $reservation) {
@@ -53,6 +60,11 @@ if ($paiement_accepte && isset($_SESSION['id']) && !empty($panier)) {
         }
 
         $sous_total = $voyage['prix_base'] * $quantite + $prix_options;
+
+        if ($isVIP) {
+          $sous_total *= 0.9; // Réduction de 10%
+        }
+
         $total += $sous_total;
 
         $u['commandes'][] = [
@@ -61,7 +73,7 @@ if ($paiement_accepte && isset($_SESSION['id']) && !empty($panier)) {
           'date_depart' => $reservation['date_depart'] ?? date("Y-m-d"),
           'voyageurs' => $quantite,
           'options' => $options_detail,
-          'total' => $sous_total
+          'total' => round($sous_total, 2)
         ];
       }
       break;
@@ -102,11 +114,17 @@ if ($paiement_accepte && isset($_SESSION['id']) && !empty($panier)) {
           $options = $reservation['options'] ?? [];
           $prix_base = $reservation['prix_base'];
           $prix_total = $reservation['prix_total'];
+
+          // Recalcul du prix avec réduction si VIP
+          $prix_total_reduit = $prix_total;
+          if ($isVIP) {
+            $prix_total_reduit *= 0.9;
+          }
         ?>
         <div class="card carte-voyage">
           <div class="entete">
             <h2><?= htmlspecialchars($titre) ?></h2>
-            <span class="prix"><?= number_format($prix_total, 2, ',', ' ') ?> €</span>
+            <span class="prix"><?= number_format($prix_total_reduit, 2, ',', ' ') ?> €</span>
           </div>
           <div class="details">
             <p><strong>Nombre de voyageurs :</strong> <?= $quantite ?></p>
@@ -128,6 +146,9 @@ if ($paiement_accepte && isset($_SESSION['id']) && !empty($panier)) {
 
       <hr>
       <h2 style="text-align:center;">Total payé : <?= number_format($total, 2, ',', ' ') ?> €</h2>
+      <?php if ($isVIP): ?>
+        <p style="text-align:center; font-weight:bold; color:green;">✅ Vous avez bénéficié d'une réduction VIP de 10% !</p>
+      <?php endif; ?>
 
     <?php else: ?>
       <h1 class="error">❌ Paiement refusé</h1>
