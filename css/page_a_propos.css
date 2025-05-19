@@ -1,30 +1,124 @@
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
-
-main {
-  flex: 1;
+.apropos-container {
+  padding: 3rem 5%;
   display: flex;
   flex-direction: column;
-  gap: 5rem;
+  gap: 4rem;
+  background-color: var(--background);
+  color: var(--color);
+  animation: fadeInBody 1.2s ease-out both;
 }
 
-h2 {
-  font-size: 3em;
-  font-weight: 150;
-  margin: 0;
+@keyframes fadeInBody {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-p {
-  text-align: justify;
+.apropos-container h1 {
+  text-align: center;
+  font-size: 3rem;
+  color: #5a9fff;
+  transform: scale(0.95);
+  transition: transform 0.5s ease;
 }
 
-.logo {
-  display: block;
-  margin: 70px auto 0px auto;
-  max-width: 300px;
-  height: auto;
+.apropos-container h1:hover {
+  transform: scale(1);
+}
+
+.apropos-container h2 {
+  font-size: 2rem;
+  color: #3366cc;
+  margin-bottom: 1rem;
+  border-left: 4px solid #3366cc;
+  padding-left: 1rem;
+}
+
+.apropos-container p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 1.2rem;
+}
+
+/* Animations au scroll */
+.fade-in,
+.slide-in {
+  opacity: 0;
+  transform: translateY(50px) scale(0.98);
+  transition: all 0.9s ease-out;
+}
+
+.slide-in {
+  transform: translateX(-50px) scale(0.98);
+}
+
+.fade-in.visible,
+.slide-in.visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+/* Équipe */
+.equipe ul {
+  list-style: none;
+  padding: 0;
+}
+.equipe li {
+  margin-bottom: 0.8rem;
+  font-weight: bold;
+}
+
+/* Valeurs */
+.valeurs-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.valeur-card {
+  background: var(--background);
+  border: 2px solid #3366cc;
+  padding: 1.2rem;
+  border-radius: 1rem;
+  transition: transform 0.4s ease, box-shadow 0.3s ease;
+}
+
+body.dark .valeur-card {
+  background-color: #1a1a2f;
+  border-color: #66ccff;
+}
+
+.valeur-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+}
+
+.valeur-card h3 {
+  margin-top: 0;
+  color: #1e50aa;
+}
+
+/* Boutons */
+.btn-cgu,
+.btn-inscription {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.9rem 1.5rem;
+  background-color: #3366cc;
+  color: white;
+  font-weight: bold;
+  border-radius: 1rem;
+  text-decoration: none;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn-cgu:hover,
+.btn-inscription:hover {
+  background-color: #274c9c;
+  transform: scale(1.05);
 }

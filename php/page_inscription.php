@@ -122,7 +122,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
       <div class="input-group cgu">
         <label>
        <input type="checkbox" id="accept-cgu" required />
-       <span>En créant un compte, vous acceptez nos <a href="#">Conditions Générales d'Utilisation</a> et notre politique de confidentialité.</span>
+       <span>En créant un compte, vous acceptez nos <a class="btn-cgu" href="../data/CGU_T2T.pdf" target="_blank">Conditions Générales d'Utilisation</a> et notre politique de confidentialité.</span>
        </label>
       </div>
 
