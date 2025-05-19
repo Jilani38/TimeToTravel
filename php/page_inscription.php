@@ -135,3 +135,5 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     <script src="../js/form_validation.js"></script>
   </body>
 </html>
+
+<?php include './partials/footer.php'; ?>

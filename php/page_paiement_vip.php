@@ -50,3 +50,5 @@ $control = md5($api_key . "#" . $transaction . "#" . $montant . "#" . $vendeur .
 
 </body>
 </html>
+
+<?php include './partials/footer.php'; ?>

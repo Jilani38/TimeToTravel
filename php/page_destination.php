@@ -40,3 +40,6 @@ $voyages = json_decode(file_get_contents('../data/voyages.json'), true);
     </div>
 </body>
 </html>
+
+<?php include './partials/footer.php'; ?>
+

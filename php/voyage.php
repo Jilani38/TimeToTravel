@@ -117,3 +117,5 @@ if (!$voyage) {
   </main>
 </body>
 </html>
+
+<?php include './partials/footer.php'; ?>

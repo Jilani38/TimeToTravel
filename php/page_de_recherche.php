@@ -60,3 +60,5 @@ $q = isset($_GET['q']) ? $_GET['q'] : '';
   <script src="../js/recherche.js"></script>
 </body>
 </html>
+
+<?php include './partials/footer.php'; ?>

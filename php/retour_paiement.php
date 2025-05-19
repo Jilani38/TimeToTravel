@@ -142,3 +142,4 @@ if ($paiement_accepte && isset($_SESSION['id']) && !empty($panier)) {
 
 </body>
 </html>
+<?php include './partials/footer.php'; ?>

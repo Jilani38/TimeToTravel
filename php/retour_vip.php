@@ -82,3 +82,6 @@ if ($paiement_accepte) {
 
 </body>
 </html>
+
+<?php include './partials/footer.php'; ?>
+

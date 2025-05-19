@@ -122,3 +122,5 @@ $role = $_SESSION['role'] ?? 'client';
 
 </body>
 </html>
+
+<?php include './partials/footer.php'; ?>
