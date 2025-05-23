@@ -9,7 +9,7 @@
         "motdepasse": "$2y$10$WegyZTDNYsmbuvviME\/wr.9ULjrjJ\/LPNpdOeoZPyrWw9LJ\/yoEhO",
         "telephone": "0641104600",
         "date_inscription": "2025-03-31",
-        "derniere_connexion": "2025-05-23 13:20:37",
+        "derniere_connexion": "2025-05-23 14:14:49",
         "role": "admin",
         "commandes": [
             {
@@ -19,77 +19,77 @@
                 "voyageurs": 3,
                 "options": [
                     {
-                        "type": "hébergement",
-                        "nom": "Tente de l’époque",
+                        "type": "h\u00e9bergement",
+                        "nom": "Tente de l\u2019\u00e9poque",
                         "prix_par_personne": 90
                     },
                     {
                         "type": "repas",
-                        "nom": "Repas typique de l’époque",
+                        "nom": "Repas typique de l\u2019\u00e9poque",
                         "prix_par_personne": 75
                     },
                     {
                         "type": "souvenir",
-                        "nom": "Objet d’époque discret",
+                        "nom": "Objet d\u2019\u00e9poque discret",
                         "prix_par_personne": 60
                     }
                 ],
                 "total": 6876
             },
             {
-                "titre": "Ère des dinosaures",
+                "titre": "\u00c8re des dinosaures",
                 "date": "2025-05-16",
                 "date_depart": "2025-05-16",
                 "voyageurs": 5,
                 "options": [
                     {
-                        "type": "activité",
-                        "nom": "Immersion 360°",
+                        "type": "activit\u00e9",
+                        "nom": "Immersion 360\u00b0",
                         "prix_par_personne": 100
                     },
                     {
                         "type": "repas",
-                        "nom": "Repas typique de l’époque",
+                        "nom": "Repas typique de l\u2019\u00e9poque",
                         "prix_par_personne": 75
                     },
                     {
                         "type": "souvenir",
-                        "nom": "Objet d’époque discret",
+                        "nom": "Objet d\u2019\u00e9poque discret",
                         "prix_par_personne": 60
                     }
                 ],
                 "total": 8320
             },
             {
-                "titre": "Ère des dinosaures",
+                "titre": "\u00c8re des dinosaures",
                 "date": "2025-05-17",
                 "date_depart": "2025-05-30",
                 "voyageurs": 6,
                 "options": [
                     {
-                        "type": "activité",
-                        "nom": "Immersion 360°",
+                        "type": "activit\u00e9",
+                        "nom": "Immersion 360\u00b0",
                         "quantite": 3,
                         "prix_par_personne": 100,
                         "total_option": 300
                     },
                     {
                         "type": "repas",
-                        "nom": "Repas typique de l’époque",
+                        "nom": "Repas typique de l\u2019\u00e9poque",
                         "quantite": 4,
                         "prix_par_personne": 75,
                         "total_option": 300
                     },
                     {
                         "type": "souvenir",
-                        "nom": "Objet d’époque discret",
+                        "nom": "Objet d\u2019\u00e9poque discret",
                         "quantite": 6,
                         "prix_par_personne": 60,
                         "total_option": 360
                     },
                     {
                         "type": "bonus",
-                        "nom": "Accès à une scène secondaire confidentielle",
+                        "nom": "Acc\u00e8s \u00e0 une sc\u00e8ne secondaire confidentielle",
                         "quantite": 1,
                         "prix_par_personne": 100,
                         "total_option": 100
@@ -104,29 +104,29 @@
                 "voyageurs": 5,
                 "options": [
                     {
-                        "type": "hébergement",
-                        "nom": "Tente de l’époque",
+                        "type": "h\u00e9bergement",
+                        "nom": "Tente de l\u2019\u00e9poque",
                         "quantite": 2,
                         "prix_par_personne": 90,
                         "total_option": 180
                     },
                     {
-                        "type": "expédition",
-                        "nom": "Visite guidée historique",
+                        "type": "exp\u00e9dition",
+                        "nom": "Visite guid\u00e9e historique",
                         "quantite": 3,
                         "prix_par_personne": 180,
                         "total_option": 540
                     },
                     {
                         "type": "repas",
-                        "nom": "Repas typique de l’époque",
+                        "nom": "Repas typique de l\u2019\u00e9poque",
                         "quantite": 1,
                         "prix_par_personne": 75,
                         "total_option": 75
                     },
                     {
                         "type": "souvenir",
-                        "nom": "Objet d’époque discret",
+                        "nom": "Objet d\u2019\u00e9poque discret",
                         "quantite": 5,
                         "prix_par_personne": 60,
                         "total_option": 300
@@ -141,29 +141,29 @@
                 "voyageurs": 6,
                 "options": [
                     {
-                        "type": "hébergement",
-                        "nom": "Tente de l’époque",
+                        "type": "h\u00e9bergement",
+                        "nom": "Tente de l\u2019\u00e9poque",
                         "quantite": 3,
                         "prix_par_personne": 90,
                         "total_option": 270
                     },
                     {
                         "type": "repas",
-                        "nom": "Repas typique de l’époque",
+                        "nom": "Repas typique de l\u2019\u00e9poque",
                         "quantite": 3,
                         "prix_par_personne": 75,
                         "total_option": 225
                     },
                     {
                         "type": "souvenir",
-                        "nom": "Objet d’époque discret",
+                        "nom": "Objet d\u2019\u00e9poque discret",
                         "quantite": 6,
                         "prix_par_personne": 60,
                         "total_option": 360
                     },
                     {
                         "type": "bonus",
-                        "nom": "Accès à une scène secondaire confidentielle",
+                        "nom": "Acc\u00e8s \u00e0 une sc\u00e8ne secondaire confidentielle",
                         "quantite": 5,
                         "prix_par_personne": 100,
                         "total_option": 500
@@ -178,29 +178,29 @@
                 "voyageurs": 4,
                 "options": [
                     {
-                        "type": "expédition",
-                        "nom": "Visite guidée historique",
+                        "type": "exp\u00e9dition",
+                        "nom": "Visite guid\u00e9e historique",
                         "quantite": 2,
                         "prix_par_personne": 180,
                         "total_option": 360
                     },
                     {
                         "type": "repas",
-                        "nom": "Repas typique de l’époque",
+                        "nom": "Repas typique de l\u2019\u00e9poque",
                         "quantite": 3,
                         "prix_par_personne": 75,
                         "total_option": 225
                     },
                     {
                         "type": "souvenir",
-                        "nom": "Objet d’époque discret",
+                        "nom": "Objet d\u2019\u00e9poque discret",
                         "quantite": 4,
                         "prix_par_personne": 60,
                         "total_option": 240
                     },
                     {
                         "type": "bonus",
-                        "nom": "Accès à une scène secondaire confidentielle",
+                        "nom": "Acc\u00e8s \u00e0 une sc\u00e8ne secondaire confidentielle",
                         "quantite": 2,
                         "prix_par_personne": 100,
                         "total_option": 200
@@ -209,42 +209,42 @@
                 "total": 11241
             },
             {
-                "titre": "Terre ré-ensauvagée",
+                "titre": "Terre r\u00e9-ensauvag\u00e9e",
                 "date": "2025-05-17",
                 "date_depart": "2025-05-29",
                 "voyageurs": 5,
                 "options": [
                     {
-                        "type": "activité",
-                        "nom": "Immersion 360°",
+                        "type": "activit\u00e9",
+                        "nom": "Immersion 360\u00b0",
                         "quantite": 5,
                         "prix_par_personne": 100,
                         "total_option": 500
                     },
                     {
-                        "type": "hébergement",
-                        "nom": "Tente de l’époque",
+                        "type": "h\u00e9bergement",
+                        "nom": "Tente de l\u2019\u00e9poque",
                         "quantite": 2,
                         "prix_par_personne": 90,
                         "total_option": 180
                     },
                     {
                         "type": "repas",
-                        "nom": "Repas typique de l’époque",
+                        "nom": "Repas typique de l\u2019\u00e9poque",
                         "quantite": 3,
                         "prix_par_personne": 75,
                         "total_option": 225
                     },
                     {
                         "type": "souvenir",
-                        "nom": "Objet d’époque discret",
+                        "nom": "Objet d\u2019\u00e9poque discret",
                         "quantite": 4,
                         "prix_par_personne": 60,
                         "total_option": 240
                     },
                     {
                         "type": "bonus",
-                        "nom": "Accès à une scène secondaire confidentielle",
+                        "nom": "Acc\u00e8s \u00e0 une sc\u00e8ne secondaire confidentielle",
                         "quantite": 3,
                         "prix_par_personne": 100,
                         "total_option": 300
@@ -291,14 +291,14 @@
                 "total": 19899
             },
             {
-                "titre": "Assassinat de Jules César",
+                "titre": "Assassinat de Jules C\u00e9sar",
                 "date": "2025-05-18",
                 "date_depart": "2025-05-30",
                 "voyageurs": 1,
                 "options": [
                     {
-                        "type": "hébergement",
-                        "nom": "Taverne populaire près du Forum",
+                        "type": "h\u00e9bergement",
+                        "nom": "Taverne populaire pr\u00e8s du Forum",
                         "quantite": 1,
                         "prix_par_personne": 2100,
                         "total_option": 2100
@@ -307,7 +307,7 @@
                 "total": 24499
             },
             {
-                "titre": "Débarquement de Normandie",
+                "titre": "D\u00e9barquement de Normandie",
                 "date": "2025-05-21",
                 "date_depart": "2025-05-24",
                 "voyageurs": 2,
@@ -329,29 +329,29 @@
                 "voyageurs": 3,
                 "options": [
                     {
-                        "type": "hébergement",
+                        "type": "h\u00e9bergement",
                         "nom": "Pension familiale dans le Marais",
                         "quantite": 2,
                         "prix_par_personne": 1100,
                         "total_option": 2200
                     },
                     {
-                        "type": "hébergement",
-                        "nom": "Suite luxueuse à l’hôtel Continental (près de l’Opéra)",
+                        "type": "h\u00e9bergement",
+                        "nom": "Suite luxueuse \u00e0 l\u2019h\u00f4tel Continental (pr\u00e8s de l\u2019Op\u00e9ra)",
                         "quantite": 3,
                         "prix_par_personne": 2200,
                         "total_option": 6600
                     },
                     {
                         "type": "repas",
-                        "nom": "Dîner gastronomique à la française dans un salon Belle Époque",
+                        "nom": "D\u00eener gastronomique \u00e0 la fran\u00e7aise dans un salon Belle \u00c9poque",
                         "quantite": 1,
                         "prix_par_personne": 120,
                         "total_option": 120
                     },
                     {
                         "type": "souvenir",
-                        "nom": "Affiche originale de l’Exposition Universelle",
+                        "nom": "Affiche originale de l\u2019Exposition Universelle",
                         "quantite": 2,
                         "prix_par_personne": 60,
                         "total_option": 120
@@ -456,7 +456,7 @@
         "telephone": "123456789",
         "date_inscription": "2025-05-11",
         "derniere_connexion": "2025-05-11 19:12:00",
-        "role": "client",
+        "role": "vip",
         "commandes": []
     },
     {
@@ -473,43 +473,43 @@
         "role": "client",
         "commandes": [
             {
-                "titre": "Terre ré-ensauvagée",
+                "titre": "Terre r\u00e9-ensauvag\u00e9e",
                 "date": "2025-05-11",
                 "date_depart": "2025-05-11",
                 "voyageurs": 2,
                 "options": [
                     {
-                        "type": "activité",
-                        "nom": "Immersion 360°",
+                        "type": "activit\u00e9",
+                        "nom": "Immersion 360\u00b0",
                         "prix_par_personne": 100
                     },
                     {
-                        "type": "hébergement",
-                        "nom": "Tente de l’époque",
+                        "type": "h\u00e9bergement",
+                        "nom": "Tente de l\u2019\u00e9poque",
                         "prix_par_personne": 90
                     },
                     {
                         "type": "repas",
-                        "nom": "Repas typique de l’époque",
+                        "nom": "Repas typique de l\u2019\u00e9poque",
                         "prix_par_personne": 75
                     }
                 ],
                 "total": 5354
             },
             {
-                "titre": "Assassinat de Jules César",
+                "titre": "Assassinat de Jules C\u00e9sar",
                 "date": "2025-05-11",
                 "date_depart": "2025-05-11",
                 "voyageurs": 4,
                 "options": [
                     {
                         "type": "repas",
-                        "nom": "Repas typique de l’époque",
+                        "nom": "Repas typique de l\u2019\u00e9poque",
                         "prix_par_personne": 75
                     },
                     {
                         "type": "souvenir",
-                        "nom": "Objet d’époque discret",
+                        "nom": "Objet d\u2019\u00e9poque discret",
                         "prix_par_personne": 60
                     }
                 ],
@@ -522,42 +522,42 @@
                 "voyageurs": 1,
                 "options": [
                     {
-                        "type": "hébergement",
+                        "type": "h\u00e9bergement",
                         "nom": "Auberge temporelle",
                         "prix_par_personne": 120
                     },
                     {
                         "type": "repas",
-                        "nom": "Repas typique de l’époque",
+                        "nom": "Repas typique de l\u2019\u00e9poque",
                         "prix_par_personne": 75
                     },
                     {
                         "type": "souvenir",
-                        "nom": "Objet d’époque discret",
+                        "nom": "Objet d\u2019\u00e9poque discret",
                         "prix_par_personne": 60
                     }
                 ],
                 "total": 1599
             },
             {
-                "titre": "Révolte des IA",
+                "titre": "R\u00e9volte des IA",
                 "date": "2025-05-11",
                 "date_depart": "2025-05-11",
                 "voyageurs": 10,
                 "options": [
                     {
-                        "type": "hébergement",
-                        "nom": "Tente de l’époque",
+                        "type": "h\u00e9bergement",
+                        "nom": "Tente de l\u2019\u00e9poque",
                         "prix_par_personne": 90
                     },
                     {
-                        "type": "expédition",
-                        "nom": "Visite guidée historique",
+                        "type": "exp\u00e9dition",
+                        "nom": "Visite guid\u00e9e historique",
                         "prix_par_personne": 180
                     },
                     {
                         "type": "repas",
-                        "nom": "Repas typique de l’époque",
+                        "nom": "Repas typique de l\u2019\u00e9poque",
                         "prix_par_personne": 75
                     }
                 ],
@@ -570,18 +570,18 @@
                 "voyageurs": 8,
                 "options": [
                     {
-                        "type": "hébergement",
-                        "nom": "Tente de l’époque",
+                        "type": "h\u00e9bergement",
+                        "nom": "Tente de l\u2019\u00e9poque",
                         "prix_par_personne": 90
                     },
                     {
                         "type": "repas",
-                        "nom": "Repas typique de l’époque",
+                        "nom": "Repas typique de l\u2019\u00e9poque",
                         "prix_par_personne": 75
                     },
                     {
                         "type": "bonus",
-                        "nom": "Accès à une scène secondaire confidentielle",
+                        "nom": "Acc\u00e8s \u00e0 une sc\u00e8ne secondaire confidentielle",
                         "prix_par_personne": 100
                     }
                 ],
@@ -594,23 +594,23 @@
                 "voyageurs": 10,
                 "options": [
                     {
-                        "type": "expédition",
-                        "nom": "Visite guidée historique",
+                        "type": "exp\u00e9dition",
+                        "nom": "Visite guid\u00e9e historique",
                         "prix_par_personne": 180
                     },
                     {
                         "type": "repas",
-                        "nom": "Repas typique de l’époque",
+                        "nom": "Repas typique de l\u2019\u00e9poque",
                         "prix_par_personne": 75
                     },
                     {
                         "type": "souvenir",
-                        "nom": "Objet d’époque discret",
+                        "nom": "Objet d\u2019\u00e9poque discret",
                         "prix_par_personne": 60
                     },
                     {
                         "type": "bonus",
-                        "nom": "Accès à une scène secondaire confidentielle",
+                        "nom": "Acc\u00e8s \u00e0 une sc\u00e8ne secondaire confidentielle",
                         "prix_par_personne": 100
                     }
                 ],
@@ -646,24 +646,24 @@
         "role": "admin",
         "commandes": [
             {
-                "titre": "Débarquement de Normandie",
+                "titre": "D\u00e9barquement de Normandie",
                 "date": "2025-05-12",
                 "date_depart": "2025-05-12",
                 "voyageurs": 1,
                 "options": [
                     {
-                        "type": "expédition",
-                        "nom": "Visite guidée historique",
+                        "type": "exp\u00e9dition",
+                        "nom": "Visite guid\u00e9e historique",
                         "prix_par_personne": 180
                     },
                     {
                         "type": "souvenir",
-                        "nom": "Objet d’époque discret",
+                        "nom": "Objet d\u2019\u00e9poque discret",
                         "prix_par_personne": 60
                     },
                     {
                         "type": "bonus",
-                        "nom": "Accès à une scène secondaire confidentielle",
+                        "nom": "Acc\u00e8s \u00e0 une sc\u00e8ne secondaire confidentielle",
                         "prix_par_personne": 100
                     }
                 ],
@@ -685,34 +685,34 @@
         "role": "client",
         "commandes": [
             {
-                "titre": "Terre ré-ensauvagée",
+                "titre": "Terre r\u00e9-ensauvag\u00e9e",
                 "date": "2025-05-14",
                 "date_depart": "2025-05-14",
                 "voyageurs": 7,
                 "options": [
                     {
-                        "type": "activité",
-                        "nom": "Immersion 360°",
+                        "type": "activit\u00e9",
+                        "nom": "Immersion 360\u00b0",
                         "prix_par_personne": 100
                     },
                     {
-                        "type": "hébergement",
-                        "nom": "Tente de l’époque",
+                        "type": "h\u00e9bergement",
+                        "nom": "Tente de l\u2019\u00e9poque",
                         "prix_par_personne": 90
                     },
                     {
                         "type": "repas",
-                        "nom": "Repas typique de l’époque",
+                        "nom": "Repas typique de l\u2019\u00e9poque",
                         "prix_par_personne": 75
                     },
                     {
                         "type": "souvenir",
-                        "nom": "Objet d’époque discret",
+                        "nom": "Objet d\u2019\u00e9poque discret",
                         "prix_par_personne": 60
                     },
                     {
                         "type": "bonus",
-                        "nom": "Accès à une scène secondaire confidentielle",
+                        "nom": "Acc\u00e8s \u00e0 une sc\u00e8ne secondaire confidentielle",
                         "prix_par_personne": 100
                     }
                 ],
@@ -740,28 +740,28 @@
                 "voyageurs": 9,
                 "options": [
                     {
-                        "type": "activité",
-                        "nom": "Immersion 360°",
+                        "type": "activit\u00e9",
+                        "nom": "Immersion 360\u00b0",
                         "prix_par_personne": 100
                     },
                     {
-                        "type": "expédition",
-                        "nom": "Visite guidée historique",
+                        "type": "exp\u00e9dition",
+                        "nom": "Visite guid\u00e9e historique",
                         "prix_par_personne": 180
                     },
                     {
                         "type": "repas",
-                        "nom": "Repas typique de l’époque",
+                        "nom": "Repas typique de l\u2019\u00e9poque",
                         "prix_par_personne": 75
                     },
                     {
                         "type": "souvenir",
-                        "nom": "Objet d’époque discret",
+                        "nom": "Objet d\u2019\u00e9poque discret",
                         "prix_par_personne": 60
                     },
                     {
                         "type": "bonus",
-                        "nom": "Accès à une scène secondaire confidentielle",
+                        "nom": "Acc\u00e8s \u00e0 une sc\u00e8ne secondaire confidentielle",
                         "prix_par_personne": 100
                     }
                 ],
@@ -785,10 +785,10 @@
     },
     {
         "id": "68306ed163471",
-        "prenom": "z",
+        "prenom": "zkicodn",
         "nom": "a",
-        "date_naissance": "2025-05-07",
-        "genre": "Femme",
+        "date_naissance": "2025-05-42",
+        "genre": "homme",
         "email": "z@cy.fr",
         "motdepasse": "$2y$10$Vyw0LNpm7YBBV591FkiX6u96eVdCStCk7J69UddG5NwUN1zAx70xa",
         "telephone": "0641104600",
@@ -805,20 +805,28 @@
                 "total": 1500
             },
             {
-                "titre": "Assassinat de Jules César",
+                "titre": "Abonnement VIP",
+                "date": "2025-05-23",
+                "date_depart": "2025-05-23",
+                "voyageurs": 1,
+                "options": [],
+                "total": 1500
+            },
+            {
+                "titre": "Assassinat de Jules C\u00e9sar",
                 "date": "2025-05-23",
                 "date_depart": "2025-05-31",
                 "voyageurs": 3,
                 "options": [
                     {
-                        "type": "hébergement",
-                        "nom": "Taverne populaire près du Forum",
+                        "type": "h\u00e9bergement",
+                        "nom": "Taverne populaire pr\u00e8s du Forum",
                         "quantite": 2,
                         "prix_par_personne": 2100,
                         "total_option": 4200
                     },
                     {
-                        "type": "hébergement",
+                        "type": "h\u00e9bergement",
                         "nom": "Domus senatoriale avec vue sur le Capitole",
                         "quantite": 3,
                         "prix_par_personne": 820,
@@ -826,7 +834,7 @@
                     },
                     {
                         "type": "repas",
-                        "nom": "Banquet romain en l'honneur de César",
+                        "nom": "Banquet romain en l'honneur de C\u00e9sar",
                         "quantite": 1,
                         "prix_par_personne": 7500,
                         "total_option": 7500
@@ -847,7 +855,7 @@
         "telephone": "0641104600",
         "date_inscription": "2025-05-23",
         "derniere_connexion": "2025-05-23 13:44:51",
-        "role": "admin",
+        "role": "vip",
         "commandes": [
             {
                 "titre": "Abonnement VIP",
@@ -865,35 +873,35 @@
                 "options": [
                     {
                         "type": "hebergement ",
-                        "nom": "Suite suspendue à gravité modulable",
+                        "nom": "Suite suspendue \u00e0 gravit\u00e9 modulable",
                         "quantite": 2,
                         "prix_par_personne": 10000,
                         "total_option": 20000
                     },
                     {
-                        "type": "hébergement",
-                        "nom": "Pod panoramique avec dôme en verre",
+                        "type": "h\u00e9bergement",
+                        "nom": "Pod panoramique avec d\u00f4me en verre",
                         "quantite": 3,
                         "prix_par_personne": 900,
                         "total_option": 2700
                     },
                     {
                         "type": "repas",
-                        "nom": "Dîner omakase en orbite haute",
+                        "nom": "D\u00eener omakase en orbite haute",
                         "quantite": 1,
                         "prix_par_personne": 750,
                         "total_option": 750
                     },
                     {
                         "type": "repas",
-                        "nom": "Menu street-food néon au marché flottant",
+                        "nom": "Menu street-food n\u00e9on au march\u00e9 flottant",
                         "quantite": 3,
                         "prix_par_personne": 60,
                         "total_option": 180
                     },
                     {
                         "type": "bonus",
-                        "nom": "Accès à la boîte de nuit quantique VIP",
+                        "nom": "Acc\u00e8s \u00e0 la bo\u00eete de nuit quantique VIP",
                         "quantite": 2,
                         "prix_par_personne": 10000,
                         "total_option": 20000
