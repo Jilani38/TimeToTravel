@@ -1,3 +1,4 @@
+/* ====== Conteneur principal de la page de paiement ====== */
 .container {
     max-width: 800px;
     margin: 100px auto;
@@ -7,12 +8,14 @@
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
+/* ====== Titre principal ====== */
 h2 {
     text-align: center;
     margin-bottom: 30px;
     color: var(--primary-background);
 }
 
+/* ====== Carte de résumé du voyage sélectionné ====== */
 .bubble {
     position: relative;
     border-radius: 12px;
@@ -23,10 +26,10 @@ h2 {
     flex-direction: column;
     justify-content: flex-end;
     min-height: 200px;
-    /* color: white; */
-    --bg-url: none;
+    --bg-url: none; /* utilisé pour insérer dynamiquement l'image */
 }
 
+/* ====== Image de fond floutée derrière la bulle ====== */
 .bubble::before {
     content: "";
     position: absolute;
@@ -40,6 +43,7 @@ h2 {
     opacity: 0.6;
 }
 
+/* ====== Titre de la destination affiché par-dessus ====== */
 .title {
     background: rgba(0,0,0,0.6);
     color: white;
@@ -51,9 +55,8 @@ h2 {
     z-index: 1;
 }
 
+/* ====== Détails du voyage (dates, options, etc.) ====== */
 .details {
-    /* background: rgba(255,255,255,0.95); */
-    /* color: #000; */
     padding: 12px 16px;
     font-size: 14px;
     border-radius: 0 0 12px 12px;
@@ -61,6 +64,7 @@ h2 {
     z-index: 1;
 }
 
+/* ====== Bloc final avec récapitulatif + bouton paiement ====== */
 .recap-final {
     margin-top: 40px;
     padding: 20px;
@@ -68,17 +72,20 @@ h2 {
     text-align: center;
 }
 
+/* ====== Titre de la section récapitulatif ====== */
 .recap-final h3 {
     font-size: 20px;
     margin-bottom: 20px;
 }
 
+/* ====== Formulaire contenant le bouton "Payer" ====== */
 .payment-form {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+/* ====== Bouton de validation du paiement ====== */
 .payment-form button {
     padding: 14px 24px;
     background-color: #2d89ef;
@@ -95,20 +102,20 @@ h2 {
     background-color: #1b65b9;
 }
 
-
-/*partie paiement vip*/
-
+/* ====== Partie spécifique à l'abonnement VIP ====== */
 .vip-container {
   max-width: 700px;
   margin: 100px auto;
   padding: 2em;
 }
 
+/* ====== Titre + texte en haut de la section VIP ====== */
 .vip-header {
   text-align: center;
   margin-bottom: 2em;
 }
 
+/* ====== Bloc CGU dans la version VIP ====== */
 .cgu {
   font-size: 0.9em;
   color: #666;
@@ -118,10 +125,12 @@ h2 {
   gap: 8px;
 }
 
+/* ====== Case à cocher CGU dans le formulaire VIP ====== */
 .cgu input {
   transform: scale(1.2);
 }
 
+/* ====== Bouton désactivé quand CGU non cochées ====== */
 .submit-disabled {
   opacity: 0.6;
   cursor: not-allowed;

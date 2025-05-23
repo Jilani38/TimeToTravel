@@ -1,10 +1,10 @@
-/* ====== Fond général ====== */
+/* ====== Fond général de la page ====== */
 body {
   display: flex;
   flex-direction: column;
 }
 
-/* ====== Header reste bien en haut ====== */
+/* ====== En-tête (header) fixé en haut ====== */
 header {
   background-color: var(--primary-background);
   color: white;
@@ -12,7 +12,7 @@ header {
   flex-shrink: 0;
 }
 
-/* ====== Formulaire ====== */
+/* ====== Formulaire encadré avec ombre ====== */
 form.card {
   background-color: white;
   margin: 100px auto;
@@ -23,16 +23,19 @@ form.card {
   border-radius: 12px;
 }
 
+/* ====== Titre du formulaire ====== */
 h2 {
   color: var(--primary-background);
   margin-bottom: 20px;
 }
 
+/* ====== Bloc d'un champ de formulaire ====== */
 .input-group {
   margin-bottom: 20px;
   text-align: left;
 }
 
+/* ====== Label d'un champ ====== */
 .input-group label {
   display: block;
   font-weight: bold;
@@ -40,6 +43,7 @@ h2 {
   margin-bottom: 5px;
 }
 
+/* ====== Champs de saisie (texte, mail, mdp...) ====== */
 input[type="text"],
 input[type="email"],
 input[type="password"],
@@ -52,12 +56,14 @@ input[type="date"] {
   box-sizing: border-box;
 }
 
+/* ====== Groupe des boutons radio (ex : homme/femme) ====== */
 .radio-group {
   display: flex;
   align-items: center;
   gap: 10px;
 }
 
+/* ====== Bouton valider principal ====== */
 button.btn-primary {
   background-color: #123964;
   color: white;
@@ -73,8 +79,7 @@ button.btn-primary:hover {
   background-color: #19508a;
 }
 
-/* bouton vip */
-
+/* ====== Bouton jaune pour devenir VIP ====== */
 .btn-vip {
   display: inline-block;
   width: 100%;
@@ -95,15 +100,14 @@ button.btn-primary:hover {
   transform: scale(1.03);
 }
 
-
-/*pour les cgu*/
-
+/* ====== Bloc CGU (conditions générales) ====== */
 .cgu {
   font-size: 0.9em;
   color: #666;
   margin-bottom: 1.5em;
 }
 
+/* ====== Lien vers CGU ====== */
 .cgu a {
   color: #007bff;
   text-decoration: none;
@@ -113,6 +117,7 @@ button.btn-primary:hover {
   text-decoration: underline;
 }
 
+/* ====== Case à cocher CGU ====== */
 .cgu input[type="checkbox"] {
   margin-right: 10px;
   transform: scale(1.2);

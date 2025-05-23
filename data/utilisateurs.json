@@ -9,7 +9,7 @@
         "motdepasse": "$2y$10$WegyZTDNYsmbuvviME\/wr.9ULjrjJ\/LPNpdOeoZPyrWw9LJ\/yoEhO",
         "telephone": "0641104600",
         "date_inscription": "2025-03-31",
-        "derniere_connexion": "2025-05-19 13:49:47",
+        "derniere_connexion": "2025-05-23 13:20:37",
         "role": "admin",
         "commandes": [
             {
@@ -305,6 +305,59 @@
                     }
                 ],
                 "total": 24499
+            },
+            {
+                "titre": "Débarquement de Normandie",
+                "date": "2025-05-21",
+                "date_depart": "2025-05-24",
+                "voyageurs": 2,
+                "options": [],
+                "total": 37200
+            },
+            {
+                "titre": "Avant Apollo 11",
+                "date": "2025-05-21",
+                "date_depart": "2025-05-30",
+                "voyageurs": 1,
+                "options": [],
+                "total": 42999
+            },
+            {
+                "titre": "Inauguration de la Tour Eiffel",
+                "date": "2025-05-23",
+                "date_depart": "2025-05-30",
+                "voyageurs": 3,
+                "options": [
+                    {
+                        "type": "hébergement",
+                        "nom": "Pension familiale dans le Marais",
+                        "quantite": 2,
+                        "prix_par_personne": 1100,
+                        "total_option": 2200
+                    },
+                    {
+                        "type": "hébergement",
+                        "nom": "Suite luxueuse à l’hôtel Continental (près de l’Opéra)",
+                        "quantite": 3,
+                        "prix_par_personne": 2200,
+                        "total_option": 6600
+                    },
+                    {
+                        "type": "repas",
+                        "nom": "Dîner gastronomique à la française dans un salon Belle Époque",
+                        "quantite": 1,
+                        "prix_par_personne": 120,
+                        "total_option": 120
+                    },
+                    {
+                        "type": "souvenir",
+                        "nom": "Affiche originale de l’Exposition Universelle",
+                        "quantite": 2,
+                        "prix_par_personne": 60,
+                        "total_option": 120
+                    }
+                ],
+                "total": 69037
             }
         ]
     },
@@ -729,5 +782,28 @@
         "derniere_connexion": "2025-05-19 12:14:34",
         "role": "client",
         "commandes": []
+    },
+    {
+        "id": "68306ed163471",
+        "prenom": "z",
+        "nom": "a",
+        "date_naissance": "2025-05-07",
+        "genre": "Femme",
+        "email": "z@cy.fr",
+        "motdepasse": "$2y$10$Vyw0LNpm7YBBV591FkiX6u96eVdCStCk7J69UddG5NwUN1zAx70xa",
+        "telephone": "0641104600",
+        "date_inscription": "2025-05-23",
+        "derniere_connexion": "2025-05-23 12:58:23",
+        "role": "vip",
+        "commandes": [
+            {
+                "titre": "Abonnement VIP",
+                "date": "2025-05-23",
+                "date_depart": "2025-05-23",
+                "voyageurs": 1,
+                "options": [],
+                "total": 1500
+            }
+        ]
     }
 ]

@@ -1,21 +1,23 @@
+/* ====== Style global du body ====== */
 body {
-  
   margin: 0;
   padding: 0;
 }
 
+/* ====== Conteneur principal du tableau de bord ====== */
 main.dashboard {
   max-width: 1000px;
   margin: 100px auto;
 }
 
+/* ====== Titre du dashboard ====== */
 .dashboard h1 {
   color: var(--primary-background);
   margin-bottom: 10px;
   text-align: center;
 }
 
-/* ✅ Message de succès */
+/* ✅ Message de succès (ex : profil mis à jour) */
 .success-message {
   background-color: #d9f3e7;
   color: #157347;
@@ -28,6 +30,7 @@ main.dashboard {
   font-weight: bold;
 }
 
+/* ====== Boutons d’onglets Profil / Commandes ====== */
 .onglets {
   display: flex;
   justify-content: center;
@@ -51,26 +54,30 @@ main.dashboard {
   color: var(--background);
 }
 
+/* Onglet actif */
 .onglet-actif {
   background-color: var(--primary-background) !important;
   color: var(--background) !important;
 }
 
+/* Contenu d’onglet caché par défaut */
 .onglet-section {
   display: none;
 }
 
+/* Contenu d’onglet visible */
 .onglet-section.actif {
   display: block;
 }
 
+/* Titre de section */
 .onglet-section h2 {
   text-align: center;
   margin-top: 0;
   color: var(--primary-background);
 }
 
-/* ✅ Profil inline */
+/* ✅ Informations du profil affichées en ligne */
 .profil-inline {
   width: max-content;
   margin: 0 auto;
@@ -100,13 +107,14 @@ main.dashboard {
   max-width: 250px;
 }
 
+/* Champs désactivés */
 .profil-inline input[disabled] {
   background-color: #f2f2f2;
   color: #333;
   border-color: #ccc;
 }
 
-/* ✅ Boutons d'action inline */
+/* ✅ Petits boutons inline : modifier / valider / annuler */
 .btn-edit,
 .btn-valider,
 .btn-annuler {
@@ -127,7 +135,7 @@ main.dashboard {
   color: white;
 }
 
-/* ✅ Bouton général Enregistrer */
+/* ✅ Gros bouton enregistrer (bas du formulaire) */
 #btn-enregistrer {
   display: block;
   margin: 30px auto 0;
@@ -145,7 +153,7 @@ main.dashboard {
   background-color: #0f2d55;
 }
 
-/* ✅ Commandes */
+/* ✅ Grille des cartes de commandes (onglet Commandes) */
 .cartes-commandes {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -153,6 +161,7 @@ main.dashboard {
   margin-top: 20px;
 }
 
+/* ✅ Carte individuelle de commande */
 .carte-commande {
   border: 1px solid #ddd;
   background-color: #f2f9ff;
@@ -172,13 +181,13 @@ main.dashboard {
   color: #333;
 }
 
-/* ❌ Suppression ancien bouton global d'édition */
+/* ❌ Ancien bouton d’édition supprimé */
 #form-profil,
 #btn-editer-profil {
   display: none !important;
 }
 
-/* ✅ Ajout : bouton devenir VIP */
+/* ✅ Bouton devenir VIP */
 .btn-vip {
   display: block;
   margin: 20px auto;
@@ -200,8 +209,7 @@ main.dashboard {
   transform: scale(1.05);
 }
 
-
-/* ✅ Ajout : message si déjà VIP */
+/* ✅ Message informatif si l'utilisateur est déjà VIP */
 .btn-vip-message {
   display: block;
   margin: 20px auto;

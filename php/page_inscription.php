@@ -1,9 +1,15 @@
 <?php
+// Démarre la session
 session_start();
+
+// Vérifie si le formulaire a été soumis
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
   $fichier = "../data/utilisateurs.json";
+
+  // Lit le fichier JSON des utilisateurs s’il existe
   $utilisateurs = file_exists($fichier) ? json_decode(file_get_contents($fichier), true) : [];
 
+  // Récupère les champs du formulaire
   $prenom = trim($_POST['prenom']);
   $nom = trim($_POST['nom']);
   $date_naissance = $_POST['date_naissance'];
@@ -13,16 +19,19 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
   $confirm_mdp = $_POST['confirm_mdp'];
   $telephone = trim($_POST['telephone']);
 
+  // Vérifie que les mots de passe correspondent
   if ($motdepasse !== $confirm_mdp) {
     die("Les mots de passe ne correspondent pas !");
   }
 
+  // Vérifie si l’email existe déjà
   foreach ($utilisateurs as $u) {
     if ($u['email'] === $email) {
       die("Cet email existe déjà !");
     }
   }
 
+  // Crée le nouveau compte utilisateur
   $nouvel_utilisateur = [
     "id" => uniqid(),
     "prenom" => $prenom,
@@ -38,9 +47,13 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     "commandes" => []
   ];
 
+  // Ajoute le nouvel utilisateur au tableau
   $utilisateurs[] = $nouvel_utilisateur;
+
+  // Sauvegarde dans le fichier JSON
   file_put_contents($fichier, json_encode($utilisateurs, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE));
 
+  // Redirige selon le bouton cliqué
   if (isset($_POST['vip'])) {
     header("Location: page_paiement_vip_inscription.php?id=" . $nouvel_utilisateur['id']);
     exit();
@@ -64,27 +77,33 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
   <body>
     <header>
+      <!-- Barre de navigation -->
       <?php require_once './partials/nav.php' ?>
     </header>
 
+    <!-- Formulaire d’inscription -->
     <form action="page_inscription.php" method="post" class="card">
       <h2>Inscris-toi !</h2>
 
+      <!-- Prénom -->
       <div class="input-group">
         <label for="prenom">Prénom :</label>
         <input type="text" id="prenom" name="prenom" required />
       </div>
 
+      <!-- Nom -->
       <div class="input-group">
         <label for="nom">Nom :</label>
         <input type="text" id="nom" name="nom" required />
       </div>
 
+      <!-- Date de naissance -->
       <div class="input-group">
         <label for="date_naissance">Date de naissance :</label>
         <input type="date" id="date_naissance" name="date_naissance" required />
       </div>
 
+      <!-- Genre (radio) -->
       <div class="input-group">
         <label>Genre :</label>
         <div class="radio-group">
@@ -95,16 +114,19 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         </div>
       </div>
 
+      <!-- Adresse mail -->
       <div class="input-group">
         <label for="email">Adresse mail :</label>
         <input type="email" id="email" name="email" required />
       </div>
 
+      <!-- Téléphone -->
       <div class="input-group">
         <label for="telephone">Téléphone :</label>
         <input type="tel" id="telephone" name="telephone" required />
       </div>
 
+      <!-- Mot de passe -->
       <div class="input-group input-password">
         <label for="motdepasse">Mot de passe :</label>
         <input type="password" id="motdepasse" name="motdepasse" maxlength="20" required />
@@ -112,6 +134,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         <span class="char-count">0 / 20</span>
       </div>
 
+      <!-- Confirmation mot de passe -->
       <div class="input-group input-password">
         <label for="confirm_mdp">Confirmer mot de passe :</label>
         <input type="password" id="confirm_mdp" name="confirm_mdp" maxlength="20" required />
@@ -119,21 +142,28 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         <span class="char-count">0 / 20</span>
       </div>
 
+      <!-- CGU à accepter -->
       <div class="input-group cgu">
         <label>
-       <input type="checkbox" id="accept-cgu" required />
-       <span>En créant un compte, vous acceptez nos <a class="btn-cgu" href="../data/CGU_T2T.pdf" target="_blank">Conditions Générales d'Utilisation</a> et notre politique de confidentialité.</span>
-       </label>
+          <input type="checkbox" id="accept-cgu" required />
+          <span>En créant un compte, vous acceptez nos <a class="btn-cgu" href="../data/CGU_T2T.pdf" target="_blank">Conditions Générales d'Utilisation</a> et notre politique de confidentialité.</span>
+        </label>
       </div>
 
-
+      <!-- Boutons de soumission -->
       <button type="submit" name="vip" class="btn-vip" disabled>👑 Je veux devenir VIP Traveleur !</button>
-      <button type="submit" class="btn-primary"disabled>Créer mon compte</button>
+      <button type="submit" class="btn-primary" disabled>Créer mon compte</button>
+
+      <!-- Lien vers connexion -->
       <a href="page_connexion.php" class="btn-secondary">J'ai déjà un compte</a>
     </form>
 
+    <!-- Script JS pour la validation -->
     <script src="../js/form_validation.js"></script>
   </body>
 </html>
 
-<?php include './partials/footer.php'; ?>
+<?php
+// Pied de page
+include './partials/footer.php';
+?>

@@ -1,13 +1,15 @@
+/* ====== Conteneur principal du contenu voyage ====== */
 .voyage-container {
   margin-top: 50px;
   padding: 2em;
   gap: 2em;
   opacity: 0;
-  transform: translateY(20px);
-  animation: fadeInUp 1s ease forwards;
+  margin-top: 70px;;
+  transform: translateY(30px);
+  animation: fadeInUp 3s ease forwards; /* Animation d'entrée vers le haut */
 }
 
-/* Animation d'entrée */
+/* ====== Animation douce en entrée ====== */
 @keyframes fadeInUp {
   to {
     opacity: 1;
@@ -15,7 +17,7 @@
   }
 }
 
-/* Ligne contenant image + réservation */
+/* ====== Ligne du haut : image à gauche + formulaire à droite ====== */
 .ligne-haut {
   display: flex;
   justify-content: center;
@@ -24,7 +26,7 @@
   gap: 2em;
 }
 
-/* Colonne gauche = image + infos */
+/* ====== Colonne gauche : image + infos ====== */
 .colonne-gauche {
   display: flex;
   flex-direction: column;
@@ -33,7 +35,7 @@
   flex: 1;
 }
 
-/* Colonne droite = titre + formulaire */
+/* ====== Colonne droite : formulaire de réservation ====== */
 .colonne-droite {
   display: flex;
   flex-direction: column;
@@ -44,14 +46,14 @@
   margin-top: 0;
 }
 
-/* Image */
+/* ====== Image du voyage ====== */
 .image img {
   width: 100%;
   border-radius: 15px;
   box-shadow: 0 0 10px rgba(0,0,0,0.2);
 }
 
-/* Titre du voyage (au-dessus du formulaire) */
+/* ====== Titre principal du voyage ====== */
 .titre-voyage-reservation {
   font-size: 2em;
   font-weight: bold;
@@ -59,7 +61,7 @@
   margin: 0 0 0.5em 0;
 }
 
-/* Infos (sous l'image) */
+/* ====== Bloc infos sous l’image (description, étapes...) ====== */
 .card.infos {
   background-color: white;
   padding: 1.5em;
@@ -75,33 +77,38 @@
   margin: 0 0 0.5em 0;
 }
 
+/* ====== Description en italique ====== */
 .description {
   font-style: italic;
   margin-bottom: 1.5em;
 }
 
+/* ====== Espacement entre étapes, listes ou formulaire dans .infos ====== */
 .etape,
 .infos ul,
 .infos form {
   margin-bottom: 1.5em;
 }
 
+/* ====== Titres secondaires ====== */
 h2 {
   margin-top: 1.2em;
   color: #457b9d;
 }
 
+/* ====== Marges dans les listes ====== */
 ul {
   padding-left: 1em;
 }
 
+/* ====== Prix affiché dans .infos ====== */
 .prix {
   font-size: 1.4em;
   color: #e63946;
   font-weight: bold;
 }
 
-/* Carte personnalisation à droite */
+/* ====== Bloc formulaire à droite : personnalisation / réservation ====== */
 .card.reservation {
   background-color: #f9f9f9;
   padding: 1.5em;
@@ -117,13 +124,14 @@ ul {
   color: #1d3557;
 }
 
-/* Formulaire */
+/* ====== Formulaire vertical ====== */
 form {
   display: flex;
   flex-direction: column;
   gap: 1em;
 }
 
+/* ====== Champs numériques et dates ====== */
 input[type="number"],
 input[type="date"] {
   padding: 0.5em;
@@ -132,6 +140,7 @@ input[type="date"] {
   max-width: 200px;
 }
 
+/* ====== Bouton de validation du formulaire ====== */
 button {
   background-color: #1d3557;
   color: white;
@@ -147,7 +156,7 @@ button:hover {
   background-color: #457b9d;
 }
 
-/* Options alignées horizontalement */
+/* ====== Options affichées horizontalement avec label + select ====== */
 .option {
   display: flex;
   flex-direction: row;
@@ -170,7 +179,7 @@ button:hover {
   max-width: 120px;
 }
 
-/* Prix total mis en valeur */
+/* ====== Affichage du prix total mis en évidence ====== */
 #prix-total {
   font-size: 1.6em;
   color: #e63946;

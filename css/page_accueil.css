@@ -1,8 +1,10 @@
+/* ====== Mise en page générale du body ====== */
 body {
   display: flex;
   flex-direction: column;
 }
 
+/* ====== Vidéo de fond plein écran ====== */
 #background-video {
   position: absolute;
   top: 0;
@@ -10,25 +12,26 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  /* Fait en sorte que la vidéo prenne tout l'espace */
   z-index: -2;
-  /* Met la vidéo derrière les éléments */
 }
 
+/* ====== Section header avec texte centré ====== */
 header {
   position: relative;
   height: 50vh;
-  /* Même hauteur que l'ancien header */
   display: grid;
   place-items: center;
   color: white;
   text-align: center;
 }
 
+/* ====== Navigation dans le header ====== */
 header nav {
   position: absolute;
+  background-color: transparent;
 }
 
+/* ====== Voile sombre sur la vidéo ====== */
 header::before {
   content: "";
   position: absolute;
@@ -37,26 +40,10 @@ header::before {
   width: 100%;
   height: 100%;
   background: rgb(0, 0, 0, 0.4);
-  /* Assombrit légèrement */
   z-index: -1;
 }
 
-header nav {
-  background-color: transparent;
-}
-
-/*header {
-  display: grid;
-  place-items: center;
-  height: 50vh;
-  background-image:
-    linear-gradient(#0008, #0008),
-    url("../img/accueil_hero.jpg");
-  background-size: cover;
-  background-position: center;
-  color: white;
-}*/
-
+/* ====== Champ de recherche dans le header ====== */
 header input {
   width: 50%;
   height: 50px;
@@ -66,20 +53,22 @@ header input {
   background: transparent;
   color: white;
   border: 1px solid white;
-
-  &::placeholder {
-    color: white;
-  }
-
-  &:focus {
-    outline: 2px solid white;
-  }
 }
 
+header input::placeholder {
+  color: white;
+}
+
+header input:focus {
+  outline: 2px solid white;
+}
+
+/* ====== Logo dans le header ====== */
 header img {
   width: 200px;
 }
 
+/* ====== Contenu principal ====== */
 main {
   flex: 1;
   display: flex;
@@ -87,15 +76,9 @@ main {
   gap: 5rem;
 }
 
-/*section#choice {
-  height: 50vh;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}*/
-
+/* ====== Sections de choix (passé/futur) avec image de fond ====== */
 section#choice aside {
   margin: 20px;
-  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
   box-shadow: 0 4px 8px 0 #0003;
   border-radius: 10px;
   background-size: cover;
@@ -103,23 +86,24 @@ section#choice aside {
   transition-property: box-shadow scale;
   transition-duration: 0.5s;
   overflow: hidden;
-
-  &:nth-child(1) {
-    margin-right: 0;
-    background-image: url("../img/accueil_past.avif");
-  }
-
-  &:is(:hover, :focus-within) {
-    /* box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2); */
-    box-shadow: 0 8px 16px 0 #0003;
-    scale: 1.01;
-  }
-
-  &:nth-child(2) {
-    background-image: url("../img/accueil_future.jpg");
-  }
 }
 
+section#choice aside:nth-child(1) {
+  margin-right: 0;
+  background-image: url("../img/accueil_past.avif");
+}
+
+section#choice aside:nth-child(2) {
+  background-image: url("../img/accueil_future.jpg");
+}
+
+/* ====== Hover sur les choix (past / future) ====== */
+section#choice aside:is(:hover, :focus-within) {
+  box-shadow: 0 8px 16px 0 #0003;
+  scale: 1.01;
+}
+
+/* ====== Contenu texte à l'intérieur d'un choix ====== */
 section#choice aside div {
   position: relative;
   height: 100%;
@@ -130,12 +114,14 @@ section#choice aside div {
   padding: 20px;
 }
 
+/* ====== Texte de description des choix ====== */
 section#choice aside div span {
   text-wrap: balance;
   text-align: center;
   font-size: 20px;
 }
 
+/* ====== Bouton dans les choix ====== */
 section#choice aside div a {
   position: absolute;
   bottom: 20px;
@@ -145,6 +131,7 @@ section#choice aside div a {
   border-radius: 15px;
 }
 
+/* ====== Effet de survol sur bouton ====== */
 section#choice aside div a::before {
   content: "";
   position: absolute;
@@ -164,6 +151,7 @@ section#choice aside:nth-child(2) div a {
   color: white;
 }
 
+/* ====== Affichage du texte au hover sur une carte ====== */
 section#choice aside:is(:hover, :focus-within) div {
   translate: 0 0;
   background-color: rgba(0, 0, 0, 0.5);
@@ -173,6 +161,7 @@ section#choice aside div a:is(:hover, :focus-within)::before {
   opacity: 1;
 }
 
+/* ====== Sections longues : passé / futur ====== */
 section:is(#past, #future) {
   --aside-padding: 1em;
   position: relative;
@@ -183,6 +172,7 @@ section:is(#past, #future) {
   justify-content: space-between;
 }
 
+/* ====== Image sticky dans passé / futur ====== */
 section:is(#past, #future) img {
   --margin: 1em;
   position: sticky;
@@ -194,24 +184,28 @@ section:is(#past, #future) img {
   border-radius: 10px;
 }
 
+/* ====== Texte sticky dans passé / futur ====== */
 section:is(#past, #future) aside {
   position: sticky;
   top: 0;
 }
 
+/* ====== Animation discrète sur les paragraphes ====== */
 section:is(#past, #future) aside * {
   transition: opacity 0.2s;
-
-  &.hidden {
-    opacity: 0;
-  }
 }
 
+section:is(#past, #future) aside *.hidden {
+  opacity: 0;
+}
+
+/* Alignement à droite pour "past" */
 section#past aside {
   padding: var(--aside-padding) var(--aside-padding) 0 0;
   text-align: right;
 }
 
+/* Alignement à gauche pour "future" */
 section#future img {
   float: right;
 }
@@ -220,38 +214,29 @@ section#future aside {
   padding: var(--aside-padding) 0 0 var(--aside-padding);
 }
 
+/* ====== Icône panier dans le nav ====== */
 nav .icone-panier {
   width: 35px;
-  /* Largeur */
   height: auto;
-  /* Hauteur  */
   vertical-align: middle;
-  /* Alignement vertical  */
   transition: transform 0.3s ease;
 }
 
 nav .icone-panier:hover {
   transform: scale(1.2);
-  /* zoom au survol */
 }
 
-/* survol boutton */
-
+/* ====== Animation de zoom au survol des liens nav ====== */
 header nav div a {
   display: inline-block;
-  /* nécessaire pour que le zoom fonctionne proprement */
   transition: transform 0.3s ease;
-  /* Animation fluide */
 }
 
 header nav div a:hover {
   transform: scale(1.2);
-  /* Zoom de 20% au survol */
 }
 
-
-/* nouvelle gestion de l'affichage de la barre de recherche*/
-
+/* ====== Barre de recherche sous le header ====== */
 .form-recherche {
   display: flex;
   justify-content: center;
@@ -261,6 +246,7 @@ header nav div a:hover {
   width: 100%;
 }
 
+/* ====== Input de la recherche ====== */
 .form-recherche input[type="search"] {
   width: 50%;
   height: 50px;
@@ -280,9 +266,9 @@ header nav div a:hover {
   outline: 2px solid white;
 }
 
+/* ====== Bouton de recherche ====== */
 .form-recherche button {
   background-color: white;
-  /* background-color: var(--background); */
   color: var(--primary-background);
   border: none;
   border-radius: 25px;
@@ -296,14 +282,14 @@ header nav div a:hover {
   background-color: #e0e0e0;
 }
 
-/* Section contenant le titre + les cartes */
+/* ====== Section des cartes de voyages ====== */
 .section-voyages {
   padding: 0 40px;
   margin: 0 0 30px;
   text-align: center;
 }
 
-/* Titre au-dessus des cartes */
+/* ====== Titre au-dessus des cartes ====== */
 .titre-voyages {
   font-size: 2.8rem;
   font-weight: bold;
@@ -312,7 +298,7 @@ header nav div a:hover {
   color: var(--primary-background);
 }
 
-/* Conteneur des 4 cartes */
+/* ====== Conteneur des cartes de voyages ====== */
 .grid-voyages {
   display: flex;
   justify-content: space-between;
@@ -320,7 +306,7 @@ header nav div a:hover {
   gap: 20px;
 }
 
-/* Carte individuelle */
+/* ====== Carte individuelle ====== */
 .voyage-carte {
   position: relative;
   width: 23%;
@@ -337,7 +323,7 @@ header nav div a:hover {
   transform: scale(1.02);
 }
 
-/* Titre visible en bas de carte avant hover */
+/* ====== Texte visible par défaut en bas ====== */
 .voyage-carte .titre-visible {
   position: absolute;
   bottom: 0;
@@ -362,7 +348,7 @@ header nav div a:hover {
   opacity: 0;
 }
 
-/* Conteneur hover */
+/* ====== Contenu visible au hover ====== */
 .voyage-carte div {
   position: absolute;
   bottom: 0;
@@ -386,7 +372,7 @@ header nav div a:hover {
   transform: translateY(0);
 }
 
-/* Voile noir flouté */
+/* ====== Fond flouté derrière le contenu hover ====== */
 .voyage-carte div::before {
   content: "";
   position: absolute;
@@ -403,7 +389,7 @@ header nav div a:hover {
   opacity: 1;
 }
 
-/* Contenu hover animé */
+/* ====== Animation des éléments dans la carte ====== */
 .voyage-carte div .titre-hover,
 .voyage-carte div a {
   transform: translateY(100%);
@@ -425,7 +411,7 @@ header nav div a:hover {
   text-align: center;
 }
 
-/* Bouton */
+/* ====== Bouton dans carte de voyage ====== */
 .voyage-carte div a {
   background-color: #fff;
   color: var(--primary-background);
@@ -435,7 +421,6 @@ header nav div a:hover {
   font-weight: bold;
   transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
   pointer-events: auto;
-  /* ✅ bouton cliquable */
 }
 
 .voyage-carte div a:hover {
@@ -444,11 +429,7 @@ header nav div a:hover {
   box-shadow: 0 2px 8px #0002;
 }
 
-
-/*style texte passé et futur*/
-
-
-/* Style général */
+/* ====== Styles du texte dans les sections passé / futur ====== */
 section#past aside p,
 section#future aside p {
   font-size: 1.6rem;
@@ -457,7 +438,7 @@ section#future aside p {
   transition: opacity 0.6s ease, transform 0.6s ease;
 }
 
-/* Accent spécifique pour la dernière ligne (CTA) */
+/* ====== Dernière ligne avec effet "call to action" ====== */
 section#past aside p:last-child {
   font-weight: bold;
   color: #ffcf99;
@@ -470,6 +451,7 @@ section#future aside p:last-child {
   text-shadow: 0 0 6px rgba(0, 255, 255, 0.5);
 }
 
+/* ====== Image passée/future zoomable au survol ====== */
 #img-past,
 #img-future {
   cursor: pointer;
@@ -480,4 +462,3 @@ section#future aside p:last-child {
 #img-future:hover {
   transform: scale(1.05);
 }
-

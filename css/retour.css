@@ -1,25 +1,27 @@
-
-
+/* ====== Conteneur principal avec animation ====== */
 .container {
   max-width: 800px;
   margin: 40px auto;
+  margin-top: 100px;;
   padding: 20px;
-  
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  animation: fadeIn 0.6s ease-out;
+  animation: fadeIn 0.6s ease-out; /* Animation d'apparition */
 }
 
+/* ====== Titre en vert si succès ====== */
 h1.success {
   text-align: center;
   color: #2ecc71;
 }
 
+/* ====== Titre en rouge si erreur ====== */
 h1.error {
   text-align: center;
   color: #e74c3c;
 }
 
+/* ====== Message d'information (paiement ou erreur) ====== */
 .message {
   text-align: center;
   font-size: 1.1em;
@@ -27,6 +29,7 @@ h1.error {
   margin-bottom: 1.5em;
 }
 
+/* ====== Carte de résumé du voyage (reçue après paiement) ====== */
 .carte-voyage {
   background-color: #f0f0f0;
   border-radius: 8px;
@@ -34,17 +37,20 @@ h1.error {
   margin-bottom: 20px;
 }
 
+/* ====== En-tête avec titre + prix alignés ====== */
 .entete {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
+/* ====== Prix en bleu accentué ====== */
 .prix {
   font-weight: bold;
   color: #2d89ef;
 }
 
+/* ====== Bouton pour ajouter une autre date ou recommencer ====== */
 .btn-ajouter {
   display: inline-block;
   margin-top: 20px;
@@ -60,18 +66,21 @@ h1.error {
   background-color: #1b65b9;
 }
 
+/* ====== Détails des options choisies (hébergements, activités...) ====== */
 .options-lignes {
   margin-top: 8px;
   font-size: 0.88em;
   line-height: 1.6;
+  color: #222;
   padding-left: 5px;
 }
 
+/* ====== Une ligne d’option dans la liste ====== */
 .opt-ligne {
   margin-bottom: 2px;
 }
 
-/*  Animation d’entrée douce */
+/* ====== Animation d’entrée en douceur ====== */
 @keyframes fadeIn {
   from {
     opacity: 0;

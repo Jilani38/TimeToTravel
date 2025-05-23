@@ -1,14 +1,15 @@
-/* ====== Fond avec dégradé passé → futur ====== */
+/* ====== Fond avec alignement centré + effet pleine page ====== */
 body {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+  justify-content: center;     /* Centre horizontalement */
+  align-items: center;         /* Centre verticalement */
+  height: 100vh;               /* Hauteur de la fenêtre */
   margin: 0;
   position: relative;
   overflow: hidden;
 }
 
+/* ====== Zone principale du contenu ====== */
 main {
   flex: 1;
   display: flex;
@@ -16,19 +17,20 @@ main {
   gap: 5rem;
 }
 
-/* ====== Conteneur du profil ====== */
+/* ====== Conteneur du formulaire de profil ====== */
 .profil-container {
   text-align: center;
   width: 90%;
   max-width: 400px;
 }
 
+/* ====== Titre du formulaire ====== */
 h1 {
   font-size: 1.8em;
   margin-bottom: 1rem;
 }
 
-/* ====== Champs bien alignés ====== */
+/* ====== Label pour les champs du profil ====== */
 label {
   font-weight: bold;
   display: block;
@@ -37,11 +39,12 @@ label {
   text-align: left;
 }
 
+/* ====== Champs de saisie ====== */
 input {
   padding: 10px;
 }
 
-/* Effet au focus */
+/* ====== Effet lumineux quand on clique sur un champ ====== */
 input:focus {
   border-color: #007bff;
   box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);

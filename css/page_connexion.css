@@ -1,13 +1,14 @@
-
+/* ====== Mise en page générale de la page de connexion ====== */
 body {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+  justify-content: center;      /* Centre horizontalement */
+  align-items: center;          /* Centre verticalement */
+  height: 100vh;                /* Hauteur totale de la fenêtre */
   position: relative;
   overflow: hidden;
 }
 
+/* ====== Formulaire centré en colonne ====== */
 form {
   display: flex;
   flex-direction: column;
@@ -15,6 +16,7 @@ form {
   width: 100%;
 }
 
+/* ====== Main utilisé pour agencer le contenu avec des espacements ====== */
 main {
   flex: 1;
   display: flex;
@@ -22,20 +24,21 @@ main {
   gap: 5rem;
 }
 
-/* ====== Conteneur du formulaire ====== */
+/* ====== Bloc contenant le formulaire ====== */
 .login-container {
   position: relative;
   text-align: center;
   width: 100%;
-  max-width: 400px;
+  max-width: 400px;             /* Largeur max du bloc */
 }
 
-/* ====== Lien d'inscription centré ====== */
+/* ====== Lien d'inscription sous le formulaire ====== */
 .register-link {
   text-align: center;
   margin-top: 1rem;
 }
 
+/* ====== Style du lien "Créer un compte" (hors .btn-secondary) ====== */
 .register-link a:not(.btn-secondary) {
   color: #00aaff;
   text-decoration: none;
@@ -46,6 +49,7 @@ main {
   text-decoration: underline;
 }
 
+/* ====== Message d'erreur rouge affiché sous le formulaire ====== */
 .message-error {
   color: red;
 }

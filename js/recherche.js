@@ -1,16 +1,15 @@
-
-
+// Tableau qui contiendra tous les voyages chargés
 const voyages = [];
 
-// Charger les données JSON au chargement de la page
+// Chargement du fichier JSON contenant les voyages, puis déclenche les filtres
 fetch('../data/voyages.json')
   .then(response => response.json())
   .then(data => {
-    voyages.push(...data);
-    appliquerFiltres()
+    voyages.push(...data); // Ajoute les données dans le tableau
+    appliquerFiltres();    // Applique les filtres au chargement
   });
 
-// Gestion des filtres et tri
+// Sélection des éléments de filtrage et d'affichage
 const rechercheInput = document.getElementById('recherche-input');
 const filtreTypeTemporel = document.getElementById('filtre-type-temporel');
 const filtrePrix = document.getElementById('filtre-prix');
@@ -19,31 +18,38 @@ const filtreNote = document.getElementById('filtre-note');
 const resetFiltresBtn = document.getElementById('reset-filtres');
 const resultatsDiv = document.getElementById('resultats');
 
+// Fonction pour appliquer les filtres selon les critères choisis
 function appliquerFiltres() {
   let filtres = voyages;
 
+  // Recherche par mot-clé (dans le titre ou le lieu)
   const search = rechercheInput.value.trim().toLowerCase();
   const url = new URL(window.location);
   if (search) {
     url.searchParams.set('q', search);
-    filtres = filtres.filter(v => v.titre.toLowerCase().includes(search) || v.lieu.toLowerCase().includes(search));
+    filtres = filtres.filter(v =>
+      v.titre.toLowerCase().includes(search) || v.lieu.toLowerCase().includes(search)
+    );
   } else {
     url.searchParams.delete('q');
   }
-  history.replaceState(null, '', url);
+  history.replaceState(null, '', url); // Met à jour l'URL sans recharger la page
 
+  // Filtrage par type temporel (passé / futur)
   if (filtreTypeTemporel.value) {
     filtres = filtres.filter(v => v.type_temporel === filtreTypeTemporel.value);
   }
 
+  // Filtrage par tranches de prix
   if (filtrePrix.value) {
     filtres = filtres.filter(v => {
-      if (filtrePrix.value === '1') return v.prix_base <= 1000;
-      if (filtrePrix.value === '2') return v.prix_base > 1000 && v.prix_base <= 2000;
-      if (filtrePrix.value === '3') return v.prix_base > 2000;
+      if (filtrePrix.value === '1') return v.prix_base <= 10000;
+      if (filtrePrix.value === '2') return v.prix_base > 10000 && v.prix_base <= 20000;
+      if (filtrePrix.value === '3') return v.prix_base > 20000;
     });
   }
 
+  // Filtrage par durée
   if (filtreDuree.value) {
     filtres = filtres.filter(v => {
       if (filtreDuree.value === '1') return v.duree <= 4;
@@ -52,19 +58,24 @@ function appliquerFiltres() {
     });
   }
 
+  // Filtrage par note minimale
   if (filtreNote.value) {
     filtres = filtres.filter(v => v.note_moyenne >= parseInt(filtreNote.value));
   }
 
+  // Affiche les voyages après filtrage
   afficherVoyages(filtres);
 }
 
+// Fonction pour générer dynamiquement les cartes de voyages
 function afficherVoyages(voyages) {
-  resultatsDiv.innerHTML = '';
+  resultatsDiv.innerHTML = ''; // Vide la zone d'affichage
+
   if (voyages.length === 0) {
     resultatsDiv.innerHTML = '<p>Aucun voyage trouvé.</p>';
     return;
   }
+
   voyages.forEach(v => {
     resultatsDiv.innerHTML += `
       <a href="http://localhost:8000/php/voyage.php?id=${v.id}" class="carte-voyage">
@@ -78,16 +89,17 @@ function afficherVoyages(voyages) {
   });
 }
 
-// Gestion des tris
+// Gestion des boutons de tri
 const triButtons = document.querySelectorAll('.actions-tri button');
 triButtons.forEach(button => {
   button.addEventListener('click', () => {
     const critere = button.dataset.tri;
-    let voyagesActuels = Array.from(resultatsDiv.querySelectorAll('.carte-voyage')).map(v => v.dataset.id);
-    let filtres = voyages;
-    appliquerFiltres();
-    filtres = Array.from(voyages);
 
+    // Applique les filtres d'abord pour avoir la bonne base
+    appliquerFiltres();
+    let filtres = Array.from(voyages); // Copie des données filtrées
+
+    // Tri selon le critère choisi
     if (critere === 'prix') {
       filtres.sort((a, b) => a.prix_base - b.prix_base);
     } else if (critere === 'duree') {
@@ -102,20 +114,22 @@ triButtons.forEach(button => {
   });
 });
 
-// Reset filtres
+// Réinitialisation de tous les filtres
 resetFiltresBtn.addEventListener('click', () => {
   const url = new URL(window.location);
   url.searchParams.delete('q');
   history.replaceState(null, '', url);
+
   rechercheInput.value = '';
   filtreTypeTemporel.value = '';
   filtrePrix.value = '';
   filtreDuree.value = '';
   filtreNote.value = '';
-  afficherVoyages(voyages);
+  
+  afficherVoyages(voyages); // Affiche tous les voyages
 });
 
-// Rafraîchir à chaque changement de filtre
+// Mise à jour automatique à chaque changement de filtre ou recherche
 [rechercheInput, filtreTypeTemporel, filtrePrix, filtreDuree, filtreNote].forEach(el => {
   el.addEventListener('input', appliquerFiltres);
 });

@@ -1,12 +1,14 @@
+/* ====== Style général de la page ====== */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
     margin: 0;
     background-color: #f4f4f4;
     color: #333;
-    animation: fadeInPage 1s ease-in;
-  }
+    animation: fadeInPage 1s ease-in; /* Animation d'entrée douce */
+}
 
-  @keyframes fadeInPage {
+/* ====== Animation d'apparition de la page ====== */
+@keyframes fadeInPage {
     from {
       opacity: 0;
       transform: translateY(20px);
@@ -15,33 +17,37 @@ body {
       opacity: 1;
       transform: translateY(0);
     }
-  }
-  
-  .icone-panier {
+}
+
+/* ====== Icône du panier (si présente dans le header) ====== */
+.icone-panier {
     width: 30px;
     height: auto;
-  }
-  
-  .voyage-container,
-  .panier-container {
+}
+
+/* ====== Conteneurs pour les éléments de commande / panier ====== */
+.voyage-container,
+.panier-container {
     display: flex;
     flex-wrap: wrap;
     padding: 2em;
     gap: 2em;
     justify-content: center;
-  }
-  
-  .container {
+}
+
+/* ====== Carte de contenu (commande validée, résumé, etc.) ====== */
+.container {
     background: white;
     padding: 2em;
     border-radius: 15px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     max-width: 700px;
     width: 100%;
-    animation: zoomIn 0.5s ease-out;
-  }
-  
-  @keyframes zoomIn {
+    animation: zoomIn 0.5s ease-out; /* Animation de zoom à l'entrée */
+}
+
+/* ====== Animation d'entrée type zoom ====== */
+@keyframes zoomIn {
     from {
       transform: scale(0.95);
       opacity: 0;
@@ -50,40 +56,47 @@ body {
       transform: scale(1);
       opacity: 1;
     }
-  }
-  
-  h1 {
+}
+
+/* ====== Titre principal ====== */
+h1 {
     color: #1d3557;
     font-size: 2em;
     margin-bottom: 0.5em;
     text-align: center;
-  }
-  
-  h2 {
+}
+
+/* ====== Titres secondaires ====== */
+h2 {
     color: #457b9d;
     margin-top: 1em;
-  }
-  
-  .carte-voyage {
+}
+
+/* ====== Carte de voyage affichée dans le récapitulatif ====== */
+.carte-voyage {
     margin-bottom: 1em;
-  }
-  
-  .entete {
+}
+
+/* ====== En-tête d’un élément (ex : nom + prix alignés) ====== */
+.entete {
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
-  
-  .prix {
+}
+
+/* ====== Prix en rouge mis en avant ====== */
+.prix {
     color: #e63946;
     font-weight: bold;
-  }
-  
-  .details p {
+}
+
+/* ====== Paragraphe de détail (dates, options...) ====== */
+.details p {
     margin: 5px 0;
-  }
-  
-  .btn-ajouter {
+}
+
+/* ====== Bouton pour ajouter une autre commande ou retour accueil ====== */
+.btn-ajouter {
     display: inline-block;
     margin-top: 20px;
     padding: 10px 16px;
@@ -93,13 +106,14 @@ body {
     border-radius: 8px;
     transition: background 0.3s;
     text-align: center;
-  }
-  
-  .btn-ajouter:hover {
+}
+
+.btn-ajouter:hover {
     background-color: #457b9d;
-  }
-  
-  .btn-payer {
+}
+
+/* ====== Bouton "Payer" (vert) ====== */
+.btn-payer {
     width: 100%;
     margin-top: 15px;
     padding: 12px;
@@ -110,17 +124,17 @@ body {
     border-radius: 8px;
     cursor: pointer;
     transition: background 0.3s;
-  }
-  
-  .btn-payer:hover {
+}
+
+.btn-payer:hover {
     background-color: #21867a;
-  }
-  
-  .total-commande {
+}
+
+/* ====== Affichage du total final ====== */
+.total-commande {
     display: flex;
     justify-content: space-between;
     font-weight: bold;
     font-size: 1.2em;
     margin-top: 10px;
-  }
-  
+}

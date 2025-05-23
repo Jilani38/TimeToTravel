@@ -1,125 +1,132 @@
+/* ====== Titre principal centré ====== */
 h1 {
   margin-top: 100px;
   text-align: center;
 }
 
-  /* Mise en page panier */
-  .panier-container {
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
-  }
-  
-  .container {
-    flex: 1;
-    max-width: 700px;
-    margin-right: 20px;
-  }
-  
-  .entete {
-    background-color: #cfe6f5;
-    border-radius: 8px;
-    padding: 10px 15px;
-    position: relative;
-  }
+/* ====== Conteneur principal du panier (partie gauche + droite) ====== */
+.panier-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
 
-  body.dark .entete {
-    background-color: #11111b;
-  }
-  
-  .entete h2 {
-    margin: 0;
-    font-size: 1.1em;
-  }
-  
-  .prix {
-    position: absolute;
-    right: 15px;
-    top: 50%;
-    transform: translateY(-50%);
-    font-weight: bold;
-  }
-  
-  .details {
-    padding: 10px 15px;
-  }
-  
-  .warning {
-    color: #c0392b;
-    font-size: 0.9em;
-  }
-  
-  .actions {
-    margin-top: 25px;
-  }
-  
-  .btn {
-    text-decoration: none;
-    padding: 10px 15px;
-    border-radius: 8px;
-    color: white;
-    font-weight: bold;
-    cursor: pointer;
-    display: inline-block;
-    text-align: center;
-  }
-  
-  .continuer {
-    background-color: #7f8c8d;
-  }
-  
-  .valider, .payer {
-    background-color: #005aa7;
-  }
-  
-  .ajouter {
-    background-color: white;
-    color: #005aa7;
-    border: 2px solid #005aa7;
-    margin-top: 10px;
-  }
-  
-  .btn:hover {
-    opacity: 0.9;
-  }
-  
-  /* Bulle de total à droite */
-  .bulle-total {
-    width: 300px;
-  }
-  
-  .bulle-total h3 {
-    margin-top: 0;
-    margin-bottom: 15px;
-  }
-  
-  .bulle-total p {
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .total-commande {
-    display: flex;
-    justify-content: space-between;
-    font-size: 1.2em;
-    margin: 15px 0;
-  }
-  
-  /*.bulle-total hr {
-    border: none;
-    border-top: 1px solid #ddd;
-  }
-  
-  .bulle-total .btn {
-    width: 100%;
-    margin-top: 10px;
-    padding: 12px;
-  }*/
+/* ====== Colonne principale avec les articles ====== */
+.container {
+  flex: 1;
+  max-width: 700px;
+  margin-right: 20px;
+}
 
-  .bulle-total .btn-payer,
+/* ====== En-tête d'un article dans le panier ====== */
+.entete {
+  background-color: #cfe6f5;
+  border-radius: 8px;
+  padding: 10px 15px;
+  position: relative;
+}
+
+/* ====== En-tête dark mode ====== */
+body.dark .entete {
+  background-color: #11111b;
+}
+
+/* ====== Titre d’un article (ex : voyage) ====== */
+.entete h2 {
+  margin: 0;
+  font-size: 1.1em;
+}
+
+/* ====== Prix affiché à droite de l’en-tête ====== */
+.prix {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-weight: bold;
+}
+
+/* ====== Détails de l’article sous l’en-tête ====== */
+.details {
+  padding: 10px 15px;
+}
+
+/* ====== Message d’avertissement (ex : stock ou date manquante) ====== */
+.warning {
+  color: #c0392b;
+  font-size: 0.9em;
+}
+
+/* ====== Bloc d’actions (boutons) sous l’article ====== */
+.actions {
+  margin-top: 25px;
+}
+
+/* ====== Bouton générique ====== */
+.btn {
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+}
+
+/* ====== Bouton "Continuer mes achats" ====== */
+.continuer {
+  background-color: #7f8c8d;
+}
+
+/* ====== Bouton "Valider le panier" ou "Payer" ====== */
+.valider, .payer {
+  background-color: #005aa7;
+}
+
+/* ====== Bouton "Ajouter une date" ====== */
+.ajouter {
+  background-color: white;
+  color: #005aa7;
+  border: 2px solid #005aa7;
+  margin-top: 10px;
+}
+
+/* ====== Effet hover pour tous les boutons ====== */
+.btn:hover {
+  opacity: 0.9;
+}
+
+/* ====== Bulle de résumé total à droite ====== */
+.bulle-total {
+  width: 300px;
+}
+
+/* ====== Titre dans la bulle totale ====== */
+.bulle-total h3 {
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+/* ====== Lignes de résumé prix (détail + montant) ====== */
+.bulle-total p {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* ====== Ligne affichant le total final ====== */
+.total-commande {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.2em;
+  margin: 15px 0;
+}
+
+/* ====== Boutons dans la bulle totale ====== */
+.bulle-total .btn-payer,
 .bulle-total .btn-ajouter {
   width: 100% !important;
-  display: block !important; /* crucial pour forcer une nouvelle ligne */
+  display: block !important;
   padding: 12px 15px !important;
   box-sizing: border-box !important;
   text-align: center !important;
@@ -128,27 +135,29 @@ h1 {
   font-weight: bold !important;
   cursor: pointer !important;
   text-decoration: none !important;
-  border: none !important; /* retire les bordures par défaut (utile pour <button>) */
+  border: none !important;
 }
 
+/* ====== Style bouton payer ====== */
 .bulle-total .btn-payer {
   background-color: #005aa7 !important;
   color: white !important;
 }
 
+/* ====== Style bouton ajouter ====== */
 .bulle-total .btn-ajouter {
   background-color: white !important;
   color: #005aa7 !important;
-  border: 2px solid #005aa7 !important; /* Ajoute explicitement une bordure au lien */
+  border: 2px solid #005aa7 !important;
 }
 
+/* ====== Hover sur boutons à droite ====== */
 .bulle-total .btn-payer:hover,
 .bulle-total .btn-ajouter:hover {
   opacity: 0.9 !important;
 }
 
-/*gestion boutton supprimer*/
-
+/* ====== Bouton pour supprimer un voyage du panier ====== */
 .btn-supprimer {
   background-color: #e63946;
   color: white;
@@ -163,4 +172,3 @@ h1 {
 .btn-supprimer:hover {
   background-color: #c5303b;
 }
-

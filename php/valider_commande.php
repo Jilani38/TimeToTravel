@@ -1,16 +1,17 @@
 <?php
-session_start();
+session_start(); // Démarre la session pour accéder au panier
 
+// Vérifie que le panier existe et n'est pas vide
 if (!isset($_SESSION['panier']) || empty($_SESSION['panier'])) {
-  header('Location: page_panier.php');
+  header('Location: page_panier.php'); // Redirige vers le panier si vide
   exit;
 }
 
+// Charge les données des voyages depuis le fichier JSON
 $voyages = json_decode(file_get_contents("../data/voyages.json"), true);
-$panier = $_SESSION['panier'];
-$total = 0;
+$panier = $_SESSION['panier']; // Récupère le panier de la session
+$total = 0; // Initialisation du total général
 ?>
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -22,7 +23,7 @@ $total = 0;
 <body>
 
 <header>
-  <?php require_once './partials/nav.php'; ?>
+  <?php require_once './partials/nav.php'; ?> <!-- Inclusion de la barre de navigation -->
 </header>
 
 <main class="panier-container">
@@ -32,8 +33,11 @@ $total = 0;
 
     <?php foreach ($panier as $id => $quantite): ?>
       <?php
+        // Recherche du voyage correspondant
         $voyage = array_filter($voyages, fn($v) => $v['id'] == $id);
-        $voyage = reset($voyage);
+        $voyage = reset($voyage); // Prend le premier résultat du filtre
+
+        // Calcul du prix pour ce voyage
         $sous_total = $voyage['prix_base'] * $quantite;
         $total += $sous_total;
       ?>
@@ -59,6 +63,6 @@ $total = 0;
 </html>
 
 <?php
-// Nettoyage du panier
+// Vide le panier après validation de la commande
 unset($_SESSION['panier']);
 ?>

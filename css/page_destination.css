@@ -1,25 +1,31 @@
+/* ====== Conteneur principal qui sépare la page en deux sections ====== */
 .main-container {
     display: flex;
     height: 100vh;
 }
 
+/* ====== Partie gauche avec les infos de description ====== */
 .left-section {
     width: 25%;
     background-color: #ffffff;
     padding: 20px;
-    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
-    position: fixed;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1); /* ombre à droite */
+    position: fixed; /* reste fixe pendant le scroll */
     height: 100vh;
-    overflow: auto;
+    overflow: auto; /* scroll si contenu trop long */
 }
+
+/* ====== Version dark mode de la section gauche ====== */
 body.dark .left-section {
   background-color: #11111b;
 }
 
+/* ====== Titre dans la partie gauche ====== */
 .left-section h1 {
     margin-top: 70px;
 }
 
+/* ====== Texte de définition sous le titre ====== */
 .definition {
     margin-top: 15px;
     font-size: 15px;
@@ -27,14 +33,15 @@ body.dark .left-section {
     text-align: justify;
 }
 
-
+/* ====== Partie droite avec les bulles de destinations ====== */
 .right-section {
     width: 75%;
-    margin-left: 25%;
+    margin-left: 25%; /* laisse la place pour la partie gauche */
     padding: 20px;
-    overflow-y: auto;
+    overflow-y: auto; /* scroll si besoin */
 }
 
+/* ====== Conteneur pour les bulles (cartes de voyage) ====== */
 .destinations-container {
     margin-top: 100px;
     display: flex;
@@ -43,6 +50,7 @@ body.dark .left-section {
     gap: 20px;
 }
 
+/* ====== Bulle individuelle pour une destination ====== */
 .bubble {
     position: relative;
     width: 300px;
@@ -55,10 +63,12 @@ body.dark .left-section {
     transition: transform 0.3s ease;
 }
 
+/* ====== Zoom au survol sur la bulle ====== */
 .bubble:is(:hover, :focus-within) {
     transform: scale(1.1);
 }
 
+/* ====== Voile sombre au survol de la bulle ====== */
 .overlay {
     position: absolute;
     top: 0;
@@ -73,11 +83,13 @@ body.dark .left-section {
     opacity: 0;
 }
 
+/* ====== Affichage du voile au hover ====== */
 .bubble:is(:hover, :focus-within) .overlay {
     background-color: rgba(0,0,0,0.6);
     opacity: 1;
 }
 
+/* ====== Bouton cliquable au centre de la bulle ====== */
 .button {
     padding: 10px 15px;
     background-color: #fff;
@@ -92,6 +104,7 @@ body.dark .left-section {
     background-color: #ddd;
 }
 
+/* ====== Titre visible en bas de la bulle ====== */
 .title {
     position: absolute;
     bottom: 0;

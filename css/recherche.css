@@ -1,3 +1,4 @@
+/* ====== Titre de la page de résultats ====== */
 h1 {
   margin-top: 80px;
   font-size: 2em;
@@ -5,7 +6,7 @@ h1 {
   text-align: center;
 }
 
-/* Liste des résultats */
+/* ====== Liste des résultats de voyages ====== */
 ul.resultats-list {
   list-style: none;
   padding: 0;
@@ -13,7 +14,7 @@ ul.resultats-list {
   max-width: 1000px;
 }
 
-/* Carte de voyage */
+/* ====== Carte individuelle d’un voyage trouvé ====== */
 .carte-voyage {
   background-color: #e4f0f9;
   border-radius: 12px;
@@ -23,10 +24,12 @@ ul.resultats-list {
   transition: transform 0.2s;
 }
 
+/* ====== Légère élévation au survol ====== */
 .carte-voyage:hover {
   transform: translateY(-3px);
 }
 
+/* ====== Structure du lien cliquable dans la carte ====== */
 .carte-voyage a {
   text-decoration: none;
   color: inherit;
@@ -35,6 +38,7 @@ ul.resultats-list {
   align-items: center;
 }
 
+/* ====== Image de la carte de voyage ====== */
 .carte-voyage img {
   width: 200px;
   height: 140px;
@@ -42,22 +46,25 @@ ul.resultats-list {
   object-fit: cover;
 }
 
+/* ====== Zone de texte à droite de l’image ====== */
 .carte-voyage .texte {
   flex: 1;
 }
 
+/* ====== Titre du voyage dans la carte ====== */
 .carte-voyage h3 {
   margin: 0;
   font-size: 1.3em;
   color: var(--primary-background);
 }
 
+/* ====== Description courte ou infos complémentaires ====== */
 .carte-voyage p {
   margin: 8px 0;
   color: #333;
 }
 
-/* Message aucun résultat */
+/* ====== Message si aucun résultat trouvé ====== */
 body > p {
   text-align: center;
   font-size: 1.1em;

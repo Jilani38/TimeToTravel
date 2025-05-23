@@ -1,12 +1,15 @@
+/* ====== Police personnalisée ====== */
 @font-face {
   font-family: 'TitilliumWeb';
   src: url('../font/TitilliumWeb/TitilliumWeb-Regular.ttf') format('truetype');
 }
 
+/* ====== Configuration globale ====== */
 * {
   box-sizing: border-box;
 }
 
+/* ====== Style général du body ====== */
 body {
   --background: #f4f7fb;
   --color: #000;
@@ -19,12 +22,14 @@ body {
   min-height: 100vh;
 }
 
+/* ====== Mode sombre ====== */
 body.dark {
   --background: #0e0e17f0;
   --primary-background: #f4f7fb;
   --color: #f4f7fb;
 }
 
+/* ====== Style global des boutons ====== */
 button {
   font: inherit;
   background: transparent;
@@ -33,6 +38,7 @@ button {
   cursor: pointer;
 }
 
+/* ====== Barre de navigation (header) ====== */
 header nav {
   position: fixed;
   z-index: 1;
@@ -41,7 +47,6 @@ header nav {
   justify-content: space-between;
   align-items: center;
   padding-right: 20px;
-
   top: 0;
   left: 0;
   right: 0;
@@ -52,10 +57,12 @@ header nav a {
   color: white;
 }
 
+/* ====== Liens et boutons dans le header ====== */
 header nav div :is(a, button) {
   padding: 10px;
   border-radius: 10px;
 
+  /* Bouton spécial (ex: panier ?) */
   &:nth-child(5) {
     position: relative;
     color: var(--primary-background);
@@ -76,40 +83,35 @@ header nav div :is(a, button) {
   }
 }
 
+/* ====== Logo principal dans le header ====== */
 header nav a:first-of-type img {
   width: 160px;
   margin-top: 10px;
 }
 
+/* ====== Autres icônes / images dans le header ====== */
 header nav img {
   width: 35px;
-  /* Largeur */
   height: auto;
-  /* Hauteur  */
   vertical-align: middle;
-  /* Alignement vertical  */
   transition: transform 0.3s ease;
 }
 
 header nav img:hover {
-  transform: scale(1.2);
-  /* zoom au survol */
+  transform: scale(1.2); /* zoom */
 }
 
-/* survol boutton */
-
+/* ====== Zoom sur les boutons au survol ====== */
 header nav div :is(a, button) {
   display: inline-block;
-  /* nécessaire pour que le zoom fonctionne proprement */
   transition: transform 0.3s ease;
-  /* Animation fluide */
 }
 
 header nav div :is(a, button):hover {
   transform: scale(1.2);
-  /* Zoom de 20% au survol */
 }
 
+/* ====== Bouton pour changer le thème (clair/sombre) ====== */
 button#toggle-dark-mode {
   padding-inline: 0;
   cursor: pointer;
@@ -120,14 +122,9 @@ button#toggle-dark-mode svg {
   cursor: pointer;
   display: block;
   margin: auto;
-  /* position: absolute; */
-  /* top: 50%; */
-  /* left: 50%; */
-  /* transform: translate(-50%, -50%); */
 }
 
-
-/* Bulle de total à droite */
+/* ====== Carte (bloc de contenu stylé) ====== */
 .card {
   background-color: #fff;
   border-radius: 12px;
@@ -139,6 +136,7 @@ body.dark .card {
   background-color: #11111b;
 }
 
+/* ====== Champs de formulaire ====== */
 input[type="text"],
 input[type="search"],
 input[type="number"],
@@ -163,7 +161,7 @@ input:focus {
   box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
 }
 
-/* ====== Champs du formulaire bien alignés ====== */
+/* ====== Groupes de champs bien alignés ====== */
 .input-group {
   display: flex;
   flex-direction: column;
@@ -176,10 +174,9 @@ input:focus {
   font-weight: bold;
   margin-bottom: 0.3rem;
   align-self: flex-start;
-  /* Assure que les labels restent bien à gauche */
 }
 
-/* ====== Boutons stylés ====== */
+/* ====== Boutons principaux bleus ====== */
 button.btn-primary {
   background-color: #123964;
   color: white;
@@ -195,7 +192,7 @@ button.btn-primary:hover {
   background-color: #19508a;
 }
 
-/* ====== Boutons stylés ====== */
+/* ====== Boutons secondaires blancs ====== */
 .btn-secondary {
   display: block;
   margin-top: 15px;
@@ -218,6 +215,7 @@ body.dark .btn-secondary {
   color: white;
 }
 
+/* ====== Bouton rouge pour erreurs ou suppression ====== */
 .btn-error {
   display: inline-block;
   text-decoration: none;
@@ -237,9 +235,7 @@ body.dark .btn-secondary {
   background-color: #a71d2a;
 }
 
-
-/*pour la partie mdp des form*/
-
+/* ====== Champ mot de passe avec icône visible/masqué ====== */
 .input-password {
   position: relative;
   width: 100%;
@@ -248,7 +244,6 @@ body.dark .btn-secondary {
 .input-password input {
   width: 100%;
   padding-right: 80px;
-  /* Laisse bien la place */
   box-sizing: border-box;
 }
 
@@ -276,9 +271,7 @@ body.dark .btn-secondary {
   color: #555;
 }
 
-
-/*partie footer*/
-
+/* ====== Pied de page (footer) ====== */
 .site-footer {
   background: #0d0d2b;
   color: #f0f0f0;
@@ -301,6 +294,7 @@ body.dark .btn-secondary {
   min-width: 200px;
 }
 
+/* Logo dans le footer */
 .logo-col h2.logo-footer {
   font-family: 'Orbitron', sans-serif;
   font-size: 1.8em;
@@ -308,12 +302,14 @@ body.dark .btn-secondary {
   margin-bottom: 0.5em;
 }
 
+/* Titres de colonne */
 .footer-col h3 {
   color: #ffffff;
   font-weight: bold;
   margin-bottom: 0.8em;
 }
 
+/* Listes de liens dans le footer */
 .footer-col ul {
   list-style: none;
   padding: 0;
@@ -333,6 +329,7 @@ body.dark .btn-secondary {
   text-decoration: underline;
 }
 
+/* Icônes des réseaux sociaux */
 .social-icons a {
   display: inline-block;
   margin-right: 0.7em;
@@ -349,6 +346,7 @@ body.dark .btn-secondary {
   transform: scale(1.2);
 }
 
+/* Bas de page avec infos légales */
 .footer-bottom {
   border-top: 1px solid #444;
   text-align: center;

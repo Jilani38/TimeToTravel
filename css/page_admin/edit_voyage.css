@@ -1,7 +1,9 @@
+/* ====== Conteneur principal ====== */
 main {
   padding: 20px;
 }
 
+/* ====== Formulaire centré avec fond blanc ====== */
 main form {
   background-color: white;
   padding: 20px;
@@ -12,9 +14,10 @@ main form {
   overflow-x: hidden;
 }
 
+/* ====== Tableau (pour afficher les champs en ligne) ====== */
 table {
   width: 100%;
-  border-spacing: 0 10px;
+  border-spacing: 0 10px;         /* espace entre les lignes */
   border-collapse: separate;
 }
 
@@ -29,12 +32,14 @@ table td {
   padding: 10px;
 }
 
+/* ====== Image prévisualisation (ex : image de voyage) ====== */
 img {
   max-width: 200px;
   margin-top: 10px;
   border-radius: 6px;
 }
 
+/* ====== Boutons d'action en bas du formulaire ====== */
 main div {
   margin-top: 30px;
   display: flex;
@@ -42,6 +47,7 @@ main div {
   flex-wrap: wrap;
 }
 
+/* ====== Bouton "Valider / Créer" ====== */
 main div input[type="submit"] {
   background-color: var(--primary-background);
   color: white;
@@ -57,6 +63,7 @@ main div input[type="submit"]:hover {
   background-color: #19508a;
 }
 
+/* ====== Lien "Annuler" ====== */
 main div a {
   background-color: white;
   border: 1px solid var(--primary-background);
@@ -73,7 +80,7 @@ main div a:hover {
   color: white;
 }
 
-/* Sections dynamiques */
+/* ====== Section dynamique (étapes, options, activités, etc.) ====== */
 section {
   margin-top: 40px;
   padding-top: 10px;
@@ -86,6 +93,7 @@ section h2 {
   font-size: 20px;
 }
 
+/* ====== Bloc dynamique (option, activité, jour, info) ====== */
 .option-bloc, .activite-bloc, .jour-bloc, .info-bloc {
   background-color: #f9f9f9;
   padding: 15px;
@@ -97,6 +105,7 @@ section h2 {
   position: relative;
 }
 
+/* ====== Label des champs dynamiques ====== */
 .option-bloc label,
 .activite-bloc label,
 .jour-bloc label,
@@ -107,6 +116,7 @@ section h2 {
   color: var(--primary-background);
 }
 
+/* ====== Champs dans les blocs dynamiques ====== */
 .option-bloc input,
 .activite-bloc input,
 .activite-bloc textarea,
@@ -122,6 +132,7 @@ section h2 {
   box-sizing: border-box;
 }
 
+/* ====== Bouton de suppression d'un bloc (X rouge) ====== */
 button[type="button"].supprimer {
   background-color: #e74c3c;
   color: #fff;
@@ -142,6 +153,7 @@ button[type="button"].supprimer:hover {
   background-color: #c0392b;
 }
 
+/* ====== Bouton pour ajouter un nouveau bloc dynamique (étape, option...) ====== */
 button[type="button"].ajouter {
   background-color: white;
   color: var(--primary-background);
@@ -161,7 +173,7 @@ button[type="button"].ajouter:hover {
   border-color: var(--primary-background);
 }
 
-/* Suppression de hr */
+/* ====== Suppression des <hr> inutiles dans les blocs ====== */
 .option-bloc hr,
 .activite-bloc hr,
 .jour-bloc hr,
