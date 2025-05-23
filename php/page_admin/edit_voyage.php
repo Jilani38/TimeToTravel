@@ -34,9 +34,9 @@ $voyage = $voyages[$index];
 if (isset($_POST['submit'])) {
   $programme = [];
   if (!empty($_POST['programme']) && is_array($_POST['programme'])) {
-    foreach ($_POST['programme'] as $index => $etape) {
+    foreach ($_POST['programme'] as $i => $etape) {
       $programme[] = [
-        "jour" => (int) $index,
+        "jour" => (int) $i,
         "titre" => trim($etape['titre'] ?? ''),
         "activite" => trim($etape['activite'] ?? '')
       ];
