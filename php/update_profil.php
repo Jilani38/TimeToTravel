@@ -28,9 +28,13 @@ foreach ($utilisateurs as &$u) {
       $u['email'] = trim($u['email']);
     }
     $u['telephone'] = trim($_POST['telephone'] ?? $u['telephone']);
-    if (isset($_POST['date_naissance']) && (new DateTime($_POST['date_naissance']) < new DateTime())) {
-      $u['date_naissance'] = trim($_POST['date_naissance']);
-    } else {
+    try {
+      if (isset($_POST['date_naissance']) && (new DateTime($_POST['date_naissance']) < new DateTime())) {
+        $u['date_naissance'] = trim($_POST['date_naissance']);
+      } else {
+        $u['date_naissance'] = trim($u['date_naissance']);
+      }
+    } catch (Exception $e) {
       $u['date_naissance'] = trim($u['date_naissance']);
     }
     $u['genre'] = trim($_POST['genre'] ?? $u['genre']);
