@@ -60,6 +60,7 @@ $role = $utilisateur['role'] ?? 'client';
 
     <section id="profil" class="onglet-section actif">
       <h2>Informations personnelles</h2>
+      <form method="POST" action="update_profil.php">
       <ul class="profil-inline">
         <?php 
         $infos = [
@@ -77,17 +78,16 @@ $role = $utilisateur['role'] ?? 'client';
         ?>
           <li>
             <label><?= $label ?> :</label>
-            <input type="text" id="<?= $champ ?>" value="<?= htmlspecialchars($utilisateur[$champ]) ?>" disabled <?= $readonly ?>>
+            <input type="text" name="<?= $champ ?>" id="<?= $champ ?>" value="<?= htmlspecialchars($utilisateur[$champ]) ?>" readonly>
             <?php if (!in_array($champ, ["date_inscription", "derniere_connexion"])): ?>
-              <button class="btn-edit">✏️</button>
-              <button class="btn-valider" style="display:none;">✅</button>
-              <button class="btn-annuler" style="display:none;">❌</button>
+              <button type="button" class="btn-edit">✏️</button>
+              <button type="button" class="btn-valider" style="display:none;">✅</button>
+              <button type="button" class="btn-annuler" style="display:none;">❌</button>
             <?php endif; ?>
           </li>
         <?php endforeach; ?>
       </ul>
 
-      <form method="POST" action="update_profil.php">
         <button id="btn-enregistrer" class="btn-primary" style="display:none;">💾 Enregistrer les modifications</button>
       </form>
     </section>

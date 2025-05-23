@@ -24,15 +24,14 @@ document.addEventListener("DOMContentLoaded", () => {
     const valeurInitiale = input.value;
 
     btnEdit.addEventListener("click", () => {
-      if (input.hasAttribute("readonly")) return;
-      input.disabled = false;
+      input.readOnly = false;
       btnEdit.style.display = 'none';
       btnValider.style.display = 'inline';
       btnAnnuler.style.display = 'inline';
     });
 
     btnValider.addEventListener("click", () => {
-      input.disabled = true;
+      input.readOnly = true;
       input.dataset.modifie = "true";
       btnEdit.style.display = 'inline';
       btnValider.style.display = 'none';
@@ -42,7 +41,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     btnAnnuler.addEventListener("click", () => {
       input.value = valeurInitiale;
-      input.disabled = true;
+      input.readOnly = true;
       btnEdit.style.display = 'inline';
       btnValider.style.display = 'none';
       btnAnnuler.style.display = 'none';
