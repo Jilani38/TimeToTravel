@@ -22,8 +22,10 @@ foreach ($utilisateurs as &$u) {
   if ($u['id'] === $id) {
     $u['nom'] = trim($_POST['nom'] ?? $u['nom']);
     $u['prenom'] = trim($_POST['prenom'] ?? $u['prenom']);
-    $u['date_naissance'] = $_POST['date_naissance'] ?? $u['date_naissance'];
+    $u['email'] = trim($_POST['email'] ?? $u['email']);
     $u['telephone'] = trim($_POST['telephone'] ?? $u['telephone']);
+    $u['date_naissance'] = trim($_POST['date_naissance'] ?? $u['date_naissance']);
+    $u['genre'] = trim($_POST['genre'] ?? $u['genre']);
 
     // Mettre à jour la session
     $_SESSION['nom'] = $u['nom'];
