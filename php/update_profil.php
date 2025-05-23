@@ -22,9 +22,17 @@ foreach ($utilisateurs as &$u) {
   if ($u['id'] === $id) {
     $u['nom'] = trim($_POST['nom'] ?? $u['nom']);
     $u['prenom'] = trim($_POST['prenom'] ?? $u['prenom']);
-    $u['email'] = trim($_POST['email'] ?? $u['email']);
+    if (isset($_POST['email']) && filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
+      $u['email'] = trim($_POST['email']);
+    } else {
+      $u['email'] = trim($u['email']);
+    }
     $u['telephone'] = trim($_POST['telephone'] ?? $u['telephone']);
-    $u['date_naissance'] = trim($_POST['date_naissance'] ?? $u['date_naissance']);
+    if (isset($_POST['date_naissance']) && (new DateTime($_POST['date_naissance']) < new DateTime())) {
+      $u['date_naissance'] = trim($_POST['date_naissance']);
+    } else {
+      $u['date_naissance'] = trim($u['date_naissance']);
+    }
     $u['genre'] = trim($_POST['genre'] ?? $u['genre']);
 
     // Mettre à jour la session
